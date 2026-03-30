@@ -271,103 +271,137 @@ class StateManager:
             logger.error(f"Error fetching current price for {symbol}: {e}")
             return None
 
-    def _calculate_entry_readiness(self, current_price: float, next_buy_level: Optional[float] = None) -> Tuple[Optional[float], str]:
+    def _calculate_entry_readiness(self, current_price: float, buy_levels: List[float],
+                                   sell_levels: List[float]) -> Dict:
         """
-        次のエントリーレベルと準備度（READY/WARN/FAR）を計算
+        次のエントリーレベル（買い・売り）と準備度を計算
 
         Args:
             current_price: 現在価格
-            next_buy_level: 次の買いレベル
+            buy_levels: 買いレベルのリスト
+            sell_levels: 売りレベルのリスト
 
         Returns:
-            (次の買いレベルまでの距離（%）, 準備度ステータス（"READY"/"WARN"/"FAR"）)
-        """
-        try:
-            if next_buy_level is None:
-                grid_state = self._get_grid_state()
-                buy_levels = grid_state.get("buy_levels", [])
-                if not buy_levels:
-                    return None, "FAR"
-                next_buy_level = max(buy_levels)  # 最も高い買いレベル
-
-            distance_pct = abs((current_price - next_buy_level) / next_buy_level * 100)
-
-            if distance_pct <= READY_THRESHOLD:
-                status = "READY"
-            elif distance_pct <= WARN_THRESHOLD:
-                status = "WARN"
-            else:
-                status = "FAR"
-
-            return distance_pct, status
-
-        except Exception as e:
-            logger.error(f"Error calculating entry readiness: {e}")
-            return None, "FAR"
-
-    def _calculate_tp_sl_profit(
-        self,
-        current_price: float,
-        entry_price: float,
-        quantity: float,
-        leverage: int = 1,
-        tp_pct: float = 2.0,
-        sl_pct: float = -5.0
-    ) -> Dict:
-        """
-        TP（テイクプロフィット）・SL（ストップロス）・利益推定を計算
-
-        Args:
-            current_price: 現在価格
-            entry_price: エントリー価格
-            quantity: ポジション数量
-            leverage: レバレッジ倍率（デフォルト: 1）
-            tp_pct: TP レベル（%、デフォルト: 2.0）
-            sl_pct: SL レベル（%、デフォルト: -5.0）
-
-        Returns:
-            {
-                "entry_price": float,
-                "tp_price": float,
-                "sl_price": float,
-                "current_pnl_pct": float,
-                "potential_profit": float,
-                "potential_loss": float,
-                "pnl_ratio": float
+            dict: {
+                'next_buy_level': float or None,
+                'next_sell_level': float or None,
+                'distance_buy_pct': float,  # 負数 = 下降が必要
+                'distance_sell_pct': float,
+                'buy_readiness': str,  # 'READY', 'WARN', 'FAR'
+                'sell_readiness': str,
             }
         """
         try:
-            tp_price = entry_price * (1 + tp_pct / 100)
-            sl_price = entry_price * (1 + sl_pct / 100)
+            # 次の買いレベル（現在価格より下）
+            next_buy = [lv for lv in sorted(buy_levels, reverse=True) if lv < current_price]
+            next_buy_level = next_buy[0] if next_buy else (min(buy_levels) if buy_levels else None)
 
-            current_pnl_pct = (current_price - entry_price) / entry_price * 100 * leverage
+            # 次の売りレベル（現在価格より上）
+            next_sell = [lv for lv in sorted(sell_levels) if lv > current_price]
+            next_sell_level = next_sell[0] if next_sell else (max(sell_levels) if sell_levels else None)
 
-            # ロングポジション想定
-            potential_profit = (tp_price - entry_price) * quantity * leverage
-            potential_loss = abs((sl_price - entry_price) * quantity * leverage)
+            # 距離をパーセンテージで計算
+            distance_buy_pct = ((next_buy_level - current_price) / current_price * 100) if next_buy_level else 0
+            distance_sell_pct = ((next_sell_level - current_price) / current_price * 100) if next_sell_level else 0
 
-            pnl_ratio = potential_profit / potential_loss if potential_loss > 0 else 0
+            # 状態判定
+            def _get_readiness(distance_pct: float) -> str:
+                abs_dist = abs(distance_pct)
+                if abs_dist <= READY_THRESHOLD:
+                    return "READY"
+                elif abs_dist <= WARN_THRESHOLD:
+                    return "WARN"
+                else:
+                    return "FAR"
 
             return {
-                "entry_price": float(entry_price),
-                "tp_price": float(tp_price),
-                "sl_price": float(sl_price),
-                "current_pnl_pct": float(current_pnl_pct),
-                "potential_profit": float(potential_profit),
-                "potential_loss": float(potential_loss),
-                "pnl_ratio": float(pnl_ratio)
+                'next_buy_level': next_buy_level,
+                'next_sell_level': next_sell_level,
+                'distance_buy_pct': distance_buy_pct,
+                'distance_sell_pct': distance_sell_pct,
+                'buy_readiness': _get_readiness(distance_buy_pct),
+                'sell_readiness': _get_readiness(distance_sell_pct),
+            }
+
+        except Exception as e:
+            logger.error(f"Error calculating entry readiness: {e}")
+            return {
+                'next_buy_level': None,
+                'next_sell_level': None,
+                'distance_buy_pct': 0,
+                'distance_sell_pct': 0,
+                'buy_readiness': 'FAR',
+                'sell_readiness': 'FAR',
+            }
+
+    def _calculate_tp_sl_profit(self, current_price: float, next_buy_level: Optional[float],
+                                next_sell_level: Optional[float], atr: Optional[float]) -> Dict:
+        """
+        TP (売りレベル)・SL (買いレベル) と利益推定を計算
+
+        Args:
+            current_price: 現在価格
+            next_buy_level: 次の買いレベル（SL）
+            next_sell_level: 次の売りレベル（TP）
+            atr: ATR（平均真の値幅）
+
+        Returns:
+            dict: {
+                'tp_price': float,
+                'sl_price': float,
+                'tp_profit_usd': float,
+                'tp_profit_pct': float,
+                'sl_loss_usd': float,
+                'sl_loss_pct': float,
+                'rr_ratio': float,  # リスク・リワード比
+                'estimated_hours_to_tp': float,
+                'estimated_hours_to_sl': float,
+            }
+        """
+        try:
+            tp_price = next_sell_level if next_sell_level else current_price
+            sl_price = next_buy_level if next_buy_level else current_price
+
+            # 利益・損失計算（エントリーが現在価格と仮定）
+            tp_profit_usd = tp_price - current_price
+            tp_profit_pct = (tp_profit_usd / current_price) * 100 if current_price > 0 else 0
+
+            sl_loss_usd = current_price - sl_price
+            sl_loss_pct = (sl_loss_usd / current_price) * 100 if current_price > 0 else 0
+
+            # リスク・リワード比
+            rr_ratio = tp_profit_usd / sl_loss_usd if sl_loss_usd > 0 else 0
+
+            # 時間推定（ATR ベース）
+            # 推定時間 = 距離 / (ATR / 24 時間)
+            atr_per_hour = atr / 24.0 if atr and atr > 0 else 1.0
+            estimated_hours_to_tp = abs(tp_profit_usd) / atr_per_hour if atr_per_hour > 0 else 0
+            estimated_hours_to_sl = sl_loss_usd / atr_per_hour if atr_per_hour > 0 else 0
+
+            return {
+                'tp_price': float(tp_price),
+                'sl_price': float(sl_price),
+                'tp_profit_usd': float(tp_profit_usd),
+                'tp_profit_pct': float(tp_profit_pct),
+                'sl_loss_usd': float(sl_loss_usd),
+                'sl_loss_pct': float(sl_loss_pct),
+                'rr_ratio': float(rr_ratio),
+                'estimated_hours_to_tp': float(estimated_hours_to_tp),
+                'estimated_hours_to_sl': float(estimated_hours_to_sl),
             }
 
         except Exception as e:
             logger.error(f"Error calculating TP/SL/Profit: {e}")
             return {
-                "entry_price": 0.0,
-                "tp_price": 0.0,
-                "sl_price": 0.0,
-                "current_pnl_pct": 0.0,
-                "potential_profit": 0.0,
-                "potential_loss": 0.0,
-                "pnl_ratio": 0.0
+                'tp_price': 0.0,
+                'sl_price': 0.0,
+                'tp_profit_usd': 0.0,
+                'tp_profit_pct': 0.0,
+                'sl_loss_usd': 0.0,
+                'sl_loss_pct': 0.0,
+                'rr_ratio': 0.0,
+                'estimated_hours_to_tp': 0.0,
+                'estimated_hours_to_sl': 0.0,
             }
 
     def update(self, symbol: str = "BTC") -> Dict:
@@ -396,17 +430,23 @@ class StateManager:
                     "filled_levels": List[int]
                 },
                 "entry_readiness": {
-                    "distance_pct": float,
-                    "status": str  # "READY", "WARN", "FAR"
+                    "next_buy_level": float or None,
+                    "next_sell_level": float or None,
+                    "distance_buy_pct": float,
+                    "distance_sell_pct": float,
+                    "buy_readiness": str,  # "READY", "WARN", "FAR"
+                    "sell_readiness": str
                 },
                 "tp_sl_profit": {
-                    "entry_price": float,
                     "tp_price": float,
                     "sl_price": float,
-                    "current_pnl_pct": float,
-                    "potential_profit": float,
-                    "potential_loss": float,
-                    "pnl_ratio": float
+                    "tp_profit_usd": float,
+                    "tp_profit_pct": float,
+                    "sl_loss_usd": float,
+                    "sl_loss_pct": float,
+                    "rr_ratio": float,
+                    "estimated_hours_to_tp": float,
+                    "estimated_hours_to_sl": float
                 }
             }
         """
@@ -444,23 +484,20 @@ class StateManager:
             self.grid_state = self._get_grid_state()
 
             # 5. エントリー準備度を計算
-            distance_pct, readiness_status = self._calculate_entry_readiness(
+            buy_levels = self.grid_state.get("buy_levels", [])
+            sell_levels = self.grid_state.get("sell_levels", [])
+            entry_readiness = self._calculate_entry_readiness(
                 self.current_price,
-                next_buy_level=max(self.grid_state.get("buy_levels", [self.current_price]))
+                buy_levels,
+                sell_levels
             )
 
-            entry_readiness = {
-                "distance_pct": distance_pct,
-                "status": readiness_status
-            }
-
             # 6. TP/SL/利益推定を計算
-            entry_price = self.grid_state.get("grid_center", self.current_price)
             tp_sl_profit = self._calculate_tp_sl_profit(
                 self.current_price,
-                entry_price,
-                quantity=1.0,
-                leverage=getattr(self.grid_bot.grid_manager, 'leverage', 1) if self.grid_bot else 1
+                entry_readiness.get('next_buy_level'),
+                entry_readiness.get('next_sell_level'),
+                atr
             )
 
             # 7. すべてをまとめて返す
@@ -501,16 +538,22 @@ class StateManager:
                 "filled_levels": []
             },
             "entry_readiness": {
-                "distance_pct": None,
-                "status": "FAR"
+                "next_buy_level": None,
+                "next_sell_level": None,
+                "distance_buy_pct": 0.0,
+                "distance_sell_pct": 0.0,
+                "buy_readiness": "FAR",
+                "sell_readiness": "FAR"
             },
             "tp_sl_profit": {
-                "entry_price": 0.0,
                 "tp_price": 0.0,
                 "sl_price": 0.0,
-                "current_pnl_pct": 0.0,
-                "potential_profit": 0.0,
-                "potential_loss": 0.0,
-                "pnl_ratio": 0.0
+                "tp_profit_usd": 0.0,
+                "tp_profit_pct": 0.0,
+                "sl_loss_usd": 0.0,
+                "sl_loss_pct": 0.0,
+                "rr_ratio": 0.0,
+                "estimated_hours_to_tp": 0.0,
+                "estimated_hours_to_sl": 0.0
             }
         }
