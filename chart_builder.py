@@ -2,7 +2,7 @@ import json
 from typing import List, Dict, Optional
 import pandas as pd
 from ui_config import (
-    COLOR_BUY_LEVEL, COLOR_SELL_LEVEL, COLOR_CURRENT_PRICE,
+    COLOR_BUY_LEVEL, COLOR_SELL_LEVEL, COLOR_CURRENT_PRICE, COLOR_FILLED,
     CHART_HEIGHT, CHART_CANDLES
 )
 
@@ -47,36 +47,45 @@ class ChartBuilder:
         """
         js_code = ""
         filled_levels = filled_levels or set()
+        line_counter = 0
 
         # 買いレベル（青）
-        for i, price in enumerate(sorted(buy_levels)):
-            style = "solid" if price not in filled_levels else "bold"
-            color = COLOR_BUY_LEVEL if price not in filled_levels else "#2c3e50"
-            width = 1 if style == "solid" else 2
+        for price in sorted(buy_levels):
+            color = COLOR_BUY_LEVEL if price not in filled_levels else COLOR_FILLED
+            lineWidth = 2 if price in filled_levels else 1
+            lineStyle = 1 if price not in filled_levels else 0  # 1 = dash, 0 = solid
 
             js_code += f"""
-            chart.addLine({{
-                price: {price},
-                color: '{color}',
-                width: {width},
-                style: PriceScaleMarksAlign.Top,
-            }});
+                const buyLine{line_counter} = {{
+                    price: {price},
+                    color: '{color}',
+                    lineWidth: {lineWidth},
+                    lineStyle: {lineStyle},
+                    axisLabelVisible: false,
+                    title: 'Buy Level {price}',
+                }};
+                candlestickSeries.createPriceLine(buyLine{line_counter});
             """
+            line_counter += 1
 
         # 売りレベル（赤）
-        for i, price in enumerate(sorted(sell_levels)):
-            style = "solid" if price not in filled_levels else "bold"
-            color = COLOR_SELL_LEVEL if price not in filled_levels else "#2c3e50"
-            width = 1 if style == "solid" else 2
+        for price in sorted(sell_levels):
+            color = COLOR_SELL_LEVEL if price not in filled_levels else COLOR_FILLED
+            lineWidth = 2 if price in filled_levels else 1
+            lineStyle = 1 if price not in filled_levels else 0
 
             js_code += f"""
-            chart.addLine({{
-                price: {price},
-                color: '{color}',
-                width: {width},
-                style: PriceScaleMarksAlign.Top,
-            }});
+                const sellLine{line_counter} = {{
+                    price: {price},
+                    color: '{color}',
+                    lineWidth: {lineWidth},
+                    lineStyle: {lineStyle},
+                    axisLabelVisible: false,
+                    title: 'Sell Level {price}',
+                }};
+                candlestickSeries.createPriceLine(sellLine{line_counter});
             """
+            line_counter += 1
 
         return js_code
 
@@ -140,7 +149,7 @@ class ChartBuilder:
                 const candles = {candles_json};
                 candlestickSeries.setData(candles);
 
-                // グリッドレベルラインを追加（簡略版）
+                // グリッドレベルラインを追加（createPriceLine を使用）
                 {level_lines_js}
 
                 // 現在価格ラインを追加

@@ -5,6 +5,7 @@ COLOR_FAR = "#d9534f"      # 赤 (5%+)
 COLOR_BUY_LEVEL = "#4a90e2"    # 買いレベル：青
 COLOR_SELL_LEVEL = "#e94b3c"   # 売りレベル：赤
 COLOR_CURRENT_PRICE = "#2c3e50"  # 現在価格：黒
+COLOR_FILLED = "#2c3e50"   # 約定済みレベルの色
 COLOR_GRID_FILL = "#ecf0f1"    # グリッド背景
 
 # UI設定
