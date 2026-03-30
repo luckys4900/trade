@@ -90,7 +90,14 @@ class StateManager:
                         logger.warning(f"Not enough candle data: {len(df)} candles")
                         return None
 
-                    return df.sort_values("timestamp").reset_index(drop=True)
+                    # タイムスタンプの重複チェック
+                    if df.duplicated(subset=['timestamp']).any():
+                        logger.warning("Duplicate timestamps detected in OHLCV data")
+
+                    # ソートして時系列順を確保
+                    df = df.sort_values('timestamp').reset_index(drop=True)
+
+                    return df
 
                 except requests.RequestException as e:
                     if attempt < MAX_RETRIES - 1:
@@ -162,8 +169,10 @@ class StateManager:
             ATR 値、またはエラー時は None
         """
         try:
-            if len(close) < period:
-                logger.warning(f"Not enough data for ATR (need {period}, got {len(close)})")
+            # リスト長の一貫性を確認
+            if len(close) < period or len(high) != len(close) or len(low) != len(close):
+                logger.warning(f"Insufficient or inconsistent OHLCV data for ATR calculation: "
+                              f"high={len(high)}, low={len(low)}, close={len(close)}")
                 return None
 
             h = pd.Series(high)
@@ -200,8 +209,9 @@ class StateManager:
             }
         """
         try:
-            if self.grid_bot is None or not hasattr(self.grid_bot, 'grid_manager'):
-                logger.warning("GridBot instance not available")
+            # grid_manager 属性の存在確認
+            if not self.grid_bot:
+                logger.warning("GridBot instance not provided")
                 return {
                     "grid_center": None,
                     "grid_range": None,
@@ -211,18 +221,44 @@ class StateManager:
                     "filled_levels": []
                 }
 
-            gm = self.grid_bot.grid_manager
+            if not hasattr(self.grid_bot, 'grid_manager'):
+                logger.warning("GridBot instance does not have grid_manager attribute")
+                return {
+                    "grid_center": None,
+                    "grid_range": None,
+                    "buy_levels": [],
+                    "sell_levels": [],
+                    "open_orders": 0,
+                    "filled_levels": []
+                }
+
+            grid_mgr = self.grid_bot.grid_manager
+
+            # grid_manager の属性存在確認
+            required_attrs = ['grid_center', 'grid_range', 'buy_levels', 'sell_levels', 'open_orders', 'filled_levels']
+            for attr in required_attrs:
+                if not hasattr(grid_mgr, attr):
+                    logger.warning(f"GridManager missing attribute: {attr}")
+                    return {
+                        "grid_center": None,
+                        "grid_range": None,
+                        "buy_levels": [],
+                        "sell_levels": [],
+                        "open_orders": 0,
+                        "filled_levels": []
+                    }
+
             return {
-                "grid_center": getattr(gm, 'grid_center', None),
-                "grid_range": getattr(gm, 'grid_range', None),
-                "buy_levels": getattr(gm, 'buy_levels', []),
-                "sell_levels": getattr(gm, 'sell_levels', []),
-                "open_orders": len(getattr(gm, 'open_orders', {})),
-                "filled_levels": list(getattr(gm, 'filled_levels', set()))
+                'grid_center': grid_mgr.grid_center,
+                'grid_range': grid_mgr.grid_range,
+                'buy_levels': grid_mgr.buy_levels[:],
+                'sell_levels': grid_mgr.sell_levels[:],
+                'open_orders': len(grid_mgr.open_orders) if isinstance(grid_mgr.open_orders, dict) else len(list(grid_mgr.open_orders)),
+                'filled_levels': grid_mgr.filled_levels.copy() if hasattr(grid_mgr.filled_levels, 'copy') else list(grid_mgr.filled_levels),
             }
 
         except Exception as e:
-            logger.error(f"Error getting grid state: {e}")
+            logger.error(f"Failed to get grid state: {e}")
             return {
                 "grid_center": None,
                 "grid_range": None,
