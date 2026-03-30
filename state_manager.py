@@ -11,6 +11,7 @@ import numpy as np
 from typing import Dict, List, Optional, Tuple
 from datetime import datetime
 import requests
+import ccxt
 from ui_config import (
     UPDATE_INTERVAL, RSI_PERIOD, ATR_PERIOD,
     READY_THRESHOLD, WARN_THRESHOLD, API_TIMEOUT, MAX_RETRIES
@@ -39,7 +40,7 @@ class StateManager:
 
     def _fetch_ohlcv(self, symbol: str = "BTC", interval: int = 3600, limit: int = 100) -> Optional[pd.DataFrame]:
         """
-        Hyperliquid API から過去 100 本の 1h ローソク足データを取得
+        CCXT（Binance）から過去 100 本の 1h ローソク足データを取得
 
         Args:
             symbol: 取引シンボル（デフォルト: "BTC"）
@@ -50,45 +51,23 @@ class StateManager:
             OHLCV データの DataFrame、またはエラー時は None
         """
         try:
-            url = f"{self.api_base_url}/info"
-            params = {
-                "type": "candleSnapshot",
-                "coin": symbol,
-                "interval": interval,
-                "startTime": int((datetime.now().timestamp() - (limit * interval)) * 1000),
-                "endTime": int(datetime.now().timestamp() * 1000)
-            }
+            # CCXT で Binance から取得
+            exchange = ccxt.binance()
+
+            # タイムフレーム変換（秒 -> CCXT フォーマット）
+            timeframe_map = {3600: '1h', 300: '5m', 900: '15m', 1800: '30m', 86400: '1d'}
+            timeframe = timeframe_map.get(interval, '1h')
 
             for attempt in range(MAX_RETRIES):
                 try:
-                    response = self.session.get(url, params=params, timeout=API_TIMEOUT)
-                    response.raise_for_status()
-                    data = response.json()
+                    ohlcv = exchange.fetch_ohlcv(f"{symbol}/USDT", timeframe, limit=limit)
 
-                    if not data or "candles" not in data:
-                        logger.warning(f"No candle data returned for {symbol}")
+                    if len(ohlcv) < 2:
+                        logger.warning(f"Not enough candle data: {len(ohlcv)} candles")
                         return None
 
-                    candles = data["candles"]
-                    if len(candles) == 0:
-                        logger.warning(f"Empty candles list for {symbol}")
-                        return None
-
-                    df = pd.DataFrame([
-                        {
-                            "timestamp": pd.to_datetime(c.get("t", 0), unit="ms"),
-                            "open": float(c.get("o", 0)),
-                            "high": float(c.get("h", 0)),
-                            "low": float(c.get("l", 0)),
-                            "close": float(c.get("c", 0)),
-                            "volume": float(c.get("v", 0))
-                        }
-                        for c in candles
-                    ])
-
-                    if len(df) < 2:
-                        logger.warning(f"Not enough candle data: {len(df)} candles")
-                        return None
+                    df = pd.DataFrame(ohlcv, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
+                    df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
 
                     # タイムスタンプの重複チェック
                     if df.duplicated(subset=['timestamp']).any():
@@ -99,7 +78,7 @@ class StateManager:
 
                     return df
 
-                except requests.RequestException as e:
+                except Exception as e:
                     if attempt < MAX_RETRIES - 1:
                         logger.debug(f"Retry {attempt + 1}/{MAX_RETRIES} for OHLCV fetch: {e}")
                         continue
@@ -270,7 +249,7 @@ class StateManager:
 
     def _fetch_current_price(self, symbol: str = "BTC") -> Optional[float]:
         """
-        Hyperliquid API から現在価格を取得
+        CCXT（Binance）から現在価格を取得
 
         Args:
             symbol: 取引シンボル（デフォルト: "BTC"）
@@ -279,25 +258,15 @@ class StateManager:
             現在価格、またはエラー時は None
         """
         try:
-            url = f"{self.api_base_url}/info"
-            params = {
-                "type": "lastPrice",
-                "coin": symbol
-            }
+            exchange = ccxt.binance()
 
             for attempt in range(MAX_RETRIES):
                 try:
-                    response = self.session.get(url, params=params, timeout=API_TIMEOUT)
-                    response.raise_for_status()
-                    data = response.json()
+                    ticker = exchange.fetch_ticker(f"{symbol}/USDT")
+                    price = float(ticker['last'])
+                    return price
 
-                    if "lastPrice" in data:
-                        return float(data["lastPrice"])
-
-                    logger.warning(f"No lastPrice in response for {symbol}")
-                    return None
-
-                except requests.RequestException as e:
+                except Exception as e:
                     if attempt < MAX_RETRIES - 1:
                         logger.debug(f"Retry {attempt + 1}/{MAX_RETRIES} for price fetch: {e}")
                         continue
