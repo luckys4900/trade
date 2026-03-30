@@ -252,16 +252,14 @@ def update_data(state_manager: StateManager) -> Dict:
     try:
         logger.info("データ更新中...")
         data = state_manager.update()
-        logger.info(f"データ更新完了: {data}")
+        logger.info(f"データ更新完了")
         return data
     except Exception as e:
         logger.error(f"データ更新エラー: {e}")
         logger.error(traceback.format_exc())
         return {
-            "status": "error",
-            "message": str(e),
             "current_price": None,
-            "ohlcv_data": None,
+            "ohlcv": None,
             "grid_state": {},
             "indicators": {}
         }
@@ -339,7 +337,7 @@ def main():
         st.stop()
 
     current_price = data.get("current_price")
-    ohlcv_data = data.get("ohlcv_data")
+    ohlcv_data = data.get("ohlcv")
     grid_state = data.get("grid_state", {})
     indicators = data.get("indicators", {})
 
