@@ -1,0 +1,65 @@
+2026-03-02 02:50:39 [INFO] Mode: backtest
+2026-03-02 02:50:39 [INFO] Config: {
+  "exchange_id": "binance",
+  "symbol": "BTC/USDT",
+  "timeframe": "4h",
+  "lookback_days": 180,
+  "api_key": "",
+  "api_secret": "",
+  "ema_fast": 50,
+  "ema_slow": 200,
+  "bb_period": 20,
+  "bb_dev": 2.0,
+  "squeeze_lookback": 20,
+  "squeeze_relax": 1.2,
+  "vol_sma_period": 20,
+  "atr_period": 14,
+  "risk_pct": 0.02,
+  "atr_sl_mult": 1.5,
+  "tp1_atr_mult": 1.5,
+  "tp1_close_pct": 0.7,
+  "tp1_stop_move": 0.5,
+  "tp2_atr_mult": 4.0,
+  "initial_cash": 100000.0,
+  "commission_pct": 0.001,
+  "max_position_pct": 0.95,
+  "max_daily_loss_pct": 0.05,
+  "max_consecutive_losses": 4,
+  "cooldown_bars": 6,
+  "data_csv": "btc_usdt_4h.csv",
+  "log_dir": "logs",
+  "state_file": "trade_state.json"
+}
+2026-03-02 02:50:40 [INFO] Fetching BTC/USDT 4h from binance...
+2026-03-02 02:50:41 [INFO] Saved 1080 bars -> btc_usdt_4h.csv
+2026-03-02 02:50:41 [INFO] Data: 2025-09-09 04:00:00 -> 2026-03-01 16:00:00 (1042 bars)
+2026-03-02 02:50:41 [INFO] Entry signals in data: 8
+2026-03-02 02:50:41 [DEBUG]   ENTRY @ 112991.11 | size=0.840774 | SL=111860.99 | TP1=114121.23 | TP2=116004.76
+2026-03-02 02:50:41 [DEBUG]   EXIT [STOP_LOSS] @ 111860.99 | PnL: $-1044.22 (-1.00%)
+2026-03-02 02:50:41 [DEBUG]   ENTRY @ 113853.99 | size=0.816968 | SL=112264.25 | TP1=115443.73 | TP2=118093.30
+2026-03-02 02:50:41 [DEBUG]   TP1 (70%) @ 115443.73 | PnL: $+843.12
+2026-03-02 02:50:41 [DEBUG]   EXIT [TRAILING_STOP] @ 114383.90 | PnL: $+101.84 (+0.47%)
+2026-03-02 02:50:41 [DEBUG]   ENTRY @ 124713.63 | size=0.760233 | SL=122981.65 | TP1=126445.61 | TP2=129332.24
+2026-03-02 02:50:41 [DEBUG]   EXIT [STOP_LOSS] @ 122981.65 | PnL: $-1410.20 (-1.39%)
+2026-03-02 02:50:41 [DEBUG]   ENTRY @ 125410.81 | size=0.734632 | SL=123559.24 | TP1=127262.38 | TP2=130348.32
+2026-03-02 02:50:41 [DEBUG]   EXIT [STOP_LOSS] @ 123559.24 | PnL: $-1450.99 (-1.48%)
+2026-03-02 02:50:41 [DEBUG]   ENTRY @ 91808.12 | size=0.973472 | SL=91102.70 | TP1=92513.54 | TP2=93689.23
+2026-03-02 02:50:41 [DEBUG]   EXIT [STOP_LOSS] @ 91102.70 | PnL: $-775.39 (-0.77%)
+2026-03-02 02:50:41 [DEBUG]   ENTRY @ 91665.00 | size=0.958913 | SL=90685.37 | TP1=92644.63 | TP2=94277.34
+2026-03-02 02:50:41 [DEBUG]   TP1 (70%) @ 92644.63 | PnL: $+595.38
+2026-03-02 02:50:41 [DEBUG]   EXIT [TRAILING_STOP] @ 91991.54 | PnL: $+67.47 (+0.36%)
+2026-03-02 02:50:41 [INFO] ======================================================================
+  BTC/USDT 4H HIT & RUN - PERFORMANCE REPORT
+======================================================================
+  Final Portfolio Value  : $93,851.48
+  Total Return           : -6.15%
+  Max Drawdown           : 8.36%
+  Sharpe Ratio (ann.)    : -1.9453
+----------------------------------------------------------------------
+  Total Trades           : 8
+  Win Rate               : 50.0%
+  Profit Factor          : 0.34
+  Avg Win                : $+401.95
+  Avg Loss               : $-1,170.20
+  Expectancy / Trade     : $-384.13
+======================================================================

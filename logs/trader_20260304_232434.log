@@ -1,0 +1,37 @@
+{"timestamp": "2026-03-04T23:24:34.241027", "message": "Trader process started"}
+2026-03-04 23:24:34 [INFO] ======================================================================
+2026-03-04 23:24:34 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-03-04 23:24:34 [INFO] ======================================================================
+2026-03-04 23:24:34 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-03-04 23:24:34 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-03-04 23:24:34 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-03-04 23:24:34 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260304_232434.log
+2026-03-04 23:24:34 [INFO] ======================================================================
+2026-03-04 23:24:34 [INFO] Test message: Trader is running
+2026-03-04 23:24:34 [INFO] Live trading 有効化: env=mainnet, address=0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-03-04 23:24:34 [INFO] Initialized trader for BTC with 4h timeframe
+2026-03-04 23:24:34 [INFO] RSI settings: period=14, overbought=70, oversold=30
+2026-03-04 23:24:34 [INFO] Trader initialized successfully
+2026-03-04 23:24:34 [INFO] Starting trading loop (live mode)...
+2026-03-04 23:24:34 [INFO] Current RSI: 75.06, Price: $71548.00
+2026-03-04 23:24:34 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:24:34 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:25:34 [INFO] Current RSI: 75.09, Price: $71564.00
+2026-03-04 23:25:34 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:25:34 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:26:35 [INFO] Current RSI: 75.05, Price: $71546.00
+2026-03-04 23:26:35 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:26:35 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:27:08 [INFO] Trading loop stopped by user
+2026-03-04 23:27:08 [INFO] Trader stopped by user
+2026-03-04 23:27:08 [INFO] Test message: Trader is running
+2026-03-04 23:27:08 [INFO] DEBUG: Starting live trading mode...
+2026-03-04 23:27:08 [INFO] Live trading 有効化: env=mainnet, address=0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-03-04 23:27:08 [INFO] Initialized trader for BTC with 4h timeframe
+2026-03-04 23:27:08 [INFO] RSI settings: period=14, overbought=70, oversold=30
+2026-03-04 23:27:08 [INFO] Trader initialized successfully
+2026-03-04 23:27:08 [INFO] Starting trading loop (live mode)...
+2026-03-04 23:27:08 [INFO] Current RSI: 75.04, Price: $71541.00
+2026-03-04 23:27:08 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:27:08 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:27:09 [INFO] Trading loop stopped by user

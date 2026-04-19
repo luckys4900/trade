@@ -1,0 +1,10 @@
+2026-04-10 17:52:02,677 [INFO] Loaded config: 3 wallets
+2026-04-10 17:52:02,677 [INFO] === Run Once ===
+2026-04-10 17:52:03,049 [DEBUG] Whale_1: Using default metrics (2000 fills, trade count estimated)
+2026-04-10 17:52:03,049 [DEBUG] Whale_1: sortino 0.00 < 0.5
+2026-04-10 17:52:03,445 [DEBUG] Whale_2: Using default metrics (2000 fills, trade count estimated)
+2026-04-10 17:52:03,445 [DEBUG] Whale_2: sortino 0.00 < 0.5
+2026-04-10 17:52:03,825 [DEBUG] Whale_3: Using default metrics (2000 fills, trade count estimated)
+2026-04-10 17:52:03,825 [DEBUG] Whale_3: sortino 0.00 < 0.5
+2026-04-10 17:52:03,826 [WARNING] No qualified wallets
+2026-04-10 17:52:03,837 [INFO] Signal written: NONE, strength=0.00, valid=False

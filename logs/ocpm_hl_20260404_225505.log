@@ -1,0 +1,10 @@
+2026-04-04 22:55:05 [INFO] Mode: live | On-Chain Pullback Momentum | Days: 365
+2026-04-04 22:55:05 [INFO] Timeframe: 4h | Exchange: Mainnet
+2026-04-04 22:55:05 [INFO] Entering LIVE mode
+2026-04-04 22:55:05 [WARNING] REAL MONEY TRADING - Be careful!
+2026-04-04 22:55:07 [INFO] Hyperliquid Info API initialized (Mainnet)
+2026-04-04 22:55:08 [INFO] Starting live loop (interval=60s)
+2026-04-04 22:55:08 [INFO] Exchange: Hyperliquid Mainnet
+2026-04-04 22:55:08 [INFO] --- Iteration 1 ---
+2026-04-04 22:55:08 [INFO] CSV cache: btc_usdt_4h_ocpm.csv (4380 bars)
+2026-04-04 22:55:08 [INFO] Sleeping 60s until next bar...

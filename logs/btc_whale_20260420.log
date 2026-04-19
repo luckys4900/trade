@@ -1,0 +1,10 @@
+2026-04-20 01:05:14,676 - INFO - ======================================================================
+2026-04-20 01:05:14,676 - INFO - Starting daily BTC whale discovery cycle
+2026-04-20 01:05:14,676 - INFO - [Phase 1] Fetching whales from Blockchair...
+2026-04-20 01:05:17,870 - WARNING - No whales found, using backup data
+2026-04-20 01:05:17,871 - INFO -   Found 0 whales
+2026-04-20 01:05:17,872 - INFO - [Phase 2] Analyzing ROI and running backtests...
+2026-04-20 01:05:17,872 - INFO - [Phase 3] Generating reports...
+2026-04-20 01:05:18,994 - INFO -   Reports saved: data\backtest_results_20260420_010518.json, data\backtest_report_20260420_010518.txt
+2026-04-20 01:05:18,995 - INFO -   DB snapshot: data/whales_daily_20260420_010518.json
+2026-04-20 01:05:18,996 - INFO - Daily cycle completed successfully

@@ -1,0 +1,31 @@
+{"timestamp": "2026-04-02T21:10:56.992357", "message": "Trader process started"}
+2026-04-02 21:10:56 [INFO] ======================================================================
+2026-04-02 21:10:56 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-04-02 21:10:56 [INFO] ======================================================================
+2026-04-02 21:10:56 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-04-02 21:10:56 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-02 21:10:56 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-04-02 21:10:56 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260402_211056.log
+2026-04-02 21:10:56 [INFO] ======================================================================
+2026-04-02 21:10:56 [INFO] Test message: Trader is running
+2026-04-02 21:10:56 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 21:10:56 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 21:10:56 [INFO] Trader initialized successfully
+2026-04-02 21:10:56 [INFO] Starting trading loop (paper mode)...
+2026-04-02 21:10:57 [INFO] Current RSI: 26.00, Price: $66071.00
+2026-04-02 21:10:57 [INFO] [PAPER] BUY signal: RSI 26.00 <= 30 (paper position opened, no real order sent)
+2026-04-02 21:10:57 [INFO] Sleeping for 60 seconds...
+2026-04-02 21:11:46 [INFO] Trading loop stopped by user
+2026-04-02 21:11:46 [INFO] Trader stopped by user
+2026-04-02 21:11:46 [INFO] Test message: Trader is running
+2026-04-02 21:11:46 [INFO] DEBUG: Starting live trading mode...
+2026-04-02 21:11:46 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 21:11:46 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 21:11:46 [INFO] Trader initialized successfully
+2026-04-02 21:11:46 [INFO] Starting trading loop (paper mode)...
+2026-04-02 21:11:46 [INFO] Current RSI: 25.97, Price: $66066.00
+2026-04-02 21:11:46 [INFO] [PAPER] BUY signal: RSI 25.97 <= 30 (paper position opened, no real order sent)
+2026-04-02 21:11:46 [INFO] Sleeping for 60 seconds...
+2026-04-02 21:11:47 [INFO] Trading loop stopped by user
+2026-04-02 21:11:47 [INFO] Initialized backtester for BTC with $10000.00
+2026-04-02 21:11:47 [INFO] Starting backtest for 180 days...

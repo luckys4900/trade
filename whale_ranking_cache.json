@@ -1,0 +1,23 @@
+{
+  "timestamp": 1776608959.328213,
+  "ranked_wallets": [
+    {
+      "address": "0x932bdd2d5e21475e62d2fea8158fc5974507cb1a",
+      "label": "Whale_2",
+      "sortino": 0.0,
+      "win_rate": 0.5,
+      "trade_count": 1000,
+      "ev": 0.0,
+      "qualified": true
+    },
+    {
+      "address": "0x523852be2db1a76a0e088ecbff32e849544054e5",
+      "label": "Whale_3",
+      "sortino": 0.0,
+      "win_rate": 0.5,
+      "trade_count": 1000,
+      "ev": 0.0,
+      "qualified": true
+    }
+  ]
+}

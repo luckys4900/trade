@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>v2.1 Post-Mortem and Redesign</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+:root{--b0:#06090f;--b2:#131a26;--b3:#1a2435;--bd:#1e2d42;--t1:#e8edf5;--t2:#9ca8be;--t3:#5e6e85;--bl:#4d8ef7;--gn:#22c55e;--rd:#f04444;--am:#eab308;--pr:#a78bfa;--cy:#22d3ee}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--b0);color:var(--t1);font-family:'DM Sans',sans-serif;line-height:1.7;padding:24px;max-width:1260px;margin:0 auto}
+header{border-bottom:2px solid var(--bd);padding-bottom:20px;margin-bottom:28px}
+header h1{font-family:'IBM Plex Mono',monospace;font-size:21px;font-weight:700;color:var(--rd)}
+header .s{font-size:11px;color:var(--t3);font-family:'IBM Plex Mono',monospace;margin-top:3px}
+section{margin-bottom:40px}
+h2{font-family:'IBM Plex Mono',monospace;font-size:15px;color:var(--cy);border-left:3px solid var(--cy);padding-left:11px;margin-bottom:14px}
+h3{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--am);margin:14px 0 7px}
+h4{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--pr);margin:8px 0 4px}
+p{color:var(--t2);font-size:12.5px;margin-bottom:7px}
+.c{background:var(--b2);border:1px solid var(--bd);border-radius:5px;padding:12px 16px;margin-bottom:9px}
+.cr{border-left:3px solid var(--rd)}.cg{border-left:3px solid var(--gn)}.cb{border-left:3px solid var(--bl)}.ca{border-left:3px solid var(--am)}
+table{width:100%;border-collapse:collapse;margin-bottom:9px;font-size:11px}
+th{background:var(--b3);color:var(--cy);font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:10px;text-align:left;padding:6px 8px;border-bottom:1px solid var(--bd);text-transform:uppercase;letter-spacing:.3px}
+td{padding:5px 8px;border-bottom:1px solid var(--bd);color:var(--t2);font-family:'IBM Plex Mono',monospace;font-size:10.5px}
+.p{color:var(--gn);font-weight:600}.n{color:var(--rd);font-weight:600}.w{color:var(--am);font-weight:600}.i{color:var(--bl);font-weight:600}
+.f{background:var(--b3);border:1px solid var(--bd);border-radius:4px;padding:10px 13px;margin:6px 0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;color:var(--gn);overflow-x:auto;white-space:pre-wrap}
+.nt{background:rgba(234,179,8,.06);border-left:3px solid var(--am);padding:8px 11px;margin:6px 0;font-size:11px;color:var(--t2)}
+.ct{background:rgba(240,68,68,.06);border-left:3px solid var(--rd);padding:8px 11px;margin:6px 0;font-size:11px;color:var(--t2)}
+.vb{border-radius:6px;padding:20px 26px;margin-bottom:12px}
+.vr{background:linear-gradient(135deg,#1a0808,var(--b0));border:2px solid var(--rd)}
+.vg{background:linear-gradient(135deg,#081a0e,var(--b0));border:2px solid var(--gn)}
+.va{background:linear-gradient(135deg,#1a1600,var(--b0));border:2px solid var(--am)}
+.vb h2{border:none;padding-left:0}
+.an{font-family:'IBM Plex Mono',monospace;font-weight:700;margin-bottom:5px}
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:7px;margin-bottom:9px}
+.pi{background:var(--b3);border:1px solid var(--bd);border-radius:4px;padding:8px 10px}
+.pl{font-size:8px;color:var(--t3);font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.4px;margin-bottom:1px}
+.pv{font-size:17px;font-weight:700;font-family:'IBM Plex Mono',monospace;color:var(--bl)}
+.pn{font-size:8px;color:var(--t3)}
+hr{border:none;border-top:1px solid var(--bd);margin:24px 0}
+footer{border-top:1px solid var(--bd);padding-top:12px;margin-top:32px;text-align:center;color:var(--t3);font-size:9px;font-family:'IBM Plex Mono',monospace}
+</style>
+</head>
+<body>
+
+<header>
+<h1>v2.0 POST-MORTEM &rarr; v2.1 REDESIGN</h1>
+<div class="s">Backtest Failure Decomposition &middot; OHLCV-Compatible Redesign &middot; L2 Collection Plan</div>
+<div class="s" style="color:var(--am)">2026-04-13 &middot; Based on: 216 trades, -0.13%, WR 44.9%, Sharpe -0.003</div>
+</header>
+
+<!-- ===== PART 1 ===== -->
+
+<div class="vb vr">
+<h2 style="color:var(--rd)">PART 1: WHY v2.0 FAILED</h2>
+<div class="an" style="font-size:28px;color:var(--rd)">3 Root Causes &rarr; WR 44.9% vs target 55%</div>
+<p>The 10.1% WR gap is structural, not parametric. Tuning won't fix it.</p>
+</div>
+
+<section>
+<h2>&sect;1 Failure Decomposition</h2>
+
+<h3>1.1 What the Numbers Reveal</h3>
+<div class="f">REPORTED: trades=216, return=-0.1348%, WR=44.91%, E=-0.0001%/trade
+
+CRITICAL OBSERVATION:
+  Total $ loss = $10k &times; 0.1348% = only $13.48
+  Per trade avg = -$0.062 on $30k position = -0.0002%
+
+  This is NOT a series of TP/SL hits.
+  This is 216 trades exiting at ~ZERO P&amp;L (timeout).
+
+  IF TP=0.40% and SL=0.25% hit at WR=44.9%:
+    97 wins &times; $120 - 119 losses &times; $75 = +$11,640 - $8,925 = +$2,715
+    This should be VERY profitable!
+
+  But actual P&amp;L = -$13.48
+
+  CONCLUSION: TP and SL almost never trigger.
+  Timeout exit dominates. The price doesn't move 0.40% in 15 min.
+  The OHLCV proxy signals have ZERO directional edge.</div>
+
+<h3>1.2 Three Root Causes</h3>
+
+<div class="c cr">
+<h4>RC#1: Signal Death (60% of failure)</h4>
+<p><strong>v2.0 CDS design:</strong> OBI(0.25) + AggressiveFlow(0.30) + MicroPrice(0.20) + VolSpike(0.15) + ATR(0.10)</p>
+<p><strong>OHLCV can compute:</strong> VolSpike(0.15) + ATR(0.10) = <strong>only 25% of signal weight</strong></p>
+<p>The 3 core directional signals (75% weight) require L2 orderbook + trade-level data. On OHLCV, they degrade to noise. The remaining Volume+ATR carry no directional information. Result: entries are random &rarr; WR converges to ~(SL/(TP+SL)) = 38.5% minus costs.</p>
+<p>Actual WR 44.9% > 38.5% suggests the regime filter added ~6% over random, but that alone can't reach 55%.</p>
+</div>
+
+<div class="c ca">
+<h4>RC#2: TP 0.40% Unreachable (25% of failure)</h4>
+<p><strong>Math:</strong> BTC 5-min ATR median &asymp; $70 = 0.082%. In 15 min (3 bars): expected range = 0.082% &times; &radic;3 = 0.142%. TP at 0.40% = <strong>2.8&sigma; move</strong> = probability &lt;1% per random walk. Even with perfect signal, P(TP hit before SL in 15min) &asymp; 30-35% max. The 55% assumption was wrong.</p>
+</div>
+
+<div class="c ca">
+<h4>RC#3: Regime Detection Lag (15% of failure)</h4>
+<p>ADX(14)+Hurst+BBW(20) on 5-min bars has 15-25 min structural lag. During regime transitions (range&rarr;trend), 3-5 mean-reversion trades are placed against the emerging trend. These trades have WR &lt;40%, dragging aggregate WR down by 2-3%.</p>
+</div>
+
+<div class="ct"><strong>Bottom line:</strong> v2.0 was designed for L2+trade data. Running it on OHLCV is like testing sonar in a vacuum. The fix isn't parameter tuning &mdash; it's either change the data or change the strategy.</div>
+</section>
+
+<!-- ===== PART 2: v2.1 ===== -->
+
+<div class="vb va">
+<h2 style="color:var(--am)">PART 2: v2.1 OHLCV-Native Redesign</h2>
+<div class="an" style="font-size:22px;color:var(--am)">New signals + dynamic exits + realistic targets</div>
+</div>
+
+<section>
+<h2>&sect;2 v2.1 Signal Design (OHLCV-Only)</h2>
+
+<h3>2.1 Five New Signals</h3>
+<table>
+<tr><th>Signal</th><th>Formula</th><th>Weight</th><th>Why</th></tr>
+<tr><td>RSI Extreme</td><td>RSI(8, 5min). Long: &lt;25, Short: &gt;75</td><td class="i">0.25</td><td>Direct price overextension from close prices. Validated for sub-hourly mean reversion</td></tr>
+<tr><td>VWAP Deviation</td><td>(close - VWAP) / ATR(14). Long: &lt;-1.5, Short: &gt;+1.5</td><td class="i">0.25</td><td>VWAP from typical_price*volume. ATR-standardized dislocation = regime-adaptive</td></tr>
+<tr><td>Volume + Direction</td><td>vol/SMA(vol,20) &gt; 2.0 AND candle direction opposes entry<br>(selling climax for long, buying climax for short)</td><td class="i">0.25</td><td>High volume with directional exhaustion. Replaces Aggressive Flow concept</td></tr>
+<tr><td>BB Pierce Return</td><td>Low pierced BB(20,2) lower AND close &gt; lower band (for long)</td><td class="i">0.15</td><td>Failed breakout = mean reversion setup. Fully OHLCV-native</td></tr>
+<tr><td>Wick Rejection</td><td>Lower wick &gt; 2&times; body (for long). Upper wick &gt; 2&times; body (short)</td><td class="i">0.10</td><td>Price rejection pattern from OHLC structure</td></tr>
+</table>
+
+<h3>2.2 Composite Score</h3>
+<div class="f">v2.1_score = 0.25*RSI_norm + 0.25*VWAP_dev_norm + 0.25*vol_dir + 0.15*BB_pierce + 0.10*wick
+
+Entry: |v2.1_score| &gt; 0.55 (at least 3 signals aligned)
+All signals provide DIRECTIONAL info from OHLCV (unlike v2.0 where 75% needed L2)</div>
+
+<h3>2.3 Dynamic Exit (Core Fix)</h3>
+<div class="f">ATR_14 = ATR(14, 5-min bars)
+
+TP = ATR_14 &times; 2.0
+SL = ATR_14 &times; 1.5
+RR = 1.33 (gross), ~1.15 (net of costs)
+TIME_STOP = 9 bars (45 min)
+
+MID-VOL EXAMPLE (ATR=$70=0.082%):
+  TP = 0.165% ($49.5 on $30k)
+  SL = 0.124% ($37.0 on $30k)
+
+WHY 2.0x ATR / 1.5x ATR:
+  Random walk: P(hit +2 ATR before -1.5 ATR) = 1.5/3.5 = 42.9%
+  With directional edge: +5-8% above random = 48-51% TP hit rate
+  SL hit rate: ~32-35%
+  TO rate: ~17-20%
+
+  This is ACHIEVABLE because targets scale with actual volatility.</div>
+
+<h3>2.4 Regime Filter (Simplified)</h3>
+<div class="f">ADX_10 (faster response than ADX_14)
+
+RANGE (trade): ADX_10 &lt; 30
+TREND (stop): ADX_10 &gt; 30
+Cooldown: 6 bars (30 min) after TREND&rarr;RANGE
+
+Eliminates Hurst (noisy on OHLCV) and BBW (redundant with ADX)
+Reduces lag by ~2 bars vs v2.0</div>
+</section>
+
+<section>
+<h2>&sect;3 v2.1 Expected Value</h2>
+
+<h3>3.1 Calculation (mid-vol, WR=52%)</h3>
+<div class="f">TP=0.165%, SL=0.124%, TO_avg_loss=-0.02%, cost_w=0.030%, cost_l=0.050%, cost_to=0.042%
+
+E = 0.52*(0.165-0.030) + 0.30*(-(0.124+0.050)) + 0.18*(-(0.020+0.042))
+  = 0.52*0.135 + 0.30*(-0.174) + 0.18*(-0.062)
+  = 0.0702 - 0.0522 - 0.0112
+  = +0.0068% per trade = $2.05/trade on $30k</div>
+
+<h3>3.2 Monthly Projections</h3>
+<table>
+<tr><th>Scenario</th><th>WR</th><th>Trades/mo</th><th>E[$/T]</th><th>Monthly $</th><th>Monthly %</th></tr>
+<tr><td class="n">Pessimistic</td><td>49%</td><td>200</td><td>-$0.45</td><td>-$90</td><td class="n">-0.9%</td></tr>
+<tr><td class="w">Conservative</td><td>51%</td><td>210</td><td>$1.15</td><td>$242</td><td class="w">+2.4%</td></tr>
+<tr><td>Base</td><td>52%</td><td>220</td><td>$2.05</td><td>$451</td><td class="p">+4.5%</td></tr>
+<tr><td class="p">Optimistic</td><td>54%</td><td>240</td><td>$3.85</td><td>$924</td><td class="p">+9.2%</td></tr>
+</table>
+
+<div class="nt"><strong>OHLCV ceiling: 4-9%/month.</strong> Honest conclusion. OHLCV data cannot support 10%/month consistently. The information resolution is too low.</div>
+</section>
+
+<hr>
+
+<!-- ===== PART 3: L2 PATH ===== -->
+
+<div class="vb vg">
+<h2 style="color:var(--gn)">PART 3: Path to 10% &mdash; L2 Data Collection Plan</h2>
+<div class="an" style="font-size:22px;color:var(--gn)">Collect L2 data NOW &rarr; Backtest v2.0 in 2-4 weeks</div>
+</div>
+
+<section>
+<h2>&sect;4 L2 Data Collection Architecture</h2>
+
+<h3>4.1 What to Collect</h3>
+<table>
+<tr><th>Data</th><th>Source</th><th>Frequency</th><th>Storage/day</th><th>Cost</th></tr>
+<tr><td>L2 Orderbook (20 levels)</td><td>HL WebSocket: l2Book subscription</td><td>Per block (~200ms)</td><td>~500MB-1GB</td><td class="p">Free</td></tr>
+<tr><td>Trade stream</td><td>HL WebSocket: trades subscription</td><td>Every trade</td><td>~50-100MB</td><td class="p">Free</td></tr>
+<tr><td>Funding rate</td><td>HL REST: meta endpoint</td><td>1min poll</td><td>~1MB</td><td class="p">Free</td></tr>
+</table>
+
+<h3>4.2 Collection Script Architecture</h3>
+<div class="f">Tech stack: Python + asyncio + websockets + SQLite/Parquet
+
+collector.py:
+  1. Connect to wss://api.hyperliquid.xyz/ws
+  2. Subscribe: {"method":"subscribe","subscription":{"type":"l2Book","coin":"BTC"}}
+  3. Subscribe: {"method":"subscribe","subscription":{"type":"trades","coin":"BTC"}}
+  4. For each L2 update:
+     - Timestamp (ms), 20 bid levels (price, size), 20 ask levels (price, size)
+     - Calculate: OBI_L1, OBI_L5, MicroPrice, spread
+     - Write to parquet file (daily rotation)
+  5. For each trade:
+     - Timestamp, price, size, side (buy/sell)
+     - Aggregate: 1-sec AF, 10-sec AF, 60-sec AF
+     - Write to parquet
+
+Run on: VPS (Tokyo/Singapore, $5-20/month)
+Collection period: minimum 14 days, ideally 30 days
+Storage: ~15-30GB for 30 days (compressible to ~3-5GB with parquet)</div>
+
+<h3>4.3 Backtest Flow with L2 Data</h3>
+<div class="f">With 14-30 days of L2 + trade data:
+
+1. Reconstruct CDS signals at block-level resolution:
+   - TWOBI_L5: from L2 snapshots (filter orders &lt; 1 sec)
+   - AF_60s: from trade stream (taker buy vs sell)
+   - MicroPrice: from L2 top-of-book
+   - VolSpike: from trade stream aggregation
+   - ATR: from 5-min OHLCV derived from trade stream
+
+2. Run v2.0 backtest with ACTUAL signals (not proxies)
+   - Use real spread for entry price simulation
+   - Use real queue depth for fill probability
+   - Apply time-priority fill model
+
+3. If v2.0 CDS produces WR &gt; 52%:
+   - Proceed to paper trading (Phase 1)
+   - Use v2.1 dynamic exits (ATR-scaled) instead of fixed 0.40%
+
+4. If v2.0 CDS WR &lt; 52%:
+   - Hybridize: v2.1 OHLCV signals + L2 confirmation
+   - CDS_hybrid = 0.5 * v2.1_score + 0.5 * v2.0_CDS</div>
+
+<h3>4.4 Timeline</h3>
+<table>
+<tr><th>Week</th><th>Action</th><th>Deliverable</th></tr>
+<tr><td>Week 1</td><td>Deploy L2 collector on VPS</td><td>collector.py running, data flowing</td></tr>
+<tr><td>Week 1-2</td><td>Run v2.1 OHLCV backtest (new signals)</td><td>Validation of OHLCV-native approach</td></tr>
+<tr><td>Week 2-3</td><td>Accumulate 14+ days of L2 data</td><td>L2 dataset for backtesting</td></tr>
+<tr><td>Week 3-4</td><td>Run v2.0 L2-based backtest</td><td>True CDS signal performance</td></tr>
+<tr><td>Week 4-5</td><td>Compare v2.0 vs v2.1 vs hybrid</td><td>Final strategy selection</td></tr>
+<tr><td>Week 5-6</td><td>Paper trading with winner</td><td>Live signal validation</td></tr>
+</table>
+</section>
+
+<!-- ===== PART 4: SUMMARY ===== -->
+
+<section>
+<h2>&sect;5 v2.1 Parameter Summary</h2>
+<div class="pg">
+<div class="pi"><div class="pl">ENTRY SIGNAL</div><div class="pv">5-sig OHLCV</div><div class="pn">RSI+VWAP+Vol+BB+Wick</div></div>
+<div class="pi"><div class="pl">CDS THRESHOLD</div><div class="pv">0.55</div><div class="pn">min 3 signals aligned</div></div>
+<div class="pi"><div class="pl">TAKE PROFIT</div><div class="pv">2.0x ATR</div><div class="pn">dynamic, ~0.16% mid-vol</div></div>
+<div class="pi"><div class="pl">STOP LOSS</div><div class="pv">1.5x ATR</div><div class="pn">dynamic, ~0.12% mid-vol</div></div>
+<div class="pi"><div class="pl">RR RATIO</div><div class="pv">1.33</div><div class="pn">gross TP/SL</div></div>
+<div class="pi"><div class="pl">TIME STOP</div><div class="pv">45 min</div><div class="pn">9 bars (5-min)</div></div>
+<div class="pi"><div class="pl">REGIME FILTER</div><div class="pv">ADX(10)&lt;30</div><div class="pn">simplified 2-state</div></div>
+<div class="pi"><div class="pl">LEVERAGE</div><div class="pv">3x</div><div class="pn">isolated margin</div></div>
+<div class="pi"><div class="pl">POSITION</div><div class="pv">$30k</div><div class="pn">0.353 BTC @ $85k</div></div>
+<div class="pi"><div class="pl">DAILY LOSS LIM</div><div class="pv">-3%</div><div class="pn">hard shutdown</div></div>
+<div class="pi"><div class="pl">RSI PERIOD</div><div class="pv">8</div><div class="pn">fast RSI on 5-min</div></div>
+<div class="pi"><div class="pl">VWAP DEV THRESH</div><div class="pv">1.5 ATR</div><div class="pn">standardized dislocation</div></div>
+</div>
+</section>
+
+<section>
+<h2>&sect;6 Final Verdict</h2>
+
+<div class="c" style="border:2px solid var(--cy);">
+<table>
+<tr><th>Question</th><th>Answer</th></tr>
+<tr><td>Why did v2.0 backtest fail?</td><td class="n">3/5 signals (75% weight) need L2 data. OHLCV proxy = no directional edge. TP 0.40% unreachable in 15min.</td></tr>
+<tr><td>Can OHLCV-only achieve 10%/mo?</td><td class="w">NO. Ceiling is 4-9%/month with v2.1 redesign. Honest answer.</td></tr>
+<tr><td>What can OHLCV achieve?</td><td class="p">v2.1 with ATR-scaled exits: 2-9%/month (base 4.5%)</td></tr>
+<tr><td>Path to 10%+?</td><td class="p">Collect L2 data (free from HL API) &rarr; test v2.0 CDS with real signals &rarr; 14-30 day turnaround</td></tr>
+<tr><td>Next action</td><td class="i">PARALLEL: (1) Run v2.1 OHLCV backtest now (2) Deploy L2 collector on VPS</td></tr>
+</table>
+</div>
+
+<div class="c cg" style="margin-top:10px;">
+<h4>Recommended Immediate Actions</h4>
+<p><strong>Action 1 (today):</strong> Modify backtest_distortion_reversion_v2.py with v2.1 signals (RSI(8)+VWAP_dev+Vol_dir+BB_pierce+Wick) and ATR-scaled dynamic exits. Re-run on same data. Target: WR &gt; 50% = proof of concept.</p>
+<p><strong>Action 2 (this week):</strong> Write Hyperliquid WebSocket L2 collector. Deploy on local machine or VPS. Start accumulating real orderbook + trade data.</p>
+<p><strong>Action 3 (2-4 weeks):</strong> With L2 dataset, backtest original v2.0 CDS. This is the make-or-break test for the 10% target.</p>
+</div>
+</section>
+
+<footer>
+v2.1 Post-Mortem &amp; Redesign &middot; 2026-04-13<br>
+Data: v2.0 backtest results (216 trades), Hyperliquid Docs, CCN liquidity report (Jan 2026)<br>
+Academic: Cont et al. (2014), CoinAPI OHLCV limitations analysis (2025)
+</footer>
+</body>
+</html>

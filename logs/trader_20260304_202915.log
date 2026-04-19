@@ -1,0 +1,11 @@
+{"timestamp": "2026-03-04T20:29:15.664915", "message": "Trader process started"}
+2026-03-04 20:29:15 [INFO] ======================================================================
+2026-03-04 20:29:15 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-03-04 20:29:15 [INFO] ======================================================================
+2026-03-04 20:29:15 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-03-04 20:29:15 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-03-04 20:29:15 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-03-04 20:29:15 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260304_202915.log
+2026-03-04 20:29:15 [INFO] ======================================================================
+2026-03-04 20:29:15 [INFO] Test message: Trader is running
+2026-03-04 20:29:15 [INFO] Trading loop ready to start...

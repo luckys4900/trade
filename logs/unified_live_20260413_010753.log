@@ -1,0 +1,19 @@
+2026-04-13 01:07:53 [INFO] Qwen Unified Trader (live)
+2026-04-13 01:07:53 [INFO] Wallet: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
+2026-04-13 01:07:54 [INFO] State loaded: OCPM=No, MR=No, RSISwing=No, Contrarian=No
+2026-04-13 01:07:54 [WARNING] REAL MONEY TRADING - Be careful!
+2026-04-13 01:07:54 [INFO] Starting Unified Live Loop...
+2026-04-13 01:07:54 [INFO] HL API: fetched 1 candles, total 4429 bars
+2026-04-13 01:07:55 [INFO] Bar 5 | Price: $70,864.50 | Bal: $190.59 | RSI: 43.1 | Trend: UPTREND
+2026-04-13 01:07:55 [DEBUG] OCPM check: trend=UPTREND, close=70864, donchian_mid=72134, rsi_prev=42.9, rsi=43.1, ocpm_long=0, ocpm_short=0
+2026-04-13 01:07:55 [INFO] Contrarian LONG SIGNAL @ 70864.50 | kronos=DOWN -> contra=LONG | sz=0.0006 SL=69256.36 TP=74080.78
+2026-04-13 01:07:55 [INFO] [Contrarian] OPENING LONG 0.0006 @ 70864.50 SL: 69256.36
+2026-04-13 01:07:55 [ERROR] Order error: ('Invalid order type', {'market': {'slippage': 0.001}})
+2026-04-13 01:07:55 [ERROR] [Contrarian] Order failed
+2026-04-13 01:08:55 [INFO] HL API: fetched 1 candles, total 4429 bars
+2026-04-13 01:08:55 [INFO] Bar 6 | Price: $70,837.50 | Bal: $190.59 | RSI: 42.8 | Trend: UPTREND
+2026-04-13 01:08:55 [DEBUG] OCPM check: trend=UPTREND, close=70838, donchian_mid=72134, rsi_prev=42.9, rsi=42.8, ocpm_long=0, ocpm_short=0
+2026-04-13 01:08:55 [INFO] Contrarian LONG SIGNAL @ 70837.50 | kronos=DOWN -> contra=LONG | sz=0.0006 SL=69229.36 TP=74053.78
+2026-04-13 01:08:55 [INFO] [Contrarian] OPENING LONG 0.0006 @ 70837.50 SL: 69229.36
+2026-04-13 01:08:55 [ERROR] Order error: ('Invalid order type', {'market': {'slippage': 0.001}})
+2026-04-13 01:08:55 [ERROR] [Contrarian] Order failed

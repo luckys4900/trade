@@ -1,0 +1,12 @@
+{
+  "strategy": "EV1_INFLOW_SHORT",
+  "valid": false,
+  "signal": "NONE",
+  "strength": 0.0,
+  "reason": "no_qualifying_inflow in window or EV1 filters failed",
+  "last_event_ts": 0,
+  "last_event_exchange": null,
+  "last_event_inflow_btc": null,
+  "evaluated_at_utc": "2026-04-19T10:20:03Z",
+  "timestamp": 1776594003595
+}

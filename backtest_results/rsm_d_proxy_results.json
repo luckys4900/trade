@@ -1,0 +1,137 @@
+{
+  "metrics": {
+    "start_equity": 100000.0,
+    "final_equity": 97770.42386269206,
+    "total_return_pct": -2.2295761373079426,
+    "cagr_pct": -1.5038819501661638,
+    "max_drawdown_pct": -8.763692957380053,
+    "sharpe": -0.1516422001645596,
+    "calmar": -0.1716036786637669,
+    "monthly_win_rate_pct": 11.76470588235294,
+    "trades": 33,
+    "win_rate_pct": 30.303030303030305,
+    "avg_win_pct": 19.737164339389796,
+    "avg_loss_pct": -13.235801116038386,
+    "expectancy_pct": -3.2439934022722703,
+    "profit_factor": 0.6590481911673982,
+    "regime_on": {
+      "trades": 33,
+      "win_rate_pct": 30.303030303030305,
+      "expectancy_pct": -3.2439934022722703
+    },
+    "regime_off": {
+      "trades": 0,
+      "win_rate_pct": 0.0,
+      "expectancy_pct": 0.0
+    },
+    "analysis_start": "2024-04-05 08:00:00",
+    "analysis_end": "2025-09-30 20:00:00"
+  },
+  "inventory": [
+    {
+      "symbol": "AAVE",
+      "sector": "defi",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "ACE",
+      "sector": "gaming",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "ADA",
+      "sector": "layer1",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "AIXBT",
+      "sector": "ai",
+      "bars": 1581,
+      "start": "2025-01-10 12:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "APE",
+      "sector": "nft",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "APT",
+      "sector": "layer1",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "AR",
+      "sector": "infra",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "ARB",
+      "sector": "layer2",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "DOGE",
+      "sector": "meme",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "ETH",
+      "sector": "layer1",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "LINK",
+      "sector": "oracle",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "PEPE",
+      "sector": "meme",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "SOL",
+      "sector": "layer1",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "SUI",
+      "sector": "layer1",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    },
+    {
+      "symbol": "WIF",
+      "sector": "meme",
+      "bars": 3262,
+      "start": "2024-04-05 08:00:00",
+      "end": "2025-09-30 20:00:00"
+    }
+  ]
+}

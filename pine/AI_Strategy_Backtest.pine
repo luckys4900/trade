@@ -1,0 +1,264 @@
+// AI_Strategy_Backtest — Pine Script v5 strategy (Strategy Tester = historical backtest on chart bars)
+//@version=5
+// Slippage: Pine cannot read input() inside strategy(); edit slippage= below or keep 0 and rely on commission.
+strategy("AI_Strategy_Backtest", overlay=true, margin_long=100, margin_short=100, initial_capital=10000, currency=currency.USD, default_qty_type=strategy.fixed, default_qty_value=0.0, pyramiding=50, commission_type=strategy.commission.percent, commission_value=0.1, slippage=0, calc_on_order_fills=false, process_orders_on_close=false, close_entries_rule="ANY")
+
+// === Inputs: mode (only ONE mode is evaluated — prevents mixing Weekly BTC with 4H SOL on one chart) ===
+strategy_mode = input.string("BTC_WEEKLY_200EMA_DCA", "strategy_mode", options=["BTC_WEEKLY_200EMA_DCA", "SOL_4H_182"], tooltip="BTC mode: apply on BTC Weekly chart. SOL mode: apply on SOL 4H chart only.")
+
+// === Common: fees/slippage/sizing ===
+qty_mode = input.string("Fixed USD", "Position size mode", options=["Fixed USD", "Fixed coin"], group="Common")
+fixed_usd = input.float(1000.0, "Fixed USD per leg", minval=1.0, group="Common")
+fixed_coin = input.float(0.1, "Fixed coin qty per leg", minval=0.0001, step=0.0001, group="Common")
+
+// === Strategy A: BTC Weekly 200 EMA DCA (only when strategy_mode == BTC_WEEKLY_200EMA_DCA) ===
+touch_band_pct = input.float(0.5, "A: touch_band_pct (%)", minval=0.01, step=0.05, group="A BTC Weekly")
+dwell_weeks = input.int(8, "A: dwell_weeks (lookback)", minval=2, maxval=52, group="A BTC Weekly")
+dwell_band_pct = input.float(1.0, "A: dwell_band_pct around EMA (%)", minval=0.05, step=0.05, group="A BTC Weekly")
+dwell_min_weeks = input.int(3, "A: dwell_min_weeks", minval=1, maxval=52, group="A BTC Weekly")
+touch_dwell_logic = input.string("AND", "A: touch AND/OR dwell", options=["AND", "OR"], group="A BTC Weekly")
+dca_orders = input.int(3, "A: dca_orders (splits at next bar open)", minval=1, maxval=20, group="A BTC Weekly")
+allow_add_while_long = input.bool(true, "A: allow_add_while_long (new signal adds)", group="A BTC Weekly")
+max_add_rounds = input.int(3, "A: max_add_rounds per position lifecycle", minval=1, maxval=20, group="A BTC Weekly")
+exit_dev_pct = input.float(8.0, "A: exit_dev_pct above EMA200 for take-profit trigger (%)", minval=0.1, step=0.1, group="A BTC Weekly")
+partial_tp_pct = input.float(50.0, "A: partial_tp_pct of position on TP trigger", minval=1.0, maxval=100.0, group="A BTC Weekly")
+max_hold_weeks = input.int(52, "A: max_hold_weeks (time stop)", minval=1, maxval=520, group="A BTC Weekly")
+entry_edge_only_A = input.bool(true, "A: enter only on signal edge (not every repeated week)", group="A BTC Weekly")
+
+// === Strategy B: SOL 4H $182 (only when strategy_mode == SOL_4H_182) ===
+level = input.float(182.0, "B: Key level USD", group="B SOL 4H")
+break_buffer_pct = input.float(0.35, "B: break_buffer_pct (strong close below)", minval=0.01, step=0.01, group="B SOL 4H")
+min_body_pct = input.float(0.12, "B: min_body_pct: abs(close-open)/close * 100", minval=0.0, step=0.01, group="B SOL 4H")
+lookback_bars = input.int(24, "B: lookback_bars for grab", minval=5, maxval=500, group="B SOL 4H")
+grab_depth_pct = input.float(0.45, "B: grab_depth_pct below level (wick)", minval=0.01, step=0.01, group="B SOL 4H")
+reclaim_buffer_pct = input.float(0.25, "B: reclaim_buffer_pct above level", minval=0.01, step=0.01, group="B SOL 4H")
+short_lookback_for_long = input.int(12, "B: bars since short signal for long reclaim", minval=1, maxval=200, group="B SOL 4H")
+
+rr_mode = input.string("ATR", "B: risk/reward mode", options=["ATR", "Fixed %", "Fixed price target"], group="B SOL 4H")
+atr_len = input.int(14, "B: ATR length", minval=1, group="B SOL 4H")
+atr_sl_mult = input.float(1.25, "B: ATR stop mult", minval=0.1, step=0.05, group="B SOL 4H")
+atr_tp_mult = input.float(2.0, "B: ATR target mult", minval=0.1, step=0.05, group="B SOL 4H")
+stop_pct = input.float(1.5, "B: fixed stop (%)", minval=0.01, step=0.01, group="B SOL 4H")
+target_pct = input.float(3.0, "B: fixed target (%)", minval=0.01, step=0.01, group="B SOL 4H")
+target_near = input.float(175.0, "B: target_near (fixed price target). May be invalid vs liquidity/volatility — tune per market.", minval=0.0, step=0.1, group="B SOL 4H")
+
+target_pf = input.float(7.2, "Highlight table row if PF >= target_pf (does NOT guarantee performance)", minval=0.0, step=0.1, group="UI")
+
+// --- Helpers ---
+f_qty() =>
+    float q = na
+    if qty_mode == "Fixed coin"
+        q := fixed_coin
+    else
+        q := fixed_usd / math.max(close, syminfo.mintick)
+    q
+
+f_close_in_ema_band(float emaV, float c, float pct) =>
+    not na(c) and not na(emaV) and c >= emaV * (1.0 - pct / 100.0) and c <= emaV * (1.0 + pct / 100.0)
+
+f_touch_week(float emaV, float pct) =>
+    float loB = emaV * (1.0 - pct / 100.0)
+    float hiB = emaV * (1.0 + pct / 100.0)
+    bool cross = low <= emaV and high >= emaV
+    bool band_touch = low <= hiB and high >= loB
+    cross or band_touch
+
+// --- Strategy A state ---
+var int a_add_rounds = 0
+
+// --- Strategy B state ---
+var bool b_short_recent = false
+var int b_short_signal_bar = na
+
+// =========================
+// MODE A: BTC Weekly DCA
+// =========================
+bool runA = strategy_mode == "BTC_WEEKLY_200EMA_DCA" and timeframe.isweekly
+float ema200w = runA ? ta.ema(close, 200) : na
+
+bool touchA = false
+int dwell_cnt = 0
+bool dwellA = false
+if runA and not na(ema200w)
+    touchA := f_touch_week(ema200w, touch_band_pct)
+    for i = 0 to dwell_weeks - 1
+        float em = ta.ema(close, 200)[i]
+        if f_close_in_ema_band(em, close[i], dwell_band_pct)
+            dwell_cnt += 1
+    dwellA := dwell_cnt >= dwell_min_weeks
+
+bool signalA = false
+if runA
+    signalA := touch_dwell_logic == "AND" ? (touchA and dwellA) : (touchA or dwellA)
+
+bool signalA_edge = entry_edge_only_A ? (signalA and not signalA[1]) : signalA
+
+bool flat_or_add_ok = strategy.position_size == 0 or (allow_add_while_long and a_add_rounds < max_add_rounds)
+
+// --- Plots (must stay in global scope; conditional series only) ---
+plot(runA ? ema200w : na, "EMA200 Weekly", color=color.new(color.orange, 0), linewidth=2)
+bgcolor(runA and touchA ? color.new(color.blue, 92) : na)
+bgcolor(runA and dwellA and not touchA ? color.new(color.purple, 93) : na)
+plotshape(runA and barstate.isconfirmed and signalA_edge and flat_or_add_ok, title="A DCA entry", style=shape.triangleup, location=location.belowbar, color=color.new(color.lime, 0), size=size.tiny, text="DCA")
+
+// =========================
+// MODE B: SOL 4H $182
+// =========================
+bool runB = strategy_mode == "SOL_4H_182" and (timeframe.period == "240")
+
+float atrB = runB ? ta.atr(atr_len) : na
+
+bool strong_short = false
+bool grab_ok = false
+bool reclaim_long = false
+
+if runB and barstate.isconfirmed
+    float thrShort = level * (1.0 - break_buffer_pct / 100.0)
+    float bodyPct = math.abs(close - open) / math.max(close, syminfo.mintick) * 100.0
+    strong_short := close < thrShort and bodyPct >= min_body_pct
+
+    float lowestW = ta.lowest(low, lookback_bars)
+    grab_ok := lowestW < level * (1.0 - grab_depth_pct / 100.0)
+
+    float reclaimThr = level * (1.0 + reclaim_buffer_pct / 100.0)
+    reclaim_long := close > reclaimThr
+
+plot(runB ? level : na, "B Key level", color=color.new(color.yellow, 0), linewidth=2)
+plot(runB ? target_near : na, "B target_near (optional)", color=color.new(color.teal, 0), linewidth=1, style=plot.style_linebr)
+
+bool short_recent = runB and not na(b_short_signal_bar) and (bar_index - b_short_signal_bar) <= short_lookback_for_long
+
+bool strong_short_edge = runB and strong_short and not strong_short[1]
+bool grab_reclaim_edge = runB and grab_ok and reclaim_long and (grab_ok[1] == false or reclaim_long[1] == false)
+
+if runB and barstate.isconfirmed
+    if strong_short_edge
+        b_short_recent := true
+        b_short_signal_bar := bar_index
+
+if runB and barstate.isconfirmed and strong_short_edge
+    label.new(bar_index, high, "B break", style=label.style_label_down, color=color.red, textcolor=color.white, size=size.tiny)
+
+if runB and barstate.isconfirmed and grab_reclaim_edge
+    label.new(bar_index, low, "B grab+reclaim", style=label.style_label_up, color=color.green, textcolor=color.white, size=size.tiny)
+
+// --- A entries (long only; pyramiding split) ---
+if runA and barstate.isconfirmed and signalA_edge and flat_or_add_ok
+    float qLeg = f_qty() / math.max(dca_orders, 1)
+    for k = 0 to dca_orders - 1
+        strategy.entry("A_DCA_" + str.tostring(k), strategy.long, qty=qLeg, comment="A_DCA")
+    a_add_rounds += 1
+
+// A exits: partial above EMA + dev; time stop (weekly bars since flat)
+int bars_in_pos = strategy.position_size > 0 ? ta.barssince(strategy.position_size[1] == 0) : na
+if runA and barstate.isconfirmed and strategy.position_size > 0 and not na(ema200w)
+    float tpLine = ema200w * (1.0 + exit_dev_pct / 100.0)
+    bool tpHit = close > tpLine
+    bool timeStop = not na(bars_in_pos) and bars_in_pos >= max_hold_weeks
+    if tpHit
+        strategy.close("A_TP", qty_percent=partial_tp_pct, comment="A_partial_TP")
+    if timeStop
+        strategy.close("A_TIME", comment="A_time_stop")
+
+if runA and strategy.position_size == 0 and strategy.position_size[1] != 0
+    a_add_rounds := 0
+
+// --- B entries / flips (priority: close long before short; long reclaim after short context) ---
+if runB and barstate.isconfirmed
+    float qB = f_qty()
+
+    if strong_short_edge and strategy.position_size >= 0
+        if strategy.position_size > 0
+            strategy.close("B_flip_from_long", comment="B_close_for_short")
+        strategy.entry("B_SHORT", strategy.short, qty=qB, comment="B_short")
+
+    if grab_ok and reclaim_long and b_short_recent and short_recent and strategy.position_size <= 0
+        strategy.entry("B_LONG", strategy.long, qty=qB, comment="B_long_reclaim")
+
+    if grab_ok and reclaim_long and b_short_recent and short_recent and strategy.position_size < 0
+        strategy.close("B_cover_short", comment="B_cover")
+        strategy.entry("B_LONG", strategy.long, qty=qB, comment="B_long_after_short")
+
+// B exits (ATR / % / fixed price)
+if runB and barstate.isconfirmed and strategy.position_size != 0
+    float avgB = strategy.position_avg_price
+    if strategy.position_size > 0
+        float sl = na
+        float tp = na
+        if rr_mode == "ATR" and not na(atrB)
+            sl := avgB - atrB * atr_sl_mult
+            tp := avgB + atrB * atr_tp_mult
+        else if rr_mode == "Fixed %"
+            sl := avgB * (1.0 - stop_pct / 100.0)
+            tp := avgB * (1.0 + target_pct / 100.0)
+        else
+            sl := avgB * (1.0 - stop_pct / 100.0)
+            tp := target_near
+        if not na(sl) and not na(tp)
+            strategy.exit("B_LX", from_entry="B_LONG", stop=sl, limit=tp)
+    if strategy.position_size < 0
+        float slS = na
+        float tpS = na
+        if rr_mode == "ATR" and not na(atrB)
+            slS := avgB + atrB * atr_sl_mult
+            tpS := avgB - atrB * atr_tp_mult
+        else if rr_mode == "Fixed %"
+            slS := avgB * (1.0 + stop_pct / 100.0)
+            tpS := avgB * (1.0 - target_pct / 100.0)
+        else
+            slS := avgB * (1.0 + stop_pct / 100.0)
+            tpS := target_near
+        if not na(slS) and not na(tpS)
+            strategy.exit("B_SX", from_entry="B_SHORT", stop=slS, limit=tpS)
+
+// =========================
+// Stats table (closed trades)
+// =========================
+var table t = table.new(position.top_right, 2, 7, border_width=1)
+if barstate.islastconfirmedhistory or barstate.islast
+    int n = strategy.closedtrades
+    float gross_win = 0.0
+    float gross_loss = 0.0
+    int wins = 0
+    if n > 0
+        for i = 0 to n - 1
+            float p = strategy.closedtrades.profit(i)
+            if p > 0
+                wins += 1
+                gross_win += p
+            else if p < 0
+                gross_loss += p
+    float pf = gross_loss != 0.0 ? gross_win / math.abs(gross_loss) : na
+    float wr = n > 0 ? (wins / n) * 100.0 : na
+    float net = strategy.netprofit
+    float mdd = strategy.max_drawdown
+
+    table.cell(t, 0, 0, "Metric", bgcolor=color.new(color.gray, 70))
+    table.cell(t, 1, 0, "Value", bgcolor=color.new(color.gray, 70))
+    table.cell(t, 0, 1, "Trades")
+    table.cell(t, 1, 1, str.tostring(n))
+    table.cell(t, 0, 2, "Win rate %")
+    table.cell(t, 1, 2, na(wr) ? "-" : str.tostring(wr, "#.##"))
+    table.cell(t, 0, 3, "PF")
+    table.cell(t, 1, 3, na(pf) ? "-" : str.tostring(pf, "#.###"))
+    table.cell(t, 0, 4, "Net profit")
+    table.cell(t, 1, 4, str.tostring(net, "#.##"))
+    table.cell(t, 0, 5, "Max DD (TV)")
+    table.cell(t, 1, 5, str.tostring(mdd, "#.##"))
+    table.cell(t, 0, 6, "PF vs target")
+    table.cell(t, 1, 6, not na(pf) and pf >= target_pf ? "highlight" : "-")
+    table.cell_set_bgcolor(t, 1, 6, not na(pf) and pf >= target_pf ? color.new(color.green, 75) : color.new(color.gray, 90))
+
+/*
+=== 使い方 ===
+1) strategy_mode = "BTC_WEEKLY_200EMA_DCA"
+   - BTC の「週足」チャート（例: BINANCE:BTCUSDT.P）に貼る。
+   - 他モードの条件は評価されない。
+
+2) strategy_mode = "SOL_4H_182"
+   - SOL の「4時間足」チャート（例: BINANCE:SOLUSDT.P）に貼る。
+   - timeframe.period が 240 分（4H）であることを前提。
+
+3) TradingView の Strategy Tester はチャートの履歴バーに対するシミュレーション（バックテスト）です。
+   結果は銘柄・足・手数料設定・約定モデルに依存し、PF 等を保証するものではありません。
+*/

@@ -1,0 +1,55 @@
+{
+  "coins": [
+    {
+      "symbol": "0G/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\0G_USDCUSDC_4h_365d.csv"
+    },
+    {
+      "symbol": "2Z/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\2Z_USDCUSDC_4h_365d.csv"
+    },
+    {
+      "symbol": "AAVE/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\AAVE_USDCUSDC_4h_365d.csv"
+    },
+    {
+      "symbol": "ACE/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\ACE_USDCUSDC_4h_365d.csv"
+    },
+    {
+      "symbol": "ADA/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\ADA_USDCUSDC_4h_365d.csv"
+    },
+    {
+      "symbol": "AERO/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\AERO_USDCUSDC_4h_365d.csv"
+    },
+    {
+      "symbol": "AIXBT/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\AIXBT_USDCUSDC_4h_365d.csv"
+    },
+    {
+      "symbol": "APE/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\APE_USDCUSDC_4h_365d.csv"
+    },
+    {
+      "symbol": "APEX/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\APEX_USDCUSDC_4h_365d.csv"
+    },
+    {
+      "symbol": "APT/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\APT_USDCUSDC_4h_365d.csv"
+    },
+    {
+      "symbol": "AR/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\AR_USDCUSDC_4h_365d.csv"
+    },
+    {
+      "symbol": "ARB/USDC:USDC",
+      "path": "C:\\Users\\user\\Desktop\\cursor\\trade\\data\\ARB_USDCUSDC_4h_365d.csv"
+    }
+  ],
+  "timeframe": "4h",
+  "days": 365,
+  "updated": "2026-04-05 04:40:56.474656"
+}

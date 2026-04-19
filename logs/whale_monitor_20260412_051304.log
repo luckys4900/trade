@@ -1,0 +1,191 @@
+2026-04-12 14:13:04,195 [ERROR] Failed to load config: [Errno 2] No such file or directory: 'whale_wallets.json'
+2026-04-12 14:13:04,195 [INFO] Starting loop with interval 900s
+2026-04-12 14:13:04,195 [INFO] === Run Once ===
+2026-04-12 14:13:04,195 [INFO] Using cached ranking (36.9h old)
+2026-04-12 14:13:04,686 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 14:28:04,701 [INFO] === Run Once ===
+2026-04-12 14:28:04,701 [INFO] Using cached ranking (37.2h old)
+2026-04-12 14:28:05,030 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 14:43:05,030 [INFO] === Run Once ===
+2026-04-12 14:43:05,030 [INFO] Using cached ranking (37.4h old)
+2026-04-12 14:43:05,416 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 14:58:05,419 [INFO] === Run Once ===
+2026-04-12 14:58:05,419 [INFO] Using cached ranking (37.7h old)
+2026-04-12 14:58:05,746 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 15:13:05,761 [INFO] === Run Once ===
+2026-04-12 15:13:05,761 [INFO] Using cached ranking (37.9h old)
+2026-04-12 15:13:06,743 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 15:28:06,757 [INFO] === Run Once ===
+2026-04-12 15:28:06,757 [INFO] Using cached ranking (38.2h old)
+2026-04-12 15:28:07,126 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 15:43:07,135 [INFO] === Run Once ===
+2026-04-12 15:43:07,135 [INFO] Using cached ranking (38.4h old)
+2026-04-12 15:43:07,547 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 15:58:07,560 [INFO] === Run Once ===
+2026-04-12 15:58:07,560 [INFO] Using cached ranking (38.7h old)
+2026-04-12 15:58:07,914 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 16:13:07,926 [INFO] === Run Once ===
+2026-04-12 16:13:07,927 [INFO] Using cached ranking (38.9h old)
+2026-04-12 16:13:08,285 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 16:28:08,294 [INFO] === Run Once ===
+2026-04-12 16:28:08,294 [INFO] Using cached ranking (39.2h old)
+2026-04-12 16:28:08,661 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 16:43:08,664 [INFO] === Run Once ===
+2026-04-12 16:43:08,665 [INFO] Using cached ranking (39.4h old)
+2026-04-12 16:43:09,018 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 16:58:09,021 [INFO] === Run Once ===
+2026-04-12 16:58:09,023 [INFO] Using cached ranking (39.7h old)
+2026-04-12 16:58:09,440 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 17:13:09,441 [INFO] === Run Once ===
+2026-04-12 17:13:09,443 [INFO] Using cached ranking (39.9h old)
+2026-04-12 17:13:09,862 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 17:28:09,865 [INFO] === Run Once ===
+2026-04-12 17:28:09,866 [INFO] Using cached ranking (40.2h old)
+2026-04-12 17:28:10,410 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 17:43:10,423 [INFO] === Run Once ===
+2026-04-12 17:43:10,425 [INFO] Using cached ranking (40.4h old)
+2026-04-12 17:43:10,836 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 17:58:10,837 [INFO] === Run Once ===
+2026-04-12 17:58:10,839 [INFO] Using cached ranking (40.7h old)
+2026-04-12 17:58:11,248 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 18:13:11,249 [INFO] === Run Once ===
+2026-04-12 18:13:11,250 [INFO] Using cached ranking (40.9h old)
+2026-04-12 18:13:11,642 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 18:28:11,645 [INFO] === Run Once ===
+2026-04-12 18:28:11,645 [INFO] Using cached ranking (41.2h old)
+2026-04-12 18:28:11,995 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 18:43:12,004 [INFO] === Run Once ===
+2026-04-12 18:43:12,005 [INFO] Using cached ranking (41.4h old)
+2026-04-12 18:43:12,393 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 18:58:12,394 [INFO] === Run Once ===
+2026-04-12 18:58:12,394 [INFO] Using cached ranking (41.7h old)
+2026-04-12 18:58:12,760 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 19:13:12,764 [INFO] === Run Once ===
+2026-04-12 19:13:12,765 [INFO] Using cached ranking (41.9h old)
+2026-04-12 19:13:13,121 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 19:28:13,123 [INFO] === Run Once ===
+2026-04-12 19:28:13,124 [INFO] Using cached ranking (42.2h old)
+2026-04-12 19:28:13,510 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 19:43:13,524 [INFO] === Run Once ===
+2026-04-12 19:43:13,526 [INFO] Using cached ranking (42.4h old)
+2026-04-12 19:43:13,530 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 19:43:13,531 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 19:43:13,532 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 19:43:13,547 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 19:58:13,561 [INFO] === Run Once ===
+2026-04-12 19:58:13,561 [INFO] Using cached ranking (42.7h old)
+2026-04-12 19:58:13,563 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 19:58:13,564 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 19:58:13,565 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 19:58:13,573 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 20:13:13,582 [INFO] === Run Once ===
+2026-04-12 20:13:13,583 [INFO] Using cached ranking (42.9h old)
+2026-04-12 20:13:13,585 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:13:13,588 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:13:13,590 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:13:13,601 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 20:28:13,617 [INFO] === Run Once ===
+2026-04-12 20:28:13,617 [INFO] Using cached ranking (43.2h old)
+2026-04-12 20:28:13,619 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:28:13,621 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:28:13,622 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:28:13,634 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 20:43:13,646 [INFO] === Run Once ===
+2026-04-12 20:43:13,646 [INFO] Using cached ranking (43.4h old)
+2026-04-12 20:43:13,648 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:43:13,650 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:43:13,651 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:43:13,656 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 20:58:13,664 [INFO] === Run Once ===
+2026-04-12 20:58:13,666 [INFO] Using cached ranking (43.7h old)
+2026-04-12 20:58:13,669 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:58:13,671 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:58:13,672 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 20:58:13,691 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 21:13:13,698 [INFO] === Run Once ===
+2026-04-12 21:13:13,699 [INFO] Using cached ranking (43.9h old)
+2026-04-12 21:13:13,702 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:13:13,703 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:13:13,704 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:13:13,715 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 21:28:13,721 [INFO] === Run Once ===
+2026-04-12 21:28:13,722 [INFO] Using cached ranking (44.2h old)
+2026-04-12 21:28:13,725 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:28:13,727 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:28:13,729 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:28:13,746 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 21:43:13,756 [INFO] === Run Once ===
+2026-04-12 21:43:13,757 [INFO] Using cached ranking (44.4h old)
+2026-04-12 21:43:13,759 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:43:13,761 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:43:13,762 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:43:13,771 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 21:58:13,780 [INFO] === Run Once ===
+2026-04-12 21:58:13,781 [INFO] Using cached ranking (44.7h old)
+2026-04-12 21:58:13,784 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:58:13,790 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:58:13,791 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 21:58:13,806 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 22:13:13,809 [INFO] === Run Once ===
+2026-04-12 22:13:13,809 [INFO] Using cached ranking (44.9h old)
+2026-04-12 22:13:13,810 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:13:13,811 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:13:13,811 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:13:13,823 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 22:28:13,839 [INFO] === Run Once ===
+2026-04-12 22:28:13,840 [INFO] Using cached ranking (45.2h old)
+2026-04-12 22:28:13,842 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:28:13,844 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:28:13,845 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:28:13,858 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 22:43:13,872 [INFO] === Run Once ===
+2026-04-12 22:43:13,878 [INFO] Using cached ranking (45.4h old)
+2026-04-12 22:43:13,879 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:43:13,879 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:43:13,880 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:43:13,886 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 22:58:13,893 [INFO] === Run Once ===
+2026-04-12 22:58:13,894 [INFO] Using cached ranking (45.7h old)
+2026-04-12 22:58:13,895 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:58:13,896 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:58:13,897 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 22:58:13,907 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 23:13:13,915 [INFO] === Run Once ===
+2026-04-12 23:13:13,916 [INFO] Using cached ranking (45.9h old)
+2026-04-12 23:13:13,920 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:13:13,923 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:13:13,924 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:13:13,936 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 23:28:13,942 [INFO] === Run Once ===
+2026-04-12 23:28:13,943 [INFO] Using cached ranking (46.2h old)
+2026-04-12 23:28:13,947 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:28:13,949 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:28:13,950 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:28:13,973 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 23:43:13,975 [INFO] === Run Once ===
+2026-04-12 23:43:13,976 [INFO] Using cached ranking (46.4h old)
+2026-04-12 23:43:13,977 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:43:13,979 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:43:13,980 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:43:13,986 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-12 23:58:13,987 [INFO] === Run Once ===
+2026-04-12 23:58:13,989 [INFO] Using cached ranking (46.7h old)
+2026-04-12 23:58:13,991 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:58:13,992 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:58:13,993 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-12 23:58:14,007 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-13 00:13:14,013 [INFO] === Run Once ===
+2026-04-13 00:13:14,014 [INFO] Using cached ranking (46.9h old)
+2026-04-13 00:13:14,016 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-13 00:13:14,018 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-13 00:13:14,019 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-13 00:13:14,026 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-13 00:28:14,039 [INFO] === Run Once ===
+2026-04-13 00:28:14,040 [INFO] Using cached ranking (47.2h old)
+2026-04-13 00:28:14,043 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-13 00:28:14,046 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-13 00:28:14,048 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-13 00:28:14,066 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-13 00:51:39,016 [INFO] === Run Once ===
+2026-04-13 00:51:39,018 [INFO] Using cached ranking (47.6h old)
+2026-04-13 00:51:39,360 [INFO] Signal written: NONE, strength=0.00, valid=False

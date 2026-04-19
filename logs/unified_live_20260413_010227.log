@@ -1,0 +1,33 @@
+2026-04-13 01:02:27 [INFO] Qwen Unified Trader (live)
+2026-04-13 01:02:27 [INFO] Wallet: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
+2026-04-13 01:02:33 [INFO] State loaded: OCPM=No, MR=No, RSISwing=No, Contrarian=No
+2026-04-13 01:02:33 [WARNING] REAL MONEY TRADING - Be careful!
+2026-04-13 01:02:33 [INFO] Starting Unified Live Loop...
+2026-04-13 01:02:33 [INFO] HL API: fetched 2 candles, total 4429 bars
+2026-04-13 01:02:33 [INFO] Bar 1 | Price: $70,848.50 | Bal: $190.59 | RSI: 43.0 | Trend: UPTREND
+2026-04-13 01:02:33 [DEBUG] Kronos signal stale (814.7min old)
+2026-04-13 01:02:33 [DEBUG] OCPM check: trend=UPTREND, close=70848, donchian_mid=72134, rsi_prev=42.9, rsi=43.0, ocpm_long=0, ocpm_short=0
+2026-04-13 01:02:33 [DEBUG] Kronos signal stale (814.7min old)
+2026-04-13 01:02:33 [DEBUG] Kronos signal stale (814.7min old)
+2026-04-13 01:02:33 [DEBUG] Contrarian signal stale (326.7min old)
+2026-04-13 01:03:33 [INFO] HL API: fetched 1 candles, total 4429 bars
+2026-04-13 01:03:33 [INFO] Bar 2 | Price: $70,881.00 | Bal: $190.59 | RSI: 43.3 | Trend: UPTREND
+2026-04-13 01:03:33 [DEBUG] OCPM check: trend=UPTREND, close=70881, donchian_mid=72134, rsi_prev=42.9, rsi=43.3, ocpm_long=0, ocpm_short=0
+2026-04-13 01:03:33 [INFO] Contrarian LONG SIGNAL @ 70881.00 | kronos=DOWN -> contra=LONG | sz=0.0006 SL=69279.72 TP=74083.56
+2026-04-13 01:03:33 [INFO] [Contrarian] OPENING LONG 0.0006 @ 70881.00 SL: 69279.72
+2026-04-13 01:03:33 [ERROR] Order error: ('float_to_wire causes rounding', 0.0005646559258475472)
+2026-04-13 01:03:33 [ERROR] [Contrarian] Order failed
+2026-04-13 01:04:33 [INFO] HL API: fetched 1 candles, total 4429 bars
+2026-04-13 01:04:33 [INFO] Bar 3 | Price: $70,928.50 | Bal: $190.59 | RSI: 43.7 | Trend: UPTREND
+2026-04-13 01:04:34 [DEBUG] OCPM check: trend=UPTREND, close=70928, donchian_mid=72134, rsi_prev=42.9, rsi=43.7, ocpm_long=0, ocpm_short=0
+2026-04-13 01:04:34 [INFO] Contrarian LONG SIGNAL @ 70928.50 | kronos=DOWN -> contra=LONG | sz=0.0006 SL=69320.36 TP=74144.78
+2026-04-13 01:04:34 [INFO] [Contrarian] OPENING LONG 0.0006 @ 70928.50 SL: 69320.36
+2026-04-13 01:04:34 [ERROR] Order error: ('float_to_wire causes rounding', 0.0005642777822736981)
+2026-04-13 01:04:34 [ERROR] [Contrarian] Order failed
+2026-04-13 01:05:34 [INFO] HL API: fetched 1 candles, total 4429 bars
+2026-04-13 01:05:34 [INFO] Bar 4 | Price: $70,906.50 | Bal: $190.59 | RSI: 43.5 | Trend: UPTREND
+2026-04-13 01:05:34 [DEBUG] OCPM check: trend=UPTREND, close=70906, donchian_mid=72134, rsi_prev=42.9, rsi=43.5, ocpm_long=0, ocpm_short=0
+2026-04-13 01:05:34 [INFO] Contrarian LONG SIGNAL @ 70906.50 | kronos=DOWN -> contra=LONG | sz=0.0006 SL=69298.36 TP=74122.78
+2026-04-13 01:05:34 [INFO] [Contrarian] OPENING LONG 0.0006 @ 70906.50 SL: 69298.36
+2026-04-13 01:05:34 [ERROR] Order error: ('float_to_wire causes rounding', 0.0005644528594698652)
+2026-04-13 01:05:34 [ERROR] [Contrarian] Order failed

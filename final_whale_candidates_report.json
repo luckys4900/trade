@@ -1,0 +1,21 @@
+[
+  {
+    "address": "0x932bdd2d5e21475e62d2fea8158fc5974507cb1a",
+    "total_btc_trades": 252,
+    "win_rate": 0.49206349206349204,
+    "avg_win": 0.4225914470458981,
+    "avg_loss": -0.49177872334682066,
+    "ev_per_trade": -0.04185054426468918,
+    "sortino": -0.042927798892432416,
+    "max_drawdown": -31.62967614637373,
+    "account_value": 622361.981925,
+    "active_positions": 3,
+    "activity_days": 24,
+    "days_since_last_trade": 16,
+    "risk_score": 6,
+    "is_recently_active": true,
+    "has_btc_activity": true,
+    "source": "existing",
+    "note": "Whale_2"
+  }
+]

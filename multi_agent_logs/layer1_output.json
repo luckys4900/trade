@@ -1,0 +1,1 @@
+{"strategy": "OCPM Strategy Enhancement", "cache_key": "1b78e6415d8f5110", "test_criteria": {"min_sortino": 2.0, "min_win_rate": 0.5, "max_drawdown": 0.15}}

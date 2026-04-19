@@ -1,0 +1,28 @@
+{
+  "simulation_date": "C:\\Users\\user\\Desktop\\cursor\\trade",
+  "assumptions": {
+    "sessions_per_day": 2,
+    "days": 30,
+    "total_sessions": 60
+  },
+  "scenarios": [
+    {
+      "name": "Traditional (Single Agent)",
+      "tokens_final": 540000,
+      "cost": 1.62,
+      "efficiency": 0
+    },
+    {
+      "name": "Multi-Agent (3-Layer)",
+      "tokens_final": 200496,
+      "cost": 0.6,
+      "efficiency": 3.7
+    },
+    {
+      "name": "Multi-Agent Optimized (2x efficiency)",
+      "tokens_final": 192793,
+      "cost": 0.58,
+      "efficiency": 7.4
+    }
+  ]
+}

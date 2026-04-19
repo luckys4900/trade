@@ -1,0 +1,63 @@
+2026-03-02 21:28:24 [INFO] Mode: live | v5 Adaptive RSI (Hyperliquid Edition) | Days: 180
+2026-03-02 21:28:24 [INFO] Exchange: hyperliquid (Mainnet)
+2026-03-02 21:28:24 [INFO] Entering LIVE mode
+2026-03-02 21:28:24 [INFO] Hyperliquid Info API initialized (Mainnet)
+2026-03-02 21:28:24 [INFO] Hyperliquid Exchange API initialized for 0x8455b7... (Mainnet)
+2026-03-02 21:28:26 [INFO] Starting live loop (interval=60s)
+2026-03-02 21:28:26 [INFO] Exchange: Hyperliquid Mainnet
+2026-03-02 21:28:26 [INFO] --- Iteration 1 ---
+2026-03-02 21:28:26 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-02 21:28:26 [ERROR] Error fetching price for BTC: 'Info' object has no attribute 'l2_book'
+2026-03-02 21:28:26 [WARNING] Could not fetch live price, using close price
+2026-03-02 21:28:26 [ERROR] Error fetching balance: 'Exchange' object has no attribute 'get_user_state'
+2026-03-02 21:28:26 [DEBUG] DEBUG: Checking entries | Long signal: 0 | Short signal: 0 | Balance: $0.00
+2026-03-02 21:28:26 [INFO] Sleeping 60s until next bar...
+2026-03-02 21:29:26 [INFO] --- Iteration 2 ---
+2026-03-02 21:29:26 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-02 21:29:26 [ERROR] Error fetching price for BTC: 'Info' object has no attribute 'l2_book'
+2026-03-02 21:29:26 [WARNING] Could not fetch live price, using close price
+2026-03-02 21:29:26 [ERROR] Error fetching balance: 'Exchange' object has no attribute 'get_user_state'
+2026-03-02 21:29:26 [DEBUG] DEBUG: Checking entries | Long signal: 0 | Short signal: 0 | Balance: $0.00
+2026-03-02 21:29:26 [INFO] Sleeping 60s until next bar...
+2026-03-02 21:30:26 [INFO] --- Iteration 3 ---
+2026-03-02 21:30:26 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-02 21:30:26 [ERROR] Error fetching price for BTC: 'Info' object has no attribute 'l2_book'
+2026-03-02 21:30:26 [WARNING] Could not fetch live price, using close price
+2026-03-02 21:30:26 [ERROR] Error fetching balance: 'Exchange' object has no attribute 'get_user_state'
+2026-03-02 21:30:26 [DEBUG] DEBUG: Checking entries | Long signal: 0 | Short signal: 0 | Balance: $0.00
+2026-03-02 21:30:26 [INFO] Sleeping 60s until next bar...
+2026-03-02 21:31:26 [INFO] --- Iteration 4 ---
+2026-03-02 21:31:26 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-02 21:31:26 [ERROR] Error fetching price for BTC: 'Info' object has no attribute 'l2_book'
+2026-03-02 21:31:26 [WARNING] Could not fetch live price, using close price
+2026-03-02 21:31:26 [ERROR] Error fetching balance: 'Exchange' object has no attribute 'get_user_state'
+2026-03-02 21:31:26 [DEBUG] DEBUG: Checking entries | Long signal: 0 | Short signal: 0 | Balance: $0.00
+2026-03-02 21:31:26 [INFO] Sleeping 60s until next bar...
+2026-03-02 21:32:26 [INFO] --- Iteration 5 ---
+2026-03-02 21:32:26 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-02 21:32:26 [ERROR] Error fetching price for BTC: 'Info' object has no attribute 'l2_book'
+2026-03-02 21:32:26 [WARNING] Could not fetch live price, using close price
+2026-03-02 21:32:26 [ERROR] Error fetching balance: 'Exchange' object has no attribute 'get_user_state'
+2026-03-02 21:32:26 [DEBUG] DEBUG: Checking entries | Long signal: 0 | Short signal: 0 | Balance: $0.00
+2026-03-02 21:32:26 [INFO] Sleeping 60s until next bar...
+2026-03-02 21:33:26 [INFO] --- Iteration 6 ---
+2026-03-02 21:33:26 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-02 21:33:26 [ERROR] Error fetching price for BTC: 'Info' object has no attribute 'l2_book'
+2026-03-02 21:33:26 [WARNING] Could not fetch live price, using close price
+2026-03-02 21:33:26 [ERROR] Error fetching balance: 'Exchange' object has no attribute 'get_user_state'
+2026-03-02 21:33:26 [DEBUG] DEBUG: Checking entries | Long signal: 0 | Short signal: 0 | Balance: $0.00
+2026-03-02 21:33:26 [INFO] Sleeping 60s until next bar...
+2026-03-02 21:34:26 [INFO] --- Iteration 7 ---
+2026-03-02 21:34:26 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-02 21:34:26 [ERROR] Error fetching price for BTC: 'Info' object has no attribute 'l2_book'
+2026-03-02 21:34:26 [WARNING] Could not fetch live price, using close price
+2026-03-02 21:34:26 [ERROR] Error fetching balance: 'Exchange' object has no attribute 'get_user_state'
+2026-03-02 21:34:26 [DEBUG] DEBUG: Checking entries | Long signal: 0 | Short signal: 0 | Balance: $0.00
+2026-03-02 21:34:26 [INFO] Sleeping 60s until next bar...
+2026-03-02 21:35:26 [INFO] --- Iteration 8 ---
+2026-03-02 21:35:26 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-02 21:35:26 [ERROR] Error fetching price for BTC: 'Info' object has no attribute 'l2_book'
+2026-03-02 21:35:26 [WARNING] Could not fetch live price, using close price
+2026-03-02 21:35:26 [ERROR] Error fetching balance: 'Exchange' object has no attribute 'get_user_state'
+2026-03-02 21:35:26 [DEBUG] DEBUG: Checking entries | Long signal: 0 | Short signal: 0 | Balance: $0.00
+2026-03-02 21:35:26 [INFO] Sleeping 60s until next bar...

@@ -1,0 +1,26 @@
+[
+  {
+    "file": "advanced_whale_scanner.py",
+    "line": 128,
+    "check": "insecure_random",
+    "risk": "MEDIUM",
+    "description": "Weak random number generation for crypto",
+    "code": "prefix = random.choice(prefixes)"
+  },
+  {
+    "file": "backtest_chart.py",
+    "line": 126,
+    "check": "insecure_random",
+    "risk": "MEDIUM",
+    "description": "Weak random number generation for crypto",
+    "code": "if np.random.random() < 0.02:"
+  },
+  {
+    "file": "backtest_chart.py",
+    "line": 127,
+    "check": "insecure_random",
+    "risk": "MEDIUM",
+    "description": "Weak random number generation for crypto",
+    "code": "ret += np.random.choice([-1, 1]) * np.random.uniform(0.02, 0.05)"
+  }
+]

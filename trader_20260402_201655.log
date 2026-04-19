@@ -1,0 +1,63 @@
+{"timestamp": "2026-04-02T20:16:55.076063", "message": "Trader process started"}
+2026-04-02 20:16:55 [INFO] ======================================================================
+2026-04-02 20:16:55 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-04-02 20:16:55 [INFO] ======================================================================
+2026-04-02 20:16:55 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-04-02 20:16:55 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-02 20:16:55 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-04-02 20:16:55 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260402_201655.log
+2026-04-02 20:16:55 [INFO] ======================================================================
+2026-04-02 20:16:55 [INFO] Test message: Trader is running
+2026-04-02 20:16:56 [INFO] Live trading 有効化: env=mainnet, address=0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-04-02 20:16:56 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 20:16:56 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 20:16:56 [INFO] Trader initialized successfully
+2026-04-02 20:16:56 [INFO] Starting trading loop (live mode)...
+2026-04-02 20:16:56 [INFO] Current RSI: 26.39, Price: $66369.00
+2026-04-02 20:16:56 [INFO] [LIVE] Placing BUY: coin=BTC, qty=0.001500, notional~$100.00
+2026-04-02 20:16:56 [ERROR] [LIVE] BUY order failed: ('Invalid order type', {'market': {}})
+2026-04-02 20:16:56 [ERROR] [LIVE] BUY traceback: Traceback (most recent call last):
+  File "C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py", line 398, in run
+    resp = self.exchange.order(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\exchange.py", line 141, in order
+    return self.bulk_orders([order], builder)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\exchange.py", line 146, in bulk_orders
+    order_wires: List[OrderWire] = [
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\exchange.py", line 147, in <listcomp>
+    order_request_to_order_wire(order, self.info.name_to_asset(order["coin"])) for order in order_requests
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\utils\signing.py", line 511, in order_request_to_order_wire
+    "t": order_type_to_wire(order["order_type"]),
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\utils\signing.py", line 166, in order_type_to_wire
+    raise ValueError("Invalid order type", order_type)
+ValueError: ('Invalid order type', {'market': {}})
+
+2026-04-02 20:16:56 [INFO] Sleeping for 60 seconds...
+2026-04-02 20:17:09 [INFO] Trading loop stopped by user
+2026-04-02 20:17:10 [INFO] Trader stopped by user
+2026-04-02 20:17:10 [INFO] Test message: Trader is running
+2026-04-02 20:17:10 [INFO] DEBUG: Starting live trading mode...
+2026-04-02 20:17:11 [INFO] Live trading 有効化: env=mainnet, address=0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-04-02 20:17:11 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 20:17:11 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 20:17:11 [INFO] Trader initialized successfully
+2026-04-02 20:17:11 [INFO] Starting trading loop (live mode)...
+2026-04-02 20:17:11 [INFO] Current RSI: 26.64, Price: $66408.00
+2026-04-02 20:17:11 [INFO] [LIVE] Placing BUY: coin=BTC, qty=0.001500, notional~$100.00
+2026-04-02 20:17:11 [ERROR] [LIVE] BUY order failed: ('Invalid order type', {'market': {}})
+2026-04-02 20:17:11 [ERROR] [LIVE] BUY traceback: Traceback (most recent call last):
+  File "C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py", line 398, in run
+    resp = self.exchange.order(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\exchange.py", line 141, in order
+    return self.bulk_orders([order], builder)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\exchange.py", line 146, in bulk_orders
+    order_wires: List[OrderWire] = [
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\exchange.py", line 147, in <listcomp>
+    order_request_to_order_wire(order, self.info.name_to_asset(order["coin"])) for order in order_requests
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\utils\signing.py", line 511, in order_request_to_order_wire
+    "t": order_type_to_wire(order["order_type"]),
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\utils\signing.py", line 166, in order_type_to_wire
+    raise ValueError("Invalid order type", order_type)
+ValueError: ('Invalid order type', {'market': {}})
+
+2026-04-02 20:17:11 [INFO] Sleeping for 60 seconds...
+2026-04-02 20:17:11 [INFO] Trading loop stopped by user

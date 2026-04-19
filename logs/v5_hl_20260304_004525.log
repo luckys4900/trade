@@ -1,0 +1,28 @@
+2026-03-04 00:45:25 [INFO] Mode: live | v5 Adaptive RSI (Hyperliquid Edition) | Days: 180
+2026-03-04 00:45:25 [INFO] Exchange: hyperliquid (Mainnet)
+2026-03-04 00:45:25 [INFO] Entering LIVE mode
+2026-03-04 00:45:25 [INFO] Hyperliquid Info API initialized (Mainnet)
+2026-03-04 00:45:25 [INFO] Hyperliquid Exchange API initialized for 0x8455b7... (Mainnet)
+2026-03-04 00:45:25 [INFO] Starting live loop (interval=60s)
+2026-03-04 00:45:25 [INFO] Exchange: Hyperliquid Mainnet
+2026-03-04 00:45:25 [INFO] --- Iteration 1 ---
+2026-03-04 00:45:25 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-04 00:45:26 [ERROR] Error fetching price for BTC: 'Info' object has no attribute 'l2_book'
+2026-03-04 00:45:26 [WARNING] Could not fetch live price, using close price
+2026-03-04 00:45:26 [ERROR] Error fetching balance: 'Exchange' object has no attribute 'get_user_state'
+2026-03-04 00:45:26 [DEBUG] DEBUG: Checking entries | Long signal: 0 | Short signal: 0 | Balance: $0.00
+2026-03-04 00:45:26 [INFO] Sleeping 60s until next bar...
+2026-03-04 00:46:26 [INFO] --- Iteration 2 ---
+2026-03-04 00:46:26 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-04 00:46:26 [ERROR] Error fetching price for BTC: 'Info' object has no attribute 'l2_book'
+2026-03-04 00:46:26 [WARNING] Could not fetch live price, using close price
+2026-03-04 00:46:26 [ERROR] Error fetching balance: 'Exchange' object has no attribute 'get_user_state'
+2026-03-04 00:46:26 [DEBUG] DEBUG: Checking entries | Long signal: 0 | Short signal: 0 | Balance: $0.00
+2026-03-04 00:46:26 [INFO] Sleeping 60s until next bar...
+2026-03-04 00:47:26 [INFO] --- Iteration 3 ---
+2026-03-04 00:47:26 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-04 00:47:26 [ERROR] Error fetching price for BTC: 'Info' object has no attribute 'l2_book'
+2026-03-04 00:47:26 [WARNING] Could not fetch live price, using close price
+2026-03-04 00:47:26 [ERROR] Error fetching balance: 'Exchange' object has no attribute 'get_user_state'
+2026-03-04 00:47:26 [DEBUG] DEBUG: Checking entries | Long signal: 0 | Short signal: 0 | Balance: $0.00
+2026-03-04 00:47:26 [INFO] Sleeping 60s until next bar...

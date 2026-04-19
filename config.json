@@ -1,0 +1,18 @@
+{
+  "secret_key": "0xb866b265cb6e38cd0aa179d773e794be18e2936333060de6c88e4c151be14f1c",
+  "account_address": "0x7dd9f0C23Fb61CA3f36B8414306310F963093c12",
+  "live_trading": true,
+  "environment": "mainnet",
+  "symbol": "BTC",
+  "timeframe": "4h",
+  "rsi_period": 14,
+  "rsi_overbought": 70,
+  "rsi_oversold": 30,
+  "sl_atr": 1.5,
+  "tp_atr": 3.0,
+  "equity_usd": 211.19,
+  "risk_pct": 0.02,
+  "leverage": 1,
+  "check_interval": 60,
+  "max_bars": 20
+}

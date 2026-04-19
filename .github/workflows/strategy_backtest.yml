@@ -1,0 +1,71 @@
+name: Strategy Backtest
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - "**/*.py"
+      - "**/*.json"
+      - "**/*.yml"
+      - "**/*.yaml"
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          # install any extra local requirements if needed
+
+      - name: Analyze strategy
+        env:
+          LLM_MODEL: openrouter
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          python scripts/analyze_strategy.py --commit
+
+      - name: Get last analysis status
+        id: last_analysis
+        run: |
+          python - <<'PY'
+          import json, os
+          with open('analysis_history.md', 'r', encoding='utf-8') as f:
+              lines = [ln for ln in f.read().splitlines() if ln.strip().startswith('{')]
+          last = json.loads(lines[-1])
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as fh:
+              fh.write(f"status={last['status']}\n")
+              fh.write(f"summary={last['summary']}\n")
+          PY
+
+      - name: Run backtest if implemented
+        if: steps.last_analysis.outputs.status == 'implemented'
+        run: |
+          python run_backtest.py > backtest_output.txt
+          python scripts/analyze_strategy.py --analysis_file backtest_output.txt --commit --force
+
+      - name: Publish PR comment
+        if: steps.last_analysis.outputs.status != ''
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const path = require('path');
+            const content = fs.readFileSync('analysis_history.md', 'utf8');
+            const lines = content.split('\n').filter(line => line.trim().startsWith('{'));
+            const last = lines[lines.length - 1];
+            await github.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `### Analysis Result\n${last}`
+            });

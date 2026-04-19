@@ -1,0 +1,72 @@
+====================================================================================================
+WHALE CANDIDATE ANALYSIS REPORT
+Generated: 2026-04-10T06:57:04.364108
+====================================================================================================
+
+EXECUTIVE SUMMARY
+----------------------------------------------------------------------------------------------------
+Total candidates analyzed: 3
+Average EV per trade: 0.80%
+Average Sortino: 4.19
+
+TOP 5 RECOMMENDED WHALE WALLETS
+----------------------------------------------------------------------------------------------------
+
+#1 0x863b676e5e4fea0541062c32983dc8f84749ca6d
+  Leaderboard ROI: 45.2%
+  Trades (90d): 43
+  Win Rate: 83.7%
+  EV per trade: 1.25%
+  Sortino: 9.69
+  Max Drawdown: -13.19%
+  Risk Score: 2/10 (lower=better)
+  Account Value: $0
+  Simulated Following EV: 3.41%
+
+  PROFESSIONAL ASSESSMENT:
+    Strengths: Excellent risk-adjusted returns; High win rate; Strong following alpha; Quick turnover
+    Concerns: None identified
+    Recommendation: STRONG BUY - Add to whale portfolio immediately
+
+
+#2 0x932bdd2d5e21475e62d2fea8158fc5974507cb1a
+  Leaderboard ROI: 38.7%
+  Trades (90d): 229
+  Win Rate: 48.5%
+  EV per trade: 0.61%
+  Sortino: 1.78
+  Max Drawdown: -15.30%
+  Risk Score: 2/10 (lower=better)
+  Account Value: $0
+  Simulated Following EV: 0.05%
+
+  PROFESSIONAL ASSESSMENT:
+    Strengths: Quick turnover
+    Concerns: Low win rate; Weak following alpha
+    Recommendation: HOLD - Potential candidate, needs more data
+
+
+#3 0x523852be2db1a76a0e088ecbff32e849544054e5
+  Leaderboard ROI: 32.4%
+  Trades (90d): 72
+  Win Rate: 70.8%
+  EV per trade: 0.53%
+  Sortino: 1.09
+  Max Drawdown: -7.58%
+  Risk Score: 1/10 (lower=better)
+  Account Value: $0
+  Simulated Following EV: 1.56%
+
+  PROFESSIONAL ASSESSMENT:
+    Strengths: High win rate; Controlled drawdown; Strong following alpha; Quick turnover
+    Concerns: Mediocre risk-adjusted returns
+    Recommendation: AVOID - Does not meet criteria
+
+
+FULL CANDIDATE TABLE
+----------------------------------------------------------------------------------------------------
+Rank  Address              EV%      Sortino    WR%      Trades     Risk     SimEV%    
+----------------------------------------------------------------------------------------------------
+1     0x863b676e5e4fea0541   1.25%     9.69   83.7%       43      2     3.41%
+2     0x932bdd2d5e21475e62   0.61%     1.78   48.5%      229      2     0.05%
+3     0x523852be2db1a76a0e   0.53%     1.09   70.8%       72      1     1.56%

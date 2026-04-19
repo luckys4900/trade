@@ -1,0 +1,6 @@
+Whale BTC-ETH Backtest Report
+Status: REJECTED
+EV: -0.1909%
+Win Rate: 60.71%
+Best Params: 3d / 6h
+Generated: 2026-04-19 11:33:27.766304

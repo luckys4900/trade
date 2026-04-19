@@ -1,0 +1,18 @@
+2026-03-18 04:47:47 [INFO] ======================================================================
+2026-03-18 04:47:47 [INFO]  BTC SHORT TRADING BOT - HYPERLIQUID
+2026-03-18 04:47:47 [INFO] ======================================================================
+2026-03-18 04:47:47 [INFO] Start time: 2026-03-18T04:47:47.982532
+2026-03-18 04:47:47 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\short_bot_20260318_044747.log
+2026-03-18 04:47:47 [INFO] ======================================================================
+2026-03-18 04:47:47 [INFO] Loaded config from C:\Users\user\Desktop\cursor\trade\config.json
+2026-03-18 04:47:47 [INFO] ShortBot initialized: symbol=BTC, timeframe=1h, paper_mode=False, rsi_overbought=60
+2026-03-18 04:47:47 [WARNING] ⚠️  LIVE TRADING MODE
+2026-03-18 04:47:47 [WARNING] Real money trades will be placed
+2026-03-18 04:47:47 [INFO] Starting short trading loop...
+2026-03-18 04:47:47 [INFO] Paper mode: False
+2026-03-18 04:47:47 [INFO] Check interval: 60 seconds
+
+2026-03-18 04:47:47 [INFO] === Bot cycle 2026-03-18T04:47:47.983532 ===
+2026-03-18 04:47:48 [INFO] Price: $74,525.00 | RSI: 56.2 | ATR: $620.34 | 24h change: -1.03%
+2026-03-18 04:47:48 [INFO] Sleeping 60s...
+

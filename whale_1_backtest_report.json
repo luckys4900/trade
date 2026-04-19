@@ -1,0 +1,85 @@
+{
+  "analysis": {
+    "total_trades": 3,
+    "win_rate": 1.0,
+    "avg_win": 2.1970939770330444,
+    "avg_loss": 0,
+    "max_win": 2.1970939770330444,
+    "max_loss": 0,
+    "ev_per_trade": 2.1970939770330444,
+    "sortino": 219709397.70330444,
+    "sharpe": 0,
+    "max_drawdown": 0.0,
+    "avg_hold_hours": 158.02740555555556,
+    "max_hold_hours": 158.02740555555556,
+    "min_hold_hours": 158.02740555555556,
+    "long_ev": 0,
+    "short_ev": 2.1970939770330444,
+    "long_trades": 0,
+    "short_trades": 3,
+    "coins": {
+      "SOL": {
+        "count": 3,
+        "ev": 2.1970939770330444,
+        "wr": 1.0
+      }
+    },
+    "monthly": {
+      "2025-05": {
+        "pnl": 6.591281931099133,
+        "trades": 3
+      }
+    },
+    "outcomes": [
+      2.1970939770330444,
+      2.1970939770330444,
+      2.1970939770330444
+    ]
+  },
+  "simulation": {
+    "initial_equity": 100000.0,
+    "final_equity": 106737.15917544246,
+    "total_return_pct": 6.737159175442459,
+    "cagr_pct": 6.737159175442464,
+    "max_drawdown_pct": 0.0,
+    "sharpe_ratio": 170865555.74883044,
+    "total_trades": 3,
+    "equity_curve": [
+      100000.0,
+      102197.09397703304,
+      104442.46017350524,
+      106737.15917544246
+    ],
+    "trades_log": [
+      {
+        "trade_num": 1,
+        "direction": "SHORT",
+        "entry_px": 170.68,
+        "exit_px": 166.93,
+        "pnl_pct": 2.1970939770330444,
+        "pnl_abs": 2197.093977033044,
+        "account_value": 102197.09397703304
+      },
+      {
+        "trade_num": 2,
+        "direction": "SHORT",
+        "entry_px": 170.68,
+        "exit_px": 166.93,
+        "pnl_pct": 2.1970939770330444,
+        "pnl_abs": 2245.366196472193,
+        "account_value": 104442.46017350524
+      },
+      {
+        "trade_num": 3,
+        "direction": "SHORT",
+        "entry_px": 170.68,
+        "exit_px": 166.93,
+        "pnl_pct": 2.1970939770330444,
+        "pnl_abs": 2294.6990019372197,
+        "account_value": 106737.15917544246
+      }
+    ]
+  },
+  "wallet": "0x863b676e5e4fea0541062c32983dc8f84749ca6d",
+  "backtest_date": "2026-04-10T07:06:31.383335"
+}

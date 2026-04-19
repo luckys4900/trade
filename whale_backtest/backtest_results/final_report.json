@@ -1,0 +1,14 @@
+{
+  "source": "LIVE_HYPERLIQUID_DATA",
+  "patterns_detected": 0,
+  "trades_analyzed": 0,
+  "baseline_ev": 0,
+  "baseline_win_rate": 0,
+  "optimized_ev": 0.0,
+  "best_params": {
+    "btc_hold_days": 3,
+    "eth_delay_hours": 6
+  },
+  "status": "REJECTED",
+  "timestamp": "2026-04-19T11:40:37.006284"
+}

@@ -1,0 +1,29 @@
+{"timestamp": "2026-04-02T21:25:17.977334", "message": "Trader process started"}
+2026-04-02 21:25:17 [INFO] ======================================================================
+2026-04-02 21:25:17 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-04-02 21:25:17 [INFO] ======================================================================
+2026-04-02 21:25:17 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-04-02 21:25:17 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-02 21:25:17 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-04-02 21:25:17 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260402_212517.log
+2026-04-02 21:25:17 [INFO] ======================================================================
+2026-04-02 21:25:17 [INFO] Test message: Trader is running
+2026-04-02 21:25:18 [INFO] [DEBUG] Secret key length: 66
+2026-04-02 21:25:18 [INFO] [DEBUG] Account address: 0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-04-02 21:25:18 [INFO] [DEBUG] Derived account address: 0x8455b70a5A0D942eB9A1598A0E9e1214a3b31B55
+2026-04-02 21:25:18 [INFO] [DEBUG] Using account address: 0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-04-02 21:25:18 [ERROR] Hyperliquid SDK 初期化に失敗: list index out of range. paper モードにフォールバックします。
+2026-04-02 21:25:18 [ERROR] Traceback: Traceback (most recent call last):
+  File "C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py", line 171, in __init__
+    self.info = Info(self.base_url, skip_ws=True)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\info.py", line 48, in __init__
+    base_info = spot_meta["tokens"][base]
+IndexError: list index out of range
+
+2026-04-02 21:25:18 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 21:25:18 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 21:25:18 [INFO] Trader initialized successfully
+2026-04-02 21:25:18 [INFO] Starting trading loop (paper mode)...
+2026-04-02 21:25:18 [INFO] Current RSI: 41.03, Price: $67028.00
+2026-04-02 21:25:18 [INFO] No signal (neutral/bearish, flat)
+2026-04-02 21:25:18 [INFO] Sleeping for 60 seconds...

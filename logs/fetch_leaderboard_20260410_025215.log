@@ -1,0 +1,5 @@
+2026-04-10 11:52:15,223 [INFO] === Hyperliquid Leaderboard Fetcher ===
+2026-04-10 11:52:15,223 [INFO] Fetching leaderboard (top 16)...
+2026-04-10 11:52:15,308 [WARNING] HL API returned 422
+2026-04-10 11:52:15,309 [ERROR] Failed to fetch leaderboard
+2026-04-10 11:52:15,309 [ERROR] No wallets fetched

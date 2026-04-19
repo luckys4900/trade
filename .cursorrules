@@ -1,0 +1,198 @@
+# Cursor Rules - Whale-Following Copy-Trading Bot Project
+
+This file ensures consistency across all development environments (Cursor IDE, Claude Code CLI, external LLMs).
+
+## Core Operating Principles
+
+**Reference**: CLAUDE.md (operational status) + DEVELOPMENT_PROCESS.md (workflow)
+
+### 1. CONTEXT MANAGEMENT - Most Critical
+
+- Monitor context in status bar (0-50% safe, 50-70% caution, 70%+ end session)
+- Never exceed 70% utilization in single session
+- After task completion: always use /clear to reset context
+- CLAUDE.md must stay < 500 lines (currently 174 ✓)
+
+**Why**: 27x token savings at session start with proper CLAUDE.md. Auto-compact at 85% loses conversation history.
+
+### 2. Process First - ALWAYS Follow This Order
+
+For ANY feature/fix, MUST follow:
+```
+1. /brainstorm      → validate requirements
+2. /plan            → document implementation strategy  
+3. Implement        → code changes (use subagents if multi-task)
+4. /review-pr       → quality assurance
+5. Merge            → integrate to main
+6. /clear           → reset context
+```
+
+**Why**: Process quality determines ROI, not raw model power. Plan-less implementation costs 5x more tokens, 30% slower.
+
+### 3. One Task = One Session
+
+- Complete single task fully
+- Run /clear when done
+- Start fresh session for next task
+- Never accumulate tasks in one session
+
+**Why**: Context compounds. Without cleanup, you waste tokens on unrelated conversations.
+
+### 4. Tool/Skill/MCP Selection
+
+**Priority order**:
+1. Check if Skill exists → use it (50 tokens header)
+2. Check if MCP exists → use it (5.7K tokens constant)
+3. API docs available? → Create Skill
+4. Create custom MCP only as last resort
+
+**Current project**: Superpowers skills enabled, no global MCPs (optimal)
+
+### 5. Parallel Development with Subagents
+
+When multiple independent tasks exist:
+```
+Don't: Sequential execution (45 min, 300K tokens)
+Do: Subagent-driven-development (5 min, 50K tokens in main)
+```
+
+Use `/subagent-driven-development` for:
+- Multiple strategy backtests
+- UI improvements + backend enhancements
+- Validation tasks
+
+Main session stays clean (<50% context).
+
+### 6. Git Workflow - Worktree for Isolation
+
+For parallel feature branches:
+```bash
+git worktree add ./worktrees/feature-X feature/X
+cd ./worktrees/feature-X
+# Work in isolation, no conflicts with main
+```
+
+**Use case**: Whale system v2 + bug fixes simultaneously
+
+---
+
+## Critical Files - DO NOT MODIFY WITHOUT PLAN
+
+| File | Status | Purpose |
+|------|--------|---------|
+| `qwen_unified_live.py` | 🔒 FROZEN | Main bot (30-day validation) |
+| `whale_monitor.py` | 🔒 FROZEN | Whale signal generation |
+| `macro_filter.py` | 🔒 FROZEN | Macro state tracking |
+| `config.json` | ⚠️ Params only | Strategy parameters |
+| `.env` | 🔒 NEVER COMMIT | API credentials |
+| `CLAUDE.md` | ✅ Reference | Operational guide |
+| `whale_wallets.json` | ⚠️ 3 wallets monitored | Configuration |
+
+## Mandatory Checks Before Implementation
+
+- [ ] Read CLAUDE.md first (project status)
+- [ ] Read DEVELOPMENT_PROCESS.md (workflow rules)
+- [ ] Check git status (no uncommitted changes)
+- [ ] Verify .env exists locally (NEVER commit)
+- [ ] Understand 30-day validation plan (ongoing since 2026-04-10)
+
+## After Every Change
+
+```bash
+# 1. Test changes
+pytest test_*.py
+
+# 2. Update PROJECT_STATUS.md with changelog
+# 3. Verify no secrets in git diff
+git diff --no-color | grep -i "key\|secret\|password" || echo "OK"
+
+# 4. Commit with conventional message
+git commit -m "feat/fix/refactor: description"
+
+# 5. Clean up session
+/clear
+```
+
+## Risk Management - Sacred Rules
+
+- **Max position size**: 40% of equity
+- **Max drawdown before halt**: 15%
+- **Consecutive loss limit**: 5 trades → stop trading
+- **Leverage**: 1.0x only (no margin)
+- **Live account**: $211.19 (small, validate on paper first)
+
+**Any change affecting these MUST go through full Brainstorm → Plan → Review cycle.**
+
+## When Context > 70%
+
+1. Save progress (git commit)
+2. Run `/clear`
+3. Start new session
+4. Check CLAUDE.md for project status
+5. Continue with fresh context budget
+
+## Switching Between Environments
+
+| From | To | Action |
+|------|-----|--------|
+| Claude Code CLI | Cursor IDE | Review CLAUDE.md + DEVELOPMENT_PROCESS.md |
+| Cursor IDE | Claude Code CLI | Same (both read CLAUDE.md) |
+| Any | External LLM | Reference AGENTS.md + AGENT_INSTRUCTIONS.md |
+
+All environments share: CLAUDE.md, DEVELOPMENT_PROCESS.md, CONTEXT_MANAGEMENT.md
+
+## Key Metrics to Track
+
+- **Session Context Usage**: Monitor via status line (target: <50%)
+- **Token Efficiency**: CLAUDE.md should save 27x tokens per session start
+- **Process Adherence**: Every task should follow Brainstorm→Plan→Implement→Review cycle
+- **30-Day Validation**: Track `trade_alignment_log.json` entries
+
+## Documentation References
+
+- **Operational**: CLAUDE.md (main guide)
+- **Process**: DEVELOPMENT_PROCESS.md (how to implement)
+- **Context**: CONTEXT_MANAGEMENT.md (budget management)
+- **Git**: GIT_WORKFLOW.md (worktree usage)
+- **Tools**: TOOLING.md (MCP vs Skills)
+- **Multi-Agent**: AGENTS.md + AGENT_INSTRUCTIONS.md
+
+## Status Check Command
+
+```bash
+# Quick verification
+./03_STATUS.lnk    # Windows
+# or
+python -c "import json; print(json.load(open('whale_signal.json')))" 2>/dev/null || echo "Signal not ready"
+```
+
+## Emergency Procedures
+
+**System overheats (unexpected losses)**:
+1. Stop all trading: `04_STOP.lnk`
+2. Review logs: `logs/unified_live_*.log`
+3. Check `whale_signal.json` timestamp
+4. Verify macro filter is not triggered
+5. Post mortem → git commit with incident notes
+
+**Context overflow (85%+)**:
+1. `/clear` immediately
+2. New session
+3. Do not attempt recovery in same context
+4. Archive old reports to DEVELOPMENT_COMPLETED/
+
+**API connection failure**:
+1. Check logs for error details
+2. Verify HL_PRIVATE_KEY in .env is correct
+3. Test connection: `python -c "from hyperliquid.client import Client; print(Client().get_ws_url())"`
+4. Restart system if needed: `04_STOP.lnk → 01_START.lnk`
+
+---
+
+## Last Updated
+
+Source: zostaff Claude Code Guide (X.com)
+Integrated: 2026-04-12
+Status: All environments aligned
+
+**Version**: 1.0

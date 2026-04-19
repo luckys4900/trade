@@ -1,0 +1,9 @@
+2026-04-19 05:22:39,486 [INFO] Loaded config with 3 wallets
+2026-04-19 05:22:39,486 [INFO] PatternDetector initialized with config: C:\Users\user\AppData\Local\Temp\pytest-of-user\pytest-21\test_load_monitored_wallets_fr0\whale_wallets.json
+2026-04-19 05:22:39,486 [INFO] Loaded 3 active wallets
+2026-04-19 05:22:39,494 [INFO] Loaded config with 2 wallets
+2026-04-19 05:22:39,494 [INFO] PatternDetector initialized with config: C:\Users\user\AppData\Local\Temp\pytest-of-user\pytest-21\test_load_monitored_wallets_in0\whale_wallets.json
+2026-04-19 05:22:39,494 [INFO] Loaded 1 active wallets
+2026-04-19 05:22:39,496 [WARNING] Config file not found: \nonexistent\whale_wallets.json
+2026-04-19 05:22:39,496 [INFO] PatternDetector initialized with config: \nonexistent\whale_wallets.json
+2026-04-19 05:22:39,496 [INFO] Loaded 0 active wallets

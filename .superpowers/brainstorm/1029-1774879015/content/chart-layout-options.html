@@ -1,0 +1,101 @@
+<h2>チャート表示レイアウト - 3つのアプローチ</h2>
+<p class="subtitle">リアルタイムチャート + グリッドレベル + エビデンス情報をどう配置するか</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Option A: 上下分割</div>
+        <div class="mockup-body" style="background: #f5f5f5; padding: 15px; border-radius: 4px;">
+          <div style="height: 200px; background: #fff; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center;">
+            <span style="color: #999; font-size: 12px;">📈 チャート（ローソク足+グリッドレベル）</span>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div style="height: 60px; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 8px; font-size: 11px;">
+              <div style="color: #666;">📊 エントリー準備度</div>
+              <div style="margin-top: 4px; height: 6px; background: #e0e0e0; border-radius: 2px;"></div>
+            </div>
+            <div style="height: 60px; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 8px; font-size: 11px;">
+              <div style="color: #666;">📈 RSI / ATR</div>
+              <div style="margin-top: 4px; color: #888; font-size: 10px;">RSI: 45 | ATR: 850</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>上下分割レイアウト</h3>
+      <p><strong>メリット:</strong> チャート領域が広い、シンプル<br/><strong>向き:</strong> デスクトップ中心</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Option B: 右サイドパネル</div>
+        <div class="mockup-body" style="background: #f5f5f5; padding: 15px; border-radius: 4px;">
+          <div style="display: flex; gap: 10px;">
+            <div style="flex: 2; height: 150px; background: #fff; border: 1px solid #ddd; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+              <span style="color: #999; font-size: 12px;">📈 チャート</span>
+            </div>
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 8px;">
+              <div style="height: 40px; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 8px; font-size: 10px; display: flex; align-items: center;">
+                <span style="color: #666;">💰 現在価格</span>
+              </div>
+              <div style="height: 40px; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 8px; font-size: 10px; display: flex; align-items: center;">
+                <span style="color: #666;">📊 次レベル</span>
+              </div>
+              <div style="height: 40px; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 8px; font-size: 10px; display: flex; align-items: center;">
+                <span style="color: #666;">⚡ RSI/ATR</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>右サイドパネル</h3>
+      <p><strong>メリット:</strong> ワイド対応、情報密度適切<br/><strong>向き:</strong> デスク/タブレット両対応</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Option C: ダッシュボード型</div>
+        <div class="mockup-body" style="background: #f5f5f5; padding: 15px; border-radius: 4px;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px;">
+            <div style="height: 30px; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 6px; font-size: 10px; display: flex; align-items: center;">
+              <span style="color: #888;">BTC: $67,234 ↑ 0.5%</span>
+            </div>
+            <div style="height: 30px; background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 6px; font-size: 10px; display: flex; align-items: center;">
+              <span style="color: #888;">次買い: $67,000 (↓0.35%)</span>
+            </div>
+          </div>
+          <div style="height: 100px; background: #fff; border: 1px solid #ddd; border-radius: 4px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center;">
+            <span style="color: #999; font-size: 12px;">📈 チャート（フルスクリーン）</span>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px;">
+            <div style="height: 45px; background: #f0f0f0; border: 1px solid #ddd; border-radius: 4px; padding: 6px; font-size: 9px; text-align: center;">
+              <div style="color: #666; margin-bottom: 2px;">準備度</div>
+              <div style="height: 4px; background: #ddd; border-radius: 2px; margin: 2px 0;"></div>
+              <div style="color: #888; font-size: 8px;">2% 接近</div>
+            </div>
+            <div style="height: 45px; background: #f0f0f0; border: 1px solid #ddd; border-radius: 4px; padding: 6px; font-size: 9px; text-align: center;">
+              <div style="color: #666; margin-bottom: 2px;">RSI</div>
+              <div style="color: #d9534f; font-weight: bold;">45</div>
+            </div>
+            <div style="height: 45px; background: #f0f0f0; border: 1px solid #ddd; border-radius: 4px; padding: 6px; font-size: 9px; text-align: center;">
+              <div style="color: #666; margin-bottom: 2px;">ATR</div>
+              <div style="color: #5cb85c; font-weight: bold;">850</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>ダッシュボード型</h3>
+      <p><strong>メリット:</strong> 全情報一覧、監視に最適<br/><strong>向き:</strong> リアルタイム監視用</p>
+    </div>
+  </div>
+</div>

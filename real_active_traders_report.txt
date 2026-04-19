@@ -1,0 +1,26 @@
+====================================================================================================
+REAL ACTIVE TRADER DISCOVERY REPORT
+Generated: 2026-04-10T08:48:29.143094
+====================================================================================================
+
+EXECUTIVE SUMMARY
+----------------------------------------------------------------------------------------------------
+Total qualified active traders: 1
+Average EV: 3.21%
+Average Sortino: 321067528.22
+Average Win Rate: 100.0%
+
+RECOMMENDED ACTIVE TRADERS
+----------------------------------------------------------------------------------------------------
+
+#1 0x932bdd2d5e21475e62d2fea8158fc5974507cb1a
+  Source: verified | Note: Whale_2 - High volume
+  BTC Trades (7d): 20
+  Win Rate: 100.0%
+  EV per trade: 3.21%
+  Sortino: 321067528.22
+  Max Drawdown: 0.00%
+  Days Since Last Trade: 2
+  Account Value: $614,910
+  Active Positions: 3
+  Recommendation: STRONG BUY

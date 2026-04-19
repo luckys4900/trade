@@ -1,0 +1,18 @@
+{"timestamp": "2026-03-29T01:10:04.702118", "message": "Trader process started"}
+2026-03-29 01:10:04 [INFO] ======================================================================
+2026-03-29 01:10:04 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-03-29 01:10:04 [INFO] ======================================================================
+2026-03-29 01:10:04 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-03-29 01:10:04 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-03-29 01:10:04 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-03-29 01:10:04 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260329_011004.log
+2026-03-29 01:10:04 [INFO] ======================================================================
+2026-03-29 01:10:04 [INFO] Test message: Trader is running
+2026-03-29 01:10:06 [INFO] Live trading 有効化: env=mainnet, address=0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-03-29 01:10:06 [INFO] Initialized trader for BTC with 1h timeframe
+2026-03-29 01:10:06 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-03-29 01:10:06 [INFO] Trader initialized successfully
+2026-03-29 01:10:06 [INFO] Starting trading loop (live mode)...
+2026-03-29 01:10:06 [INFO] Current RSI: 77.36, Price: $67057.00
+2026-03-29 01:10:06 [INFO] No signal (neutral/bearish, flat)
+2026-03-29 01:10:06 [INFO] Sleeping for 60 seconds...

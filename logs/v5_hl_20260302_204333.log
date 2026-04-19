@@ -1,0 +1,5 @@
+2026-03-02 20:43:33 [INFO] Mode: backtest | v5 Adaptive RSI (Hyperliquid Edition) | Days: 1
+2026-03-02 20:43:33 [INFO] Exchange: hyperliquid (Mainnet)
+2026-03-02 20:43:33 [INFO] Entering BACKTEST mode
+2026-03-02 20:43:33 [INFO] CSV cache: btc_usdt_4h.csv (6 bars)
+2026-03-02 20:43:33 [ERROR] No data after indicators computation

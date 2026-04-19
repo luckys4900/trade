@@ -1,0 +1,8 @@
+2026-04-10 14:41:09,622 [INFO] Loaded config: 4 wallets
+2026-04-10 14:41:09,622 [INFO] === Run Once ===
+2026-04-10 14:41:09,963 [DEBUG] Whale_1: 2000 fills, <1 trades -> skipped
+2026-04-10 14:41:11,366 [DEBUG] Whale_2: 2000 fills, <1 trades -> skipped
+2026-04-10 14:41:11,796 [DEBUG] Whale_3: 2000 fills, <1 trades -> skipped
+2026-04-10 14:41:11,959 [DEBUG] Whale_4: 121 fills, <1 trades -> skipped
+2026-04-10 14:41:11,959 [WARNING] No qualified wallets
+2026-04-10 14:41:11,964 [INFO] Signal written: NONE, strength=0.00, valid=False

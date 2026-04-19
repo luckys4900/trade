@@ -1,0 +1,20 @@
+{"timestamp": "2026-04-02T21:28:09.031331", "message": "Trader process started"}
+2026-04-02 21:28:09 [INFO] ======================================================================
+2026-04-02 21:28:09 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-04-02 21:28:09 [INFO] ======================================================================
+2026-04-02 21:28:09 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-04-02 21:28:09 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-02 21:28:09 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-04-02 21:28:09 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260402_212809.log
+2026-04-02 21:28:09 [INFO] ======================================================================
+2026-04-02 21:28:09 [INFO] Test message: Trader is running
+2026-04-02 21:28:09 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 21:28:09 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 21:28:09 [INFO] Trader initialized successfully
+2026-04-02 21:28:09 [INFO] Starting trading loop (paper mode)...
+2026-04-02 21:28:09 [INFO] Current RSI: 26.23, Price: $66108.00
+2026-04-02 21:28:09 [INFO] [PAPER] BUY signal: RSI 26.23 <= 30 (paper position opened, no real order sent)
+2026-04-02 21:28:09 [INFO] Sleeping for 60 seconds...
+2026-04-02 21:29:09 [INFO] Current RSI: 26.13, Price: $66092.00
+2026-04-02 21:29:09 [INFO] Holding position (no sell signal)
+2026-04-02 21:29:09 [INFO] Sleeping for 60 seconds...

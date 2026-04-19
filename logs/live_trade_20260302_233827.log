@@ -1,0 +1,945 @@
+2026-03-02 23:38:27 [INFO] ======================================================================
+2026-03-02 23:38:27 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-03-02 23:38:27 [INFO] ======================================================================
+2026-03-02 23:38:27 [INFO] Mode: LIVE TRADING
+2026-03-02 23:38:27 [INFO] API: Hyperliquid
+2026-03-02 23:38:27 [INFO] Lookback: 180 days
+2026-03-02 23:38:27 [INFO] ======================================================================
+2026-03-02 23:38:27 [INFO] Mode: LIVE | v5 Adaptive RSI
+2026-03-02 23:38:27 [INFO] API Key: 0x8455b7...1b55
+2026-03-02 23:38:27 [INFO] Initializing Hyperliquid API (LIVE mode)
+2026-03-02 23:38:27 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-02 23:38:27 [INFO] Initial equity: $100.00
+2026-03-02 23:38:27 [INFO] Unrealized PnL: $0.00
+2026-03-02 23:38:27 [INFO] CSV cache: btc_usdt_4h.csv (2190 bars)
+2026-03-02 23:38:27 [INFO] Data: 2025-03-02 16:00:00 -> 2026-03-02 12:00:00 (2190 bars)
+2026-03-02 23:38:27 [INFO] Regimes: {'RANGE': 877, 'BEAR': 748, 'BULL': 565}
+2026-03-02 23:38:27 [INFO] Long signals: 5, Short signals: 10
+2026-03-02 23:38:27 [INFO] Waiting for next 4h bar (interval: 240 min)...
+2026-03-02 23:38:27 [ERROR] Get market state error: 'spot'
+2026-03-02 23:38:27 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-02 23:38:27 [INFO] 
+======================================================================
+2026-03-02 23:38:27 [INFO] Time: 2026-03-02 23:38:27
+2026-03-02 23:38:27 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-02 23:38:27 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-02 23:38:27 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-02 23:38:27 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-02 23:42:27 [ERROR] Get market state error: 'spot'
+2026-03-02 23:42:27 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-02 23:42:27 [INFO] 
+======================================================================
+2026-03-02 23:42:27 [INFO] Time: 2026-03-02 23:42:27
+2026-03-02 23:42:27 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-02 23:42:27 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-02 23:42:27 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-02 23:42:27 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-02 23:46:28 [ERROR] Get market state error: 'spot'
+2026-03-02 23:46:28 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-02 23:46:28 [INFO] 
+======================================================================
+2026-03-02 23:46:28 [INFO] Time: 2026-03-02 23:46:28
+2026-03-02 23:46:28 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-02 23:46:28 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-02 23:46:28 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-02 23:46:28 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-02 23:50:28 [ERROR] Get market state error: 'spot'
+2026-03-02 23:50:28 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-02 23:50:28 [INFO] 
+======================================================================
+2026-03-02 23:50:28 [INFO] Time: 2026-03-02 23:50:28
+2026-03-02 23:50:28 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-02 23:50:28 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-02 23:50:28 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-02 23:50:28 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-02 23:54:29 [ERROR] Get market state error: 'spot'
+2026-03-02 23:54:29 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-02 23:54:29 [INFO] 
+======================================================================
+2026-03-02 23:54:29 [INFO] Time: 2026-03-02 23:54:29
+2026-03-02 23:54:29 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-02 23:54:29 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-02 23:54:29 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-02 23:54:29 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-02 23:58:29 [ERROR] Get market state error: 'spot'
+2026-03-02 23:58:29 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-02 23:58:29 [INFO] 
+======================================================================
+2026-03-02 23:58:29 [INFO] Time: 2026-03-02 23:58:29
+2026-03-02 23:58:29 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-02 23:58:29 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-02 23:58:29 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-02 23:58:29 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:02:29 [ERROR] Get market state error: 'spot'
+2026-03-03 00:02:29 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:02:29 [INFO] 
+======================================================================
+2026-03-03 00:02:29 [INFO] Time: 2026-03-03 00:02:29
+2026-03-03 00:02:29 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:02:29 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:02:29 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:02:29 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:06:29 [ERROR] Get market state error: 'spot'
+2026-03-03 00:06:29 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:06:29 [INFO] 
+======================================================================
+2026-03-03 00:06:29 [INFO] Time: 2026-03-03 00:06:29
+2026-03-03 00:06:29 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:06:29 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:06:29 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:06:29 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:10:30 [ERROR] Get market state error: 'spot'
+2026-03-03 00:10:30 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:10:30 [INFO] 
+======================================================================
+2026-03-03 00:10:30 [INFO] Time: 2026-03-03 00:10:30
+2026-03-03 00:10:30 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:10:30 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:10:30 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:10:30 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:14:30 [ERROR] Get market state error: 'spot'
+2026-03-03 00:14:30 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:14:30 [INFO] 
+======================================================================
+2026-03-03 00:14:30 [INFO] Time: 2026-03-03 00:14:30
+2026-03-03 00:14:30 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:14:30 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:14:30 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:14:30 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:18:31 [ERROR] Get market state error: 'spot'
+2026-03-03 00:18:31 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:18:31 [INFO] 
+======================================================================
+2026-03-03 00:18:31 [INFO] Time: 2026-03-03 00:18:31
+2026-03-03 00:18:31 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:18:31 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:18:31 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:18:31 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:22:31 [ERROR] Get market state error: 'spot'
+2026-03-03 00:22:31 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:22:31 [INFO] 
+======================================================================
+2026-03-03 00:22:31 [INFO] Time: 2026-03-03 00:22:31
+2026-03-03 00:22:31 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:22:31 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:22:31 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:22:31 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:26:31 [ERROR] Get market state error: 'spot'
+2026-03-03 00:26:31 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:26:31 [INFO] 
+======================================================================
+2026-03-03 00:26:31 [INFO] Time: 2026-03-03 00:26:31
+2026-03-03 00:26:31 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:26:31 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:26:31 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:26:31 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:30:32 [ERROR] Get market state error: 'spot'
+2026-03-03 00:30:32 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:30:32 [INFO] 
+======================================================================
+2026-03-03 00:30:32 [INFO] Time: 2026-03-03 00:30:32
+2026-03-03 00:30:32 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:30:32 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:30:32 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:30:32 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:34:32 [ERROR] Get market state error: 'spot'
+2026-03-03 00:34:32 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:34:32 [INFO] 
+======================================================================
+2026-03-03 00:34:32 [INFO] Time: 2026-03-03 00:34:32
+2026-03-03 00:34:32 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:34:32 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:34:32 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:34:32 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:38:32 [ERROR] Get market state error: 'spot'
+2026-03-03 00:38:32 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:38:32 [INFO] 
+======================================================================
+2026-03-03 00:38:32 [INFO] Time: 2026-03-03 00:38:32
+2026-03-03 00:38:32 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:38:32 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:38:32 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:38:32 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:42:32 [ERROR] Get market state error: 'spot'
+2026-03-03 00:42:32 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:42:32 [INFO] 
+======================================================================
+2026-03-03 00:42:32 [INFO] Time: 2026-03-03 00:42:32
+2026-03-03 00:42:32 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:42:32 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:42:32 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:42:32 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:46:33 [ERROR] Get market state error: 'spot'
+2026-03-03 00:46:33 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:46:33 [INFO] 
+======================================================================
+2026-03-03 00:46:33 [INFO] Time: 2026-03-03 00:46:33
+2026-03-03 00:46:33 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:46:33 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:46:33 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:46:33 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:50:33 [ERROR] Get market state error: 'spot'
+2026-03-03 00:50:33 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:50:33 [INFO] 
+======================================================================
+2026-03-03 00:50:33 [INFO] Time: 2026-03-03 00:50:33
+2026-03-03 00:50:33 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:50:33 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:50:33 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:50:33 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:54:34 [ERROR] Get market state error: 'spot'
+2026-03-03 00:54:34 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:54:34 [INFO] 
+======================================================================
+2026-03-03 00:54:34 [INFO] Time: 2026-03-03 00:54:34
+2026-03-03 00:54:34 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:54:34 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:54:34 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:54:34 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 00:58:34 [ERROR] Get market state error: 'spot'
+2026-03-03 00:58:34 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 00:58:34 [INFO] 
+======================================================================
+2026-03-03 00:58:34 [INFO] Time: 2026-03-03 00:58:34
+2026-03-03 00:58:34 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 00:58:34 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 00:58:34 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 00:58:34 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:02:34 [ERROR] Get market state error: 'spot'
+2026-03-03 01:02:34 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:02:34 [INFO] 
+======================================================================
+2026-03-03 01:02:34 [INFO] Time: 2026-03-03 01:02:34
+2026-03-03 01:02:34 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:02:34 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:02:34 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:02:34 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:06:34 [ERROR] Get market state error: 'spot'
+2026-03-03 01:06:34 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:06:34 [INFO] 
+======================================================================
+2026-03-03 01:06:34 [INFO] Time: 2026-03-03 01:06:34
+2026-03-03 01:06:34 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:06:34 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:06:34 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:06:34 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:10:35 [ERROR] Get market state error: 'spot'
+2026-03-03 01:10:35 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:10:35 [INFO] 
+======================================================================
+2026-03-03 01:10:35 [INFO] Time: 2026-03-03 01:10:35
+2026-03-03 01:10:35 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:10:35 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:10:35 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:10:35 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:14:35 [ERROR] Get market state error: 'spot'
+2026-03-03 01:14:35 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:14:35 [INFO] 
+======================================================================
+2026-03-03 01:14:35 [INFO] Time: 2026-03-03 01:14:35
+2026-03-03 01:14:35 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:14:35 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:14:35 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:14:35 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:18:35 [ERROR] Get market state error: 'spot'
+2026-03-03 01:18:35 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:18:35 [INFO] 
+======================================================================
+2026-03-03 01:18:35 [INFO] Time: 2026-03-03 01:18:35
+2026-03-03 01:18:35 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:18:35 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:18:35 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:18:35 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:22:35 [ERROR] Get market state error: 'spot'
+2026-03-03 01:22:35 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:22:35 [INFO] 
+======================================================================
+2026-03-03 01:22:35 [INFO] Time: 2026-03-03 01:22:35
+2026-03-03 01:22:35 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:22:35 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:22:35 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:22:35 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:26:36 [ERROR] Get market state error: 'spot'
+2026-03-03 01:26:36 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:26:36 [INFO] 
+======================================================================
+2026-03-03 01:26:36 [INFO] Time: 2026-03-03 01:26:36
+2026-03-03 01:26:36 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:26:36 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:26:36 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:26:36 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:30:36 [ERROR] Get market state error: 'spot'
+2026-03-03 01:30:36 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:30:36 [INFO] 
+======================================================================
+2026-03-03 01:30:36 [INFO] Time: 2026-03-03 01:30:36
+2026-03-03 01:30:36 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:30:36 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:30:36 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:30:36 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:34:37 [ERROR] Get market state error: 'spot'
+2026-03-03 01:34:37 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:34:37 [INFO] 
+======================================================================
+2026-03-03 01:34:37 [INFO] Time: 2026-03-03 01:34:37
+2026-03-03 01:34:37 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:34:37 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:34:37 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:34:37 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:38:37 [ERROR] Get market state error: 'spot'
+2026-03-03 01:38:37 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:38:37 [INFO] 
+======================================================================
+2026-03-03 01:38:37 [INFO] Time: 2026-03-03 01:38:37
+2026-03-03 01:38:37 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:38:37 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:38:37 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:38:37 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:42:38 [ERROR] Get market state error: 'spot'
+2026-03-03 01:42:38 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:42:38 [INFO] 
+======================================================================
+2026-03-03 01:42:38 [INFO] Time: 2026-03-03 01:42:38
+2026-03-03 01:42:38 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:42:38 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:42:38 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:42:38 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:46:39 [ERROR] Get market state error: 'spot'
+2026-03-03 01:46:39 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:46:39 [INFO] 
+======================================================================
+2026-03-03 01:46:39 [INFO] Time: 2026-03-03 01:46:39
+2026-03-03 01:46:39 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:46:39 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:46:39 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:46:39 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:50:39 [ERROR] Get market state error: 'spot'
+2026-03-03 01:50:39 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:50:39 [INFO] 
+======================================================================
+2026-03-03 01:50:39 [INFO] Time: 2026-03-03 01:50:39
+2026-03-03 01:50:39 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:50:39 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:50:39 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:50:39 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:54:39 [ERROR] Get market state error: 'spot'
+2026-03-03 01:54:39 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:54:39 [INFO] 
+======================================================================
+2026-03-03 01:54:39 [INFO] Time: 2026-03-03 01:54:39
+2026-03-03 01:54:39 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:54:39 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:54:39 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:54:39 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 01:58:40 [ERROR] Get market state error: 'spot'
+2026-03-03 01:58:40 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 01:58:40 [INFO] 
+======================================================================
+2026-03-03 01:58:40 [INFO] Time: 2026-03-03 01:58:40
+2026-03-03 01:58:40 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 01:58:40 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 01:58:40 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 01:58:40 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:02:40 [ERROR] Get market state error: 'spot'
+2026-03-03 02:02:40 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:02:40 [INFO] 
+======================================================================
+2026-03-03 02:02:40 [INFO] Time: 2026-03-03 02:02:40
+2026-03-03 02:02:40 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:02:40 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:02:40 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:02:40 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:06:40 [ERROR] Get market state error: 'spot'
+2026-03-03 02:06:40 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:06:40 [INFO] 
+======================================================================
+2026-03-03 02:06:40 [INFO] Time: 2026-03-03 02:06:40
+2026-03-03 02:06:40 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:06:40 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:06:40 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:06:40 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:10:40 [ERROR] Get market state error: 'spot'
+2026-03-03 02:10:40 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:10:40 [INFO] 
+======================================================================
+2026-03-03 02:10:40 [INFO] Time: 2026-03-03 02:10:40
+2026-03-03 02:10:40 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:10:40 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:10:40 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:10:40 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:14:41 [ERROR] Get market state error: 'spot'
+2026-03-03 02:14:41 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:14:41 [INFO] 
+======================================================================
+2026-03-03 02:14:41 [INFO] Time: 2026-03-03 02:14:41
+2026-03-03 02:14:41 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:14:41 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:14:41 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:14:41 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:18:41 [ERROR] Get market state error: 'spot'
+2026-03-03 02:18:41 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:18:41 [INFO] 
+======================================================================
+2026-03-03 02:18:41 [INFO] Time: 2026-03-03 02:18:41
+2026-03-03 02:18:41 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:18:41 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:18:41 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:18:41 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:22:41 [ERROR] Get market state error: 'spot'
+2026-03-03 02:22:41 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:22:41 [INFO] 
+======================================================================
+2026-03-03 02:22:41 [INFO] Time: 2026-03-03 02:22:41
+2026-03-03 02:22:41 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:22:41 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:22:41 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:22:41 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:26:42 [ERROR] Get market state error: 'spot'
+2026-03-03 02:26:42 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:26:42 [INFO] 
+======================================================================
+2026-03-03 02:26:42 [INFO] Time: 2026-03-03 02:26:42
+2026-03-03 02:26:42 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:26:42 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:26:42 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:26:42 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:30:42 [ERROR] Get market state error: 'spot'
+2026-03-03 02:30:42 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:30:42 [INFO] 
+======================================================================
+2026-03-03 02:30:42 [INFO] Time: 2026-03-03 02:30:42
+2026-03-03 02:30:42 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:30:42 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:30:42 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:30:42 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:34:42 [ERROR] Get market state error: 'spot'
+2026-03-03 02:34:42 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:34:42 [INFO] 
+======================================================================
+2026-03-03 02:34:42 [INFO] Time: 2026-03-03 02:34:42
+2026-03-03 02:34:42 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:34:42 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:34:42 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:34:42 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:38:42 [ERROR] Get market state error: 'spot'
+2026-03-03 02:38:42 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:38:42 [INFO] 
+======================================================================
+2026-03-03 02:38:42 [INFO] Time: 2026-03-03 02:38:42
+2026-03-03 02:38:42 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:38:42 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:38:42 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:38:42 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:42:43 [ERROR] Get market state error: 'spot'
+2026-03-03 02:42:43 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:42:43 [INFO] 
+======================================================================
+2026-03-03 02:42:43 [INFO] Time: 2026-03-03 02:42:43
+2026-03-03 02:42:43 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:42:43 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:42:43 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:42:43 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:46:43 [ERROR] Get market state error: 'spot'
+2026-03-03 02:46:43 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:46:43 [INFO] 
+======================================================================
+2026-03-03 02:46:43 [INFO] Time: 2026-03-03 02:46:43
+2026-03-03 02:46:43 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:46:43 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:46:43 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:46:43 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:50:43 [ERROR] Get market state error: 'spot'
+2026-03-03 02:50:43 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:50:43 [INFO] 
+======================================================================
+2026-03-03 02:50:43 [INFO] Time: 2026-03-03 02:50:43
+2026-03-03 02:50:43 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:50:43 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:50:43 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:50:43 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:54:44 [ERROR] Get market state error: 'spot'
+2026-03-03 02:54:44 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:54:44 [INFO] 
+======================================================================
+2026-03-03 02:54:44 [INFO] Time: 2026-03-03 02:54:44
+2026-03-03 02:54:44 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:54:44 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:54:44 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:54:44 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 02:58:45 [ERROR] Get market state error: 'spot'
+2026-03-03 02:58:45 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 02:58:45 [INFO] 
+======================================================================
+2026-03-03 02:58:45 [INFO] Time: 2026-03-03 02:58:45
+2026-03-03 02:58:45 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 02:58:45 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 02:58:45 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 02:58:45 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:02:45 [ERROR] Get market state error: 'spot'
+2026-03-03 03:02:45 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:02:45 [INFO] 
+======================================================================
+2026-03-03 03:02:45 [INFO] Time: 2026-03-03 03:02:45
+2026-03-03 03:02:45 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:02:45 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:02:45 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:02:45 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:06:45 [ERROR] Get market state error: 'spot'
+2026-03-03 03:06:45 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:06:45 [INFO] 
+======================================================================
+2026-03-03 03:06:45 [INFO] Time: 2026-03-03 03:06:45
+2026-03-03 03:06:45 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:06:45 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:06:45 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:06:45 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:10:46 [ERROR] Get market state error: 'spot'
+2026-03-03 03:10:46 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:10:46 [INFO] 
+======================================================================
+2026-03-03 03:10:46 [INFO] Time: 2026-03-03 03:10:46
+2026-03-03 03:10:46 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:10:46 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:10:46 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:10:46 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:14:46 [ERROR] Get market state error: 'spot'
+2026-03-03 03:14:46 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:14:46 [INFO] 
+======================================================================
+2026-03-03 03:14:46 [INFO] Time: 2026-03-03 03:14:46
+2026-03-03 03:14:46 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:14:46 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:14:46 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:14:46 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:18:46 [ERROR] Get market state error: 'spot'
+2026-03-03 03:18:46 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:18:46 [INFO] 
+======================================================================
+2026-03-03 03:18:46 [INFO] Time: 2026-03-03 03:18:46
+2026-03-03 03:18:46 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:18:46 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:18:46 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:18:46 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:22:46 [ERROR] Get market state error: 'spot'
+2026-03-03 03:22:46 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:22:46 [INFO] 
+======================================================================
+2026-03-03 03:22:46 [INFO] Time: 2026-03-03 03:22:46
+2026-03-03 03:22:46 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:22:46 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:22:46 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:22:46 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:26:47 [ERROR] Get market state error: 'spot'
+2026-03-03 03:26:47 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:26:47 [INFO] 
+======================================================================
+2026-03-03 03:26:47 [INFO] Time: 2026-03-03 03:26:47
+2026-03-03 03:26:47 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:26:47 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:26:47 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:26:47 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:30:47 [ERROR] Get market state error: 'spot'
+2026-03-03 03:30:47 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:30:47 [INFO] 
+======================================================================
+2026-03-03 03:30:47 [INFO] Time: 2026-03-03 03:30:47
+2026-03-03 03:30:47 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:30:47 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:30:47 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:30:47 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:34:47 [ERROR] Get market state error: 'spot'
+2026-03-03 03:34:47 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:34:47 [INFO] 
+======================================================================
+2026-03-03 03:34:47 [INFO] Time: 2026-03-03 03:34:47
+2026-03-03 03:34:47 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:34:47 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:34:47 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:34:47 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:38:47 [ERROR] Get market state error: 'spot'
+2026-03-03 03:38:47 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:38:47 [INFO] 
+======================================================================
+2026-03-03 03:38:47 [INFO] Time: 2026-03-03 03:38:47
+2026-03-03 03:38:47 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:38:47 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:38:47 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:38:47 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:42:48 [ERROR] Get market state error: 'spot'
+2026-03-03 03:42:48 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:42:48 [INFO] 
+======================================================================
+2026-03-03 03:42:48 [INFO] Time: 2026-03-03 03:42:48
+2026-03-03 03:42:48 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:42:48 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:42:48 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:42:48 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:46:48 [ERROR] Get market state error: 'spot'
+2026-03-03 03:46:48 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:46:48 [INFO] 
+======================================================================
+2026-03-03 03:46:48 [INFO] Time: 2026-03-03 03:46:48
+2026-03-03 03:46:48 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:46:48 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:46:48 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:46:48 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:50:48 [ERROR] Get market state error: 'spot'
+2026-03-03 03:50:48 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:50:48 [INFO] 
+======================================================================
+2026-03-03 03:50:48 [INFO] Time: 2026-03-03 03:50:48
+2026-03-03 03:50:48 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:50:48 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:50:48 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:50:48 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:54:49 [ERROR] Get market state error: 'spot'
+2026-03-03 03:54:49 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:54:49 [INFO] 
+======================================================================
+2026-03-03 03:54:49 [INFO] Time: 2026-03-03 03:54:49
+2026-03-03 03:54:49 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:54:49 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:54:49 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:54:49 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 03:58:49 [ERROR] Get market state error: 'spot'
+2026-03-03 03:58:49 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 03:58:49 [INFO] 
+======================================================================
+2026-03-03 03:58:49 [INFO] Time: 2026-03-03 03:58:49
+2026-03-03 03:58:49 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 03:58:49 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 03:58:49 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 03:58:49 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:02:49 [ERROR] Get market state error: 'spot'
+2026-03-03 04:02:49 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:02:49 [INFO] 
+======================================================================
+2026-03-03 04:02:49 [INFO] Time: 2026-03-03 04:02:49
+2026-03-03 04:02:49 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:02:49 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:02:49 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:02:49 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:06:49 [ERROR] Get market state error: 'spot'
+2026-03-03 04:06:49 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:06:49 [INFO] 
+======================================================================
+2026-03-03 04:06:49 [INFO] Time: 2026-03-03 04:06:49
+2026-03-03 04:06:49 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:06:49 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:06:49 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:06:49 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:10:50 [ERROR] Get market state error: 'spot'
+2026-03-03 04:10:50 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:10:50 [INFO] 
+======================================================================
+2026-03-03 04:10:50 [INFO] Time: 2026-03-03 04:10:50
+2026-03-03 04:10:50 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:10:50 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:10:50 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:10:50 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:14:50 [ERROR] Get market state error: 'spot'
+2026-03-03 04:14:50 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:14:50 [INFO] 
+======================================================================
+2026-03-03 04:14:50 [INFO] Time: 2026-03-03 04:14:50
+2026-03-03 04:14:50 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:14:50 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:14:50 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:14:50 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:18:50 [ERROR] Get market state error: 'spot'
+2026-03-03 04:18:50 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:18:50 [INFO] 
+======================================================================
+2026-03-03 04:18:50 [INFO] Time: 2026-03-03 04:18:50
+2026-03-03 04:18:50 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:18:50 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:18:50 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:18:50 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:22:50 [ERROR] Get market state error: 'spot'
+2026-03-03 04:22:50 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:22:50 [INFO] 
+======================================================================
+2026-03-03 04:22:50 [INFO] Time: 2026-03-03 04:22:50
+2026-03-03 04:22:50 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:22:50 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:22:50 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:22:50 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:26:51 [ERROR] Get market state error: 'spot'
+2026-03-03 04:26:51 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:26:51 [INFO] 
+======================================================================
+2026-03-03 04:26:51 [INFO] Time: 2026-03-03 04:26:51
+2026-03-03 04:26:51 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:26:51 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:26:51 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:26:51 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:30:51 [ERROR] Get market state error: 'spot'
+2026-03-03 04:30:51 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:30:51 [INFO] 
+======================================================================
+2026-03-03 04:30:51 [INFO] Time: 2026-03-03 04:30:51
+2026-03-03 04:30:51 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:30:51 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:30:51 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:30:51 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:34:51 [ERROR] Get market state error: 'spot'
+2026-03-03 04:34:51 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:34:51 [INFO] 
+======================================================================
+2026-03-03 04:34:51 [INFO] Time: 2026-03-03 04:34:51
+2026-03-03 04:34:51 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:34:51 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:34:51 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:34:51 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:38:52 [ERROR] Get market state error: 'spot'
+2026-03-03 04:38:52 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:38:52 [INFO] 
+======================================================================
+2026-03-03 04:38:52 [INFO] Time: 2026-03-03 04:38:52
+2026-03-03 04:38:52 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:38:52 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:38:52 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:38:52 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:42:52 [ERROR] Get market state error: 'spot'
+2026-03-03 04:42:52 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:42:52 [INFO] 
+======================================================================
+2026-03-03 04:42:52 [INFO] Time: 2026-03-03 04:42:52
+2026-03-03 04:42:52 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:42:52 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:42:52 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:42:52 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:46:52 [ERROR] Get market state error: 'spot'
+2026-03-03 04:46:52 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:46:52 [INFO] 
+======================================================================
+2026-03-03 04:46:52 [INFO] Time: 2026-03-03 04:46:52
+2026-03-03 04:46:52 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:46:52 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:46:52 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:46:52 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:50:53 [ERROR] Get market state error: 'spot'
+2026-03-03 04:50:53 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:50:53 [INFO] 
+======================================================================
+2026-03-03 04:50:53 [INFO] Time: 2026-03-03 04:50:53
+2026-03-03 04:50:53 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:50:53 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:50:53 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:50:53 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:54:53 [ERROR] Get market state error: 'spot'
+2026-03-03 04:54:53 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:54:53 [INFO] 
+======================================================================
+2026-03-03 04:54:53 [INFO] Time: 2026-03-03 04:54:53
+2026-03-03 04:54:53 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:54:53 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:54:53 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:54:53 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 04:58:54 [ERROR] Get market state error: 'spot'
+2026-03-03 04:58:54 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 04:58:54 [INFO] 
+======================================================================
+2026-03-03 04:58:54 [INFO] Time: 2026-03-03 04:58:54
+2026-03-03 04:58:54 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 04:58:54 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 04:58:54 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 04:58:54 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:02:54 [ERROR] Get market state error: 'spot'
+2026-03-03 05:02:54 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:02:54 [INFO] 
+======================================================================
+2026-03-03 05:02:54 [INFO] Time: 2026-03-03 05:02:54
+2026-03-03 05:02:54 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:02:54 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:02:54 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:02:54 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:06:54 [ERROR] Get market state error: 'spot'
+2026-03-03 05:06:54 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:06:54 [INFO] 
+======================================================================
+2026-03-03 05:06:54 [INFO] Time: 2026-03-03 05:06:54
+2026-03-03 05:06:54 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:06:54 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:06:54 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:06:54 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:10:54 [ERROR] Get market state error: 'spot'
+2026-03-03 05:10:54 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:10:54 [INFO] 
+======================================================================
+2026-03-03 05:10:54 [INFO] Time: 2026-03-03 05:10:54
+2026-03-03 05:10:54 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:10:54 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:10:54 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:10:54 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:14:55 [ERROR] Get market state error: 'spot'
+2026-03-03 05:14:55 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:14:55 [INFO] 
+======================================================================
+2026-03-03 05:14:55 [INFO] Time: 2026-03-03 05:14:55
+2026-03-03 05:14:55 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:14:55 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:14:55 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:14:55 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:18:55 [ERROR] Get market state error: 'spot'
+2026-03-03 05:18:55 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:18:55 [INFO] 
+======================================================================
+2026-03-03 05:18:55 [INFO] Time: 2026-03-03 05:18:55
+2026-03-03 05:18:55 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:18:55 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:18:55 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:18:55 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:22:56 [ERROR] Get market state error: 'spot'
+2026-03-03 05:22:56 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:22:56 [INFO] 
+======================================================================
+2026-03-03 05:22:56 [INFO] Time: 2026-03-03 05:22:56
+2026-03-03 05:22:56 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:22:56 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:22:56 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:22:56 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:26:56 [ERROR] Get market state error: 'spot'
+2026-03-03 05:26:56 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:26:56 [INFO] 
+======================================================================
+2026-03-03 05:26:56 [INFO] Time: 2026-03-03 05:26:56
+2026-03-03 05:26:56 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:26:56 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:26:56 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:26:56 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:30:56 [ERROR] Get market state error: 'spot'
+2026-03-03 05:30:56 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:30:56 [INFO] 
+======================================================================
+2026-03-03 05:30:56 [INFO] Time: 2026-03-03 05:30:56
+2026-03-03 05:30:56 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:30:56 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:30:56 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:30:56 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:34:56 [ERROR] Get market state error: 'spot'
+2026-03-03 05:34:56 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:34:56 [INFO] 
+======================================================================
+2026-03-03 05:34:56 [INFO] Time: 2026-03-03 05:34:56
+2026-03-03 05:34:56 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:34:56 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:34:56 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:34:56 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:38:57 [ERROR] Get market state error: 'spot'
+2026-03-03 05:38:57 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:38:57 [INFO] 
+======================================================================
+2026-03-03 05:38:57 [INFO] Time: 2026-03-03 05:38:57
+2026-03-03 05:38:57 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:38:57 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:38:57 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:38:57 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:42:57 [ERROR] Get market state error: 'spot'
+2026-03-03 05:42:57 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:42:57 [INFO] 
+======================================================================
+2026-03-03 05:42:57 [INFO] Time: 2026-03-03 05:42:57
+2026-03-03 05:42:57 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:42:57 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:42:57 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:42:57 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:46:57 [ERROR] Get market state error: 'spot'
+2026-03-03 05:46:57 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:46:57 [INFO] 
+======================================================================
+2026-03-03 05:46:57 [INFO] Time: 2026-03-03 05:46:57
+2026-03-03 05:46:57 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:46:57 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:46:57 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:46:57 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:50:58 [ERROR] Get market state error: 'spot'
+2026-03-03 05:50:58 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:50:58 [INFO] 
+======================================================================
+2026-03-03 05:50:58 [INFO] Time: 2026-03-03 05:50:58
+2026-03-03 05:50:58 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:50:58 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:50:58 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:50:58 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:54:58 [ERROR] Get market state error: 'spot'
+2026-03-03 05:54:58 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:54:58 [INFO] 
+======================================================================
+2026-03-03 05:54:58 [INFO] Time: 2026-03-03 05:54:58
+2026-03-03 05:54:58 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:54:58 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:54:58 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:54:58 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 05:58:59 [ERROR] Get market state error: 'spot'
+2026-03-03 05:58:59 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 05:58:59 [INFO] 
+======================================================================
+2026-03-03 05:58:59 [INFO] Time: 2026-03-03 05:58:59
+2026-03-03 05:58:59 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 05:58:59 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 05:58:59 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 05:58:59 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 06:02:59 [ERROR] Get market state error: 'spot'
+2026-03-03 06:02:59 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 06:02:59 [INFO] 
+======================================================================
+2026-03-03 06:02:59 [INFO] Time: 2026-03-03 06:02:59
+2026-03-03 06:02:59 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 06:02:59 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 06:02:59 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 06:02:59 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 06:06:59 [ERROR] Get market state error: 'spot'
+2026-03-03 06:06:59 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 06:06:59 [INFO] 
+======================================================================
+2026-03-03 06:06:59 [INFO] Time: 2026-03-03 06:06:59
+2026-03-03 06:06:59 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 06:06:59 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 06:06:59 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 06:06:59 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 06:10:59 [ERROR] Get market state error: 'spot'
+2026-03-03 06:10:59 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 06:10:59 [INFO] 
+======================================================================
+2026-03-03 06:10:59 [INFO] Time: 2026-03-03 06:10:59
+2026-03-03 06:10:59 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 06:10:59 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 06:10:59 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 06:10:59 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 06:15:00 [ERROR] Get market state error: 'spot'
+2026-03-03 06:15:00 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 06:15:00 [INFO] 
+======================================================================
+2026-03-03 06:15:00 [INFO] Time: 2026-03-03 06:15:00
+2026-03-03 06:15:00 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 06:15:00 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 06:15:00 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 06:15:00 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 06:19:00 [ERROR] Get market state error: 'spot'
+2026-03-03 06:19:00 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 06:19:00 [INFO] 
+======================================================================
+2026-03-03 06:19:00 [INFO] Time: 2026-03-03 06:19:00
+2026-03-03 06:19:00 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 06:19:00 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 06:19:00 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 06:19:00 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 06:23:01 [ERROR] Get market state error: 'spot'
+2026-03-03 06:23:01 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 06:23:01 [INFO] 
+======================================================================
+2026-03-03 06:23:01 [INFO] Time: 2026-03-03 06:23:01
+2026-03-03 06:23:01 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 06:23:01 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 06:23:01 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 06:23:01 [INFO] Trade: 0 | Consecutive losses: 0
+2026-03-03 06:27:12 [ERROR] Get market state error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-03-03 06:27:12 [ERROR] Get position error: 'Exchange' object has no attribute 'user_state'
+2026-03-03 06:27:12 [INFO] 
+======================================================================
+2026-03-03 06:27:12 [INFO] Time: 2026-03-03 06:27:12
+2026-03-03 06:27:12 [INFO] Price: $50000.00 | Bid: $49990.00 | Ask: $50010.00
+2026-03-03 06:27:12 [INFO] Equity: $100.00 | PnL: $+0.00 | DD: 0.00%
+2026-03-03 06:27:12 [INFO] Position:  0.0 @ $0.00 | Stop: $0.00
+2026-03-03 06:27:12 [INFO] Trade: 0 | Consecutive losses: 0

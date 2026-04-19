@@ -1,0 +1,27 @@
+2026-03-23 08:29:49 [INFO] ======================================================================
+2026-03-23 08:29:49 [INFO]  BTC/USDT 4H RSI SWING v6 - LIVE TRADER
+2026-03-23 08:29:49 [INFO] ======================================================================
+2026-03-23 08:29:49 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-03-23 08:29:49 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-03-23 08:29:49 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_rsi_swing_v6.py
+2026-03-23 08:29:49 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\rsi_swing_20260323_082949.log
+2026-03-23 08:29:49 [INFO] ======================================================================
+2026-03-23 08:29:51 [INFO] RSI SWING live trading 有効化: env=mainnet, address=0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-03-23 08:29:51 [INFO] Initialized RSI SWING trader for BTC 1h (rsi_period=10, OS=30.0, OB=60.0)
+2026-03-23 08:29:51 [INFO] RSI SWING trader initialized successfully
+2026-03-23 08:29:51 [INFO] Starting RSI SWING trading loop (live mode)...
+2026-03-23 08:29:51 [INFO] BAR 2026-03-23T08:00:00 | Price=68071.00 RSI=35.08 (prev=39.75) EMA50=69319.00 ATR14=439.94
+2026-03-23 08:29:51 [INFO] No entry signal.
+2026-03-23 08:29:51 [INFO] Sleeping for 60 seconds...
+2026-03-23 08:30:51 [INFO] BAR 2026-03-23T08:00:00 | Price=68082.00 RSI=35.27 (prev=39.75) EMA50=69319.43 ATR14=440.16
+2026-03-23 08:30:51 [INFO] No entry signal.
+2026-03-23 08:30:51 [INFO] Sleeping for 60 seconds...
+2026-03-23 08:31:51 [INFO] BAR 2026-03-23T08:00:00 | Price=68101.00 RSI=35.61 (prev=39.75) EMA50=69320.18 ATR14=440.16
+2026-03-23 08:31:51 [INFO] No entry signal.
+2026-03-23 08:31:51 [INFO] Sleeping for 60 seconds...
+2026-03-23 08:32:51 [INFO] BAR 2026-03-23T08:00:00 | Price=68027.00 RSI=34.31 (prev=39.75) EMA50=69317.28 ATR14=443.01
+2026-03-23 08:32:51 [INFO] No entry signal.
+2026-03-23 08:32:51 [INFO] Sleeping for 60 seconds...
+2026-03-23 08:33:51 [INFO] BAR 2026-03-23T08:00:00 | Price=67972.00 RSI=33.41 (prev=39.75) EMA50=69315.12 ATR14=447.30
+2026-03-23 08:33:51 [INFO] No entry signal.
+2026-03-23 08:33:51 [INFO] Sleeping for 60 seconds...

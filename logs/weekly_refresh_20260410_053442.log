@@ -1,0 +1,10 @@
+2026-04-10 14:34:42,578 [INFO]   WEEKLY WHALE WALLET REFRESH
+2026-04-10 14:34:42,578 [INFO] 
+======================================================================
+2026-04-10 14:34:42,578 [INFO] FETCHING TOP TRADERS FROM HYPERLIQUID LEADERBOARD
+2026-04-10 14:34:42,578 [INFO] ======================================================================
+2026-04-10 14:34:42,578 [INFO] Querying stats-data.hyperliquid.xyz...
+2026-04-10 14:34:49,806 [INFO] Processing 0 traders from leaderboard...
+2026-04-10 14:34:49,806 [INFO] 
+Qualified candidates: 0
+2026-04-10 14:34:49,824 [ERROR] No candidates found from leaderboard

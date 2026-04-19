@@ -1,0 +1,109 @@
+2026-04-10 18:20:51,508 [INFO] Loaded config: 3 wallets
+2026-04-10 18:20:51,508 [INFO] Starting loop with interval 900s
+2026-04-10 18:20:51,508 [INFO] === Run Once ===
+2026-04-10 18:20:51,512 [INFO] Using cached ranking (0.5h old)
+2026-04-10 18:20:51,512 [WARNING] No qualified wallets
+2026-04-10 18:20:51,518 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 18:35:51,527 [INFO] === Run Once ===
+2026-04-10 18:35:51,541 [INFO] Using cached ranking (0.7h old)
+2026-04-10 18:35:51,541 [WARNING] No qualified wallets
+2026-04-10 18:35:51,541 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 18:50:51,556 [INFO] === Run Once ===
+2026-04-10 18:50:51,557 [INFO] Using cached ranking (1.0h old)
+2026-04-10 18:50:51,557 [WARNING] No qualified wallets
+2026-04-10 18:50:51,557 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 19:05:51,561 [INFO] === Run Once ===
+2026-04-10 19:05:51,561 [INFO] Using cached ranking (1.2h old)
+2026-04-10 19:05:51,563 [WARNING] No qualified wallets
+2026-04-10 19:05:51,570 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 19:20:51,571 [INFO] === Run Once ===
+2026-04-10 19:20:51,571 [INFO] Using cached ranking (1.5h old)
+2026-04-10 19:20:51,571 [WARNING] No qualified wallets
+2026-04-10 19:20:51,587 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 19:35:51,595 [INFO] === Run Once ===
+2026-04-10 19:35:51,595 [INFO] Using cached ranking (1.7h old)
+2026-04-10 19:35:51,595 [WARNING] No qualified wallets
+2026-04-10 19:35:51,595 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 19:50:51,599 [INFO] === Run Once ===
+2026-04-10 19:50:51,599 [INFO] Using cached ranking (2.0h old)
+2026-04-10 19:50:51,599 [WARNING] No qualified wallets
+2026-04-10 19:50:51,615 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 20:05:51,625 [INFO] === Run Once ===
+2026-04-10 20:05:51,626 [INFO] Using cached ranking (2.2h old)
+2026-04-10 20:05:51,627 [WARNING] No qualified wallets
+2026-04-10 20:05:51,648 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 20:20:51,650 [INFO] === Run Once ===
+2026-04-10 20:20:51,651 [INFO] Using cached ranking (2.5h old)
+2026-04-10 20:20:51,651 [WARNING] No qualified wallets
+2026-04-10 20:20:51,675 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 20:35:51,686 [INFO] === Run Once ===
+2026-04-10 20:35:51,687 [INFO] Using cached ranking (2.7h old)
+2026-04-10 20:35:51,688 [WARNING] No qualified wallets
+2026-04-10 20:35:51,714 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 20:50:51,718 [INFO] === Run Once ===
+2026-04-10 20:50:51,720 [INFO] Using cached ranking (3.0h old)
+2026-04-10 20:50:51,720 [WARNING] No qualified wallets
+2026-04-10 20:50:51,748 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 21:05:51,756 [INFO] === Run Once ===
+2026-04-10 21:05:51,756 [INFO] Using cached ranking (3.2h old)
+2026-04-10 21:05:51,756 [WARNING] No qualified wallets
+2026-04-10 21:05:51,771 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 21:20:51,785 [INFO] === Run Once ===
+2026-04-10 21:20:51,785 [INFO] Using cached ranking (3.5h old)
+2026-04-10 21:20:51,785 [WARNING] No qualified wallets
+2026-04-10 21:20:51,807 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 21:35:51,812 [INFO] === Run Once ===
+2026-04-10 21:35:51,812 [INFO] Using cached ranking (3.7h old)
+2026-04-10 21:35:51,812 [WARNING] No qualified wallets
+2026-04-10 21:35:51,828 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 21:50:51,832 [INFO] === Run Once ===
+2026-04-10 21:50:51,832 [INFO] Using cached ranking (4.0h old)
+2026-04-10 21:50:51,832 [WARNING] No qualified wallets
+2026-04-10 21:50:51,848 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 22:05:51,852 [INFO] === Run Once ===
+2026-04-10 22:05:51,853 [INFO] Using cached ranking (4.2h old)
+2026-04-10 22:05:51,853 [WARNING] No qualified wallets
+2026-04-10 22:05:51,868 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 22:20:51,870 [INFO] === Run Once ===
+2026-04-10 22:20:51,870 [INFO] Using cached ranking (4.5h old)
+2026-04-10 22:20:51,870 [WARNING] No qualified wallets
+2026-04-10 22:20:51,878 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 22:35:51,891 [INFO] === Run Once ===
+2026-04-10 22:35:51,891 [INFO] Using cached ranking (4.7h old)
+2026-04-10 22:35:51,891 [WARNING] No qualified wallets
+2026-04-10 22:35:51,907 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 22:50:51,919 [INFO] === Run Once ===
+2026-04-10 22:50:51,919 [INFO] Using cached ranking (5.0h old)
+2026-04-10 22:50:51,919 [WARNING] No qualified wallets
+2026-04-10 22:50:51,935 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 23:05:51,948 [INFO] === Run Once ===
+2026-04-10 23:05:51,948 [INFO] Using cached ranking (5.2h old)
+2026-04-10 23:05:51,948 [WARNING] No qualified wallets
+2026-04-10 23:05:51,948 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 23:20:51,954 [INFO] === Run Once ===
+2026-04-10 23:20:51,954 [INFO] Using cached ranking (5.5h old)
+2026-04-10 23:20:51,954 [WARNING] No qualified wallets
+2026-04-10 23:20:51,970 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 23:35:51,982 [INFO] === Run Once ===
+2026-04-10 23:35:51,982 [INFO] Using cached ranking (5.7h old)
+2026-04-10 23:35:51,982 [WARNING] No qualified wallets
+2026-04-10 23:35:51,997 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-10 23:50:52,008 [INFO] === Run Once ===
+2026-04-10 23:50:52,009 [INFO] Using cached ranking (6.0h old)
+2026-04-10 23:50:52,009 [WARNING] No qualified wallets
+2026-04-10 23:50:52,028 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-11 00:05:52,038 [INFO] === Run Once ===
+2026-04-11 00:05:52,038 [INFO] Using cached ranking (6.2h old)
+2026-04-11 00:05:52,038 [WARNING] No qualified wallets
+2026-04-11 00:05:52,050 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-11 00:20:52,055 [INFO] === Run Once ===
+2026-04-11 00:20:52,056 [INFO] Using cached ranking (6.5h old)
+2026-04-11 00:20:52,057 [WARNING] No qualified wallets
+2026-04-11 00:20:52,089 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-11 00:35:52,098 [INFO] === Run Once ===
+2026-04-11 00:35:52,098 [INFO] Using cached ranking (6.7h old)
+2026-04-11 00:35:52,098 [WARNING] No qualified wallets
+2026-04-11 00:35:52,112 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-11 00:50:52,118 [INFO] === Run Once ===
+2026-04-11 00:50:52,119 [INFO] Using cached ranking (0.0h old)
+2026-04-11 00:50:52,494 [INFO] Signal written: NONE, strength=0.00, valid=False

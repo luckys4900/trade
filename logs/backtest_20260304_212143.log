@@ -1,0 +1,40 @@
+2026-03-04 21:21:43 [INFO] ======================================================================
+2026-03-04 21:21:43 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - BACKTEST
+2026-03-04 21:21:43 [INFO] ======================================================================
+2026-03-04 21:21:43 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\backtest_20260304_212143.log
+2026-03-04 21:21:43 [INFO] Loaded config from C:\Users\user\Desktop\cursor\trade\config.json
+2026-03-04 21:21:43 [INFO] Backtester initialized: symbol=BTC, tf=4h, rsi_period=14, overbought=70.0, oversold=30.0
+2026-03-04 21:21:43 [INFO] Starting backtest on synthetic data...
+2026-03-04 21:21:43 [INFO] Generating 1080 synthetic 4h candles for 180 days...
+2026-03-04 21:21:43 [INFO] BUY  @ 47011.60 USD, size=100.00, RSI=29.49, balance=9899.98
+2026-03-04 21:21:43 [INFO] SELL @ 42589.24 USD, PnL=-94.07, RSI=71.74, balance=9905.89
+2026-03-04 21:21:43 [INFO] BUY  @ 38544.81 USD, size=100.00, RSI=26.66, balance=9805.87
+2026-03-04 21:21:43 [INFO] SELL @ 42512.67 USD, PnL=102.94, RSI=71.57, balance=10008.79
+2026-03-04 21:21:43 [INFO] BUY  @ 41056.36 USD, size=100.00, RSI=27.15, balance=9908.77
+2026-03-04 21:21:43 [INFO] SELL @ 46963.93 USD, PnL=143.89, RSI=73.63, balance=10152.64
+2026-03-04 21:21:43 [INFO] BUY  @ 43958.45 USD, size=100.00, RSI=25.99, balance=10052.62
+2026-03-04 21:21:43 [INFO] SELL @ 46806.30 USD, PnL=64.79, RSI=75.10, balance=10217.39
+2026-03-04 21:21:43 [INFO] BUY  @ 50842.27 USD, size=100.00, RSI=28.72, balance=10117.37
+2026-03-04 21:21:43 [INFO] SELL @ 50314.77 USD, PnL=-10.38, RSI=70.22, balance=10206.97
+2026-03-04 21:21:43 [INFO] BUY  @ 56782.53 USD, size=100.00, RSI=29.45, balance=10106.95
+2026-03-04 21:21:43 [INFO] SELL @ 39622.78 USD, PnL=-302.20, RSI=70.78, balance=9904.73
+2026-03-04 21:21:43 [INFO] BUY  @ 36069.72 USD, size=100.00, RSI=27.73, balance=9804.71
+2026-03-04 21:21:43 [INFO] SELL @ 41451.83 USD, PnL=149.21, RSI=71.17, balance=10053.90
+2026-03-04 21:21:43 [INFO] BUY  @ 41562.86 USD, size=100.00, RSI=23.72, balance=9953.88
+2026-03-04 21:21:43 [INFO] SELL @ 42349.38 USD, PnL=18.92, RSI=71.10, balance=10072.79
+2026-03-04 21:21:43 [INFO] BUY  @ 39573.21 USD, size=100.00, RSI=23.15, balance=9972.77
+2026-03-04 21:21:43 [INFO] SELL @ 34525.23 USD, PnL=-127.56, RSI=72.87, balance=9945.19
+2026-03-04 21:21:43 [INFO] BUY  @ 60534.89 USD, size=100.00, RSI=29.49, balance=9845.17
+2026-03-04 21:21:43 [INFO] SELL @ 65619.77 USD, PnL=84.00, RSI=70.68, balance=10029.15
+2026-03-04 21:21:43 [INFO] BUY  @ 76712.42 USD, size=100.00, RSI=29.09, balance=9929.13
+2026-03-04 21:21:43 [INFO] SELL @ 76460.37 USD, PnL=-3.29, RSI=38.30, balance=10025.82
+2026-03-04 21:21:43 [INFO] Backtest finished.
+2026-03-04 21:21:43 [INFO] ======================================================================
+2026-03-04 21:21:43 [INFO]  BACKTEST RESULTS 
+2026-03-04 21:21:43 [INFO] ======================================================================
+2026-03-04 21:21:43 [INFO] Total trades   : 11
+2026-03-04 21:21:43 [INFO] Win rate       : 54.55%
+2026-03-04 21:21:43 [INFO] P/L            : 25.82 (0.26%)
+2026-03-04 21:21:43 [INFO] Max drawdown   : 4.04%
+2026-03-04 21:21:43 [INFO] Sharpe ratio   : -0.04
+2026-03-04 21:21:43 [INFO] Final balance  : 10025.82

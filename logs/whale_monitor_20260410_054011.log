@@ -1,0 +1,5 @@
+2026-04-10 14:40:11,504 [INFO] Loaded config: 4 wallets
+2026-04-10 14:40:11,504 [INFO] === Run Once ===
+2026-04-10 14:40:11,505 [INFO] Using cached ranking (0.6h old)
+2026-04-10 14:40:11,505 [WARNING] No qualified wallets
+2026-04-10 14:40:11,511 [INFO] Signal written: NONE, strength=0.00, valid=False

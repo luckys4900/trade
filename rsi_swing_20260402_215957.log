@@ -1,0 +1,15 @@
+2026-04-02 21:59:57 [INFO] ======================================================================
+2026-04-02 21:59:57 [INFO]  BTC/USDT 4H RSI SWING v6 - LIVE TRADER
+2026-04-02 21:59:57 [INFO] ======================================================================
+2026-04-02 21:59:57 [INFO] Python version: 3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]
+2026-04-02 21:59:57 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-02 21:59:57 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_rsi_swing_v6.py
+2026-04-02 21:59:57 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\rsi_swing_20260402_215957.log
+2026-04-02 21:59:57 [INFO] ======================================================================
+2026-04-02 21:59:57 [ERROR] RSI SWING Hyperliquid SDK 初期化失敗: No module named 'eth_account' -> paper モード
+2026-04-02 21:59:57 [INFO] Initialized RSI SWING trader for BTC 1h (rsi_period=10, OS=30.0, OB=60.0)
+2026-04-02 21:59:57 [INFO] RSI SWING trader initialized successfully
+2026-04-02 21:59:57 [INFO] Starting RSI SWING trading loop (paper mode)...
+2026-04-02 21:59:58 [INFO] BAR 2026-04-02T21:00:00 | Price=66005.00 RSI=28.33 (prev=30.38) EMA50=67401.50 ATR14=449.62
+2026-04-02 21:59:58 [INFO] No entry signal.
+2026-04-02 21:59:58 [INFO] Sleeping for 60 seconds...

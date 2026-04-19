@@ -1,0 +1,51 @@
+{"timestamp": "2026-04-02T21:31:52.677682", "message": "Trader process started"}
+2026-04-02 21:31:52 [INFO] ======================================================================
+2026-04-02 21:31:52 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-04-02 21:31:52 [INFO] ======================================================================
+2026-04-02 21:31:52 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-04-02 21:31:52 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-02 21:31:52 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-04-02 21:31:52 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260402_213152.log
+2026-04-02 21:31:52 [INFO] ======================================================================
+2026-04-02 21:31:52 [INFO] Test message: Trader is running
+2026-04-02 21:31:53 [INFO] [DEBUG] Secret key length: 66
+2026-04-02 21:31:53 [INFO] [DEBUG] Account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:31:53 [INFO] [DEBUG] Derived account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:31:53 [INFO] [DEBUG] Using account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:31:53 [INFO] Live trading 有効化: env=mainnet, address=0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:31:53 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 21:31:53 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 21:31:53 [INFO] Trader initialized successfully
+2026-04-02 21:31:53 [INFO] Starting trading loop (live mode)...
+2026-04-02 21:31:53 [INFO] Current RSI: 26.13, Price: $66092.00
+2026-04-02 21:31:53 [INFO] [LIVE] Placing BUY: coin=BTC, qty=0.0075, price=$66092.00, order_type={'limit': {}}
+2026-04-02 21:31:53 [ERROR] [LIVE] BUY order failed: (422, None, 'Failed to deserialize the JSON body into the target type', None, {'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '56', 'Connection': 'keep-alive', 'Server': 'nginx/1.22.1', 'Date': 'Thu, 02 Apr 2026 12:31:53 GMT', 'access-control-expose-headers': '*', 'access-control-allow-origin': '*', 'vary': 'origin, access-control-request-method, access-control-request-headers', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 71898cbe8ac3f8a8857b8e95ff5b2982.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'NRT57-P7', 'X-Amz-Cf-Id': '8ut4kOjVZgpn63LRKyx5Tz7n5Z3jLgjUthBhj9cotFUnefrHa5H_Rw=='})
+2026-04-02 21:31:53 [ERROR] [LIVE] BUY traceback: Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\api.py", line 36, in _handle_exception
+    err = json.loads(response.text)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py", line 412, in run
+    resp = self.exchange.order(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\exchange.py", line 141, in order
+    return self.bulk_orders([order], builder)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\exchange.py", line 164, in bulk_orders
+    return self._post_action(
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\exchange.py", line 90, in _post_action
+    return self.post("/exchange", payload)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\api.py", line 24, in post
+    self._handle_exception(response)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\hyperliquid\api.py", line 38, in _handle_exception
+    raise ClientError(status_code, None, response.text, None, response.headers)
+hyperliquid.utils.error.ClientError: (422, None, 'Failed to deserialize the JSON body into the target type', None, {'Content-Type': 'text/plain; charset=utf-8', 'Content-Length': '56', 'Connection': 'keep-alive', 'Server': 'nginx/1.22.1', 'Date': 'Thu, 02 Apr 2026 12:31:53 GMT', 'access-control-expose-headers': '*', 'access-control-allow-origin': '*', 'vary': 'origin, access-control-request-method, access-control-request-headers', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 71898cbe8ac3f8a8857b8e95ff5b2982.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'NRT57-P7', 'X-Amz-Cf-Id': '8ut4kOjVZgpn63LRKyx5Tz7n5Z3jLgjUthBhj9cotFUnefrHa5H_Rw=='})
+
+2026-04-02 21:31:53 [INFO] Sleeping for 60 seconds...

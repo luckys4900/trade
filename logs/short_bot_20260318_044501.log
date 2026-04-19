@@ -1,0 +1,21 @@
+2026-03-18 04:45:01 [INFO] ======================================================================
+2026-03-18 04:45:01 [INFO]  BTC SHORT TRADING BOT - HYPERLIQUID
+2026-03-18 04:45:01 [INFO] ======================================================================
+2026-03-18 04:45:01 [INFO] Start time: 2026-03-18T04:45:01.835609
+2026-03-18 04:45:01 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\short_bot_20260318_044501.log
+2026-03-18 04:45:01 [INFO] ======================================================================
+2026-03-18 04:45:01 [INFO] Loaded config from C:\Users\user\Desktop\cursor\trade\config.json
+2026-03-18 04:45:01 [INFO] ShortBot initialized: symbol=BTC, timeframe=1h, paper_mode=False, rsi_overbought=60
+2026-03-18 04:45:01 [WARNING] ⚠️  LIVE TRADING MODE
+2026-03-18 04:45:01 [WARNING] Real money trades will be placed
+2026-03-18 04:45:01 [INFO] Starting short trading loop...
+2026-03-18 04:45:01 [INFO] Paper mode: False
+2026-03-18 04:45:01 [INFO] Check interval: 60 seconds
+
+2026-03-18 04:45:01 [INFO] === Bot cycle 2026-03-18T04:45:01.841227 ===
+2026-03-18 04:45:02 [ERROR] API error 422: Failed to deserialize the JSON body into the target type
+2026-03-18 04:45:02 [WARNING] No candle data available
+2026-03-18 04:45:02 [INFO] Sleeping 60s...
+
+2026-03-18 04:45:28 [INFO] Shutting down gracefully...
+2026-03-18 04:45:28 [INFO] Short trading bot stopped

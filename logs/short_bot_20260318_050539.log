@@ -1,0 +1,24 @@
+2026-03-18 05:05:39 [INFO] ======================================================================
+2026-03-18 05:05:39 [INFO]  BTC SHORT TRADING BOT - HYPERLIQUID
+2026-03-18 05:05:39 [INFO] ======================================================================
+2026-03-18 05:05:39 [INFO] Start time: 2026-03-18T05:05:39.610963
+2026-03-18 05:05:39 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\short_bot_20260318_050539.log
+2026-03-18 05:05:39 [INFO] ======================================================================
+2026-03-18 05:05:39 [INFO] Loaded config from C:\Users\user\Desktop\cursor\trade\config.json
+2026-03-18 05:05:39 [INFO] ShortBot initialized: symbol=BTC, timeframe=1h, paper_mode=False, rsi_overbought=60
+2026-03-18 05:05:39 [WARNING] ⚠️  LIVE TRADING MODE
+2026-03-18 05:05:39 [WARNING] Real money trades will be placed
+2026-03-18 05:05:39 [INFO] Starting short trading loop...
+2026-03-18 05:05:39 [INFO] Paper mode: False
+2026-03-18 05:05:39 [INFO] Check interval: 60 seconds
+
+2026-03-18 05:05:39 [INFO] === Bot cycle 2026-03-18T05:05:39.611958 ===
+2026-03-18 05:05:39 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:05:39 [INFO] Price: $74,414.00 | RSI: 54.6 | ATR: $592.85 | 24h change: -1.55%
+2026-03-18 05:05:39 [INFO] Sleeping 60s...
+
+2026-03-18 05:06:39 [INFO] === Bot cycle 2026-03-18T05:06:39.878393 ===
+2026-03-18 05:06:39 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:06:39 [INFO] Price: $74,375.00 | RSI: 54.0 | ATR: $592.85 | 24h change: -1.60%
+2026-03-18 05:06:39 [INFO] Sleeping 60s...
+

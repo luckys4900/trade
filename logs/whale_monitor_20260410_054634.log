@@ -1,0 +1,50 @@
+2026-04-10 14:46:34,121 [INFO] Loaded config: 3 wallets
+2026-04-10 14:46:34,122 [INFO] Starting loop with interval 900s
+2026-04-10 14:46:34,122 [INFO] === Run Once ===
+2026-04-10 14:46:34,447 [DEBUG] Whale_1: Using default metrics (2000 fills, trade count estimated)
+2026-04-10 14:46:34,447 [INFO] Whale_1: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-04-10 14:46:34,982 [DEBUG] Whale_2: Using default metrics (2000 fills, trade count estimated)
+2026-04-10 14:46:34,982 [INFO] Whale_2: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-04-10 14:46:35,298 [DEBUG] Whale_3: Using default metrics (2000 fills, trade count estimated)
+2026-04-10 14:46:35,298 [INFO] Whale_3: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-04-10 14:46:35,749 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 15:01:35,766 [INFO] === Run Once ===
+2026-04-10 15:01:35,767 [INFO] Using cached ranking (0.3h old)
+2026-04-10 15:01:36,050 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 15:16:36,053 [INFO] === Run Once ===
+2026-04-10 15:16:36,054 [INFO] Using cached ranking (0.5h old)
+2026-04-10 15:16:37,337 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 15:31:37,346 [INFO] === Run Once ===
+2026-04-10 15:31:37,348 [INFO] Using cached ranking (0.8h old)
+2026-04-10 15:31:37,710 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 15:46:37,712 [INFO] === Run Once ===
+2026-04-10 15:46:37,712 [INFO] Using cached ranking (1.0h old)
+2026-04-10 15:46:38,038 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 16:01:38,052 [INFO] === Run Once ===
+2026-04-10 16:01:38,053 [INFO] Using cached ranking (1.3h old)
+2026-04-10 16:01:38,368 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 16:16:38,384 [INFO] === Run Once ===
+2026-04-10 16:16:38,401 [INFO] Using cached ranking (1.5h old)
+2026-04-10 16:16:38,716 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 16:31:38,726 [INFO] === Run Once ===
+2026-04-10 16:31:38,727 [INFO] Using cached ranking (1.8h old)
+2026-04-10 16:31:39,090 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 16:46:39,099 [INFO] === Run Once ===
+2026-04-10 16:46:39,101 [INFO] Using cached ranking (2.0h old)
+2026-04-10 16:46:39,403 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 17:01:39,416 [INFO] === Run Once ===
+2026-04-10 17:01:39,417 [INFO] Using cached ranking (2.3h old)
+2026-04-10 17:01:39,745 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 17:16:39,749 [INFO] === Run Once ===
+2026-04-10 17:16:39,752 [INFO] Using cached ranking (2.5h old)
+2026-04-10 17:16:40,660 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 17:31:40,672 [INFO] === Run Once ===
+2026-04-10 17:31:40,674 [INFO] Using cached ranking (2.8h old)
+2026-04-10 17:31:41,115 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 17:46:41,119 [INFO] === Run Once ===
+2026-04-10 17:46:41,119 [INFO] Using cached ranking (3.0h old)
+2026-04-10 17:46:41,477 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-10 18:01:41,484 [INFO] === Run Once ===
+2026-04-10 18:01:41,484 [INFO] Using cached ranking (0.1h old)
+2026-04-10 18:01:41,484 [WARNING] No qualified wallets
+2026-04-10 18:01:41,484 [INFO] Signal written: NONE, strength=0.00, valid=False

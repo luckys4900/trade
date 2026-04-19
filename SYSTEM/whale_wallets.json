@@ -1,0 +1,42 @@
+{
+  "wallets": [
+    {
+      "address": "0x863b676e5e4fea0541062c32983dc8f84749ca6d",
+      "label": "Whale_1",
+      "active": true,
+      "notes": "Active trader, $270k AUM, measured performance tracks live"
+    },
+    {
+      "address": "0x932bdd2d5e21475e62d2fea8158fc5974507cb1a",
+      "label": "Whale_2",
+      "active": true,
+      "notes": "7d: 20 BTC trades, 100% WR, EV 3.21%, $615k AUM, last trade 2d ago, 3 active positions"
+    },
+    {
+      "address": "0x523852be2db1a76a0e088ecbff32e849544054e5",
+      "label": "Whale_3",
+      "active": true,
+      "notes": "Active trader, $517k AUM, measured performance tracks live"
+    }
+  ],
+  "scoring_config": {
+    "lookback_days": 7,
+    "min_trades": 5,
+    "min_sortino": -2.0,
+    "min_win_rate": 0.0,
+    "min_account_value": 100000,
+    "max_account_value": 100000000,
+    "sortino_normalization_cap": 4.0,
+    "rescore_interval_hours": 12
+  },
+  "symbols_to_track": [
+    "BTC"
+  ],
+  "consensus_config": {
+    "min_agreeing_wallets": 1,
+    "min_ranked_wallets": 1,
+    "min_agreement_pct": 0.5,
+    "signal_ttl_minutes": 15
+  },
+  "last_refresh": "2026-04-10T05:39:43.606383"
+}

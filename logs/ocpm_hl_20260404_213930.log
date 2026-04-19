@@ -1,0 +1,73 @@
+2026-04-04 21:39:30 [INFO] Mode: backtest | On-Chain Pullback Momentum | Days: 365
+2026-04-04 21:39:30 [INFO] Timeframe: 4h | Exchange: Mainnet
+2026-04-04 21:39:30 [INFO] Entering BACKTEST mode
+2026-04-04 21:39:30 [INFO] CSV cache: btc_usdt_4h_ocpm.csv (2190 bars)
+2026-04-04 21:39:30 [INFO] Data: 2025-04-04 16:00:00 -> 2026-04-04 12:00:00 (2190 bars)
+2026-04-04 21:39:30 [INFO] Trend Regimes: {'UPTREND': 785, 'DOWNTREND': 782, 'RANGE': 623}
+2026-04-04 21:39:30 [INFO] Long signals: 28, Short signals: 19
+2026-04-04 21:39:30 [DEBUG]   LONG @83695.66 RSI=48.2 SL=80004.12 ADX=24.8 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @84344.66 RSI=46.2 SL=82321.58 ADX=17.3 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @94152.01 RSI=48.9 SL=90997.64 ADX=22.6 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @102791.32 RSI=51.9 SL=98672.58 ADX=51.6 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @103158.60 RSI=48.7 SL=100282.59 ADX=15.3 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @104786.41 RSI=54.9 SL=100498.90 ADX=20.5 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @108366.30 RSI=50.3 SL=103457.74 ADX=35.6 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @105482.02 RSI=51.2 SL=108758.79 ADX=26.0 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @104219.80 RSI=48.8 SL=107833.05 ADX=15.6 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @107984.24 RSI=48.8 SL=105304.48 ADX=20.1 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @117113.98 RSI=47.9 SL=112935.76 ADX=41.9 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @117924.84 RSI=47.8 SL=113448.66 ADX=23.0 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @114992.27 RSI=53.2 SL=118006.23 ADX=17.1 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @118968.91 RSI=46.7 SL=114716.29 ADX=25.7 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @112909.18 RSI=54.3 SL=116709.16 ADX=20.9 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @110233.92 RSI=55.5 SL=113682.47 ADX=24.4 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @111301.53 RSI=49.2 SL=108452.76 ADX=12.9 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @115632.38 RSI=44.9 SL=112998.61 ADX=17.3 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @121374.75 RSI=44.5 SL=117416.58 ADX=39.9 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @113577.90 RSI=53.5 SL=110078.50 ADX=29.1 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @110117.48 RSI=46.9 SL=113488.25 ADX=19.8 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @90634.34 RSI=50.8 SL=86698.02 ADX=22.0 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @87951.87 RSI=52.2 SL=92604.31 ADX=18.4 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   LONG @91364.16 RSI=45.8 SL=88224.76 ADX=31.8 [UPTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @89126.67 RSI=54.0 SL=91977.86 ADX=26.4 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @70330.38 RSI=48.1 SL=76121.52 ADX=40.8 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @68853.96 RSI=54.2 SL=73011.68 ADX=19.7 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @67318.41 RSI=48.1 SL=70283.70 ADX=13.5 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @66468.03 RSI=50.8 SL=70427.57 ADX=19.0 [DOWNTREND]
+2026-04-04 21:39:30 [DEBUG]   SHORT @67367.69 RSI=49.4 SL=70282.87 ADX=27.4 [DOWNTREND]
+2026-04-04 21:39:30 [INFO] 
+======================================================================
+  On-Chain Pullback Momentum - PERFORMANCE REPORT
+======================================================================
+  Final Value    : $105.50
+  Total Return   : +5.50%
+  Max Drawdown   : 4.31%
+  Sharpe (ann.)  : 0.1784
+----------------------------------------------------------------------
+  Trades         : 30
+  Win Rate       : 56.7%
+  Profit Factor  : 1.62
+  Avg Win        : $+0.93
+  Avg Loss       : $-0.75
+  Expectancy     : $+0.20
+  Avg Hold       : 15.2 bars
+----------------------------------------------------------------------
+  RSI Exit rate  : 23.3%
+  Stop Loss rate : 33.3%
+----------------------------------------------------------------------
+  LONG trades    : 17 (WR 53%)
+  SHORT trades   : 13 (WR 62%)
+======================================================================
+
+======================================================================
+ GO CHECK
+======================================================================
+  PASS Return > 0%: +5.50%
+  PASS MaxDD < 15%: 4.31%
+  PASS PF > 1.2: 1.62
+  PASS EV > $0: $+0.20
+  PASS WR > 40%: 56.7%
+
+  Score: 5/5
+  >>> GO <<<
+======================================================================

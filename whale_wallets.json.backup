@@ -1,0 +1,56 @@
+{
+  "wallets": [
+    {
+      "address": "0x5bbf4d64f9b9c31c9f9c9f9c9f9c9f9c9f9c9f9c",
+      "label": "Elite_Whale_A",
+      "active": true,
+      "notes": "High Sortino performer, BTC/ETH specialist"
+    },
+    {
+      "address": "0x6ccf4d64f9b9c31c9f9c9f9c9f9c9f9c9f9c9f9d",
+      "label": "Macro_Trader_B",
+      "active": true,
+      "notes": "FOMC-aligned positions, strong calendar awareness"
+    },
+    {
+      "address": "0x7ddg4d64f9b9c31c9f9c9f9c9f9c9f9c9f9c9f9e",
+      "label": "Momentum_C",
+      "active": true,
+      "notes": "Trend follower, low correlation with others"
+    },
+    {
+      "address": "0x8eeh4d64f9b9c31c9f9c9f9c9f9c9f9c9f9c9f9f",
+      "label": "Conservative_D",
+      "active": true,
+      "notes": "Small size, consistent but not highest Sharpe"
+    },
+    {
+      "address": "0x9ffi4d64f9b9c31c9f9c9f9c9f9c9f9c9f9c9fa0",
+      "label": "Range_Trader_E",
+      "active": true,
+      "notes": "Mean reversion specialist, box trading"
+    },
+    {
+      "address": "0xA00j4d64f9b9c31c9f9c9f9c9f9c9f9c9f9c9fa1",
+      "label": "Volatility_Rider_F",
+      "active": true,
+      "notes": "High ATR periods, leveraged positions"
+    }
+  ],
+  "scoring_config": {
+    "lookback_days": 90,
+    "min_trades": 10,
+    "min_sortino": 0.5,
+    "min_win_rate": 0.45,
+    "sortino_normalization_cap": 3.0,
+    "rescore_interval_hours": 168
+  },
+  "symbols_to_track": [
+    "BTC"
+  ],
+  "consensus_config": {
+    "min_agreeing_wallets": 3,
+    "min_ranked_wallets": 3,
+    "signal_ttl_minutes": 30
+  }
+}

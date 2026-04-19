@@ -1,0 +1,112 @@
+{
+  "multi_agent_config": {
+    "master_orchestrator": {
+      "name": "MasterOrchestrator",
+      "description": "AIエージェントのオーケストレーター",
+      "primary_model": "qwen3:8b",
+      "fallback_models": ["glm-5-1", "glm-5-turbo", "glm-4-7-flash"],
+      "local_models": ["qwen3:8b", "qwen3:30b", "llama3.2:latest"],
+      "cloud_models": ["glm-5-1", "glm-5-turbo", "glm-4-7-flash", "qwen/qwen3.6-plus:free"]
+    },
+    "agents": {
+      "frontend": {
+        "name": "FrontendAgent",
+        "description": "ユーザーインターフェースと可視化管理",
+        "primary_model": "glm-5-1",
+        "fallback_model": "glm-5-turbo",
+        "responsibilities": [
+          "リアルタイムダッシュボード生成",
+          "ユーザーインターフェース更新",
+          "アラート通知",
+          "レポート生成"
+        ]
+      },
+      "backend": {
+        "name": "BackendAgent", 
+        "description": "API処理とデータ管理",
+        "primary_model": "glm-5-turbo",
+        "fallback_model": "glm-4-7-flash",
+        "responsibilities": [
+          "Hyperliquid API処理",
+          "データベース操作",
+          "ログ記録",
+          "設定管理"
+        ]
+      },
+      "analysis": {
+        "name": "AnalysisAgent",
+        "description": "戦略分析と最適化",
+        "primary_model": "glm-5-1",
+        "fallback_model": "glm-5-turbo",
+        "responsibilities": [
+          "戦略パフォーマンス分析",
+          "バックテスト実行",
+          "パラメータ最適化",
+          "リスク評価"
+        ]
+      },
+      "research": {
+        "name": "ResearchAgent",
+        "description": "マクロ調査とデータ収集",
+        "primary_model": "glm-4-7-flash",
+        "fallback_model": "qwen3:8b",
+        "responsibilities": [
+          "fredapi経済指標取得",
+          "ニュース分析",
+          "市場データ収集",
+          "ファンダメンタル分析"
+        ]
+      },
+      "protection": {
+        "name": "ProtectionAgent",
+        "description": "リスク管理とシステム保護",
+        "primary_model": "glm-5-turbo", 
+        "fallback_model": "glm-4-7-flash",
+        "responsibilities": [
+          "ポジション管理",
+          "リスク制御",
+          "異常検知",
+          "システム監視"
+        ]
+      }
+    },
+    "model_switching": {
+      "high_priority": ["glm-5-1"],
+      "medium_priority": ["glm-5-turbo"],
+      "low_priority": ["glm-4-7-flash"],
+      "emergency_priority": ["qwen3:8b"],
+      "switch_criteria": {
+        "token_threshold": 0.8,
+        "complexity_score": 0.7,
+        "performance_threshold": 0.5,
+        "error_rate": 0.1
+      }
+    },
+    "token_management": {
+      "rtk_enabled": true,
+      "token_savings_target": 0.9,
+      "quota_monitoring": true,
+      "local_fallback_on_low_quota": true,
+      "usage_tracking": true
+    },
+    "communication": {
+      "protocol": "zeromq",
+      "port_range": "5555-5560",
+      "timeout": 30,
+      "retry_attempts": 3
+    },
+    "logging": {
+      "level": "INFO",
+      "file_logging": true,
+      "performance_tracking": true,
+      "error_logging": true,
+      "audit_trail": true
+    },
+    "performance": {
+      "max_concurrent_agents": 5,
+      "task_timeout": 300,
+      "cache_enabled": true,
+      "batch_processing": true
+    }
+  }
+}

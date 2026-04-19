@@ -1,0 +1,24 @@
+{"timestamp": "2026-04-02T21:59:44.028714", "message": "Trader process started"}
+2026-04-02 21:59:44 [INFO] ======================================================================
+2026-04-02 21:59:44 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-04-02 21:59:44 [INFO] ======================================================================
+2026-04-02 21:59:44 [INFO] Python version: 3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]
+2026-04-02 21:59:44 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-02 21:59:44 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-04-02 21:59:44 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260402_215944.log
+2026-04-02 21:59:44 [INFO] ======================================================================
+2026-04-02 21:59:44 [INFO] Test message: Trader is running
+2026-04-02 21:59:44 [ERROR] Hyperliquid SDK 初期化に失敗: No module named 'eth_account'. paper モードにフォールバックします。
+2026-04-02 21:59:44 [ERROR] Traceback: Traceback (most recent call last):
+  File "C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py", line 147, in __init__
+    import eth_account  # type: ignore[import]
+    ^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'eth_account'
+
+2026-04-02 21:59:44 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 21:59:44 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 21:59:44 [INFO] Trader initialized successfully
+2026-04-02 21:59:44 [INFO] Starting trading loop (paper mode)...
+2026-04-02 21:59:44 [INFO] Current RSI: 25.57, Price: $66000.00
+2026-04-02 21:59:44 [INFO] [PAPER] BUY signal: RSI 25.57 <= 30 (paper position opened, no real order sent)
+2026-04-02 21:59:44 [INFO] Sleeping for 60 seconds...

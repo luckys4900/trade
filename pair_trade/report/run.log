@@ -1,0 +1,1181 @@
+2026-04-19 02:27:50,167 [data.fetcher] INFO: Fetching BTC/USDT 4h from 2019-01-01 00:00:00...
+2026-04-19 02:27:56,060 [data.fetcher] INFO: Cache saved: BTC_USDT_4h.pkl (13142 rows)
+2026-04-19 02:27:56,060 [data.fetcher] INFO: Fetched BTC/USDT 4h: 13142 rows
+2026-04-19 02:27:56,060 [data.fetcher] INFO: Fetching ETH/USDT 4h from 2019-01-01 00:00:00...
+2026-04-19 02:27:59,024 [data.fetcher] INFO: Cache saved: ETH_USDT_4h.pkl (13142 rows)
+2026-04-19 02:27:59,024 [data.fetcher] INFO: Fetched ETH/USDT 4h: 13142 rows
+2026-04-19 02:27:59,025 [data.fetcher] INFO: [BTC] Validating 13142 rows
+2026-04-19 02:27:59,028 [data.fetcher] INFO: [BTC] Validation PASSED
+2026-04-19 02:27:59,028 [data.fetcher] INFO: [ETH] Validating 13142 rows
+2026-04-19 02:27:59,030 [data.fetcher] INFO: [ETH] Validation PASSED
+2026-04-19 02:27:59,031 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:27:59,492 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 13082/13142 valid rows
+2026-04-19 02:27:59,493 [backtest.walk_forward] INFO: Walk-Forward: 54 param combos
+2026-04-19 02:27:59,495 [backtest.walk_forward] INFO: Split 2: IS=0-4380 OOS=4380-6570
+2026-04-19 02:27:59,496 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:27:59,591 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:02,499 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:02,505 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:28:02,507 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:02,602 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:05,515 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:05,519 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:28:05,521 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:05,633 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:08,542 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:08,546 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:08,646 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:11,522 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:11,527 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:28:11,528 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:11,625 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:14,604 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:14,608 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:28:14,610 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:14,706 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:17,556 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:17,560 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:17,657 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:20,687 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:20,692 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:28:20,693 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:20,789 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:23,696 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:23,700 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:28:23,701 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:23,799 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:26,703 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:26,707 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:26,801 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:29,727 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:29,733 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:28:29,734 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:29,827 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:32,934 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:32,938 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:28:32,939 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:33,033 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:35,936 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:35,940 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:36,035 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:38,916 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:38,920 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:28:38,921 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:39,025 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:41,899 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:41,902 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:41,999 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:44,903 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:44,908 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:45,001 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:47,920 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:47,924 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:28:47,926 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:48,025 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:50,976 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:50,980 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:51,076 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:53,965 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:53,968 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:54,065 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:28:57,006 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:28:57,010 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:28:57,012 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:28:57,105 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:00,004 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:00,009 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:29:00,010 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:00,115 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:03,022 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:03,027 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:03,138 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:06,242 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:06,247 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:29:06,248 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:06,346 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:09,231 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:09,235 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:29:09,236 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:09,404 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:12,271 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:12,275 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:12,368 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:15,270 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:15,275 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:29:15,276 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:15,372 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:18,228 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:18,231 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:29:18,232 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:18,325 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:21,312 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:21,316 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:21,410 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:24,274 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:24,279 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:29:24,280 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:24,378 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:27,284 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:27,288 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:29:27,289 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:27,387 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:30,250 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:30,254 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:30,383 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:33,253 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:33,257 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:29:33,258 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:33,351 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:36,447 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:36,455 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:36,566 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:39,450 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:39,454 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:39,549 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:42,363 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:42,367 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:29:42,368 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:42,462 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:45,312 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:45,315 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:45,411 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:48,303 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:48,307 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:48,405 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:51,348 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:51,352 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:29:51,353 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:51,448 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:54,334 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:54,338 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:29:54,339 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:54,433 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:29:57,288 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:29:57,293 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:29:57,458 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:00,403 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:00,408 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:30:00,408 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:00,504 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:03,360 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:03,364 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:30:03,365 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:03,457 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:06,268 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:06,272 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:06,366 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:09,379 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:09,383 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:30:09,384 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:09,476 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:12,336 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:12,339 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:30:12,341 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:12,434 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:15,264 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:15,268 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:15,360 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:18,198 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:18,202 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:30:18,203 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:18,298 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:21,161 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:21,166 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:30:21,167 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:21,262 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:24,082 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:24,085 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:24,201 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:27,071 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:27,076 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:30:27,077 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:27,169 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:29,985 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:29,990 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:30,085 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:32,917 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:32,921 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:33,015 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:35,916 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:35,919 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:30:35,920 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:36,012 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:38,878 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:38,881 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:38,976 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:30:41,966 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:30:41,970 [backtest.walk_forward] INFO: Split 2: no valid IS params
+2026-04-19 02:30:41,970 [backtest.walk_forward] INFO: Split 3: IS=0-6570 OOS=6570-8760
+2026-04-19 02:30:41,970 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:42,112 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:30:46,408 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:30:46,413 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:30:46,416 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:46,635 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:30:51,146 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:30:51,151 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:30:51,153 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:51,304 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:30:55,666 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:30:55,670 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:30:55,810 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:00,150 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:00,155 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:31:00,157 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:00,310 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:04,565 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:04,570 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:31:04,571 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:04,714 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:08,966 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:08,970 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:09,111 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:13,406 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:13,416 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:31:13,418 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:13,569 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:17,817 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:17,824 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:31:17,826 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:17,967 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:23,177 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:23,182 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:23,320 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:27,689 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:27,695 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:31:27,697 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:27,838 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:32,212 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:32,217 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:31:32,219 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:32,371 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:36,776 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:36,780 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:36,995 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:41,316 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:41,321 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:31:41,324 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:41,465 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:45,989 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:45,995 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:31:45,996 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:46,138 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:51,118 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:51,123 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:51,265 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:55,553 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:55,559 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:31:55,561 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:31:55,700 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:31:59,986 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:31:59,992 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:31:59,993 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:00,133 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:04,418 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:04,423 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:04,561 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:08,855 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:08,859 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:32:08,861 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:09,002 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:13,347 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:13,352 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:32:13,353 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:13,497 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:17,952 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:17,957 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:18,095 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:22,426 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:22,433 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:32:22,435 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:22,582 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:26,833 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:26,838 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:32:26,840 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:27,059 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:31,326 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:31,331 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:31,471 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:35,765 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:35,770 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:32:35,772 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:35,920 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:40,165 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:40,169 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:32:40,171 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:40,317 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:44,557 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:44,563 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:44,699 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:48,977 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:48,982 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:32:48,983 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:49,125 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:53,348 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:53,353 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:32:53,354 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:53,493 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:32:57,731 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:32:57,735 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:32:57,876 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:02,079 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:02,084 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:33:02,085 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:02,225 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:06,449 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:06,453 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:33:06,454 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:06,595 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:10,834 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:10,839 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:10,979 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:15,187 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:15,193 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:33:15,195 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:15,401 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:19,776 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:19,781 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:33:19,782 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:19,923 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:24,490 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:24,497 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:24,688 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:29,222 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:29,227 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:33:29,229 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:29,371 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:33,669 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:33,675 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:33:33,676 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:33,817 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:38,141 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:38,145 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:38,287 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:43,088 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:43,093 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:33:43,095 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:43,235 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:47,510 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:47,516 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:33:47,518 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:47,662 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:52,053 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:52,059 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:52,202 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:33:57,244 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:33:57,249 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:33:57,250 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:33:57,391 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:34:01,703 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:34:01,708 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:34:01,710 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:01,854 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:34:06,158 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:34:06,163 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:06,308 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:34:10,695 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:34:10,700 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:34:10,702 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:10,876 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:34:15,293 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:34:15,300 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:34:15,302 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:15,445 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:34:19,988 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:34:19,994 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:20,176 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:34:24,474 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:34:24,479 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:34:24,480 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:24,620 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:34:29,013 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:34:29,019 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:34:29,020 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:29,159 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:34:33,598 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:34:33,604 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:33,759 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:34:37,965 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:34:37,970 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:34:37,972 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:38,112 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:34:42,364 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:34:42,369 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:34:42,370 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:42,512 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:34:46,741 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:34:46,748 [backtest.walk_forward] INFO: Split 3: no valid IS params
+2026-04-19 02:34:46,748 [backtest.walk_forward] INFO: Split 4: IS=0-8760 OOS=8760-10950
+2026-04-19 02:34:46,748 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:46,929 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:34:52,734 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:34:52,741 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:34:52,743 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:53,022 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:34:58,844 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:34:58,850 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:34:58,851 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:34:59,041 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:35:04,917 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:35:04,922 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:35:05,111 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:35:10,930 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:35:10,936 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:35:10,937 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:35:11,131 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:35:17,101 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:35:17,107 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:35:17,109 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:35:17,293 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:35:23,389 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:35:23,395 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:35:23,586 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:35:29,403 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:35:29,410 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:35:29,411 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:35:29,598 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:35:35,434 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:35:35,441 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:35:35,442 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:35:35,631 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:35:41,858 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:35:41,864 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:35:42,051 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:35:47,846 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:35:47,851 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:35:47,853 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:35:48,114 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:35:53,940 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:35:53,946 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:35:53,947 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:35:54,146 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:35:59,962 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:35:59,968 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:36:00,152 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:36:05,878 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:36:05,885 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:36:05,886 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:36:06,071 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:36:11,745 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:36:11,751 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:36:11,752 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:36:11,938 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:36:17,622 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:36:17,627 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:36:17,813 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:36:23,720 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:36:23,727 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:36:23,728 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:36:23,995 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:36:29,917 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:36:29,923 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:36:29,924 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:36:30,111 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:36:35,960 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:36:35,966 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:36:36,160 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:36:41,894 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:36:41,900 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:36:41,901 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:36:42,086 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:36:47,788 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:36:47,794 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:36:47,796 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:36:48,001 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:36:53,793 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:36:53,798 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:36:54,018 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:36:59,775 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:36:59,780 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:36:59,782 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:36:59,975 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:37:05,791 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:37:05,796 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:37:05,798 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:37:05,990 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:37:12,384 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:37:12,391 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:37:12,582 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:37:20,233 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:37:20,240 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:37:20,242 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:37:20,540 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:37:28,408 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:37:28,414 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:37:28,415 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:37:28,606 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:37:34,729 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:37:34,735 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:37:34,928 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:37:41,358 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:37:41,370 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:37:41,373 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:37:41,593 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:37:47,966 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:37:47,975 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:37:47,978 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:37:48,186 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:38:03,431 [data.fetcher] INFO: Cache loaded: BTC_USDT_4h.pkl (13142 rows)
+2026-04-19 02:38:03,432 [data.fetcher] INFO: Cache loaded: ETH_USDT_4h.pkl (13142 rows)
+2026-04-19 02:38:03,433 [data.fetcher] INFO: [BTC] Validating 13142 rows
+2026-04-19 02:38:03,434 [data.fetcher] INFO: [BTC] Validation PASSED
+2026-04-19 02:38:03,434 [data.fetcher] INFO: [ETH] Validating 13142 rows
+2026-04-19 02:38:03,435 [data.fetcher] INFO: [ETH] Validation PASSED
+2026-04-19 02:38:03,437 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:03,715 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 13082/13142 valid rows
+2026-04-19 02:38:03,716 [backtest.walk_forward] INFO: Walk-Forward: 54 param combos
+2026-04-19 02:38:03,717 [backtest.walk_forward] INFO: Split 2: IS=0-4380 OOS=4380-6570
+2026-04-19 02:38:03,717 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:03,812 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:06,801 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:06,806 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:38:06,807 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:06,905 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:10,493 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:10,497 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:38:10,498 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:10,593 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:13,713 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:13,717 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:13,813 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:16,819 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:16,824 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:38:16,825 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:16,920 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:20,427 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:20,433 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:38:20,434 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:20,604 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:24,094 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:24,097 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:24,192 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:27,093 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:27,097 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:38:27,098 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:27,237 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:30,216 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:30,220 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:38:30,221 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:30,314 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:33,511 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:33,515 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:33,609 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:36,531 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:36,535 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:38:36,536 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:36,631 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:39,612 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:39,616 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:38:39,617 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:39,720 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:42,909 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:42,913 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:43,065 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:47,090 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:47,098 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:38:47,099 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:47,317 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:50,537 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:50,541 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:50,639 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:53,677 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:53,680 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:53,777 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:38:57,827 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:38:57,831 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:38:57,832 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:38:57,966 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:01,566 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:01,572 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:01,686 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:05,157 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:05,162 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:05,321 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:08,797 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:08,803 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:39:08,804 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:08,920 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:12,551 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:12,557 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:39:12,557 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:12,663 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:16,529 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:16,538 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:16,703 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:19,815 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:19,822 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:39:19,824 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:19,943 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:23,002 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:23,006 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:39:23,008 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:23,103 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:26,099 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:26,103 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:26,197 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:29,244 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:29,247 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:39:29,249 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:29,347 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:32,303 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:32,308 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:39:32,309 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:32,403 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:35,908 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:35,912 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:36,019 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:39,347 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:39,355 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:39:39,357 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:39,619 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:43,377 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:43,383 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:39:43,384 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:43,518 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:46,981 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:46,985 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:47,107 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:50,678 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:50,681 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:39:50,682 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:50,776 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:53,702 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:53,707 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:53,802 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:56,693 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:56,697 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:56,789 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:39:59,701 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:39:59,706 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:39:59,707 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:39:59,804 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:02,827 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:02,831 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:02,929 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:05,842 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:05,845 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:05,941 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:08,927 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:08,932 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:40:08,933 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:09,029 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:12,040 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:12,044 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:40:12,045 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:12,144 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:15,619 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:15,624 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:15,802 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:19,833 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:19,838 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:40:19,840 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:20,023 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:24,192 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:24,197 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:40:24,198 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:24,322 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:28,107 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:28,111 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:28,218 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:32,026 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:32,030 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:40:32,031 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:32,130 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:35,054 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:35,058 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:40:35,059 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:35,154 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:38,057 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:38,060 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:38,154 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:41,234 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:41,238 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:40:41,239 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:41,334 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:44,331 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:44,335 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:40:44,336 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:44,431 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:47,471 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:47,475 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:47,570 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:50,690 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:50,694 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:40:50,695 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:50,791 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:53,787 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:53,790 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:53,891 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:56,818 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:56,823 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:56,918 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:40:59,809 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:40:59,813 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:40:59,814 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:40:59,907 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:41:02,774 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:41:02,778 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:02,874 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:41:05,817 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:41:05,822 [backtest.walk_forward] INFO: Split 2: no valid IS params
+2026-04-19 02:41:05,822 [backtest.walk_forward] INFO: Split 3: IS=0-6570 OOS=6570-8760
+2026-04-19 02:41:05,823 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:05,965 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:41:10,326 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:41:10,332 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:41:10,333 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:10,522 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:41:15,023 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:41:15,028 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:41:15,029 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:15,172 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:41:19,570 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:41:19,575 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:19,731 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:41:24,195 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:41:24,199 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:41:24,200 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:24,348 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:41:29,109 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:41:29,114 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:41:29,116 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:29,257 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:41:33,702 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:41:33,708 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:33,848 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:41:38,358 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:41:38,362 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:41:38,364 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:38,515 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:41:43,510 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:41:43,515 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:41:43,517 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:43,693 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:41:49,359 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:41:49,363 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:49,600 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:41:55,336 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:41:55,345 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:41:55,346 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:41:55,606 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:01,692 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:01,696 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:42:01,699 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:01,842 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:06,299 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:06,305 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:06,456 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:10,959 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:10,964 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:42:10,965 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:11,106 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:15,645 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:15,650 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:42:15,651 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:15,809 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:20,223 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:20,227 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:20,375 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:24,867 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:24,873 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:42:24,875 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:25,016 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:29,603 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:29,608 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:42:29,609 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:29,768 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:34,471 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:34,476 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:34,633 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:39,115 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:39,120 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:42:39,121 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:39,306 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:44,410 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:44,414 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:42:44,415 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:44,582 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:50,077 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:50,084 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:50,359 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:42:57,041 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:42:57,050 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:42:57,054 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:42:57,246 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:02,513 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:02,518 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:43:02,520 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:02,669 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:07,176 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:07,181 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:07,327 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:11,739 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:11,743 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:43:11,745 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:11,893 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:16,302 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:16,308 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:43:16,309 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:16,452 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:20,877 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:20,882 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:21,023 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:25,347 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:25,354 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:43:25,356 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:25,524 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:30,122 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:30,126 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:43:30,128 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:30,305 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:35,076 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:35,080 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:35,233 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:41,063 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:41,072 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:43:41,074 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:41,314 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:46,729 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:46,737 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:43:46,739 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:46,937 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:51,977 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:51,988 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:52,218 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:43:56,976 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:43:56,981 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:43:56,983 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:43:57,129 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:01,528 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:01,533 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:44:01,535 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:01,675 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:06,109 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:06,113 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:06,255 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:10,756 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:10,761 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:44:10,762 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:10,903 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:15,440 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:15,445 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:44:15,446 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:15,587 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:20,054 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:20,060 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:20,244 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:24,865 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:24,871 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:44:24,872 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:25,014 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:29,536 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:29,540 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:44:29,542 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:29,684 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:34,328 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:34,332 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:34,480 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:38,935 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:38,945 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:44:38,948 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:39,160 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:43,800 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:43,805 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:44:43,807 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:43,945 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:48,725 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:48,730 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:48,905 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:54,011 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:54,016 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:44:54,018 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:54,161 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:44:58,657 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:44:58,662 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:44:58,664 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:44:58,852 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:45:03,641 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:45:03,649 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:45:03,861 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:45:08,892 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:45:08,898 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:45:08,899 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:45:09,047 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:45:13,662 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:45:13,666 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:45:13,668 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:45:13,808 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:45:18,383 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:45:18,388 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:45:18,529 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:45:23,170 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:45:23,175 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:45:23,178 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:45:23,323 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:45:27,931 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:45:27,937 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:45:27,938 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:45:28,093 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:45:33,356 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:45:33,360 [backtest.walk_forward] INFO: Split 3: no valid IS params
+2026-04-19 02:45:33,361 [backtest.walk_forward] INFO: Split 4: IS=0-8760 OOS=8760-10950
+2026-04-19 02:45:33,361 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:45:33,551 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:45:39,529 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:45:39,534 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:45:39,536 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:45:39,763 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:45:46,068 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:45:46,074 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:45:46,076 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:45:46,266 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:45:52,587 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:45:52,593 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:45:52,783 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:45:58,636 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:45:58,641 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:45:58,643 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:45:58,830 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:46:04,691 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:46:04,696 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:46:04,698 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:46:04,892 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:46:10,696 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:46:10,702 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:46:10,894 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:46:17,351 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:46:17,357 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:46:17,359 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:46:17,546 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:46:23,959 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:46:23,964 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:46:23,966 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:46:24,153 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:46:31,362 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:46:31,369 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:46:31,611 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:46:37,973 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:46:37,983 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:46:37,986 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:46:38,186 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:46:44,484 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:46:44,491 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:46:44,492 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:46:44,754 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:46:51,630 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:46:51,639 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:46:51,864 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:46:58,457 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:46:58,463 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:46:58,464 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:46:58,661 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:47:04,854 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:47:04,864 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:47:04,865 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:47:05,134 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:47:11,681 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:47:11,686 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:47:11,889 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:47:19,319 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:47:19,329 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:47:19,331 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:47:19,666 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:47:26,192 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:47:26,197 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:47:26,198 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:47:26,426 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:47:34,590 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:47:34,596 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:47:34,802 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:47:43,231 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:47:43,237 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:47:43,239 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:47:43,456 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:47:49,811 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:47:49,818 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:47:49,819 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:47:50,170 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:47:56,794 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:47:56,803 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:47:56,998 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:49:20,860 [data.fetcher] INFO: Cache loaded: BTC_USDT_4h.pkl (13142 rows)
+2026-04-19 02:49:20,871 [data.fetcher] INFO: Cache loaded: ETH_USDT_4h.pkl (13142 rows)
+2026-04-19 02:49:20,872 [data.fetcher] INFO: [BTC] Validating 13142 rows
+2026-04-19 02:49:20,873 [data.fetcher] INFO: [BTC] Validation PASSED
+2026-04-19 02:49:20,873 [data.fetcher] INFO: [ETH] Validating 13142 rows
+2026-04-19 02:49:20,875 [data.fetcher] INFO: [ETH] Validation PASSED
+2026-04-19 02:49:20,875 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:49:21,185 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 13082/13142 valid rows
+2026-04-19 02:49:21,186 [backtest.walk_forward] INFO: Walk-Forward: 54 param combos
+2026-04-19 02:49:21,188 [backtest.walk_forward] INFO: Split 2: IS=0-4380 OOS=4380-6570
+2026-04-19 02:49:21,188 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:49:21,295 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 4320/4380 valid rows
+2026-04-19 02:49:25,074 [strategy.cointegration] INFO: Cointegration regimes: STRONG=38 MODERATE=83 NONE=944
+2026-04-19 02:49:25,074 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0255
+2026-04-19 02:49:25,130 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 2130/2190 valid rows
+2026-04-19 02:49:26,962 [strategy.cointegration] INFO: Cointegration regimes: STRONG=5 MODERATE=17 NONE=496
+2026-04-19 02:49:26,971 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:26,982 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:26,995 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,002 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,015 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,020 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,030 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,037 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,046 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,062 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,076 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,082 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,092 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,096 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,106 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,114 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,125 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,132 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,144 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,159 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,181 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,192 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,207 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,211 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,220 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,225 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,234 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,242 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,254 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,267 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:27,276 [backtest.walk_forward] INFO: Split 2: no valid IS params
+2026-04-19 02:49:27,276 [backtest.walk_forward] INFO: Split 3: IS=0-6570 OOS=6570-8760
+2026-04-19 02:49:27,276 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:49:27,433 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 6510/6570 valid rows
+2026-04-19 02:49:33,416 [strategy.cointegration] INFO: Cointegration regimes: STRONG=44 MODERATE=111 NONE=1458
+2026-04-19 02:49:33,417 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0795
+2026-04-19 02:49:33,479 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 2130/2190 valid rows
+2026-04-19 02:49:35,241 [strategy.cointegration] INFO: Cointegration regimes: STRONG=11 MODERATE=39 NONE=468
+2026-04-19 02:49:35,252 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,263 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,275 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,282 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,301 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,308 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,321 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,332 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,343 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,352 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:35,370 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,376 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:35,389 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,395 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,413 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,421 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,433 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,441 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,452 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,462 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,475 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,481 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:35,493 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,501 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:35,513 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,522 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,535 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,542 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,555 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,561 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,576 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,583 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,595 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,602 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:35,613 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:35,624 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:35,631 [backtest.walk_forward] INFO: Split 3: no valid IS params
+2026-04-19 02:49:35,631 [backtest.walk_forward] INFO: Split 4: IS=0-8760 OOS=8760-10950
+2026-04-19 02:49:35,631 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:49:35,840 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 8700/8760 valid rows
+2026-04-19 02:49:44,896 [strategy.cointegration] INFO: Cointegration regimes: STRONG=54 MODERATE=147 NONE=1959
+2026-04-19 02:49:44,896 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0723
+2026-04-19 02:49:44,958 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 2130/2190 valid rows
+2026-04-19 02:49:46,698 [strategy.cointegration] INFO: Cointegration regimes: STRONG=33 MODERATE=31 NONE=454
+2026-04-19 02:49:46,707 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,716 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,731 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,741 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,759 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,771 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,789 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,795 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,820 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,830 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:46,847 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,854 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:46,867 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,875 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,887 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,894 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,907 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,914 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,927 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,936 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,957 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,970 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:46,987 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:46,994 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:47,006 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:47,013 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:47,031 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:47,039 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:47,059 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:47,068 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:47,085 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:47,093 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:47,112 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:47,126 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:47,144 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:47,155 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:47,163 [backtest.walk_forward] INFO: Split 4: no valid IS params
+2026-04-19 02:49:47,163 [backtest.walk_forward] INFO: Split 5: IS=0-10950 OOS=10950-13140
+2026-04-19 02:49:47,163 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0356
+2026-04-19 02:49:47,596 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 10890/10950 valid rows
+2026-04-19 02:49:57,536 [strategy.cointegration] INFO: Cointegration regimes: STRONG=87 MODERATE=178 NONE=2443
+2026-04-19 02:49:57,536 [strategy.kalman_hedge] INFO: Kalman initialized: slope=0.0540
+2026-04-19 02:49:57,588 [strategy.kalman_hedge] INFO: Kalman hedge ratio: 2130/2190 valid rows
+2026-04-19 02:49:59,411 [strategy.cointegration] INFO: Cointegration regimes: STRONG=9 MODERATE=15 NONE=494
+2026-04-19 02:49:59,422 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,430 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,450 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,458 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,473 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,480 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,494 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,503 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,516 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,524 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:59,539 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,549 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:59,562 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,574 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,588 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,597 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,612 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,627 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,644 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,656 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,676 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,686 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:59,707 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,716 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:59,730 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,746 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,761 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,771 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,785 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,793 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,812 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,821 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,841 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,850 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:59,865 [strategy.signals] INFO: Generated 4 signals (actions: {'OPEN': 2, 'CLOSE': 2})
+2026-04-19 02:49:59,874 [strategy.signals] INFO: Generated 2 signals (actions: {'OPEN': 1, 'CLOSE': 1})
+2026-04-19 02:49:59,881 [backtest.walk_forward] INFO: Split 5: no valid IS params
+2026-04-19 02:50:01,046 [report.visualizer] INFO: Saved: C:\Users\user\Desktop\cursor\trade\pair_trade\report\01_equity_curve.png
+2026-04-19 02:50:01,195 [report.visualizer] INFO: Saved: C:\Users\user\Desktop\cursor\trade\pair_trade\report\03_walk_forward_summary.png

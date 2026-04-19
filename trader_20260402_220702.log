@@ -1,0 +1,59 @@
+{"timestamp": "2026-04-02T22:07:02.220998", "message": "Trader process started"}
+2026-04-02 22:07:02 [INFO] ======================================================================
+2026-04-02 22:07:02 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-04-02 22:07:02 [INFO] ======================================================================
+2026-04-02 22:07:02 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-04-02 22:07:02 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-02 22:07:02 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-04-02 22:07:02 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260402_220702.log
+2026-04-02 22:07:02 [INFO] ======================================================================
+2026-04-02 22:07:02 [INFO] Test message: Trader is running
+2026-04-02 22:07:02 [INFO] [DEBUG] Secret key length: 66
+2026-04-02 22:07:02 [INFO] [DEBUG] Account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 22:07:02 [INFO] [DEBUG] Derived account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 22:07:02 [INFO] [DEBUG] Using account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 22:07:03 [INFO] Live trading 有効化: env=mainnet, address=0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 22:07:03 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 22:07:03 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 22:07:03 [INFO] Trader initialized successfully
+2026-04-02 22:07:03 [INFO] Starting trading loop (live mode)...
+2026-04-02 22:07:04 [INFO] Current RSI: 27.18, Price: $66100.00
+2026-04-02 22:07:04 [INFO] [LIVE] Placing BUY: coin=BTC, qty=0.0075, price=$66100.00, order_type={'limit': {'tif': 'Ioc'}}
+2026-04-02 22:07:04 [INFO] [LIVE] BUY order response: {'status': 'ok', 'response': {'type': 'order', 'data': {'statuses': [{'error': 'Order could not immediately match against any resting orders. asset=0'}]}}}
+2026-04-02 22:07:04 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:08:04 [INFO] Current RSI: 26.13, Price: $66038.00
+2026-04-02 22:08:04 [INFO] Holding position (no sell signal)
+2026-04-02 22:08:04 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:09:05 [INFO] Current RSI: 25.51, Price: $65993.00
+2026-04-02 22:09:05 [INFO] Holding position (no sell signal)
+2026-04-02 22:09:05 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:10:05 [INFO] Current RSI: 25.73, Price: $66015.00
+2026-04-02 22:10:05 [INFO] Holding position (no sell signal)
+2026-04-02 22:10:05 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:11:05 [INFO] Current RSI: 25.44, Price: $65981.00
+2026-04-02 22:11:05 [INFO] Holding position (no sell signal)
+2026-04-02 22:11:05 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:12:05 [INFO] Current RSI: 25.32, Price: $65961.00
+2026-04-02 22:12:05 [INFO] Holding position (no sell signal)
+2026-04-02 22:12:05 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:13:05 [INFO] Current RSI: 25.42, Price: $65978.00
+2026-04-02 22:13:05 [INFO] Holding position (no sell signal)
+2026-04-02 22:13:05 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:14:06 [INFO] Current RSI: 25.47, Price: $65987.00
+2026-04-02 22:14:06 [INFO] Holding position (no sell signal)
+2026-04-02 22:14:06 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:15:06 [INFO] Current RSI: 25.37, Price: $65970.00
+2026-04-02 22:15:06 [INFO] Holding position (no sell signal)
+2026-04-02 22:15:06 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:16:06 [INFO] Current RSI: 25.30, Price: $65957.00
+2026-04-02 22:16:06 [INFO] Holding position (no sell signal)
+2026-04-02 22:16:06 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:17:06 [INFO] Current RSI: 25.15, Price: $65932.00
+2026-04-02 22:17:06 [INFO] Holding position (no sell signal)
+2026-04-02 22:17:06 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:18:06 [INFO] Current RSI: 25.19, Price: $65939.00
+2026-04-02 22:18:06 [INFO] Holding position (no sell signal)
+2026-04-02 22:18:06 [INFO] Sleeping for 60 seconds...
+2026-04-02 22:19:06 [INFO] Current RSI: 24.94, Price: $65895.00
+2026-04-02 22:19:06 [INFO] Holding position (no sell signal)
+2026-04-02 22:19:06 [INFO] Sleeping for 60 seconds...

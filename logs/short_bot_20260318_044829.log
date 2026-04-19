@@ -1,0 +1,36 @@
+2026-03-18 04:48:29 [INFO] ======================================================================
+2026-03-18 04:48:29 [INFO]  BTC SHORT TRADING BOT - HYPERLIQUID
+2026-03-18 04:48:29 [INFO] ======================================================================
+2026-03-18 04:48:29 [INFO] Start time: 2026-03-18T04:48:29.530531
+2026-03-18 04:48:29 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\short_bot_20260318_044829.log
+2026-03-18 04:48:29 [INFO] ======================================================================
+2026-03-18 04:48:29 [INFO] Loaded config from C:\Users\user\Desktop\cursor\trade\config.json
+2026-03-18 04:48:29 [INFO] ShortBot initialized: symbol=BTC, timeframe=1h, paper_mode=False, rsi_overbought=60
+2026-03-18 04:48:29 [WARNING] ⚠️  LIVE TRADING MODE
+2026-03-18 04:48:29 [WARNING] Real money trades will be placed
+2026-03-18 04:48:29 [INFO] Starting short trading loop...
+2026-03-18 04:48:29 [INFO] Paper mode: False
+2026-03-18 04:48:29 [INFO] Check interval: 60 seconds
+
+2026-03-18 04:48:29 [INFO] === Bot cycle 2026-03-18T04:48:29.531617 ===
+2026-03-18 04:48:30 [INFO] Price: $74,457.00 | RSI: 55.2 | ATR: $624.85 | 24h change: -1.12%
+2026-03-18 04:48:30 [INFO] Sleeping 60s...
+
+2026-03-18 04:49:30 [INFO] === Bot cycle 2026-03-18T04:49:30.461660 ===
+2026-03-18 04:49:31 [INFO] Price: $74,507.00 | RSI: 55.9 | ATR: $624.85 | 24h change: -1.05%
+2026-03-18 04:49:31 [INFO] Sleeping 60s...
+
+2026-03-18 04:50:31 [INFO] === Bot cycle 2026-03-18T04:50:31.467331 ===
+2026-03-18 04:50:31 [INFO] Price: $74,437.00 | RSI: 54.9 | ATR: $624.85 | 24h change: -1.15%
+2026-03-18 04:50:31 [INFO] Sleeping 60s...
+
+2026-03-18 04:51:31 [INFO] === Bot cycle 2026-03-18T04:51:31.508992 ===
+2026-03-18 04:51:31 [INFO] Price: $74,474.00 | RSI: 55.5 | ATR: $625.70 | 24h change: -1.10%
+2026-03-18 04:51:31 [INFO] Sleeping 60s...
+
+2026-03-18 04:52:31 [INFO] === Bot cycle 2026-03-18T04:52:31.552011 ===
+2026-03-18 04:52:31 [INFO] Price: $74,480.00 | RSI: 55.5 | ATR: $625.70 | 24h change: -1.09%
+2026-03-18 04:52:31 [INFO] Sleeping 60s...
+
+2026-03-18 04:53:21 [INFO] Shutting down gracefully...
+2026-03-18 04:53:21 [INFO] Short trading bot stopped

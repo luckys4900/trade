@@ -1,0 +1,10 @@
+2026-04-11 00:49:08,802 [INFO] Loaded config: 3 wallets
+2026-04-11 00:49:08,802 [INFO] Starting loop with interval 900s
+2026-04-11 00:49:08,802 [INFO] === Run Once ===
+2026-04-11 00:49:09,583 [DEBUG] Whale_1: Using default metrics (2000 fills, trade count estimated)
+2026-04-11 00:49:09,583 [INFO] Whale_1: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-04-11 00:49:10,336 [DEBUG] Whale_2: Using default metrics (2000 fills, trade count estimated)
+2026-04-11 00:49:10,336 [INFO] Whale_2: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-04-11 00:49:11,073 [DEBUG] Whale_3: Using default metrics (2000 fills, trade count estimated)
+2026-04-11 00:49:11,074 [INFO] Whale_3: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-04-11 00:49:11,855 [INFO] Signal written: NONE, strength=0.00, valid=False

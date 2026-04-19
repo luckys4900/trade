@@ -1,0 +1,11 @@
+{
+  "kronos_direction": "DOWN",
+  "contrarian_direction": "LONG",
+  "contrarian_signal": 1,
+  "pred_close": 70503.125,
+  "current_close": 70579.0,
+  "valid": true,
+  "timestamp": 1776069903094,
+  "samples": 30,
+  "inference_time_s": 0.5
+}

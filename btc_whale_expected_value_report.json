@@ -1,0 +1,50 @@
+{
+  "analysis_date": "2026-04-19T18:42:05.083952",
+  "current_btc_price": 75085,
+  "whales_analyzed": 3,
+  "results": [
+    {
+      "name": "MtGox Reserve",
+      "balance_btc": 140411.0,
+      "entry_date": "2012-02-07",
+      "entry_price": 5.0,
+      "entry_value_usd": 702055.0,
+      "current_price": 75085,
+      "current_value_usd": 10542759935.0,
+      "roi_pct": 1501600.0,
+      "days_held": 5185,
+      "annualized_roi_pct": 105705.68948891033
+    },
+    {
+      "name": "Grayscale BTC Trust",
+      "balance_btc": 250000.0,
+      "entry_date": "2013-01-01",
+      "entry_price": 13.0,
+      "entry_value_usd": 3250000.0,
+      "current_price": 75085,
+      "current_value_usd": 18771250000.0,
+      "roi_pct": 577476.923076923,
+      "days_held": 4856,
+      "annualized_roi_pct": 43405.905461918635
+    },
+    {
+      "name": "Early BTC Accumulator",
+      "balance_btc": 50000.0,
+      "entry_date": "2011-01-01",
+      "entry_price": 0.3,
+      "entry_value_usd": 15000.0,
+      "current_price": 75085,
+      "current_value_usd": 3754250000.0,
+      "roi_pct": 25028233.333333336,
+      "days_held": 5587,
+      "annualized_roi_pct": 1635100.2625141698
+    }
+  ],
+  "summary": {
+    "average_roi_pct": 9035770.085470086,
+    "win_rate_pct": 100.0,
+    "positive_count": 3,
+    "annualized_roi_pct": 594737.2858216662,
+    "verdict": "STRONG POSITIVE EV: Strategy viable for trading"
+  }
+}

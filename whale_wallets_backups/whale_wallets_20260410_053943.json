@@ -1,0 +1,29 @@
+{
+  "wallets": [
+    {
+      "address": "0x7dd9f0C23Fb61CA3f36B8414306310F963093c12",
+      "label": "Whale_1",
+      "active": true,
+      "notes": "User's main account - local testing"
+    }
+  ],
+  "scoring_config": {
+    "lookback_days": 90,
+    "min_trades": 200,
+    "min_sortino": 2.0,
+    "min_win_rate": 0.5,
+    "min_account_value": 1000000,
+    "max_account_value": 100000000,
+    "sortino_normalization_cap": 4.0,
+    "rescore_interval_hours": 24
+  },
+  "symbols_to_track": [
+    "BTC"
+  ],
+  "consensus_config": {
+    "min_agreeing_wallets": 3,
+    "min_ranked_wallets": 3,
+    "min_agreement_pct": 0.6,
+    "signal_ttl_minutes": 30
+  }
+}

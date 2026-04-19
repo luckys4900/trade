@@ -1,0 +1,70 @@
+{
+  "nodes": [
+    {
+      "id": "whale_monitor",
+      "label": "Whale Monitor",
+      "type": "data_source",
+      "cycle": "15-min",
+      "file": "whale_monitor.py"
+    },
+    {
+      "id": "macro_filter",
+      "label": "Macro Filter",
+      "type": "data_source",
+      "cycle": "60-min",
+      "file": "macro_filter.py"
+    },
+    {
+      "id": "qwen_bot",
+      "label": "Qwen Unified Bot",
+      "type": "executor",
+      "cycle": "1-min",
+      "file": "qwen_unified_live.py"
+    },
+    {
+      "id": "trading_logs",
+      "label": "Trade Logs",
+      "type": "output",
+      "files": [
+        "trade_alignment_log.json"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "whale_monitor",
+      "to": "qwen_bot",
+      "data": "whale_signal.json",
+      "impact": "+0.5x multiplier if valid"
+    },
+    {
+      "from": "macro_filter",
+      "to": "qwen_bot",
+      "data": "macro_state.json",
+      "impact": "Skip entry if EXTREME, -0.5x if NORMAL"
+    },
+    {
+      "from": "qwen_bot",
+      "to": "trading_logs",
+      "data": "entry_px, exit_px, outcome",
+      "impact": "30-day validation"
+    }
+  ],
+  "failure_modes": [
+    {
+      "node": "whale_monitor",
+      "symptom": "whale_signal.json > 30 min old",
+      "impact": "1.0x baseline only"
+    },
+    {
+      "node": "macro_filter",
+      "symptom": "macro_state.json > 90 min old",
+      "impact": "constant 0.5x penalty"
+    },
+    {
+      "node": "qwen_bot",
+      "symptom": "No entries despite valid signal",
+      "impact": "trading halt"
+    }
+  ]
+}

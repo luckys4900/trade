@@ -1,0 +1,194 @@
+2026-03-18 05:05:39 [INFO] ======================================================================
+2026-03-18 05:05:39 [INFO]  BTC SHORT TRADING BOT - HYPERLIQUID
+2026-03-18 05:05:39 [INFO] ======================================================================
+2026-03-18 05:05:39 [INFO] Start time: 2026-03-18T05:05:39.610963
+2026-03-18 05:05:39 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\short_bot_20260318_050539.log
+2026-03-18 05:05:39 [INFO] ======================================================================
+2026-03-18 05:05:39 [INFO] Loaded config from C:\Users\user\Desktop\cursor\trade\config.json
+2026-03-18 05:05:39 [INFO] ShortBot initialized: symbol=BTC, timeframe=1h, paper_mode=False, rsi_overbought=60
+2026-03-18 05:05:39 [WARNING] ⚠️  LIVE TRADING MODE
+2026-03-18 05:05:39 [WARNING] Real money trades will be placed
+2026-03-18 05:05:39 [INFO] Starting short trading loop...
+2026-03-18 05:05:39 [INFO] Paper mode: False
+2026-03-18 05:05:39 [INFO] Check interval: 60 seconds
+
+2026-03-18 05:05:39 [INFO] === Bot cycle 2026-03-18T05:05:39.611958 ===
+2026-03-18 05:05:39 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:05:39 [INFO] Price: $74,414.00 | RSI: 54.6 | ATR: $592.85 | 24h change: -1.55%
+2026-03-18 05:05:39 [INFO] Sleeping 60s...
+
+2026-03-18 05:06:39 [INFO] === Bot cycle 2026-03-18T05:06:39.878393 ===
+2026-03-18 05:06:39 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:06:39 [INFO] Price: $74,375.00 | RSI: 54.0 | ATR: $592.85 | 24h change: -1.60%
+2026-03-18 05:06:39 [INFO] Sleeping 60s...
+
+2026-03-18 05:07:39 [INFO] === Bot cycle 2026-03-18T05:07:39.922380 ===
+2026-03-18 05:07:39 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:07:39 [INFO] Price: $74,410.00 | RSI: 54.5 | ATR: $592.85 | 24h change: -1.55%
+2026-03-18 05:07:39 [INFO] Sleeping 60s...
+
+2026-03-18 05:08:39 [INFO] === Bot cycle 2026-03-18T05:08:39.969326 ===
+2026-03-18 05:08:39 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:08:40 [INFO] Price: $74,384.00 | RSI: 54.1 | ATR: $592.85 | 24h change: -1.59%
+2026-03-18 05:08:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:09:40 [INFO] === Bot cycle 2026-03-18T05:09:40.027949 ===
+2026-03-18 05:09:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:09:40 [INFO] Price: $74,404.00 | RSI: 54.4 | ATR: $592.85 | 24h change: -1.56%
+2026-03-18 05:09:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:10:40 [INFO] === Bot cycle 2026-03-18T05:10:40.107500 ===
+2026-03-18 05:10:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:10:40 [INFO] Price: $74,407.00 | RSI: 54.5 | ATR: $592.85 | 24h change: -1.56%
+2026-03-18 05:10:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:11:40 [INFO] === Bot cycle 2026-03-18T05:11:40.156572 ===
+2026-03-18 05:11:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:11:40 [INFO] Price: $74,442.00 | RSI: 55.0 | ATR: $592.85 | 24h change: -1.51%
+2026-03-18 05:11:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:12:40 [INFO] === Bot cycle 2026-03-18T05:12:40.202901 ===
+2026-03-18 05:12:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:12:40 [INFO] Price: $74,446.00 | RSI: 55.0 | ATR: $592.85 | 24h change: -1.51%
+2026-03-18 05:12:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:13:40 [INFO] === Bot cycle 2026-03-18T05:13:40.248520 ===
+2026-03-18 05:13:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:13:40 [INFO] Price: $74,413.00 | RSI: 54.6 | ATR: $592.85 | 24h change: -1.55%
+2026-03-18 05:13:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:14:40 [INFO] === Bot cycle 2026-03-18T05:14:40.295227 ===
+2026-03-18 05:14:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:14:40 [INFO] Price: $74,399.00 | RSI: 54.3 | ATR: $592.85 | 24h change: -1.57%
+2026-03-18 05:14:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:15:40 [INFO] === Bot cycle 2026-03-18T05:15:40.363035 ===
+2026-03-18 05:15:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:15:40 [INFO] Price: $74,368.00 | RSI: 53.9 | ATR: $594.99 | 24h change: -1.61%
+2026-03-18 05:15:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:16:40 [INFO] === Bot cycle 2026-03-18T05:16:40.407572 ===
+2026-03-18 05:16:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:16:40 [INFO] Price: $74,395.00 | RSI: 54.3 | ATR: $594.99 | 24h change: -1.57%
+2026-03-18 05:16:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:17:40 [INFO] === Bot cycle 2026-03-18T05:17:40.451371 ===
+2026-03-18 05:17:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:17:40 [INFO] Price: $74,375.00 | RSI: 54.0 | ATR: $594.99 | 24h change: -1.60%
+2026-03-18 05:17:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:18:40 [INFO] === Bot cycle 2026-03-18T05:18:40.497731 ===
+2026-03-18 05:18:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:18:40 [INFO] Price: $74,423.00 | RSI: 54.7 | ATR: $594.99 | 24h change: -1.54%
+2026-03-18 05:18:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:19:40 [INFO] === Bot cycle 2026-03-18T05:19:40.626502 ===
+2026-03-18 05:19:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:19:40 [INFO] Price: $74,416.00 | RSI: 54.6 | ATR: $594.99 | 24h change: -1.55%
+2026-03-18 05:19:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:20:40 [INFO] === Bot cycle 2026-03-18T05:20:40.674915 ===
+2026-03-18 05:20:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:20:40 [INFO] Price: $74,453.00 | RSI: 55.1 | ATR: $594.99 | 24h change: -1.50%
+2026-03-18 05:20:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:21:40 [INFO] === Bot cycle 2026-03-18T05:21:40.853186 ===
+2026-03-18 05:21:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:21:40 [INFO] Price: $74,457.00 | RSI: 55.2 | ATR: $594.99 | 24h change: -1.49%
+2026-03-18 05:21:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:22:40 [INFO] === Bot cycle 2026-03-18T05:22:40.905040 ===
+2026-03-18 05:22:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:22:40 [INFO] Price: $74,459.00 | RSI: 55.2 | ATR: $594.99 | 24h change: -1.49%
+2026-03-18 05:22:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:23:40 [INFO] === Bot cycle 2026-03-18T05:23:40.950650 ===
+2026-03-18 05:23:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:23:40 [INFO] Price: $74,469.00 | RSI: 55.4 | ATR: $594.99 | 24h change: -1.48%
+2026-03-18 05:23:40 [INFO] Sleeping 60s...
+
+2026-03-18 05:24:40 [INFO] === Bot cycle 2026-03-18T05:24:40.993581 ===
+2026-03-18 05:24:40 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:24:41 [INFO] Price: $74,579.00 | RSI: 56.7 | ATR: $602.28 | 24h change: -1.33%
+2026-03-18 05:24:41 [INFO] Sleeping 60s...
+
+2026-03-18 05:25:41 [INFO] === Bot cycle 2026-03-18T05:25:41.040061 ===
+2026-03-18 05:25:41 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:25:41 [INFO] Price: $74,567.00 | RSI: 56.5 | ATR: $603.49 | 24h change: -1.35%
+2026-03-18 05:25:41 [INFO] Sleeping 60s...
+
+2026-03-18 05:26:41 [INFO] === Bot cycle 2026-03-18T05:26:41.168247 ===
+2026-03-18 05:26:41 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:26:41 [INFO] Price: $74,634.00 | RSI: 57.3 | ATR: $607.64 | 24h change: -1.26%
+2026-03-18 05:26:41 [INFO] Sleeping 60s...
+
+2026-03-18 05:27:41 [INFO] === Bot cycle 2026-03-18T05:27:41.220786 ===
+2026-03-18 05:27:41 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:27:41 [INFO] Price: $74,632.00 | RSI: 57.3 | ATR: $607.64 | 24h change: -1.26%
+2026-03-18 05:27:41 [INFO] Sleeping 60s...
+
+2026-03-18 05:28:41 [INFO] === Bot cycle 2026-03-18T05:28:41.271095 ===
+2026-03-18 05:28:41 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:28:41 [INFO] Price: $74,612.00 | RSI: 57.1 | ATR: $607.64 | 24h change: -1.29%
+2026-03-18 05:28:41 [INFO] Sleeping 60s...
+
+2026-03-18 05:29:41 [INFO] === Bot cycle 2026-03-18T05:29:41.323137 ===
+2026-03-18 05:29:41 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:29:41 [INFO] Price: $74,627.00 | RSI: 57.2 | ATR: $607.64 | 24h change: -1.27%
+2026-03-18 05:29:41 [INFO] Sleeping 60s...
+
+2026-03-18 05:30:41 [INFO] === Bot cycle 2026-03-18T05:30:41.385675 ===
+2026-03-18 05:30:41 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:30:41 [INFO] Price: $74,600.00 | RSI: 56.9 | ATR: $607.64 | 24h change: -1.30%
+2026-03-18 05:30:41 [INFO] Sleeping 60s...
+
+2026-03-18 05:31:41 [INFO] === Bot cycle 2026-03-18T05:31:41.455021 ===
+2026-03-18 05:31:41 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:31:41 [INFO] Price: $74,603.00 | RSI: 57.0 | ATR: $607.64 | 24h change: -1.30%
+2026-03-18 05:31:41 [INFO] Sleeping 60s...
+
+2026-03-18 05:32:41 [INFO] === Bot cycle 2026-03-18T05:32:41.772440 ===
+2026-03-18 05:32:41 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:32:41 [INFO] Price: $74,574.00 | RSI: 56.6 | ATR: $607.64 | 24h change: -1.34%
+2026-03-18 05:32:41 [INFO] Sleeping 60s...
+
+2026-03-18 05:33:41 [INFO] === Bot cycle 2026-03-18T05:33:41.844554 ===
+2026-03-18 05:33:41 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:33:41 [INFO] Price: $74,566.00 | RSI: 56.5 | ATR: $607.64 | 24h change: -1.35%
+2026-03-18 05:33:41 [INFO] Sleeping 60s...
+
+2026-03-18 05:34:41 [INFO] === Bot cycle 2026-03-18T05:34:41.942496 ===
+2026-03-18 05:34:41 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:34:41 [INFO] Price: $74,520.00 | RSI: 56.0 | ATR: $607.64 | 24h change: -1.41%
+2026-03-18 05:34:41 [INFO] Sleeping 60s...
+
+2026-03-18 05:35:41 [INFO] === Bot cycle 2026-03-18T05:35:41.993970 ===
+2026-03-18 05:35:41 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:35:42 [INFO] Price: $74,520.00 | RSI: 56.0 | ATR: $607.64 | 24h change: -1.41%
+2026-03-18 05:35:42 [INFO] Sleeping 60s...
+
+2026-03-18 05:36:42 [INFO] === Bot cycle 2026-03-18T05:36:42.051122 ===
+2026-03-18 05:36:42 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:36:42 [INFO] Price: $74,523.00 | RSI: 56.0 | ATR: $607.64 | 24h change: -1.41%
+2026-03-18 05:36:42 [INFO] Sleeping 60s...
+
+2026-03-18 05:37:42 [INFO] === Bot cycle 2026-03-18T05:37:42.143106 ===
+2026-03-18 05:37:42 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:37:42 [INFO] Price: $74,517.00 | RSI: 56.0 | ATR: $607.64 | 24h change: -1.41%
+2026-03-18 05:37:42 [INFO] Sleeping 60s...
+
+2026-03-18 05:38:42 [INFO] === Bot cycle 2026-03-18T05:38:42.191703 ===
+2026-03-18 05:38:42 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:38:42 [INFO] Price: $74,494.00 | RSI: 55.7 | ATR: $607.64 | 24h change: -1.44%
+2026-03-18 05:38:42 [INFO] Sleeping 60s...
+
+2026-03-18 05:39:42 [INFO] === Bot cycle 2026-03-18T05:39:42.261847 ===
+2026-03-18 05:39:42 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:39:42 [INFO] Price: $74,550.00 | RSI: 56.4 | ATR: $607.64 | 24h change: -1.37%
+2026-03-18 05:39:42 [INFO] Sleeping 60s...
+
+2026-03-18 05:40:42 [INFO] === Bot cycle 2026-03-18T05:40:42.309288 ===
+2026-03-18 05:40:42 [INFO] [MANUAL] Balance: 199.12 USDC | Available: 199.12 USDC
+2026-03-18 05:40:42 [INFO] Price: $74,524.00 | RSI: 56.1 | ATR: $607.64 | 24h change: -1.40%
+2026-03-18 05:40:42 [INFO] Sleeping 60s...
+

@@ -1,0 +1,63 @@
+{
+  "session_id": "20260416_063109",
+  "timestamp": "2026-04-16T06:31:11.178330",
+  "timeline": [
+    {
+      "timestamp": "2026-04-16T06:31:09.874857",
+      "layer": "Layer1",
+      "event_type": "start",
+      "details": {
+        "strategy": "OCPM Strategy Enhancement"
+      }
+    },
+    {
+      "timestamp": "2026-04-16T06:31:10.175162",
+      "layer": "layer1",
+      "event_type": "tokens",
+      "details": {
+        "consumed": 3200
+      }
+    },
+    {
+      "timestamp": "2026-04-16T06:31:10.176037",
+      "layer": "Layer2",
+      "event_type": "start",
+      "details": {
+        "cache_key": "1b78e6415d8f5110"
+      }
+    },
+    {
+      "timestamp": "2026-04-16T06:31:10.976594",
+      "layer": "layer2",
+      "event_type": "tokens",
+      "details": {
+        "consumed": 150
+      }
+    },
+    {
+      "timestamp": "2026-04-16T06:31:10.977377",
+      "layer": "Layer3",
+      "event_type": "start",
+      "details": {
+        "cache_key": "1b78e6415d8f5110"
+      }
+    },
+    {
+      "timestamp": "2026-04-16T06:31:11.177685",
+      "layer": "layer3",
+      "event_type": "tokens",
+      "details": {
+        "consumed": 120
+      }
+    }
+  ],
+  "token_usage": {
+    "layer1": 3200,
+    "layer2": 150,
+    "layer3": 120,
+    "cache_savings": 130,
+    "total": 3470
+  },
+  "cache_hits": 1,
+  "savings_percentage": 3.7
+}

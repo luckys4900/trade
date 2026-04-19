@@ -1,0 +1,46 @@
+2026-04-11 01:52:04,272 [INFO] Starting loop with interval 3600s (1 hour)
+2026-04-11 01:52:04,272 [INFO] === Run Once ===
+2026-04-11 01:52:04,393 [INFO] Loaded 20 calendar events
+2026-04-11 01:52:04,400 [INFO] State written: regime=LOW, atr=0.0144, caution=False
+2026-04-11 02:52:04,414 [INFO] === Run Once ===
+2026-04-11 02:52:04,559 [INFO] Loaded 20 calendar events
+2026-04-11 02:52:04,566 [INFO] State written: regime=LOW, atr=0.0145, caution=False
+2026-04-11 03:52:04,538 [INFO] === Run Once ===
+2026-04-11 03:52:04,675 [INFO] Loaded 20 calendar events
+2026-04-11 03:52:04,683 [INFO] State written: regime=LOW, atr=0.0146, caution=False
+2026-04-11 04:52:04,499 [INFO] === Run Once ===
+2026-04-11 04:52:04,650 [INFO] Loaded 20 calendar events
+2026-04-11 04:52:04,655 [INFO] State written: regime=LOW, atr=0.0147, caution=False
+2026-04-11 05:52:04,601 [INFO] === Run Once ===
+2026-04-11 05:52:04,602 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-11 05:52:04,602 [WARNING] No candles fetched, using last known state
+2026-04-11 06:52:04,585 [INFO] === Run Once ===
+2026-04-11 06:52:04,590 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-11 06:52:04,590 [WARNING] No candles fetched, using last known state
+2026-04-11 07:52:04,596 [INFO] === Run Once ===
+2026-04-11 07:52:04,598 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-11 07:52:04,598 [WARNING] No candles fetched, using last known state
+2026-04-11 08:52:04,603 [INFO] === Run Once ===
+2026-04-11 08:52:04,605 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-11 08:52:04,605 [WARNING] No candles fetched, using last known state
+2026-04-11 09:52:04,616 [INFO] === Run Once ===
+2026-04-11 09:52:04,621 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-11 09:52:04,622 [WARNING] No candles fetched, using last known state
+2026-04-11 22:30:00,699 [INFO] === Run Once ===
+2026-04-11 22:30:00,807 [INFO] Loaded 20 calendar events
+2026-04-11 22:30:00,815 [INFO] State written: regime=LOW, atr=0.0123, caution=False
+2026-04-11 23:30:00,820 [INFO] === Run Once ===
+2026-04-11 23:30:00,978 [INFO] Loaded 20 calendar events
+2026-04-11 23:30:00,984 [INFO] State written: regime=LOW, atr=0.0123, caution=False
+2026-04-12 00:30:00,995 [INFO] === Run Once ===
+2026-04-12 00:30:01,165 [INFO] Loaded 20 calendar events
+2026-04-12 00:30:01,174 [INFO] State written: regime=LOW, atr=0.0123, caution=False
+2026-04-12 01:30:01,185 [INFO] === Run Once ===
+2026-04-12 01:30:01,434 [INFO] Loaded 20 calendar events
+2026-04-12 01:30:01,443 [INFO] State written: regime=LOW, atr=0.0116, caution=False
+2026-04-12 02:30:01,446 [INFO] === Run Once ===
+2026-04-12 02:30:01,626 [INFO] Loaded 20 calendar events
+2026-04-12 02:30:01,633 [INFO] State written: regime=LOW, atr=0.0119, caution=False
+2026-04-12 03:30:01,646 [INFO] === Run Once ===
+2026-04-12 03:30:01,795 [INFO] Loaded 20 calendar events
+2026-04-12 03:30:01,817 [INFO] State written: regime=LOW, atr=0.0119, caution=False

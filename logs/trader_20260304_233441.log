@@ -1,0 +1,111 @@
+{"timestamp": "2026-03-04T23:34:41.550011", "message": "Trader process started"}
+2026-03-04 23:34:41 [INFO] ======================================================================
+2026-03-04 23:34:41 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-03-04 23:34:41 [INFO] ======================================================================
+2026-03-04 23:34:41 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-03-04 23:34:41 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-03-04 23:34:41 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-03-04 23:34:41 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260304_233441.log
+2026-03-04 23:34:41 [INFO] ======================================================================
+2026-03-04 23:34:41 [INFO] Test message: Trader is running
+2026-03-04 23:34:42 [INFO] Live trading 有効化: env=mainnet, address=0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-03-04 23:34:42 [INFO] Initialized trader for BTC with 4h timeframe
+2026-03-04 23:34:42 [INFO] RSI settings: period=14, overbought=70, oversold=30
+2026-03-04 23:34:42 [INFO] Trader initialized successfully
+2026-03-04 23:34:42 [INFO] Starting trading loop (live mode)...
+2026-03-04 23:34:42 [INFO] Current RSI: 76.82, Price: $72395.00
+2026-03-04 23:34:42 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:34:42 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:35:43 [INFO] Current RSI: 76.31, Price: $72138.00
+2026-03-04 23:35:43 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:35:43 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:36:43 [INFO] Current RSI: 75.61, Price: $71798.00
+2026-03-04 23:36:43 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:36:43 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:37:43 [INFO] Current RSI: 75.45, Price: $71724.00
+2026-03-04 23:37:43 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:37:43 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:38:43 [INFO] Current RSI: 75.97, Price: $71968.00
+2026-03-04 23:38:43 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:38:43 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:39:43 [INFO] Current RSI: 75.75, Price: $71866.00
+2026-03-04 23:39:43 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:39:43 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:40:43 [INFO] Current RSI: 75.86, Price: $71918.00
+2026-03-04 23:40:43 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:40:43 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:41:43 [INFO] Current RSI: 75.54, Price: $71769.00
+2026-03-04 23:41:43 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:41:43 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:42:43 [INFO] Current RSI: 75.15, Price: $71587.00
+2026-03-04 23:42:43 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:42:43 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:43:43 [INFO] Current RSI: 75.09, Price: $71560.00
+2026-03-04 23:43:43 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:43:43 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:44:44 [INFO] Current RSI: 74.66, Price: $71374.00
+2026-03-04 23:44:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:44:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:45:44 [INFO] Current RSI: 74.61, Price: $71350.00
+2026-03-04 23:45:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:45:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:46:44 [INFO] Current RSI: 74.60, Price: $71347.00
+2026-03-04 23:46:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:46:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:47:44 [INFO] Current RSI: 75.05, Price: $71544.00
+2026-03-04 23:47:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:47:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:48:44 [INFO] Current RSI: 74.96, Price: $71505.00
+2026-03-04 23:48:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:48:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:49:44 [INFO] Current RSI: 74.98, Price: $71515.00
+2026-03-04 23:49:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:49:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:50:44 [INFO] Current RSI: 75.16, Price: $71594.00
+2026-03-04 23:50:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:50:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:51:44 [INFO] Current RSI: 75.11, Price: $71573.00
+2026-03-04 23:51:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:51:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:52:44 [INFO] Current RSI: 75.44, Price: $71720.00
+2026-03-04 23:52:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:52:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:53:44 [INFO] Current RSI: 75.26, Price: $71640.00
+2026-03-04 23:53:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:53:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:54:44 [INFO] Current RSI: 75.35, Price: $71679.00
+2026-03-04 23:54:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:54:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:55:44 [INFO] Current RSI: 75.13, Price: $71579.00
+2026-03-04 23:55:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:55:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:56:44 [INFO] Current RSI: 75.39, Price: $71698.00
+2026-03-04 23:56:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:56:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:57:44 [INFO] Current RSI: 75.11, Price: $71572.00
+2026-03-04 23:57:44 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:57:44 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:58:45 [INFO] Current RSI: 74.95, Price: $71501.00
+2026-03-04 23:58:45 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:58:45 [INFO] Sleeping for 60 seconds...
+2026-03-04 23:59:45 [INFO] Current RSI: 75.04, Price: $71542.00
+2026-03-04 23:59:45 [INFO] No signal (neutral/bearish, flat)
+2026-03-04 23:59:45 [INFO] Sleeping for 60 seconds...
+2026-03-05 00:00:45 [INFO] Current RSI: 75.57, Price: $71780.00
+2026-03-05 00:00:45 [INFO] No signal (neutral/bearish, flat)
+2026-03-05 00:00:45 [INFO] Sleeping for 60 seconds...
+2026-03-05 00:01:45 [INFO] Current RSI: 75.67, Price: $71829.00
+2026-03-05 00:01:45 [INFO] No signal (neutral/bearish, flat)
+2026-03-05 00:01:45 [INFO] Sleeping for 60 seconds...
+2026-03-05 00:02:45 [INFO] Current RSI: 75.87, Price: $71921.00
+2026-03-05 00:02:45 [INFO] No signal (neutral/bearish, flat)
+2026-03-05 00:02:45 [INFO] Sleeping for 60 seconds...
+2026-03-05 00:03:45 [INFO] Current RSI: 75.37, Price: $71690.00
+2026-03-05 00:03:45 [INFO] No signal (neutral/bearish, flat)
+2026-03-05 00:03:45 [INFO] Sleeping for 60 seconds...
+2026-03-05 00:04:45 [INFO] Current RSI: 75.29, Price: $71652.00
+2026-03-05 00:04:45 [INFO] No signal (neutral/bearish, flat)
+2026-03-05 00:04:45 [INFO] Sleeping for 60 seconds...
+2026-03-05 00:05:45 [INFO] Current RSI: 75.19, Price: $71608.00
+2026-03-05 00:05:45 [INFO] No signal (neutral/bearish, flat)
+2026-03-05 00:05:45 [INFO] Sleeping for 60 seconds...

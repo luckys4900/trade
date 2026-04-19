@@ -1,0 +1,18 @@
+[
+  {
+    "address": "0x932bdd2d5e21475e62d2fea8158fc5974507cb1a",
+    "total_btc_trades": 20,
+    "win_rate": 1.0,
+    "avg_win": 3.21067528219628,
+    "avg_loss": 0,
+    "ev_per_trade": 3.21067528219628,
+    "sortino": 321067528.219628,
+    "max_drawdown": 0.0,
+    "account_value": 614910.127459,
+    "active_positions": 3,
+    "days_since_last_trade": 2,
+    "is_qualified": true,
+    "source": "verified",
+    "note": "Whale_2 - High volume"
+  }
+]

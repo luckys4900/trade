@@ -1,0 +1,73 @@
+2026-04-10 14:30:30,758 [INFO]   WHALE MONITORING SYSTEM - FULL AUTOMATION
+2026-04-10 14:30:30,758 [INFO] ======================================================================
+2026-04-10 14:30:30,758 [INFO] STEP 1: Auto-discovering whale wallets from Hyperliquid
+2026-04-10 14:30:30,758 [INFO] ======================================================================
+2026-04-10 14:30:30,758 [INFO] 
+Attempting API auto-discovery...
+2026-04-10 14:30:37,539 [WARNING] Auto-discovery failed, trying manual mode...
+2026-04-10 14:30:37,539 [INFO] 
+======================================================================
+2026-04-10 14:30:37,539 [INFO] Using hardcoded known performers from public Hyperliquid data
+2026-04-10 14:30:37,539 [INFO] ======================================================================
+2026-04-10 14:30:37,540 [WARNING] NOTE: For production, please run: python discover_whale_wallets.py --manual
+2026-04-10 14:30:37,540 [WARNING]        and select TOP 6-10 wallets from https://app.hyperliquid.xyz/leaderboard
+2026-04-10 14:30:39,544 [INFO] 
+======================================================================
+2026-04-10 14:30:39,544 [INFO] STEP 2: Launching Whale Monitor (15min cycle)
+2026-04-10 14:30:39,544 [INFO] ======================================================================
+2026-04-10 14:30:39,548 [INFO]   Output: logs\whale_monitor_background.log
+2026-04-10 14:30:41,557 [INFO] 
+======================================================================
+2026-04-10 14:30:41,557 [INFO] STEP 3: Launching Macro Filter (60min cycle)
+2026-04-10 14:30:41,557 [INFO] ======================================================================
+2026-04-10 14:30:41,562 [INFO]   Output: logs\macro_filter_background.log
+2026-04-10 14:30:43,573 [INFO] 
+======================================================================
+2026-04-10 14:30:43,573 [INFO] STEP 4: Verifying Main Bot (qwen_unified_live.py)
+2026-04-10 14:30:43,573 [INFO] ======================================================================
+2026-04-10 14:30:45,760 [INFO] 
+======================================================================
+2026-04-10 14:30:45,760 [INFO] STEP 5: System Verification
+2026-04-10 14:30:45,760 [INFO] ======================================================================
+2026-04-10 14:30:48,769 [INFO] 
+Checking output files...
+2026-04-10 14:30:48,769 [INFO] Testing whale_monitor signal generation...
+2026-04-10 14:30:48,992 [INFO]   direction: NONE
+2026-04-10 14:30:48,992 [INFO]   strength: 0.0
+2026-04-10 14:30:48,993 [INFO]   valid: False
+2026-04-10 14:30:48,993 [INFO] 
+Testing macro_filter state generation...
+2026-04-10 14:30:49,304 [INFO]   regime: LOW
+2026-04-10 14:30:49,304 [INFO]   atr_ratio: 0.01429484138425381
+2026-04-10 14:30:49,304 [INFO]   caution_mode: False
+2026-04-10 14:30:49,304 [INFO] 
+Checking background processes...
+2026-04-10 14:30:49,304 [INFO] 
+======================================================================
+2026-04-10 14:30:49,304 [INFO] VERIFICATION SUMMARY
+2026-04-10 14:30:49,304 [INFO] ======================================================================
+2026-04-10 14:30:49,304 [INFO] 
+======================================================================
+2026-04-10 14:30:49,304 [INFO] SYSTEM STATUS
+2026-04-10 14:30:49,304 [INFO] ======================================================================
+2026-04-10 14:30:49,306 [INFO] 
+Output files:
+2026-04-10 14:30:49,306 [INFO]   - whale_signal.json (updated every 15min)
+2026-04-10 14:30:49,306 [INFO]   - macro_state.json (updated every 60min)
+2026-04-10 14:30:49,306 [INFO]   - trade_alignment_log.json (updated on every trade)
+2026-04-10 14:30:49,306 [INFO] 
+Logs:
+2026-04-10 14:30:49,306 [INFO]   - logs\system_launch_20260410_053030.log
+2026-04-10 14:30:49,306 [INFO]   - logs/whale_monitor_background.log
+2026-04-10 14:30:49,306 [INFO]   - logs/macro_filter_background.log
+2026-04-10 14:30:49,306 [INFO] 
+Next steps:
+2026-04-10 14:30:49,306 [INFO]   1. Check logs to verify signals are generating
+2026-04-10 14:30:49,306 [INFO]   2. Monitor whale_signal.json (should update every 15min)
+2026-04-10 14:30:49,306 [INFO]   3. After 30 days: python validate_whale_alpha.py
+2026-04-10 14:30:49,306 [INFO] 
+======================================================================
+2026-04-10 14:30:49,306 [INFO] System will continue running in background
+2026-04-10 14:30:49,306 [INFO] Press Ctrl+C to shutdown all processes
+2026-04-10 14:30:49,306 [INFO] ======================================================================
+

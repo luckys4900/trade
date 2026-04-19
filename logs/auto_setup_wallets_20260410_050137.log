@@ -1,0 +1,29 @@
+2026-04-10 14:01:37,712 [INFO] === Auto Wallet Setup ===
+2026-04-10 14:01:37,712 [INFO] Step 1: Discovering wallets from configuration...
+2026-04-10 14:01:37,713 [INFO] Found .env wallet: 0x7dd9f0C23F...
+2026-04-10 14:01:37,713 [INFO] Found config.json wallet: 0x7dd9f0C23F...
+2026-04-10 14:01:37,713 [INFO] Found known wallet: Trader_A (.env) - 0x8455b70a5a...
+2026-04-10 14:01:37,713 [INFO] Found known wallet: Trader_B (config) - 0xE2Ce93147a...
+2026-04-10 14:01:37,713 [INFO] Found known wallet: Agent_Wallet - 0xF8b04CEbEc...
+2026-04-10 14:01:37,713 [INFO] Found 5 wallets
+2026-04-10 14:01:37,713 [INFO] Step 2: Fetching wallet metrics from Hyperliquid...
+2026-04-10 14:01:37,819 [INFO] Whale_1: 0x7dd9f0C23F... - Account Value: $211.19, Positions: 0
+2026-04-10 14:01:37,903 [INFO] Whale_2: 0x7dd9f0C23F... - Account Value: $211.19, Positions: 0
+2026-04-10 14:01:37,988 [INFO] Whale_3: 0x8455b70a5a... - Account Value: $0.00, Positions: 0
+2026-04-10 14:01:38,167 [INFO] Whale_4: 0xE2Ce93147a... - Account Value: $0.00, Positions: 0
+2026-04-10 14:01:38,264 [INFO] Whale_5: 0xF8b04CEbEc... - Account Value: $0.00, Positions: 0
+2026-04-10 14:01:38,266 [INFO] Backup created: whale_wallets.json.backup
+2026-04-10 14:01:38,277 [INFO] 
+======================================================================
+2026-04-10 14:01:38,277 [INFO] CONFIGURED WALLETS
+2026-04-10 14:01:38,277 [INFO] ======================================================================
+2026-04-10 14:01:38,281 [INFO] 1. Whale_1: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
+2026-04-10 14:01:38,281 [INFO]    Account Value: $211.19, Positions: 0
+2026-04-10 14:01:38,281 [INFO] 2. Whale_2: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
+2026-04-10 14:01:38,281 [INFO]    Account Value: $211.19, Positions: 0
+2026-04-10 14:01:38,281 [INFO] 3. Whale_3: 0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-04-10 14:01:38,281 [INFO]    Account Value: $0.00, Positions: 0
+2026-04-10 14:01:38,281 [INFO] 4. Whale_4: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-10 14:01:38,282 [INFO]    Account Value: $0.00, Positions: 0
+2026-04-10 14:01:38,282 [INFO] 5. Whale_5: 0xF8b04CEbEc49EFFdE2c9d8C65a3268e875CB3332
+2026-04-10 14:01:38,282 [INFO]    Account Value: $0.00, Positions: 0

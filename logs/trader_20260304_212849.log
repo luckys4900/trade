@@ -1,0 +1,128 @@
+{"timestamp": "2026-03-04T21:28:49.233592", "message": "Trader process started"}
+2026-03-04 21:28:49 [INFO] ======================================================================
+2026-03-04 21:28:49 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-03-04 21:28:49 [INFO] ======================================================================
+2026-03-04 21:28:49 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-03-04 21:28:49 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-03-04 21:28:49 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-03-04 21:28:49 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260304_212849.log
+2026-03-04 21:28:49 [INFO] ======================================================================
+2026-03-04 21:28:49 [INFO] Test message: Trader is running
+2026-03-04 21:28:49 [INFO] Initialized trader for BTC with 4h timeframe
+2026-03-04 21:28:49 [INFO] RSI settings: period=14, overbought=70, oversold=30
+2026-03-04 21:28:49 [INFO] Trader initialized successfully
+2026-03-04 21:28:49 [INFO] Starting trading loop...
+2026-03-04 21:28:49 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:28:49 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:28:49 [INFO] Current positions: 0/1
+2026-03-04 21:28:49 [ERROR] API error: 404 - 
+2026-03-04 21:28:49 [ERROR] Error fetching candles: 
+2026-03-04 21:28:49 [ERROR] No candle data available
+2026-03-04 21:29:49 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:29:49 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:29:49 [INFO] Current positions: 0/1
+2026-03-04 21:29:49 [ERROR] API error: 404 - 
+2026-03-04 21:29:49 [ERROR] Error fetching candles: 
+2026-03-04 21:29:49 [ERROR] No candle data available
+2026-03-04 21:30:49 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:30:49 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:30:49 [INFO] Current positions: 0/1
+2026-03-04 21:30:49 [ERROR] API error: 404 - 
+2026-03-04 21:30:49 [ERROR] Error fetching candles: 
+2026-03-04 21:30:49 [ERROR] No candle data available
+2026-03-04 21:31:49 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:31:49 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:31:49 [INFO] Current positions: 0/1
+2026-03-04 21:31:49 [ERROR] API error: 404 - 
+2026-03-04 21:31:49 [ERROR] Error fetching candles: 
+2026-03-04 21:31:49 [ERROR] No candle data available
+2026-03-04 21:32:49 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:32:49 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:32:49 [INFO] Current positions: 0/1
+2026-03-04 21:32:49 [ERROR] API error: 404 - 
+2026-03-04 21:32:49 [ERROR] Error fetching candles: 
+2026-03-04 21:32:49 [ERROR] No candle data available
+2026-03-04 21:33:49 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:33:49 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:33:49 [INFO] Current positions: 0/1
+2026-03-04 21:33:49 [ERROR] API error: 404 - 
+2026-03-04 21:33:49 [ERROR] Error fetching candles: 
+2026-03-04 21:33:49 [ERROR] No candle data available
+2026-03-04 21:34:49 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:34:49 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:34:49 [INFO] Current positions: 0/1
+2026-03-04 21:34:49 [ERROR] API error: 404 - 
+2026-03-04 21:34:49 [ERROR] Error fetching candles: 
+2026-03-04 21:34:49 [ERROR] No candle data available
+2026-03-04 21:35:49 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:35:49 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:35:49 [INFO] Current positions: 0/1
+2026-03-04 21:35:50 [ERROR] API error: 404 - 
+2026-03-04 21:35:50 [ERROR] Error fetching candles: 
+2026-03-04 21:35:50 [ERROR] No candle data available
+2026-03-04 21:36:50 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:36:50 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:36:50 [INFO] Current positions: 0/1
+2026-03-04 21:36:50 [ERROR] API error: 404 - 
+2026-03-04 21:36:50 [ERROR] Error fetching candles: 
+2026-03-04 21:36:50 [ERROR] No candle data available
+2026-03-04 21:37:50 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:37:50 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:37:50 [INFO] Current positions: 0/1
+2026-03-04 21:37:50 [ERROR] API error: 404 - 
+2026-03-04 21:37:50 [ERROR] Error fetching candles: 
+2026-03-04 21:37:50 [ERROR] No candle data available
+2026-03-04 21:38:50 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:38:50 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:38:50 [INFO] Current positions: 0/1
+2026-03-04 21:38:50 [ERROR] API error: 404 - 
+2026-03-04 21:38:50 [ERROR] Error fetching candles: 
+2026-03-04 21:38:50 [ERROR] No candle data available
+2026-03-04 21:39:50 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:39:50 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:39:50 [INFO] Current positions: 0/1
+2026-03-04 21:39:50 [ERROR] API error: 404 - 
+2026-03-04 21:39:50 [ERROR] Error fetching candles: 
+2026-03-04 21:39:50 [ERROR] No candle data available
+2026-03-04 21:40:50 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:40:50 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:40:50 [INFO] Current positions: 0/1
+2026-03-04 21:40:50 [ERROR] API error: 404 - 
+2026-03-04 21:40:50 [ERROR] Error fetching candles: 
+2026-03-04 21:40:50 [ERROR] No candle data available
+2026-03-04 21:41:50 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:41:50 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:41:50 [INFO] Current positions: 0/1
+2026-03-04 21:41:50 [ERROR] API error: 404 - 
+2026-03-04 21:41:50 [ERROR] Error fetching candles: 
+2026-03-04 21:41:50 [ERROR] No candle data available
+2026-03-04 21:42:50 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:42:50 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:42:50 [INFO] Current positions: 0/1
+2026-03-04 21:42:50 [ERROR] API error: 404 - 
+2026-03-04 21:42:50 [ERROR] Error fetching candles: 
+2026-03-04 21:42:50 [ERROR] No candle data available
+2026-03-04 21:43:50 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:43:50 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:43:50 [INFO] Current positions: 0/1
+2026-03-04 21:43:50 [ERROR] API error: 404 - 
+2026-03-04 21:43:50 [ERROR] Error fetching candles: 
+2026-03-04 21:43:50 [ERROR] No candle data available
+2026-03-04 21:44:51 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:44:51 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:44:51 [INFO] Current positions: 0/1
+2026-03-04 21:44:51 [ERROR] API error: 404 - 
+2026-03-04 21:44:51 [ERROR] Error fetching candles: 
+2026-03-04 21:44:51 [ERROR] No candle data available
+2026-03-04 21:45:51 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:45:51 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:45:51 [INFO] Current positions: 0/1
+2026-03-04 21:45:51 [ERROR] API error: 404 - 
+2026-03-04 21:45:51 [ERROR] Error fetching candles: 
+2026-03-04 21:45:51 [ERROR] No candle data available
+2026-03-04 21:46:51 [ERROR] API error: 422 - Failed to deserialize the JSON body into the target type
+2026-03-04 21:46:51 [ERROR] Error fetching positions: Failed to deserialize the JSON body into the target type
+2026-03-04 21:46:51 [INFO] Current positions: 0/1
+2026-03-04 21:46:51 [ERROR] API error: 404 - 
+2026-03-04 21:46:51 [ERROR] Error fetching candles: 
+2026-03-04 21:46:51 [ERROR] No candle data available

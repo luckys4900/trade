@@ -1,0 +1,12 @@
+{
+  "direction": "SHORT",
+  "prob_up": 0.48924963516060016,
+  "strength": 0.0538,
+  "multiplier_long": 0.65,
+  "multiplier_short": 1.0215007296787997,
+  "pred_close": 70503.125,
+  "current_close": 70579.0,
+  "valid": true,
+  "timestamp": 1776069903094,
+  "inference_time_s": 0.5
+}

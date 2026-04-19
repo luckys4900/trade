@@ -1,0 +1,10 @@
+{
+  "regime": "LOW",
+  "atr_ratio": 0.01072973240721818,
+  "caution_mode": false,
+  "next_event": "2026-04-15 14:30:00",
+  "next_event_name": "US CPI YoY",
+  "hours_to_event": 53.752305264166665,
+  "timestamp": 1776069891701,
+  "valid": true
+}

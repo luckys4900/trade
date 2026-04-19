@@ -1,0 +1,41 @@
+{"timestamp": "2026-04-02T20:13:42.405430", "message": "Trader process started"}
+2026-04-02 20:13:42 [INFO] ======================================================================
+2026-04-02 20:13:42 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-04-02 20:13:42 [INFO] ======================================================================
+2026-04-02 20:13:42 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-04-02 20:13:42 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-02 20:13:42 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-04-02 20:13:42 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260402_201342.log
+2026-04-02 20:13:42 [INFO] ======================================================================
+2026-04-02 20:13:42 [INFO] Test message: Trader is running
+2026-04-02 20:13:44 [INFO] Live trading 有効化: env=mainnet, address=0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-04-02 20:13:44 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 20:13:44 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 20:13:44 [INFO] Trader initialized successfully
+2026-04-02 20:13:44 [INFO] Starting trading loop (live mode)...
+2026-04-02 20:13:44 [INFO] Current RSI: 25.53, Price: $66230.00
+2026-04-02 20:13:44 [INFO] [LIVE] Placing BUY: coin=BTC, qty=0.001500, notional~$100.00
+2026-04-02 20:13:44 [ERROR] [LIVE] BUY order failed: ('Invalid order type', {'market': {}})
+2026-04-02 20:13:44 [INFO] Sleeping for 60 seconds...
+2026-04-02 20:14:44 [INFO] Current RSI: 25.49, Price: $66222.00
+2026-04-02 20:14:44 [INFO] [LIVE] Placing BUY: coin=BTC, qty=0.001500, notional~$100.00
+2026-04-02 20:14:44 [ERROR] [LIVE] BUY order failed: ('Invalid order type', {'market': {}})
+2026-04-02 20:14:44 [INFO] Sleeping for 60 seconds...
+2026-04-02 20:15:44 [INFO] Current RSI: 25.67, Price: $66252.00
+2026-04-02 20:15:44 [INFO] [LIVE] Placing BUY: coin=BTC, qty=0.001500, notional~$100.00
+2026-04-02 20:15:44 [ERROR] [LIVE] BUY order failed: ('Invalid order type', {'market': {}})
+2026-04-02 20:15:44 [INFO] Sleeping for 60 seconds...
+2026-04-02 20:16:23 [INFO] Trading loop stopped by user
+2026-04-02 20:16:23 [INFO] Trader stopped by user
+2026-04-02 20:16:23 [INFO] Test message: Trader is running
+2026-04-02 20:16:23 [INFO] DEBUG: Starting live trading mode...
+2026-04-02 20:16:23 [INFO] Live trading 有効化: env=mainnet, address=0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-04-02 20:16:23 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 20:16:23 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 20:16:23 [INFO] Trader initialized successfully
+2026-04-02 20:16:23 [INFO] Starting trading loop (live mode)...
+2026-04-02 20:16:23 [INFO] Current RSI: 26.03, Price: $66312.00
+2026-04-02 20:16:23 [INFO] [LIVE] Placing BUY: coin=BTC, qty=0.001500, notional~$100.00
+2026-04-02 20:16:23 [ERROR] [LIVE] BUY order failed: ('Invalid order type', {'market': {}})
+2026-04-02 20:16:23 [INFO] Sleeping for 60 seconds...
+2026-04-02 20:16:24 [INFO] Trading loop stopped by user

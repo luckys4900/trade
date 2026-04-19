@@ -1,0 +1,15 @@
+2026-03-17 19:02:20 [INFO] ======================================================================
+2026-03-17 19:02:20 [INFO]  BTC/USDT 4H RSI SWING v6 - LIVE TRADER
+2026-03-17 19:02:20 [INFO] ======================================================================
+2026-03-17 19:02:20 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-03-17 19:02:20 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-03-17 19:02:20 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_rsi_swing_v6.py
+2026-03-17 19:02:20 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\rsi_swing_20260317_190220.log
+2026-03-17 19:02:20 [INFO] ======================================================================
+2026-03-17 19:02:22 [INFO] RSI SWING live trading 有効化: env=mainnet, address=0x8455b70a5a0d942eb9a1598a0e9e1214a3b31b55
+2026-03-17 19:02:22 [INFO] Initialized RSI SWING trader for BTC 4h (rsi_period=14, OS=30.0, OB=70.0)
+2026-03-17 19:02:22 [INFO] RSI SWING trader initialized successfully
+2026-03-17 19:02:22 [INFO] Starting RSI SWING trading loop (live mode)...
+2026-03-17 19:02:22 [INFO] BAR 2026-03-17T17:00:00 | Price=73906.00 RSI=63.94 (prev=67.45) EMA50=71399.93 ATR14=1054.89
+2026-03-17 19:02:22 [INFO] No entry signal.
+2026-03-17 19:02:22 [INFO] Sleeping for 60 seconds...

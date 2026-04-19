@@ -1,0 +1,15 @@
+2026-04-11 00:49:55 [INFO] Qwen Unified Trader (live)
+2026-04-11 00:49:55 [INFO] Wallet: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
+2026-04-11 00:49:55 [ERROR] Failed to init HL client: No module named 'eth_account'
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\cursor\trade\qwen_unified_live.py", line 865, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\user\Desktop\cursor\trade\qwen_unified_live.py", line 854, in main
+    engine = UnifiedEngine(c, lg)
+  File "C:\Users\user\Desktop\cursor\trade\qwen_unified_live.py", line 353, in __init__
+    self.hl = HyperliquidClient(c, lg)
+              ~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\user\Desktop\cursor\trade\qwen_unified_live.py", line 108, in __init__
+    from eth_account import Account
+ModuleNotFoundError: No module named 'eth_account'

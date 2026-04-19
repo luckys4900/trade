@@ -1,0 +1,23 @@
+{
+  "session_id": "20260416_064701",
+  "agents": {
+    "master": {
+      "model": "claude-opus-4-6",
+      "tokens": 3500
+    },
+    "dev": {
+      "model": "claude-sonnet-4-6",
+      "tokens": 2800
+    },
+    "analyst": {
+      "model": "claude-sonnet-4-6",
+      "tokens": 2200
+    },
+    "helper": {
+      "model": "claude-haiku-4-5",
+      "tokens": 450
+    }
+  },
+  "total_tokens": 8950,
+  "status": "OPERATIONAL"
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-04-17T16:24:28.365118",
+  "account": {
+    "wallet": "0x7dd9f0C23Fb61CA3f36B8414306310F963093c12",
+    "balance": 1000000.0,
+    "equity": 1000000.0,
+    "margin_used": 0.0,
+    "available_margin": 1000000.0,
+    "currency": "USD"
+  },
+  "positions": [
+    {
+      "symbol": "BTC",
+      "size": 0.0,
+      "entry_price": 0.0,
+      "current_price": 60762.0,
+      "unrealized_pnl": 0.0,
+      "side": "NONE"
+    }
+  ],
+  "status": "ready"
+}

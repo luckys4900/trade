@@ -1,0 +1,6 @@
+2026-04-05 12:25:12 [INFO] Qwen Unified Trader (live)
+2026-04-05 12:25:12 [INFO] Wallet: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
+2026-04-05 12:25:13 [INFO] State loaded: OCPM=No, MR=No, RSISwing=No
+2026-04-05 12:25:13 [WARNING] REAL MONEY TRADING - Be careful!
+2026-04-05 12:25:13 [INFO] Starting Unified Live Loop...
+2026-04-05 12:25:13 [INFO] Bar 1 | Price: $67,114.50 | Bal: $211.19 | RSI: 51.5 | Trend: DOWNTREND

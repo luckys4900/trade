@@ -1,0 +1,17 @@
+2026-04-12 19:35:48,981 [INFO] Device: cuda:0
+2026-04-12 19:35:51,051 [INFO] Kronos-base loaded
+2026-04-12 19:35:52,301 [INFO] Signal written: DOWN -> CONTRARIAN LONG
+2026-04-13 01:02:34,996 [INFO] Device: cuda:0
+2026-04-13 01:02:37,841 [INFO] Kronos-base loaded
+2026-04-13 01:02:37,842 [INFO] Starting Contrarian predictor loop (interval=14400s)
+2026-04-13 01:02:38,631 [INFO] Signal written: DOWN -> CONTRARIAN LONG
+2026-04-13 01:02:38,632 [INFO] Direct Kronos signal written: SHORT (long=0.65, short=1.01)
+2026-04-13 01:02:38,633 [INFO] Kronos: DOWN -> Contrarian: LONG | pred=70829 vs current=70855 | 0.6s
+2026-04-13 01:02:38,633 [INFO] Sleeping 14400s...
+2026-04-13 17:44:59,519 [INFO] Device: cuda:0
+2026-04-13 17:45:02,421 [INFO] Kronos-base loaded
+2026-04-13 17:45:02,422 [INFO] Starting Contrarian predictor loop (interval=14400s)
+2026-04-13 17:45:03,096 [INFO] Signal written: DOWN -> CONTRARIAN LONG
+2026-04-13 17:45:03,097 [INFO] Direct Kronos signal written: SHORT (long=0.65, short=1.02)
+2026-04-13 17:45:03,097 [INFO] Kronos: DOWN -> Contrarian: LONG | pred=70503 vs current=70579 | 0.5s
+2026-04-13 17:45:03,097 [INFO] Sleeping 14400s...

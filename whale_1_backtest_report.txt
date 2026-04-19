@@ -1,0 +1,63 @@
+====================================================================================================
+WHALE_1 DEEP BACKTEST REPORT
+Wallet: 0x863b676e5e4fea0541062c32983dc8f84749ca6d
+Generated: 2026-04-10T07:06:31.382335
+====================================================================================================
+
+EXECUTIVE SUMMARY
+----------------------------------------------------------------------------------------------------
+Total Historical Trades: 3
+Win Rate: 100.0%
+EV per Trade: 2.20%
+Sortino: 219709397.70
+Max Drawdown: 0.00%
+
+FOLLOWING STRATEGY SIMULATION
+----------------------------------------------------------------------------------------------------
+Initial Equity: $100,000.00
+Final Equity: $106,737.16
+Total Return: 6.74%
+Max Drawdown: 0.00%
+Sharpe Ratio: 170865555.75
+
+DETAILED TRADE STATISTICS
+----------------------------------------------------------------------------------------------------
+Average Win: 2.20%
+Average Loss: 0.00%
+Max Win: 2.20%
+Max Loss: 0.00%
+Average Hold Time: 158.03 hours
+Max Hold Time: 158.03 hours
+
+DIRECTION ANALYSIS
+----------------------------------------------------------------------------------------------------
+Long Trades: 0 | EV: 0.00%
+Short Trades: 3 | EV: 2.20%
+
+COIN-BY-COIN PERFORMANCE
+----------------------------------------------------------------------------------------------------
+SOL: 3 trades | EV: 2.20% | WR: 100.0%
+
+MONTHLY PERFORMANCE
+----------------------------------------------------------------------------------------------------
+2025-05: 6.59% (3 trades)
+
+RECENT 10 TRADES SAMPLE
+----------------------------------------------------------------------------------------------------
+#1 SHORT | Entry: $170.68 | Exit: $166.93 | PnL:   2.20% ($ 2197.09) | Equity: $102,197.09
+#2 SHORT | Entry: $170.68 | Exit: $166.93 | PnL:   2.20% ($ 2245.37) | Equity: $104,442.46
+#3 SHORT | Entry: $170.68 | Exit: $166.93 | PnL:   2.20% ($ 2294.70) | Equity: $106,737.16
+
+PROFESSIONAL ASSESSMENT
+----------------------------------------------------------------------------------------------------
+Strengths:
+  + Exceptional risk-adjusted returns (Sortino >= 5.0)
+  + High win rate (>= 70%)
+  + Strong expected value (>= 1.0%)
+  + Controlled drawdown (>-20%)
+
+Concerns:
+  - Insufficient sample size (< 30 trades)
+
+Recommendation:
+  [BUY] Good candidate, add with monitoring

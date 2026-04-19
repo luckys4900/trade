@@ -1,0 +1,8 @@
+{
+  "total_predictions": 168,
+  "total_records": 1008,
+  "overall_direction_accuracy": 47.61904761904761,
+  "avg_price_error_pct": 2.0211158474969873,
+  "vol_ratio_mean": 1.9741293703645024,
+  "vol_correlation": 0.25281287405465225
+}

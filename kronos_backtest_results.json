@@ -1,0 +1,50 @@
+{
+  "RSI_Only": {
+    "final_value": 154.77690249262,
+    "total_return": -22.611548753690002,
+    "total_trades": 237,
+    "win_rate": 41.77215189873418,
+    "profit_factor": 0.8298188343651769,
+    "max_drawdown": 30.57845245943186,
+    "sharpe": -1.291511533945658,
+    "avg_pnl": -0.1560582124091023,
+    "long_trades": 119,
+    "short_trades": 118,
+    "long_wr": 38.655462184873954,
+    "short_wr": 44.91525423728814,
+    "sl_rate": 40.92827004219409,
+    "tp_rate": 3.79746835443038
+  },
+  "RSI_Kronos_Filter": {
+    "final_value": 167.42172194636083,
+    "total_return": -16.289139026819583,
+    "total_trades": 109,
+    "win_rate": 38.53211009174312,
+    "profit_factor": 0.7389552579315516,
+    "max_drawdown": 23.716245675700662,
+    "sharpe": -1.4256819191168875,
+    "avg_pnl": -0.26271364917828616,
+    "long_trades": 50,
+    "short_trades": 59,
+    "long_wr": 36.0,
+    "short_wr": 40.67796610169492,
+    "sl_rate": 42.201834862385326,
+    "tp_rate": 4.587155963302752
+  },
+  "Kronos_Primary_RSI": {
+    "final_value": 174.50280855381837,
+    "total_return": -12.748595723090816,
+    "total_trades": 189,
+    "win_rate": 41.7989417989418,
+    "profit_factor": 0.8933225642460696,
+    "max_drawdown": 19.10508235383353,
+    "sharpe": -0.9039965143684962,
+    "avg_pnl": -0.09808915280598983,
+    "long_trades": 94,
+    "short_trades": 95,
+    "long_wr": 40.42553191489361,
+    "short_wr": 43.15789473684211,
+    "sl_rate": 37.03703703703704,
+    "tp_rate": 5.82010582010582
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "glm-agent-swarm",
+  "version": "1.0.0",
+  "description": "GLMマスター → サブエージェント並列実行システム",
+  "main": "glm_master_swarm.py",
+  "dependencies": {
+    "openai-swarm": "^0.4.0",
+    "asyncio": "^3.4.3",
+    "dataclasses": "^0.8",
+    "typing": "^3.10.0"
+  },
+  "scripts": {
+    "start": "python glm_master_swarm.py",
+    "install": "pip install openai-swarm"
+  },
+  "features": {
+    "GLMマスターAI": "タスク割り当てと統合",
+    "Ollamaエージェント": "高速なローカル処理",
+    "OpenRouterエージェント": "高品質なクラウド処理",
+    "並列実行": "複数エージェント同時処理",
+    "柔軟な割り当て": "タスクに応じた最適なエージェント選択"
+  }
+}

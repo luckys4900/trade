@@ -1,0 +1,16 @@
+[
+  {
+    "address": "1A1z7agoat7SfNxBBwHqzj7hCoV7utwDu",
+    "balance_btc": 10000000.0,
+    "first_seen_ts": 1231469665,
+    "tx_count": 1,
+    "fetched_at": "2026-04-19T20:00:53.295577"
+  },
+  {
+    "address": "3J98t1WpEZ73CNmYviecrnyiWrnqRhWNLy",
+    "balance_btc": 140411.0,
+    "first_seen_ts": 1328613215,
+    "tx_count": 2500,
+    "fetched_at": "2026-04-19T20:00:53.295577"
+  }
+]

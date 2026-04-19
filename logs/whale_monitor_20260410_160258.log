@@ -1,0 +1,16 @@
+2026-04-11 01:02:58,405 [INFO] Loaded config: 3 wallets
+2026-04-11 01:02:58,406 [INFO] Starting loop with interval 900s
+2026-04-11 01:02:58,406 [INFO] === Run Once ===
+2026-04-11 01:02:58,406 [INFO] Using cached ranking (0.2h old)
+2026-04-11 01:02:58,730 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-11 01:17:58,737 [INFO] === Run Once ===
+2026-04-11 01:17:59,140 [DEBUG] Whale_1: Using default metrics (2000 fills, trade count estimated)
+2026-04-11 01:17:59,140 [INFO] Whale_1: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-04-11 01:17:59,695 [DEBUG] Whale_2: Using default metrics (2000 fills, trade count estimated)
+2026-04-11 01:17:59,695 [INFO] Whale_2: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-04-11 01:18:00,189 [DEBUG] Whale_3: Using default metrics (2000 fills, trade count estimated)
+2026-04-11 01:18:00,189 [INFO] Whale_3: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-04-11 01:18:00,484 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-11 01:33:00,492 [INFO] === Run Once ===
+2026-04-11 01:33:00,493 [INFO] Using cached ranking (0.3h old)
+2026-04-11 01:33:00,836 [INFO] Signal written: NONE, strength=0.00, valid=False

@@ -1,0 +1,56 @@
+{"timestamp": "2026-04-02T21:32:31.057826", "message": "Trader process started"}
+2026-04-02 21:32:31 [INFO] ======================================================================
+2026-04-02 21:32:31 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-04-02 21:32:31 [INFO] ======================================================================
+2026-04-02 21:32:31 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-04-02 21:32:31 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-02 21:32:31 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-04-02 21:32:31 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260402_213231.log
+2026-04-02 21:32:31 [INFO] ======================================================================
+2026-04-02 21:32:31 [INFO] Test message: Trader is running
+2026-04-02 21:32:31 [INFO] [DEBUG] Secret key length: 66
+2026-04-02 21:32:31 [INFO] [DEBUG] Account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:32:31 [INFO] [DEBUG] Derived account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:32:31 [INFO] [DEBUG] Using account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:32:31 [INFO] Live trading 有効化: env=mainnet, address=0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:32:31 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 21:32:31 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 21:32:31 [INFO] Trader initialized successfully
+2026-04-02 21:32:31 [INFO] Starting trading loop (live mode)...
+2026-04-02 21:32:32 [INFO] Current RSI: 26.35, Price: $66126.00
+2026-04-02 21:32:32 [INFO] [LIVE] Placing BUY: coin=BTC, qty=0.0075, price=$66126.00, order_type={'limit': {'tif': 'Ioc'}}
+2026-04-02 21:32:32 [INFO] [LIVE] BUY order response: {'status': 'ok', 'response': {'type': 'order', 'data': {'statuses': [{'filled': {'totalSz': '0.0075', 'avgPx': '66126.0', 'oid': 368677896075}}]}}}
+2026-04-02 21:32:32 [INFO] Sleeping for 60 seconds...
+2026-04-02 21:33:32 [INFO] Current RSI: 26.35, Price: $66127.00
+2026-04-02 21:33:32 [INFO] Holding position (no sell signal)
+2026-04-02 21:33:32 [INFO] Sleeping for 60 seconds...
+2026-04-02 21:34:33 [INFO] Current RSI: 26.18, Price: $66100.00
+2026-04-02 21:34:33 [INFO] Holding position (no sell signal)
+2026-04-02 21:34:33 [INFO] Sleeping for 60 seconds...
+2026-04-02 21:35:33 [INFO] Current RSI: 26.00, Price: $66071.00
+2026-04-02 21:35:33 [INFO] Holding position (no sell signal)
+2026-04-02 21:35:33 [INFO] Sleeping for 60 seconds...
+2026-04-02 21:36:33 [INFO] Current RSI: 26.33, Price: $66123.00
+2026-04-02 21:36:33 [INFO] Holding position (no sell signal)
+2026-04-02 21:36:33 [INFO] Sleeping for 60 seconds...
+2026-04-02 21:37:33 [INFO] Current RSI: 26.28, Price: $66115.00
+2026-04-02 21:37:33 [INFO] Holding position (no sell signal)
+2026-04-02 21:37:33 [INFO] Sleeping for 60 seconds...
+2026-04-02 21:37:36 [INFO] Trading loop stopped by user
+2026-04-02 21:37:36 [INFO] Trader stopped by user
+2026-04-02 21:37:36 [INFO] Test message: Trader is running
+2026-04-02 21:37:36 [INFO] DEBUG: Starting live trading mode...
+2026-04-02 21:37:36 [INFO] [DEBUG] Secret key length: 66
+2026-04-02 21:37:36 [INFO] [DEBUG] Account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:37:36 [INFO] [DEBUG] Derived account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:37:36 [INFO] [DEBUG] Using account address: 0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:37:37 [INFO] Live trading 有効化: env=mainnet, address=0xE2Ce93147a19c5b8B1dd222499dE0A56987E1188
+2026-04-02 21:37:37 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 21:37:37 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 21:37:37 [INFO] Trader initialized successfully
+2026-04-02 21:37:37 [INFO] Starting trading loop (live mode)...
+2026-04-02 21:37:37 [INFO] Current RSI: 26.12, Price: $66090.00
+2026-04-02 21:37:37 [INFO] [LIVE] Placing BUY: coin=BTC, qty=0.0075, price=$66090.00, order_type={'limit': {'tif': 'Ioc'}}
+2026-04-02 21:37:38 [INFO] [LIVE] BUY order response: {'status': 'ok', 'response': {'type': 'order', 'data': {'statuses': [{'filled': {'totalSz': '0.0075', 'avgPx': '66082.0', 'oid': 368682132956}}]}}}
+2026-04-02 21:37:38 [INFO] Sleeping for 60 seconds...
+2026-04-02 21:37:38 [INFO] Trading loop stopped by user

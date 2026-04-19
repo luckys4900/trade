@@ -1,0 +1,49 @@
+2026-04-11 00:54:44 [INFO] Qwen Unified Trader (live)
+2026-04-11 00:54:44 [INFO] Wallet: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
+2026-04-11 00:54:46 [INFO] State loaded: OCPM=No, MR=No, RSISwing=No
+INFO:UnifiedLive:State loaded: OCPM=No, MR=No, RSISwing=No
+2026-04-11 00:54:46 [WARNING] REAL MONEY TRADING - Be careful!
+WARNING:UnifiedLive:REAL MONEY TRADING - Be careful!
+2026-04-11 00:54:46 [INFO] Starting Unified Live Loop...
+INFO:UnifiedLive:Starting Unified Live Loop...
+2026-04-11 00:54:46 [ERROR] Loop error: No module named 'ccxt'
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\cursor\trade\qwen_unified_live.py", line 821, in run_loop
+    self.run_once()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\user\Desktop\cursor\trade\qwen_unified_live.py", line 384, in run_once
+    df = fetch_ohlcv(self.c, self.lg)
+  File "C:\Users\user\Desktop\cursor\trade\qwen_unified_live.py", line 208, in fetch_ohlcv
+    import ccxt
+ModuleNotFoundError: No module named 'ccxt'
+ERROR:UnifiedLive:Loop error: No module named 'ccxt'
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\cursor\trade\qwen_unified_live.py", line 821, in run_loop
+    self.run_once()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\user\Desktop\cursor\trade\qwen_unified_live.py", line 384, in run_once
+    df = fetch_ohlcv(self.c, self.lg)
+  File "C:\Users\user\Desktop\cursor\trade\qwen_unified_live.py", line 208, in fetch_ohlcv
+    import ccxt
+ModuleNotFoundError: No module named 'ccxt'
+2026-04-11 00:55:47 [INFO] Bar 1 | Price: $72,401.50 | Bal: $211.19 | RSI: 67.7 | Trend: UPTREND
+INFO:UnifiedLive:Bar 1 | Price: $72,401.50 | Bal: $211.19 | RSI: 67.7 | Trend: UPTREND
+DEBUG:UnifiedLive:OCPM check: trend=UPTREND, close=72402, donchian_mid=70511, rsi_prev=65.7, rsi=67.7, ocpm_long=0, ocpm_short=0
+2026-04-11 00:56:49 [INFO] Bar 2 | Price: $72,458.50 | Bal: $211.19 | RSI: 68.1 | Trend: UPTREND
+INFO:UnifiedLive:Bar 2 | Price: $72,458.50 | Bal: $211.19 | RSI: 68.1 | Trend: UPTREND
+DEBUG:UnifiedLive:OCPM check: trend=UPTREND, close=72458, donchian_mid=70511, rsi_prev=65.7, rsi=68.1, ocpm_long=0, ocpm_short=0
+2026-04-11 00:57:50 [INFO] Bar 3 | Price: $72,371.50 | Bal: $211.19 | RSI: 67.6 | Trend: UPTREND
+INFO:UnifiedLive:Bar 3 | Price: $72,371.50 | Bal: $211.19 | RSI: 67.6 | Trend: UPTREND
+DEBUG:UnifiedLive:OCPM check: trend=UPTREND, close=72372, donchian_mid=70511, rsi_prev=65.7, rsi=67.6, ocpm_long=0, ocpm_short=0
+2026-04-11 00:58:52 [INFO] Bar 4 | Price: $72,402.50 | Bal: $211.19 | RSI: 67.6 | Trend: UPTREND
+INFO:UnifiedLive:Bar 4 | Price: $72,402.50 | Bal: $211.19 | RSI: 67.6 | Trend: UPTREND
+DEBUG:UnifiedLive:OCPM check: trend=UPTREND, close=72402, donchian_mid=70511, rsi_prev=65.7, rsi=67.6, ocpm_long=0, ocpm_short=0
+2026-04-11 00:59:54 [INFO] Bar 5 | Price: $72,396.50 | Bal: $211.19 | RSI: 67.7 | Trend: UPTREND
+INFO:UnifiedLive:Bar 5 | Price: $72,396.50 | Bal: $211.19 | RSI: 67.7 | Trend: UPTREND
+DEBUG:UnifiedLive:OCPM check: trend=UPTREND, close=72396, donchian_mid=70511, rsi_prev=65.7, rsi=67.7, ocpm_long=0, ocpm_short=0
+2026-04-11 01:00:55 [INFO] Bar 6 | Price: $72,434.50 | Bal: $211.19 | RSI: 68.0 | Trend: UPTREND
+INFO:UnifiedLive:Bar 6 | Price: $72,434.50 | Bal: $211.19 | RSI: 68.0 | Trend: UPTREND
+DEBUG:UnifiedLive:OCPM check: trend=UPTREND, close=72434, donchian_mid=70511, rsi_prev=67.9, rsi=68.0, ocpm_long=0, ocpm_short=0
+2026-04-11 01:01:57 [INFO] Bar 7 | Price: $72,365.50 | Bal: $211.19 | RSI: 66.9 | Trend: UPTREND
+INFO:UnifiedLive:Bar 7 | Price: $72,365.50 | Bal: $211.19 | RSI: 66.9 | Trend: UPTREND
+DEBUG:UnifiedLive:OCPM check: trend=UPTREND, close=72366, donchian_mid=70511, rsi_prev=67.9, rsi=66.9, ocpm_long=0, ocpm_short=0

@@ -1,0 +1,6 @@
+2026-03-02 21:22:40 [INFO] Mode: live | v5 Adaptive RSI (Hyperliquid Edition) | Days: 180
+2026-03-02 21:22:40 [INFO] Exchange: hyperliquid (Testnet)
+2026-03-02 21:22:40 [INFO] Entering LIVE mode
+2026-03-02 21:22:41 [INFO] Hyperliquid Info API initialized (Testnet)
+2026-03-02 21:22:41 [INFO] Hyperliquid Exchange API initialized for 0x8455b7... (Testnet)
+2026-03-02 21:22:41 [ERROR] Failed to initialize Hyperliquid client: HTTPSConnectionPool(host='api.hyperliquid.testnet', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.testnet', port=443): Failed to resolve 'api.hyperliquid.testnet' ([Errno 11001] getaddrinfo failed)"))

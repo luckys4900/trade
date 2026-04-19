@@ -1,0 +1,49 @@
+{"timestamp": "2026-04-02T21:29:27.191993", "message": "Trader process started"}
+2026-04-02 21:29:27 [INFO] ======================================================================
+2026-04-02 21:29:27 [INFO]  BTC/USDT 4H ADAPTIVE RSI v5 - LIVE TRADER
+2026-04-02 21:29:27 [INFO] ======================================================================
+2026-04-02 21:29:27 [INFO] Python version: 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]
+2026-04-02 21:29:27 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-02 21:29:27 [INFO] Script file: C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py
+2026-04-02 21:29:27 [INFO] Log file: C:\Users\user\Desktop\cursor\trade\trader_20260402_212927.log
+2026-04-02 21:29:27 [INFO] ======================================================================
+2026-04-02 21:29:27 [INFO] Test message: Trader is running
+2026-04-02 21:29:27 [INFO] [DEBUG] Secret key length: 42
+2026-04-02 21:29:27 [INFO] [DEBUG] Account address: 0xdae0c9cad22f95abf9b5d52e7c688a4fb693967c
+2026-04-02 21:29:27 [ERROR] Hyperliquid SDK 初期化に失敗: The private key must be exactly 32 bytes long, instead of 20 bytes.. paper モードにフォールバックします。
+2026-04-02 21:29:27 [ERROR] Traceback: Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_account\account.py", line 897, in _parse_private_key
+    return self._keys.PrivateKey(hb_key)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_keys\datatypes.py", line 244, in __init__
+    validate_private_key_bytes(private_key_bytes)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_keys\validation.py", line 81, in validate_private_key_bytes
+    validate_bytes_length(value, 32, "private key")
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_keys\validation.py", line 52, in validate_bytes_length
+    raise ValidationError(
+eth_utils.exceptions.ValidationError: Unexpected private key length: Expected 32, but got 20 bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\cursor\trade\hl_trader_v6.py", line 164, in __init__
+    account: LocalAccount = eth_account.Account.from_key(secret_key)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_utils\decorators.py", line 31, in _wrapper
+    return self.method(objtype, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_account\account.py", line 310, in from_key
+    key = self._parse_private_key(private_key)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_utils\decorators.py", line 31, in _wrapper
+    return self.method(objtype, *args, **kwargs)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\eth_account\account.py", line 899, in _parse_private_key
+    raise ValueError(
+ValueError: The private key must be exactly 32 bytes long, instead of 20 bytes.
+
+2026-04-02 21:29:27 [INFO] Initialized trader for BTC with 1h timeframe
+2026-04-02 21:29:27 [INFO] RSI settings: period=14, overbought=60, oversold=30
+2026-04-02 21:29:27 [INFO] Trader initialized successfully
+2026-04-02 21:29:27 [INFO] Starting trading loop (paper mode)...
+2026-04-02 21:29:27 [INFO] Current RSI: 26.21, Price: $66104.00
+2026-04-02 21:29:27 [INFO] [PAPER] BUY signal: RSI 26.21 <= 30 (paper position opened, no real order sent)
+2026-04-02 21:29:27 [INFO] Sleeping for 60 seconds...
+2026-04-02 21:30:27 [INFO] Current RSI: 26.08, Price: $66083.00
+2026-04-02 21:30:27 [INFO] Holding position (no sell signal)
+2026-04-02 21:30:27 [INFO] Sleeping for 60 seconds...

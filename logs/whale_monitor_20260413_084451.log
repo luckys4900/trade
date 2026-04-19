@@ -1,0 +1,11 @@
+2026-04-13 17:44:51,579 [ERROR] Failed to load config: [Errno 2] No such file or directory: 'whale_wallets.json'
+2026-04-13 17:44:51,579 [INFO] Starting loop with interval 900s
+2026-04-13 17:44:51,579 [INFO] === Run Once ===
+2026-04-13 17:44:51,580 [INFO] Using cached ranking (64.4h old)
+2026-04-13 17:44:52,253 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-13 17:59:52,265 [INFO] === Run Once ===
+2026-04-13 17:59:52,265 [INFO] Using cached ranking (64.7h old)
+2026-04-13 17:59:52,509 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-04-13 18:14:52,522 [INFO] === Run Once ===
+2026-04-13 18:14:52,522 [INFO] Using cached ranking (64.9h old)
+2026-04-13 18:14:52,831 [INFO] Signal written: NONE, strength=0.00, valid=False

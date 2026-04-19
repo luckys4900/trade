@@ -168,7 +168,50 @@ Production: will require 3+ wallets, 60% agreement
 ## Next Session
 
 When switching models:
-1. Check `memory/implementation_whale_system.md`
-2. This `CLAUDE.md` contains operational guide
-3. Run `03_STATUS.lnk` to verify system state
-4. All code is frozen; 30-day validation in progress
+1. Check `memory/MEMORY.md`
+2. Check `memory/strategy_ev_analysis_2026-04-15.md`
+3. Check `memory/implementation_whale_system.md`
+4. This `CLAUDE.md` contains operational guide
+5. Run `03_STATUS.lnk` to verify system state
+6. Review `STRATEGY_ANALYSIS_HANDOFF_PROMPT.md` before new strategy research
+
+---
+
+## Tools Integration (2026-04-16)
+
+### 1. LightRAG - Strategy Dependency Analysis
+- **Status**: ✓ Installed and configured
+- **File**: `tools_lightrag_setup.py`
+- **Output**: `lightrag_dependency_graph.json`
+- **Usage**: Analyze dependencies between trading strategies
+- **Update Frequency**: Monthly when strategies change
+
+### 2. Awesome Claude Code - Best Practices Guide
+- **Status**: ✓ Guide created
+- **File**: `memory/AWESOME_CLAUDE_CODE_GUIDE.md`
+- **Key Skills**: brainstorming, writing-plans, systematic-debugging, test-driven-development
+- **Usage**: Reference when starting new development
+
+### 3. Everything Claude Code - Security Audit
+- **Status**: ✓ Security scanning enabled
+- **Files**: 
+  - `tools_security_audit.py` (scanner)
+  - `SECURITY_AUDIT_REPORT.md` (latest report)
+  - `security_audit_issues.json` (structured data)
+- **Last Scan**: 2026-04-16
+- **Result**: 0 HIGH, 3 MEDIUM, 0 LOW risks
+- **Frequency**: Run before each production deployment
+
+## Tools Usage Checklist
+
+Before any development:
+- [ ] Review `memory/AWESOME_CLAUDE_CODE_GUIDE.md`
+- [ ] Use superpowers:brainstorming for new features
+- [ ] Use superpowers:writing-plans for multi-step tasks
+- [ ] Use superpowers:systematic-debugging for bugs
+
+Before production deployment:
+- [ ] Run `python3 tools_security_audit.py`
+- [ ] Review SECURITY_AUDIT_REPORT.md
+- [ ] Fix all HIGH and MEDIUM risks
+- [ ] Run `03_STATUS.lnk` verification

@@ -1,0 +1,200 @@
+<h2>右サイドパネル - 3つの情報表示パターン</h2>
+<p class="subtitle">エントリー準備度の視覚化方法とエビデンス表示の比較</p>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Option A: プログレスバー型</div>
+        <div class="mockup-body" style="background: #f5f5f5; padding: 12px; border-radius: 4px; font-size: 12px;">
+          <!-- 現在価格 -->
+          <div style="margin-bottom: 12px;">
+            <div style="color: #666; font-weight: 500; margin-bottom: 4px;">📍 現在価格</div>
+            <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 8px; font-size: 14px; font-weight: bold;">
+              BTC: $67,234
+            </div>
+          </div>
+
+          <!-- 次のエントリーレベル -->
+          <div style="margin-bottom: 12px;">
+            <div style="color: #666; font-weight: 500; margin-bottom: 4px;">🎯 次の買いレベル</div>
+            <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 8px; font-size: 13px; font-weight: bold;">
+              $67,000
+            </div>
+          </div>
+
+          <!-- エントリー準備度 -->
+          <div style="margin-bottom: 12px;">
+            <div style="color: #666; font-weight: 500; margin-bottom: 4px;">📊 準備度</div>
+            <div style="color: #d9534f; font-weight: bold; margin-bottom: 2px;">あと 0.35% で到達</div>
+            <div style="height: 12px; background: #e0e0e0; border-radius: 6px; overflow: hidden;">
+              <div style="height: 100%; width: 95%; background: linear-gradient(90deg, #5cb85c, #f0ad4e, #d9534f); border-radius: 6px;"></div>
+            </div>
+          </div>
+
+          <!-- インジケーター -->
+          <div style="border-top: 1px solid #e0e0e0; padding-top: 10px;">
+            <div style="color: #666; font-weight: 500; margin-bottom: 6px;">📈 インジケーター</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+              <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 6px; text-align: center;">
+                <div style="color: #888; font-size: 10px;">RSI</div>
+                <div style="color: #5cb85c; font-weight: bold; font-size: 14px;">45</div>
+              </div>
+              <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 6px; text-align: center;">
+                <div style="color: #888; font-size: 10px;">ATR</div>
+                <div style="color: #5cb85c; font-weight: bold; font-size: 14px;">850</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- グリッド状態 -->
+          <div style="border-top: 1px solid #e0e0e0; padding-top: 10px; margin-top: 10px;">
+            <div style="color: #666; font-weight: 500; margin-bottom: 6px;">⚙️ グリッド状態</div>
+            <div style="background: #ecf0f1; border: 1px solid #bdc3c7; border-radius: 4px; padding: 6px; font-size: 11px;">
+              <div>中心: $67,500</div>
+              <div>レンジ: $1,200</div>
+              <div>買い: 8 | 売り: 7</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A: プログレスバー型</h3>
+      <p><strong>特徴:</strong> パーセンテージで直感的<br/><strong>エビデンス:</strong> 数字 + インジケーター<br/><strong>用途:</strong> 監視・判断支援</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Option B: 色分けゲージ型</div>
+        <div class="mockup-body" style="background: #f5f5f5; padding: 12px; border-radius: 4px; font-size: 12px;">
+          <!-- 現在価格 -->
+          <div style="margin-bottom: 12px;">
+            <div style="color: #666; font-weight: 500; margin-bottom: 4px;">📍 現在価格</div>
+            <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 8px; font-size: 14px; font-weight: bold;">
+              BTC: $67,234
+            </div>
+          </div>
+
+          <!-- 次のエントリーレベル -->
+          <div style="margin-bottom: 12px;">
+            <div style="color: #666; font-weight: 500; margin-bottom: 4px;">🎯 次の買いレベル</div>
+            <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 8px; font-size: 13px; font-weight: bold;">
+              $67,000
+            </div>
+          </div>
+
+          <!-- エントリー準備度 - 色分けゲージ -->
+          <div style="margin-bottom: 12px;">
+            <div style="color: #666; font-weight: 500; margin-bottom: 4px;">🔔 準備度</div>
+            <div style="display: flex; gap: 4px; margin-bottom: 4px;">
+              <div style="flex: 1; height: 20px; background: #5cb85c; border-radius: 3px; text-align: center; color: #fff; font-size: 10px; line-height: 20px;">READY</div>
+              <div style="flex: 1; height: 20px; background: #f0ad4e; border-radius: 3px; text-align: center; color: #fff; font-size: 10px; line-height: 20px;">WARN</div>
+              <div style="flex: 1; height: 20px; background: #d9534f; border-radius: 3px; text-align: center; color: #fff; font-size: 10px; line-height: 20px;">FAR</div>
+            </div>
+            <div style="color: #f0ad4e; font-weight: bold;">⚠️ あと 0.35% で「READY」に</div>
+          </div>
+
+          <!-- エビデンス：距離と時間 -->
+          <div style="border-top: 1px solid #e0e0e0; padding-top: 10px; margin-bottom: 10px;">
+            <div style="color: #666; font-weight: 500; margin-bottom: 6px;">📏 エビデンス詳細</div>
+            <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 6px; font-size: 11px;">
+              <div style="margin-bottom: 3px;">差額: $234 (-0.35%)</div>
+              <div style="margin-bottom: 3px;">ATRまで: 3.6 日分</div>
+              <div>推定達成: 4時間以内</div>
+            </div>
+          </div>
+
+          <!-- インジケーター -->
+          <div style="margin-bottom: 12px;">
+            <div style="color: #666; font-weight: 500; margin-bottom: 6px;">📊 指標</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+              <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 6px; text-align: center;">
+                <div style="color: #888; font-size: 10px;">RSI</div>
+                <div style="color: #5cb85c; font-weight: bold; font-size: 14px;">45</div>
+                <div style="color: #bbb; font-size: 8px;">(中立)</div>
+              </div>
+              <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 6px; text-align: center;">
+                <div style="color: #888; font-size: 10px;">ATR</div>
+                <div style="color: #5cb85c; font-weight: bold; font-size: 14px;">850</div>
+                <div style="color: #bbb; font-size: 8px;">(安定)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B: 色分けゲージ型</h3>
+      <p><strong>特徴:</strong> 状態が一目瞭然<br/><strong>エビデンス:</strong> 詳細な根拠を表示<br/><strong>用途:</strong> アラート + 詳細追跡</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">Option C: スマート分析型</div>
+        <div class="mockup-body" style="background: #f5f5f5; padding: 12px; border-radius: 4px; font-size: 12px;">
+          <!-- ヘッダー：状態 -->
+          <div style="background: linear-gradient(135deg, #f0ad4e, #ec971f); color: white; border-radius: 4px; padding: 10px; margin-bottom: 12px; font-weight: bold;">
+            ⚡ 準備度: 95% 接近
+          </div>
+
+          <!-- 現在価格 -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px;">
+            <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 8px;">
+              <div style="color: #888; font-size: 10px; margin-bottom: 2px;">現在</div>
+              <div style="color: #333; font-weight: bold;">$67,234</div>
+            </div>
+            <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 8px;">
+              <div style="color: #888; font-size: 10px; margin-bottom: 2px;">次レベル</div>
+              <div style="color: #d9534f; font-weight: bold;">$67,000</div>
+            </div>
+          </div>
+
+          <!-- AI判定・推奨 -->
+          <div style="background: #ecf0f1; border: 1px solid #bdc3c7; border-radius: 4px; padding: 8px; margin-bottom: 12px;">
+            <div style="color: #666; font-weight: 500; font-size: 11px; margin-bottom: 4px;">🤖 判定</div>
+            <div style="color: #27ae60; font-weight: bold; font-size: 11px; margin-bottom: 4px;">✓ エントリー環境：良好</div>
+            <div style="color: #7f8c8d; font-size: 10px; line-height: 1.4;">
+              RSI中立 + ATR安定<br/>ボラティリティ低<br/>スリップ最小
+            </div>
+          </div>
+
+          <!-- 価格トレンド -->
+          <div style="margin-bottom: 12px;">
+            <div style="color: #666; font-weight: 500; margin-bottom: 4px;">📈 短期トレンド</div>
+            <div style="background: #fff; border: 1px solid #ddd; border-radius: 4px; padding: 6px; font-size: 11px;">
+              <div>1h: → (横ばい)</div>
+              <div>4h: ↑ (上昇)</div>
+              <div>1d: ↑ (上昇)</div>
+            </div>
+          </div>
+
+          <!-- リスク警告 -->
+          <div style="background: #ffe6e6; border: 1px solid #ffcccc; border-radius: 4px; padding: 8px; font-size: 10px; color: #c0392b;">
+            <div style="font-weight: bold; margin-bottom: 2px;">⚠️ 注意</div>
+            <div>グリッド再計算まで: ±18%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C: スマート分析型</h3>
+      <p><strong>特徴:</strong> AI推奨で判断短縮<br/><strong>エビデンス:</strong> 複合評価を表示<br/><strong>用途:</strong> 時短・判定支援</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top: 20px; padding: 12px; background: #f9f9f9; border: 1px solid #e0e0e0; border-radius: 4px;">
+  <h3 style="margin-top: 0;">エビデンス表示の重要性</h3>
+  <ul style="font-size: 12px; line-height: 1.6;">
+    <li><strong>距離:</strong> 現在価格 → レベル価格の差分（$または%）</li>
+    <li><strong>時間:</strong> ATRベースの推定達成時間</li>
+    <li><strong>指標:</strong> RSI（過熱度）、ATR（ボラティリティ）</li>
+    <li><strong>グリッド:</strong> 現在のグリッド設定と状態</li>
+    <li><strong>リスク:</strong> 警告条件（再計算閾値など）</li>
+  </ul>
+</div>

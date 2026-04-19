@@ -1,0 +1,120 @@
+2026-04-13 17:44:53 [INFO] Qwen Unified Trader (live)
+2026-04-13 17:44:53 [INFO] Wallet: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
+2026-04-13 17:44:58 [INFO] State loaded: OCPM=No, MR=No, RSISwing=No, Contrarian=No
+2026-04-13 17:44:58 [WARNING] REAL MONEY TRADING - Be careful!
+2026-04-13 17:44:58 [INFO] Starting Unified Live Loop...
+2026-04-13 17:44:58 [INFO] HL API: fetched 3 candles, total 4433 bars
+2026-04-13 17:44:58 [INFO] Bar 197 | Price: $70,574.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:44:59 [DEBUG] Kronos signal stale (1002.3min old)
+2026-04-13 17:44:59 [DEBUG] OCPM check: trend=UPTREND, close=70574, donchian_mid=72112, rsi_prev=44.8, rsi=43.4, ocpm_long=0, ocpm_short=0
+2026-04-13 17:44:59 [DEBUG] Kronos signal stale (1002.3min old)
+2026-04-13 17:44:59 [DEBUG] Kronos signal stale (1002.3min old)
+2026-04-13 17:44:59 [DEBUG] Contrarian signal stale (1002.3min old)
+2026-04-13 17:45:59 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:45:59 [INFO] Bar 197 | Price: $70,558.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:47:00 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:47:00 [INFO] Bar 197 | Price: $70,575.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:48:00 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:48:01 [INFO] Bar 197 | Price: $70,571.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:49:02 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:49:02 [INFO] Bar 197 | Price: $70,605.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:50:02 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:50:03 [INFO] Bar 197 | Price: $70,588.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:51:03 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:51:03 [INFO] Bar 197 | Price: $70,570.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:52:03 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:52:03 [INFO] Bar 197 | Price: $70,550.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:53:04 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:53:04 [INFO] Bar 197 | Price: $70,567.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:54:04 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:54:04 [INFO] Bar 197 | Price: $70,593.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:55:04 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:55:04 [INFO] Bar 197 | Price: $70,620.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:56:04 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:56:04 [INFO] Bar 197 | Price: $70,650.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:57:05 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:57:05 [INFO] Bar 197 | Price: $70,625.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:58:05 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:58:05 [INFO] Bar 197 | Price: $70,645.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 17:59:06 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 17:59:06 [INFO] Bar 197 | Price: $70,648.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:00:06 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:00:06 [INFO] Bar 197 | Price: $70,655.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:01:07 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:01:07 [INFO] Bar 197 | Price: $70,724.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:02:07 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:02:07 [INFO] Bar 197 | Price: $70,826.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:03:08 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:03:08 [INFO] Bar 197 | Price: $70,857.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:04:09 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:04:09 [INFO] Bar 197 | Price: $70,806.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:05:09 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:05:09 [INFO] Bar 197 | Price: $70,796.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:06:09 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:06:09 [INFO] Bar 197 | Price: $70,796.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:07:10 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:07:10 [INFO] Bar 197 | Price: $70,761.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:08:10 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:08:10 [INFO] Bar 197 | Price: $70,754.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:09:10 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:09:10 [INFO] Bar 197 | Price: $70,732.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:10:10 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:10:10 [INFO] Bar 197 | Price: $70,676.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:11:11 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:11:11 [INFO] Bar 197 | Price: $70,670.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:12:11 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:12:11 [INFO] Bar 197 | Price: $70,678.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:13:12 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:13:12 [INFO] Bar 197 | Price: $70,685.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:14:12 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:14:12 [INFO] Bar 197 | Price: $70,672.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:15:12 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:15:12 [INFO] Bar 197 | Price: $70,681.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:16:13 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:16:13 [INFO] Bar 197 | Price: $70,640.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:17:13 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:17:13 [INFO] Bar 197 | Price: $70,685.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:18:14 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:18:14 [INFO] Bar 197 | Price: $70,665.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:19:14 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:19:14 [INFO] Bar 197 | Price: $70,660.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:20:14 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:20:14 [INFO] Bar 197 | Price: $70,672.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:21:15 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:21:15 [INFO] Bar 197 | Price: $70,712.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:22:15 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:22:16 [INFO] Bar 197 | Price: $70,702.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:23:17 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:23:17 [INFO] Bar 197 | Price: $70,713.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:24:18 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:24:18 [INFO] Bar 197 | Price: $70,715.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:25:19 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:25:19 [INFO] Bar 197 | Price: $70,719.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:26:21 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:26:22 [INFO] Bar 197 | Price: $70,739.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:27:22 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:27:22 [INFO] Bar 197 | Price: $70,758.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:28:23 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:28:23 [INFO] Bar 197 | Price: $70,765.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:29:24 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:29:24 [INFO] Bar 197 | Price: $70,759.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:30:24 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:30:24 [INFO] Bar 197 | Price: $70,754.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:31:25 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:31:25 [INFO] Bar 197 | Price: $70,765.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:32:25 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:32:25 [INFO] Bar 197 | Price: $70,768.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:33:25 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:33:25 [INFO] Bar 197 | Price: $70,751.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:34:26 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:34:26 [INFO] Bar 197 | Price: $70,760.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:35:26 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:35:26 [INFO] Bar 197 | Price: $70,795.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:36:26 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:36:26 [INFO] Bar 197 | Price: $70,748.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:37:27 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:37:27 [INFO] Bar 197 | Price: $70,752.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:38:27 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:38:27 [INFO] Bar 197 | Price: $70,773.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
+2026-04-13 18:39:27 [INFO] HL API: fetched 1 candles, total 4433 bars
+2026-04-13 18:39:28 [INFO] Bar 197 | Price: $70,767.50 | Bal: $190.19 | RSI: 43.4 | Trend: UPTREND
