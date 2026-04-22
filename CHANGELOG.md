@@ -54,6 +54,9 @@
 - Kept compatibility with existing `tests/test_2026_04_22_regression.py` checks.
 - Added CLI compatibility flags for path/debug verification: `--verbose`, `--no-cache`, `--dump-config`.
 
+### Follow-up (CLI wiring)
+- `--no-cache` を `generate_report()` / `_load_market_data()` まで通し、`no_cache=True` 時は **合成データへ即フォールバックしない**（yfinance再試行→ダメなら `UNKNOWN`）ように修正。
+
 ### Reflection of Prior Request
 - Prior unresolved items reflected in this iteration: **10 / 10 core audit requirements**.
 

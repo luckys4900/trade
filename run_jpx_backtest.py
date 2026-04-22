@@ -264,22 +264,50 @@ def _render_executive_summary(
     )
 
 
-def _load_market_data(code: str, start: str, end: str) -> tuple[pd.DataFrame, DataProvenance]:
+def _load_market_data(code: str, start: str, end: str, *, no_cache: bool = False) -> tuple[pd.DataFrame, DataProvenance]:
     now_jst = datetime.now(JST)
     chain: list[str] = []
     loader = JQuantsDataLoader()
     if loader.cli is not None:
         chain.append("jquants(試行)")
-        df = loader.get_daily_quotes(code, start, end)
-        if not df.empty:
-            prov = DataProvenance(
-                source=DataSource.JQUANTS,
-                fetched_at=now_jst,
-                as_of=pd.Timestamp(df.index[-1]).to_pydatetime().replace(tzinfo=JST),
-                fallback_chain=chain + ["jquants(成功)"],
-            )
-            return df, prov
-        chain.append("jquants(失敗)")
+        if no_cache:
+            try:
+                raw = loader.cli.get_prices_daily_quotes(code=code, from_date=start, to_date=end)
+            except Exception as exc:
+                LOGGER.warning("J-Quants fetch failed (no_cache): %s", exc)
+                raw = pd.DataFrame()
+            if not raw.empty:
+                df = raw.rename(
+                    columns={
+                        "Open": "Open",
+                        "High": "High",
+                        "Low": "Low",
+                        "Close": "Close",
+                        "Volume": "Volume",
+                    }
+                )
+                df["Date"] = pd.to_datetime(df["Date"])
+                df = df.set_index("Date").sort_index()
+                df = df[["Open", "High", "Low", "Close", "Volume"]]
+                prov = DataProvenance(
+                    source=DataSource.JQUANTS,
+                    fetched_at=now_jst,
+                    as_of=pd.Timestamp(df.index[-1]).to_pydatetime().replace(tzinfo=JST),
+                    fallback_chain=chain + ["jquants(成功・no_cache)"],
+                )
+                return df, prov
+            chain.append("jquants(失敗・no_cache)")
+        else:
+            df = loader.get_daily_quotes(code, start, end)
+            if not df.empty:
+                prov = DataProvenance(
+                    source=DataSource.JQUANTS,
+                    fetched_at=now_jst,
+                    as_of=pd.Timestamp(df.index[-1]).to_pydatetime().replace(tzinfo=JST),
+                    fallback_chain=chain + ["jquants(成功)"],
+                )
+                return df, prov
+            chain.append("jquants(失敗)")
     else:
         chain.append("jquants(未設定)")
 
@@ -288,7 +316,14 @@ def _load_market_data(code: str, start: str, end: str) -> tuple[pd.DataFrame, Da
 
         chain.append("yfinance(試行)")
         ticker = f"{code}.T"
-        ydf = yf.Ticker(ticker).history(start=start, end=end, interval="1d")
+        ydf = yf.Ticker(ticker).history(
+            start=start,
+            end=end,
+            interval="1d",
+            auto_adjust=False,
+            actions=True,
+            prepost=bool(no_cache),
+        )
         if not ydf.empty:
             ydf = ydf.rename(columns={"Open": "Open", "High": "High", "Low": "Low", "Close": "Close", "Volume": "Volume"})
             ydf = ydf[["Open", "High", "Low", "Close", "Volume"]]
@@ -302,6 +337,15 @@ def _load_market_data(code: str, start: str, end: str) -> tuple[pd.DataFrame, Da
         chain.append("yfinance(失敗)")
     except Exception:
         chain.append("yfinance(失敗)")
+
+    if no_cache:
+        prov = DataProvenance(
+            source=DataSource.UNKNOWN,
+            fetched_at=now_jst,
+            as_of=now_jst,
+            fallback_chain=chain + ["no_cache: synthetic禁止"],
+        )
+        return pd.DataFrame(), prov
 
     synth = loader._synth_daily(code, start, end)
     prov = DataProvenance(
@@ -331,8 +375,9 @@ def generate_report(
     today: datetime | None = None,
     mock_source: str | None = None,
     yfinance_n225_overnight: float | None = None,
+    no_cache: bool = False,
 ) -> tuple[str, pd.Series]:
-    df, provenance = _load_market_data(code, start, end)
+    df, provenance = _load_market_data(code, start, end, no_cache=no_cache)
     if mock_source:
         try:
             provenance.source = DataSource[mock_source]
@@ -481,7 +526,6 @@ def run_jpx_backtest(**kwargs: Any) -> None:
     report_kwargs = dict(kwargs)
     output_path = report_kwargs.pop("output_path", None)
     report_kwargs.pop("verbose", None)
-    report_kwargs.pop("no_cache", None)
     report_kwargs.pop("dump_config", None)
     report, stats = generate_report(**report_kwargs)
     try:
@@ -496,7 +540,7 @@ def run_jpx_backtest(**kwargs: Any) -> None:
         start = str(kwargs.get("start", "2023-01-01"))
         end = str(kwargs.get("end", "2026-04-22"))
         cash = float(kwargs.get("cash", 1_000_000))
-        df, _ = _load_market_data(code, start, end)
+        df, _ = _load_market_data(code, start, end, no_cache=bool(kwargs.get("no_cache")))
         bt = Backtest(df, JPXRSISwing, cash=cash, commission=0.001, trade_on_close=True, exclusive_orders=True)
         _ = bt.run()
         filename = f"jpx_backtest_{code}.html"
@@ -549,4 +593,6 @@ if __name__ == "__main__":
         position_shares=args.position_shares,
         position_side=args.position_side,
         output_path=args.output_path,
+        no_cache=args.no_cache,
+        verbose=args.verbose,
     )
