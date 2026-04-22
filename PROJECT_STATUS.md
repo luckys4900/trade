@@ -1,7 +1,15 @@
 # Qwen Unified Auto-Trader - プロジェクト状況記録
 
 ## 最終更新日
-2026-04-18 (Contrarian Edge Filter OOS検証完了)
+2026-04-22 (JPX 2802 デイトレレポート監査対応)
+
+---
+
+## 変更履歴 (JPX / 2802)
+
+- `run_jpx_backtest.py`: Data Provenance / Executive Summary / Gap audit trail / action rules を含む監査向けMarkdownレポート生成へ拡張
+- `modules/*`: マクロ整合・イベント・シナリオ・鮮度・出所管理の分離モジュール追加
+- `tests/test_regression_20260422.py`: v3.0 回帰テスト追加（`pytest -v tests/test_regression_20260422.py`）
 
 ---
 
@@ -13,7 +21,7 @@
 | モード | ライブトレード（Hyperliquid Mainnet） |
 | ウォレット | `0x7dd9f0C23Fb61CA3f36B8414306310F963093c12` |
 | 残高 | $190.59 |
-| ポジション | なし（OCPM=No, MR=No, RSISwing=No, Contrarian=No） |
+| ポジション | なし（OCPM=No, MR=No, RSISwing=No, Contrarian=No, VSRev=No） |
 | BTC価格 | $70,842.50 |
 | RSI(14) | 42.9 |
 | トレンド | UPTREND |
@@ -106,14 +114,30 @@
 ### リスク管理
 | パラメータ | 値 |
 |------------|-----|
-| Legacy Pool | 30%（OCPM + MR + RSISwing 共有） |
+| Legacy Pool | 30%（OCPM + MR + RSISwing + VSRev 共有） |
 | Contrarian Pool | 70% |
 | Legacy Risk % | 1.5% |
 | Contrarian Risk % | 1.4% |
-| Max Position % | 40%（Legacy） / 30%（Contrarian） |
+| VSRev Risk % | 1.5% |
+| Max Position % | 40%（Legacy） / 30%（Contrarian/VSRev） |
 | Max Consecutive Losses | 5 |
 | Cooldown Bars | 2 |
 | Drawdown Halt % | 15% |
+
+### VSRev (Volume Spike Reversal)
+| パラメータ | 値 |
+|------------|-----|
+| Vol Ratio Threshold | 2.0x |
+| RSI Long Threshold | 25.0 |
+| RSI Short Threshold | 80.0 |
+| SL ATR Mult | 2.0 |
+| TP ATR Mult | 5.0 |
+| Max Hold | 6 bars（24h） |
+| Risk % | 1.5% |
+| Max Position % | 30% |
+| Max Consecutive Losses | 5 |
+| Cooldown Bars | 2 |
+| OOS Backtest | IS EV +0.19% / OOS EV **+0.77%** / OOS WR **67.7%** / n=31 |
 
 ---
 
@@ -345,6 +369,26 @@ taskkill /F /IM wscript.exe
   - IS→OOSで性能低下なし（むしろOOSで改善）→過学習なし
   - DD改善（5.8% → 4.7%）
 - **結論**: `contrarian_edge_filter_enabled = True` を本番採用確定
+
+---
+
+## 修正履歴（2026-04-20）
+
+### 1. VSRev（Volume Spike Reversal）戦略統合
+- `SYSTEM/qwen_unified_live.py` に第5戦略「VSRev」を追加
+- エントリー条件: 出来高 >= 20本平均の2倍 + RSI(14) < 25 → LONG / RSI(14) > 80 → SHORT
+- エグジット: SL=2ATR / TP=5ATR / Max Hold=6bars / RSI Exit
+- Legacy Pool（30%）内でOCPM/MR/RSISwing/VSRevが共有
+- Whale/Macro/Kronos/Confluenceマルチプライヤー対応済み
+- OOS検証結果: EV_net +0.77%、WR 67.7%（n=31）
+- テスト8件追加（全26テスト通過）
+
+### 2. 調査結果の記録
+- GitHub公開ツール調査完了（Freqtrade, Hummingbot, VectorBT, HyperData Terminal等）
+- ファンディングレート戦略バックテスト完了（Z-score逆張りOOS PASS、EV薄い）
+- 複合シグナル（Volume Spike + RSI + FR）バックテスト完了
+- Robinhood流入ショート戦略はOOSデータ不足で廃止確定
+- memory/whale_inflow_short_strategy_research.md にSection 13-17を追記
 
 ---
 
