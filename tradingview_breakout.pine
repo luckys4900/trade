@@ -1,0 +1,149 @@
+//@version=5
+strategy("Triple Top Breakout Strategy", overlay=true, default_qty_type=strategy.percent_of_equity, default_qty_value=100, commission_type=strategy.commission.percent, commission_value=0.035, slippage=0.1)
+
+// ==================== パラメータ ====================
+pivotLength = input.int(5, "Pivot Length", minval=1)
+priceTolerance = input.float(0.02, "Price Tolerance (%)", minval=0.01, maxval=0.05) / 100
+minHighCount = input.int(3, "Min High Count", minval=2, maxval=5)
+bbPeriod = input.int(20, "BB Period", minval=5, maxval=50)
+bbStd = input.float(2.0, "BB Std Dev", minval=0.5, maxval=4.0)
+atrPeriod = input.int(14, "ATR Period", minval=5, maxval=50)
+atrSLMult = input.float(2.0, "SL ATR Mult", minval=0.5, maxval=5.0)
+atrTPMult = input.float(5.0, "TP ATR Mult", minval=1.0, maxval=10.0)
+maxHoldBars = input.int(10, "Max Hold Bars", minval=1, maxval=50)
+volumeMult = input.float(2.0, "Volume Spike Threshold", minval=1.0, maxval=5.0)
+useVolFilter = input.bool(true, "Use Volume Filter")
+useBBFilter = input.bool(true, "Use BB Filter")
+useRegimeFilter = input.bool(true, "Use Volatility Regime Filter")
+regimeLookback = input.int(50, "Regime Lookback", minval=20, maxval=200)
+
+// ==================== インジケーター ====================
+// ATR
+atr = ta.atr(atrPeriod)
+
+// ボリンジャーバンド
+bbMiddle = ta.sma(close, bbPeriod)
+bbUpper = bbMiddle + bbStd * ta.stdev(close, bbPeriod)
+bbLower = bbMiddle - bbStd * ta.stdev(close, bbPeriod)
+
+// 出来高平均
+volSMA = ta.sma(volume, 20)
+
+// ピボットポイント
+pivotHigh = ta.pivothigh(high, pivotLength, pivotLength)
+pivotLow = ta.pivotlow(low, pivotLength, pivotLength)
+
+// ==================== トリプルトップ検出 ====================
+var float[] recentHighs = array.new_float(0)
+var int[] highBarIndices = array.new_int(0)
+
+// 新しい高値を記録
+if not na(pivotHigh)
+    array.push(recentHighs, pivotHigh)
+    array.push(highBarIndices, bar_index)
+
+// 古い高値を削除（50本以上前）
+if array.size(highBarIndices) > 0
+    oldestIdx = array.get(highBarIndices, 0)
+    if bar_index - oldestIdx > 50
+        array.shift(recentHighs)
+        array.shift(highBarIndices)
+
+// トリプルトップ条件
+tripleTopCondition = false
+highPriceRange = 0.0
+avgHighPrice = 0.0
+minHigh = 0.0
+maxHigh = 0.0
+
+if array.size(recentHighs) >= minHighCount
+    // 最近のminHighCount個の高値を取得
+    lastHighs = array.new_float(0)
+    for i = 0 to minHighCount - 1
+        if i < array.size(recentHighs)
+            array.unshift(lastHighs, array.get(recentHighs, array.size(recentHighs) - 1 - i))
+
+    if array.size(lastHighs) >= minHighCount
+        minHigh = array.min(lastHighs)
+        maxHigh = array.max(lastHighs)
+        avgHighPrice = array.avg(lastHighs)
+        highPriceRange = (maxHigh - minHigh) / avgHighPrice
+
+        // 価格帯が許容範囲内（±2%）
+        priceBandValid = highPriceRange <= priceTolerance * 2
+
+        // 現在価格が高値帯に近い（2%以内）
+        nearHighBand = close >= avgHighPrice * (1 - priceTolerance) and close <= avgHighPrice * (1 + priceTolerance)
+
+        // 安値が切り上がっている
+        lowsRising = true
+        if array.size(highBarIndices) >= 2
+            for i = 1 to min(array.size(highBarIndices) - 1, minHighCount - 1)
+                prevBarIdx = array.get(highBarIndices, i)
+                currBarIdx = array.get(highBarIndices, i - 1)
+                prevLow = ta.lowest(low, prevBarIdx - pivotLength * 2, prevBarIdx)
+                currLow = ta.lowest(low, currBarIdx - pivotLength * 2, currBarIdx)
+                if currLow <= prevLow
+                    lowsRising := false
+                    break
+
+        tripleTopCondition := priceBandValid and nearHighBand and lowsRising
+
+// ==================== 出来高フィルター ====================
+volumeCondition = not useVolFilter or volume > volSMA * volumeMult
+
+// ==================== BBフィルター（低ボラ排除） ====================
+bbCondition = not useBBFilter or (close > bbUpper and close > bbMiddle)
+
+// ==================== ボラティリティレジームフィルター ====================
+// ボラティリティ順位を計算
+volPct = 0.0
+if useRegimeFilter
+    absReturns = array.new_float(0)
+    for i = 0 to regimeLookback - 1
+        if bar_index - i > 0
+            array.push(absReturns, math.abs(close[bar_index - i] - close[bar_index - i - 1]) / close[bar_index - i - 1] * 100)
+    if array.size(absReturns) > 0
+        currentVol = math.abs(close - close[1]) / close[1] * 100
+        higherCount = 0
+        for i = 0 to array.size(absReturns) - 1
+            if currentVol >= array.get(absReturns, i)
+                higherCount += 1
+        volPct := higherCount / array.size(absReturns) * 100
+
+// 中ボラティリティレジーム（35-80パーセンタイル）
+regimeCondition = not useRegimeFilter or (volPct >= 35 and volPct <= 80)
+
+// ==================== エントリー条件 ====================
+longCondition = tripleTopCondition and volumeCondition and bbCondition and regimeCondition
+
+// ==================== エグジット条件 ====================
+var int entryBar = na
+
+if longCondition and strategy.position_size == 0
+    entryBar := bar_index
+
+// ストップロス / テイクプロフィット
+slPrice = strategy.position_avg_price - atr * atrSLMult
+tpPrice = strategy.position_avg_price + atr * atrTPMult
+
+// Max Hold
+if strategy.position_size > 0 and bar_index - entryBar >= maxHoldBars
+    strategy.close("Long Exit", comment="Max Hold")
+
+// ==================== エントリー / エグジット ====================
+if longCondition and strategy.position_size == 0
+    strategy.entry("Long", strategy.long)
+
+if strategy.position_size > 0
+    strategy.exit("Exit", "Long", stop=slPrice, limit=tpPrice)
+
+// ==================== プロット ====================
+plot(pivotHigh, "Pivot High", color=color.red, style=plot.style_circles, offset=-pivotLength)
+plot(pivotLow, "Pivot Low", color=color.green, style=plot.style_circles, offset=-pivotLength)
+
+// トリプルトップレベル
+plot(tripleTopCondition ? avgHighPrice : na, "Triple Top Level", color=color.purple, style=plot.style_linebr, linewidth=2)
+
+// エントリー
+plotshape(longCondition, "Buy Signal", shape.triangleup, location.belowbar, color=color.lime, size=size.small)

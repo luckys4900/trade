@@ -1,0 +1,9 @@
+2026-04-24 08:13:13,155 [INFO] Loaded config: 3 wallets
+2026-04-24 08:13:13,155 [INFO] Starting loop with interval 900s
+2026-04-24 08:13:13,155 [INFO] === Run Once ===
+2026-04-24 08:13:13,304 [DEBUG] Whale_1: AUM $0 outside range [$$100,000 - $100,000,000]
+2026-04-24 08:13:13,704 [DEBUG] Whale_2: Using default metrics (2000 fills, trade count estimated)
+2026-04-24 08:13:13,705 [INFO] Whale_2: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-04-24 08:13:14,747 [DEBUG] Whale_3: Using default metrics (2000 fills, trade count estimated)
+2026-04-24 08:13:14,747 [INFO] Whale_3: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-04-24 08:13:15,521 [INFO] Signal written: LONG, strength=0.00, valid=True

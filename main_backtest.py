@@ -3,6 +3,7 @@ import pandas as pd
 from strategies.micro_breakout import HyperliquidMicroBreakout
 from strategies.mean_reversion import MeanReversionOrderbookImbalance
 from strategies.ema_ribbon import EMA_Ribbon_VolumeSpike
+from strategies.triple_top_breakout import TripleTopBreakout
 import warnings
 import os
 from pathlib import Path
@@ -123,6 +124,36 @@ def run_comprehensive_backtest():
     print_results("EMAリボン", stats3)
     
     # ===================================================================
+    # 戦略4: トリプルトップブレイクアウト (TVScreenerベース)
+    # ===================================================================
+    print("\n" + "=" * 70)
+    print("戦略4: トリプルトップブレイクアウト (TVScreenerベース)")
+    print("=" * 70)
+    
+    bt4 = Backtest(
+        df,
+        TripleTopBreakout,
+        cash=100,
+        commission=0.00045,
+        exclusive_orders=True,
+        trade_on_close=False
+    )
+    
+    print("\nパラメータ最適化中...")
+    stats4 = bt4.optimize(
+        pivot_length=range(5, 10, 2),
+        price_tolerance_pct=[1.0, 1.5, 2.0],
+        min_high_count=[2, 3],
+        sl_atr_mult=[2.0, 2.5, 3.0],
+        tp_atr_mult=[3.0, 4.0, 5.0],
+        volume_mult=[2.0, 2.5, 3.0],
+        maximize='Sharpe Ratio',
+        constraint=lambda p: p.tp_atr_mult > p.sl_atr_mult
+    )
+    
+    print_results("トリプルトップブレイクアウト", stats4)
+    
+    # ===================================================================
     # 比較サマリー
     # ===================================================================
     print("\n" + "=" * 70)
@@ -132,28 +163,37 @@ def run_comprehensive_backtest():
     comparison = pd.DataFrame({
         'マイクロブレイクアウト': extract_key_metrics(stats1),
         '平均回帰': extract_key_metrics(stats2),
-        'EMAリボン': extract_key_metrics(stats3)
+        'EMAリボン': extract_key_metrics(stats3),
+        'トリプルトップBK': extract_key_metrics(stats4)
     }).T
     
     print(comparison.to_string())
     
-    # 最良戦略でチャート出力
-    best_sharpe = max(stats1['Sharpe Ratio'], stats2['Sharpe Ratio'], stats3['Sharpe Ratio'])
+    all_sharpes = {
+        'マイクロブレイクアウト': (stats1['Sharpe Ratio'], bt1),
+        '平均回帰': (stats2['Sharpe Ratio'], bt2),
+        'EMAリボン': (stats3['Sharpe Ratio'], bt3),
+        'トリプルトップBK': (stats4['Sharpe Ratio'], bt4),
+    }
+    best_name = max(all_sharpes, key=lambda k: all_sharpes[k][0])
+    best_sharpe = all_sharpes[best_name][0]
+    best_bt = all_sharpes[best_name][1]
     
-    if stats1['Sharpe Ratio'] == best_sharpe:
-        bt1.plot(filename='./backtest_results/micro_breakout_best.html', open_browser=False)
-        best_strategy = "マイクロブレイクアウト"
-    elif stats2['Sharpe Ratio'] == best_sharpe:
-        bt2.plot(filename='./backtest_results/mean_reversion_best.html', open_browser=False)
-        best_strategy = "平均回帰"
-    else:
-        bt3.plot(filename='./backtest_results/ema_ribbon_best.html', open_browser=False)
-        best_strategy = "EMAリボン"
+    safe_names = {
+        'マイクロブレイクアウト': 'micro_breakout',
+        '平均回帰': 'mean_reversion',
+        'EMAリボン': 'ema_ribbon',
+        'トリプルトップBK': 'triple_top_breakout',
+    }
+    best_bt.plot(
+        filename=f'./backtest_results/{safe_names[best_name]}_best.html',
+        open_browser=False
+    )
     
-    print(f"\n最良戦略: {best_strategy}（シャープレシオ {best_sharpe:.2f}）")
+    print(f"\n最良戦略: {best_name}（シャープレシオ {best_sharpe:.2f}）")
     print("結果HTMLは backtest_results/ フォルダで確認できます")
     
-    return stats1, stats2, stats3
+    return stats1, stats2, stats3, stats4
 
 
 def print_results(strategy_name, stats):
@@ -186,9 +226,9 @@ def extract_key_metrics(stats):
 
 
 if __name__ == "__main__":
-    stats1, stats2, stats3 = run_comprehensive_backtest()
+    results = run_comprehensive_backtest()
     
-    if stats1 is not None:
+    if results[0] is not None:
         print("\nバックテスト完了！")
     else:
         print("\nバックテストに失敗しました")

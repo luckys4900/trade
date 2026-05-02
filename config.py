@@ -47,6 +47,20 @@ STRATEGY_CONFIG = {
         'volume_spike_multiplier': 2.0,
         'stop_loss_pct': 0.008,
         'take_profit_pct': 0.020
+    },
+    'triple_top_breakout': {
+        'pivot_length': 7,
+        'price_tolerance_pct': 1.5,
+        'min_high_count': 3,
+        'bb_period': 20,
+        'bb_std': 1.8,
+        'atr_period': 14,
+        'sl_atr_mult': 2.5,
+        'tp_atr_mult': 4.0,
+        'max_hold_bars': 15,
+        'volume_mult': 2.5,
+        'risk_per_trade': 0.02,
+        'pivot_memory_bars': 70
     }
 }
 

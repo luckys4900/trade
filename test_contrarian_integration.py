@@ -639,3 +639,144 @@ def test_contrarian_opens_when_volatility_percentile_inside_gate(
 
     assert logged["count"] == 1
     assert engine.contrarian.last_signal_ts == signal_ts
+
+
+def test_compute_indicators_adds_vsrev_signals() -> None:
+    c = live.Config()
+    df = pd.DataFrame(
+        {
+            "close": [100.0] * 25 + [90.0, 88.0, 85.0],
+            "high": [101.0] * 25 + [91.0, 89.0, 86.0],
+            "low": [99.0] * 25 + [89.0, 87.0, 84.0],
+            "open": [100.0] * 25 + [91.0, 89.0, 86.0],
+            "volume": [1000.0] * 25 + [5000.0, 5000.0, 5000.0],
+        }
+    )
+    result = live.compute_indicators(df, c)
+    assert "vol_ratio" in result.columns
+    assert "vsrev_long" in result.columns
+    assert "vsrev_short" in result.columns
+
+
+def test_vsrev_state_persistence(engine: live.UnifiedEngine) -> None:
+    engine.vsrev.in_pos = True
+    engine.vsrev.side = "LONG"
+    engine.vsrev.size = 0.5
+    engine.vsrev.entry_px = 100.0
+    engine.save_state()
+
+    saved = json.loads(Path(engine.c.state_file).read_text(encoding="utf-8"))
+    assert saved["vsrev"]["in_pos"] is True
+    assert saved["vsrev"]["side"] == "LONG"
+    assert saved["vsrev"]["name"] == "VSRev"
+
+
+def test_vsrev_exit_on_stop_loss(engine: live.UnifiedEngine) -> None:
+    engine.vsrev.in_pos = True
+    engine.vsrev.side = "LONG"
+    engine.vsrev.size = 0.1
+    engine.vsrev.entry_px = 100.0
+    engine.vsrev.stop = 95.0
+    engine.vsrev.tp = 110.0
+    engine.vsrev.entry_bar = engine.current_bar - 1
+
+    engine._manage_vsrev_exit(pd.Series({"rsi": 20.0, "atr": 2.0}), 94.0)
+
+    assert not engine.vsrev.in_pos
+
+
+def test_vsrev_exit_on_take_profit(engine: live.UnifiedEngine) -> None:
+    engine.vsrev.in_pos = True
+    engine.vsrev.side = "LONG"
+    engine.vsrev.size = 0.1
+    engine.vsrev.entry_px = 100.0
+    engine.vsrev.stop = 95.0
+    engine.vsrev.tp = 110.0
+    engine.vsrev.entry_bar = engine.current_bar - 1
+
+    engine._manage_vsrev_exit(pd.Series({"rsi": 50.0, "atr": 2.0}), 111.0)
+
+    assert not engine.vsrev.in_pos
+
+
+def test_vsrev_exit_on_time(engine: live.UnifiedEngine) -> None:
+    engine.vsrev.in_pos = True
+    engine.vsrev.side = "LONG"
+    engine.vsrev.size = 0.1
+    engine.vsrev.entry_px = 100.0
+    engine.vsrev.stop = 95.0
+    engine.vsrev.entry_bar = engine.current_bar - engine.c.vsrev_max_hold
+
+    engine._manage_vsrev_exit(pd.Series({"rsi": 50.0, "atr": 2.0}), 102.0)
+
+    assert not engine.vsrev.in_pos
+
+
+def test_vsrev_entry_triggers_on_vol_spike_and_low_rsi(
+    engine: live.UnifiedEngine, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    opened = {"count": 0}
+
+    def mock_open(s, side, sz, px, stop, tp=0.0):
+        opened["count"] += 1
+        opened["side"] = side
+        opened["tp"] = tp
+        opened["stop"] = stop
+        return True
+
+    monkeypatch.setattr(engine, "_open_strat", mock_open)
+    monkeypatch.setattr(engine, "_log_trade_alignment", lambda *a, **kw: None)
+    monkeypatch.setattr(engine, "_read_whale_signal", lambda: None)
+    monkeypatch.setattr(engine, "_read_macro_state", lambda: None)
+    monkeypatch.setattr(engine, "_read_kronos_signal", lambda: None)
+
+    r = pd.Series({
+        "vsrev_long": 1,
+        "vsrev_short": 0,
+        "vol_ratio": 3.0,
+        "rsi": 20.0,
+        "rsi_prev": 18.0,
+        "atr": 2.0,
+    })
+
+    engine._check_vsrev_entry(r, 100.0, 1000.0)
+
+    assert opened["count"] == 1
+    assert opened["side"] == "LONG"
+    assert opened["stop"] == 100.0 - 2.0 * 2.0
+    assert opened["tp"] == 100.0 + 5.0 * 2.0
+
+
+def test_vsrev_does_not_enter_when_disabled(
+    engine: live.UnifiedEngine, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    engine.c.vsrev_enabled = False
+    opened = {"count": 0}
+
+    def mock_open(s, side, sz, px, stop, tp=0.0):
+        opened["count"] += 1
+        return True
+
+    monkeypatch.setattr(engine, "_open_strat", mock_open)
+
+    r = pd.Series({
+        "vsrev_long": 1,
+        "vsrev_short": 0,
+        "vol_ratio": 3.0,
+        "rsi": 20.0,
+        "atr": 2.0,
+    })
+
+    engine._check_vsrev_entry(r, 100.0, 1000.0)
+
+    assert opened["count"] == 0
+
+
+def test_sync_positions_includes_vsrev(engine: live.UnifiedEngine) -> None:
+    engine.vsrev.in_pos = True
+    engine.vsrev.side = "LONG"
+    engine.vsrev.size = 0.5
+
+    engine._sync_positions()
+
+    assert engine.vsrev.in_pos

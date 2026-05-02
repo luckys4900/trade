@@ -2,10 +2,10 @@
   "kronos_direction": "DOWN",
   "contrarian_direction": "LONG",
   "contrarian_signal": 1,
-  "pred_close": 70503.125,
-  "current_close": 70579.0,
+  "pred_close": 77771.046875,
+  "current_close": 78196.0,
   "valid": true,
-  "timestamp": 1776069903094,
+  "timestamp": 1776902164044,
   "samples": 30,
-  "inference_time_s": 0.5
+  "inference_time_s": 0.6
 }

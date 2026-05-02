@@ -1,0 +1,126 @@
+2026-05-01 11:34:17,454 [INFO] Loaded config: 3 wallets
+2026-05-01 11:34:17,454 [INFO] Starting loop with interval 900s
+2026-05-01 11:34:17,454 [INFO] === Run Once ===
+2026-05-01 11:34:17,594 [DEBUG] Whale_1: AUM $0 outside range [$$100,000 - $100,000,000]
+2026-05-01 11:34:18,266 [DEBUG] Whale_2: Using default metrics (2000 fills, trade count estimated)
+2026-05-01 11:34:18,266 [INFO] Whale_2: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-05-01 11:34:19,262 [DEBUG] Whale_3: Using default metrics (2000 fills, trade count estimated)
+2026-05-01 11:34:19,262 [INFO] Whale_3: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-05-01 11:34:19,496 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 11:49:19,509 [INFO] === Run Once ===
+2026-05-01 11:49:19,521 [INFO] Using cached ranking (0.3h old)
+2026-05-01 11:49:19,904 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 12:04:19,910 [INFO] === Run Once ===
+2026-05-01 12:04:19,912 [INFO] Using cached ranking (0.5h old)
+2026-05-01 12:04:20,235 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 12:19:20,237 [INFO] === Run Once ===
+2026-05-01 12:19:20,237 [INFO] Using cached ranking (0.8h old)
+2026-05-01 12:19:20,239 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-05-01 12:19:20,240 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-05-01 12:19:20,248 [INFO] Signal written: NONE, strength=0.00, valid=False
+2026-05-01 12:34:20,260 [INFO] === Run Once ===
+2026-05-01 12:34:20,261 [INFO] Using cached ranking (1.0h old)
+2026-05-01 12:34:20,456 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 12:49:20,465 [INFO] === Run Once ===
+2026-05-01 12:49:20,466 [INFO] Using cached ranking (1.3h old)
+2026-05-01 12:49:20,706 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 13:04:20,714 [INFO] === Run Once ===
+2026-05-01 13:04:20,714 [INFO] Using cached ranking (1.5h old)
+2026-05-01 13:04:20,961 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 13:19:20,971 [INFO] === Run Once ===
+2026-05-01 13:19:20,971 [INFO] Using cached ranking (1.8h old)
+2026-05-01 13:19:21,206 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 13:34:21,211 [INFO] === Run Once ===
+2026-05-01 13:34:21,211 [INFO] Using cached ranking (2.0h old)
+2026-05-01 13:34:21,498 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 13:49:21,498 [INFO] === Run Once ===
+2026-05-01 13:49:21,498 [INFO] Using cached ranking (2.3h old)
+2026-05-01 13:49:21,746 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 14:04:21,751 [INFO] === Run Once ===
+2026-05-01 14:04:21,751 [INFO] Using cached ranking (2.5h old)
+2026-05-01 14:04:21,941 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 14:19:21,947 [INFO] === Run Once ===
+2026-05-01 14:19:21,948 [INFO] Using cached ranking (2.8h old)
+2026-05-01 14:19:22,137 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 14:34:22,149 [INFO] === Run Once ===
+2026-05-01 14:34:22,150 [INFO] Using cached ranking (3.0h old)
+2026-05-01 14:34:22,945 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 14:49:22,950 [INFO] === Run Once ===
+2026-05-01 14:49:22,950 [INFO] Using cached ranking (3.3h old)
+2026-05-01 14:49:23,233 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 15:04:23,243 [INFO] === Run Once ===
+2026-05-01 15:04:23,244 [INFO] Using cached ranking (3.5h old)
+2026-05-01 15:04:23,486 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 15:19:23,489 [INFO] === Run Once ===
+2026-05-01 15:19:23,490 [INFO] Using cached ranking (3.8h old)
+2026-05-01 15:19:23,743 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 15:34:23,756 [INFO] === Run Once ===
+2026-05-01 15:34:23,756 [INFO] Using cached ranking (4.0h old)
+2026-05-01 15:34:23,987 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 15:49:23,997 [INFO] === Run Once ===
+2026-05-01 15:49:23,999 [INFO] Using cached ranking (4.3h old)
+2026-05-01 15:49:24,461 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 16:04:24,466 [INFO] === Run Once ===
+2026-05-01 16:04:24,468 [INFO] Using cached ranking (4.5h old)
+2026-05-01 16:04:24,716 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 16:19:24,719 [INFO] === Run Once ===
+2026-05-01 16:19:24,720 [INFO] Using cached ranking (4.8h old)
+2026-05-01 16:19:24,928 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 16:34:24,935 [INFO] === Run Once ===
+2026-05-01 16:34:24,936 [INFO] Using cached ranking (5.0h old)
+2026-05-01 16:34:25,172 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 16:49:25,179 [INFO] === Run Once ===
+2026-05-01 16:49:25,180 [INFO] Using cached ranking (5.3h old)
+2026-05-01 16:49:25,395 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-01 17:04:25,405 [INFO] === Run Once ===
+2026-05-01 17:04:25,407 [INFO] Using cached ranking (5.5h old)
+2026-05-01 17:04:25,748 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 02:23:46,779 [INFO] === Run Once ===
+2026-05-02 02:23:47,194 [DEBUG] Whale_1: AUM $0 outside range [$$100,000 - $100,000,000]
+2026-05-02 02:23:47,892 [DEBUG] Whale_2: Using default metrics (2000 fills, trade count estimated)
+2026-05-02 02:23:47,892 [INFO] Whale_2: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-05-02 02:23:48,381 [DEBUG] Whale_3: Using default metrics (2000 fills, trade count estimated)
+2026-05-02 02:23:48,381 [INFO] Whale_3: sortino=0.00, wr=50.0%, trades=1000, ev=0.0000
+2026-05-02 02:23:48,540 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 10:09:52,237 [INFO] === Run Once ===
+2026-05-02 10:09:52,239 [INFO] Using cached ranking (7.8h old)
+2026-05-02 10:09:52,604 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 10:24:52,616 [INFO] === Run Once ===
+2026-05-02 10:24:52,622 [INFO] Using cached ranking (8.0h old)
+2026-05-02 10:24:53,148 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 10:39:53,157 [INFO] === Run Once ===
+2026-05-02 10:39:53,158 [INFO] Using cached ranking (8.3h old)
+2026-05-02 10:39:53,621 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 10:54:53,628 [INFO] === Run Once ===
+2026-05-02 10:54:53,629 [INFO] Using cached ranking (8.5h old)
+2026-05-02 10:54:53,870 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 11:09:53,870 [INFO] === Run Once ===
+2026-05-02 11:09:53,870 [INFO] Using cached ranking (8.8h old)
+2026-05-02 11:09:54,076 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 11:24:54,091 [INFO] === Run Once ===
+2026-05-02 11:24:54,094 [INFO] Using cached ranking (9.0h old)
+2026-05-02 11:24:54,343 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 11:39:54,348 [INFO] === Run Once ===
+2026-05-02 11:39:54,350 [INFO] Using cached ranking (9.3h old)
+2026-05-02 11:39:54,989 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 11:54:55,027 [INFO] === Run Once ===
+2026-05-02 11:54:55,029 [INFO] Using cached ranking (9.5h old)
+2026-05-02 11:54:55,417 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 12:09:55,442 [INFO] === Run Once ===
+2026-05-02 12:09:55,443 [INFO] Using cached ranking (9.8h old)
+2026-05-02 12:09:55,706 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 12:24:55,739 [INFO] === Run Once ===
+2026-05-02 12:24:55,741 [INFO] Using cached ranking (10.0h old)
+2026-05-02 12:24:55,964 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 12:39:55,981 [INFO] === Run Once ===
+2026-05-02 12:39:55,983 [INFO] Using cached ranking (10.3h old)
+2026-05-02 12:39:56,246 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 12:54:56,272 [INFO] === Run Once ===
+2026-05-02 12:54:56,274 [INFO] Using cached ranking (10.5h old)
+2026-05-02 12:54:56,542 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 13:09:56,560 [INFO] === Run Once ===
+2026-05-02 13:09:56,562 [INFO] Using cached ranking (10.8h old)
+2026-05-02 13:09:56,825 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-05-02 13:24:56,834 [INFO] === Run Once ===
+2026-05-02 13:24:56,835 [INFO] Using cached ranking (11.0h old)
+2026-05-02 13:24:57,044 [INFO] Signal written: LONG, strength=0.00, valid=True

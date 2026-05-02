@@ -55,6 +55,20 @@
     "cool_bar": 0,
     "last_signal_ts": 1776009758629
   },
-  "current_bar": 197,
-  "last_processed_bar_ts": 1776052800000
+  "vsrev": {
+    "name": "VSRev",
+    "in_pos": false,
+    "side": "",
+    "size": 0.0,
+    "entry_px": 0.0,
+    "stop": 0.0,
+    "tp": 0.0,
+    "entry_bar": 0,
+    "entry_ts": "",
+    "c_loss": 0,
+    "cool_bar": 0,
+    "last_signal_ts": 0
+  },
+  "current_bar": 213,
+  "last_processed_bar_ts": 1776888000000
 }

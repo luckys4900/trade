@@ -3767,5 +3767,1737 @@
     "block_height": 892560,
     "timestamp": 1744729928,
     "detected_at": "2026-04-19T09:28:26.867555+00:00"
+  },
+  {
+    "tx_hash": "7c5ba77e9c63aac9c046045019b58310fbfb1dab93beb2b64f898a71489fe62b",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4579999868,
+    "inflow_btc": 45.79999868,
+    "senders": [
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU"
+    ],
+    "sender_count": 1,
+    "block_height": 945793,
+    "timestamp": 1776608913,
+    "detected_at": "2026-04-19T16:51:08.180988+00:00"
+  },
+  {
+    "tx_hash": "dab1f1b79a5ee01fbee36f3fbc70c8af0eaab973e5198c3675f18ce4cbae294a",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 3095824792,
+    "inflow_btc": 30.95824792,
+    "senders": [
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN",
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN",
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN",
+      "3CraYpxdGLUt9Zp5uxgpW8zC7ZYdWC5aRw",
+      "3CraYpxdGLUt9Zp5uxgpW8zC7ZYdWC5aRw"
+    ],
+    "sender_count": 10,
+    "block_height": 945780,
+    "timestamp": 1776603019,
+    "detected_at": "2026-04-19T16:51:08.180988+00:00"
+  },
+  {
+    "tx_hash": "127ae677d2194457db131ad498dfb775667357c71df108aac71d099dd4828e9f",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2023325721252,
+    "inflow_btc": 20233.25721252,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 945792,
+    "timestamp": 1776608304,
+    "detected_at": "2026-04-19T16:51:08.921250+00:00"
+  },
+  {
+    "tx_hash": "507cbc966c775a0c7544ba509375e2f7e54b6104ac03e3d618a90b41e8135b80",
+    "exchange": "Coincheck",
+    "exchange_addr": "bc1q4j7fcl8zx5yl56j00nkqez9zf3f6ggqchwzzcs5hjxwqhsgxvavq3qfgpr",
+    "inflow_sats": 1691658644,
+    "inflow_btc": 16.91658644,
+    "senders": [
+      "1ErsHg1J8Mih5Z8V6vAZXpJiHq8CMvmxeA",
+      "1HKKVx27ctvego5cS4R34c7434az2Yw1F4",
+      "13Fgw7pNjyEkZGVMff22qPefKQVayxMwSV",
+      "13Fgw7pNjyEkZGVMff22qPefKQVayxMwSV",
+      "13Fgw7pNjyEkZGVMff22qPefKQVayxMwSV"
+    ],
+    "sender_count": 178,
+    "block_height": 945801,
+    "timestamp": 1776615932,
+    "detected_at": "2026-04-19T16:51:11.286479+00:00"
+  },
+  {
+    "tx_hash": "00419c69d760a3226d27fa2b5b3bc8b9fc477d08be524022e9c0bad2c10d7c18",
+    "exchange": "Coincheck",
+    "exchange_addr": "bc1q4j7fcl8zx5yl56j00nkqez9zf3f6ggqchwzzcs5hjxwqhsgxvavq3qfgpr",
+    "inflow_sats": 1006982794,
+    "inflow_btc": 10.06982794,
+    "senders": [
+      "bc1qnsupj8eqya02nm8v6tmk93zslu2e2z8chlmcej",
+      "bc1qnsupj8eqya02nm8v6tmk93zslu2e2z8chlmcej",
+      "bc1qnsupj8eqya02nm8v6tmk93zslu2e2z8chlmcej",
+      "bc1qnsupj8eqya02nm8v6tmk93zslu2e2z8chlmcej",
+      "bc1qnsupj8eqya02nm8v6tmk93zslu2e2z8chlmcej"
+    ],
+    "sender_count": 18,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-19T17:12:21.348539+00:00"
+  },
+  {
+    "tx_hash": "afe2cbc0466dce485a4c632d891e84045ec1a66578e8e0c5df142975b45ac5d8",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4629999868,
+    "inflow_btc": 46.29999868,
+    "senders": [
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU"
+    ],
+    "sender_count": 1,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-19T17:48:40.225050+00:00"
+  },
+  {
+    "tx_hash": "af8374a4d928d066da923abb7385a4c00e105c95a88556dbbfea1bcc6739630e",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2022522649486,
+    "inflow_btc": 20225.22649486,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 945840,
+    "timestamp": 1776636973,
+    "detected_at": "2026-04-19T23:27:36.390529+00:00"
+  },
+  {
+    "tx_hash": "f0baea4f6cbb7c152da8c09cb52468faf351fe36c3827affcc5564f073ecf3a4",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2022252909365,
+    "inflow_btc": 20222.52909365,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 945818,
+    "timestamp": 1776622771,
+    "detected_at": "2026-04-19T23:27:36.390529+00:00"
+  },
+  {
+    "tx_hash": "49b59b6e8b701342930d3fe5a10d9346c3a7188b8d6ec05063807be1db89deb3",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2022090844826,
+    "inflow_btc": 20220.90844826,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 945854,
+    "timestamp": 1776644007,
+    "detected_at": "2026-04-20T00:17:31.184682+00:00"
+  },
+  {
+    "tx_hash": "72c27a9d4972cf35f11e61d35607b091fe1bfe1d9cd7cfdde8dc3ea580ff6042",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 2708896777,
+    "inflow_btc": 27.08896777,
+    "senders": [
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN",
+      "36UDSGdhoxzVTCYqdsZPo5B8T478sx3BRG"
+    ],
+    "sender_count": 2,
+    "block_height": 945919,
+    "timestamp": 1776681566,
+    "detected_at": "2026-04-20T10:41:01.865522+00:00"
+  },
+  {
+    "tx_hash": "1ec68e9a83fda8a745bab262d11a35079038f957594bbedb172590b931076cc9",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 1596489922,
+    "inflow_btc": 15.96489922,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 945915,
+    "timestamp": 1776680448,
+    "detected_at": "2026-04-20T10:41:01.865522+00:00"
+  },
+  {
+    "tx_hash": "705fe66a896e61f4e78ecf70cdc2c842e89e1ddc0635a24932bd32b71a803eb7",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 6629183755,
+    "inflow_btc": 66.29183755,
+    "senders": [
+      "3DWZ5wD5DrMjh5mtu9WDZZcXhkxKyiqJ7D",
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC",
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN",
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN",
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN"
+    ],
+    "sender_count": 10,
+    "block_height": 945913,
+    "timestamp": 1776678707,
+    "detected_at": "2026-04-20T10:41:01.866523+00:00"
+  },
+  {
+    "tx_hash": "ade715e63a93ec1315845d5047ede08ef181251d508f10e92b4687c430cae21b",
+    "exchange": "BitMEX",
+    "exchange_addr": "bc1qchctnvmdva5z9vrpxkkxck64v7nmzdtyxsrq64",
+    "inflow_sats": 1216459042977,
+    "inflow_btc": 12164.59042977,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 945919,
+    "timestamp": 1776681566,
+    "detected_at": "2026-04-20T10:41:03.413183+00:00"
+  },
+  {
+    "tx_hash": "1a73aeffcae08b60502a91df1b732e61f893c934ac6522032684cd4caaae76b6",
+    "exchange": "Coincheck",
+    "exchange_addr": "bc1q4j7fcl8zx5yl56j00nkqez9zf3f6ggqchwzzcs5hjxwqhsgxvavq3qfgpr",
+    "inflow_sats": 1005227222,
+    "inflow_btc": 10.05227222,
+    "senders": [
+      "13Fgw7pNjyEkZGVMff22qPefKQVayxMwSV",
+      "13Fgw7pNjyEkZGVMff22qPefKQVayxMwSV",
+      "1NqohyE7kES1ZvgoVY1FWV8hcoB11w3WAN",
+      "1NXhgA6HCoBnGfZNbum6n1Pn2b12VZxnPs",
+      "152nYmNtQTcNqpZU2LZCqfiNf6KDpPfAos"
+    ],
+    "sender_count": 6,
+    "block_height": 945901,
+    "timestamp": 1776669172,
+    "detected_at": "2026-04-20T10:41:05.037109+00:00"
+  },
+  {
+    "tx_hash": "01150c7b5e1e11fe32fcba5202d191505e685e7a0259aa3162943b32fe4dded4",
+    "exchange": "Coincheck",
+    "exchange_addr": "bc1q4j7fcl8zx5yl56j00nkqez9zf3f6ggqchwzzcs5hjxwqhsgxvavq3qfgpr",
+    "inflow_sats": 1718586000,
+    "inflow_btc": 17.18586,
+    "senders": [
+      "bc1qsw55gkezdyssgy6jg5fuxd6upmrc5r59llefly"
+    ],
+    "sender_count": 1,
+    "block_height": 945901,
+    "timestamp": 1776669172,
+    "detected_at": "2026-04-20T10:41:05.038111+00:00"
+  },
+  {
+    "tx_hash": "701a377210d0428a01431cbb99a32d2f7ea8fd1973c0ecabb141937f69a772ba",
+    "exchange": "Coincheck",
+    "exchange_addr": "bc1q4j7fcl8zx5yl56j00nkqez9zf3f6ggqchwzzcs5hjxwqhsgxvavq3qfgpr",
+    "inflow_sats": 723211668056,
+    "inflow_btc": 7232.11668056,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 945900,
+    "timestamp": 1776668368,
+    "detected_at": "2026-04-20T10:41:05.038111+00:00"
+  },
+  {
+    "tx_hash": "ac207e1f5af1c19de35b8df5f05330068cd00c05c7eb710d3b8fd9db20b66f1b",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2022809628370,
+    "inflow_btc": 20228.0962837,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-20T12:19:45.366417+00:00"
+  },
+  {
+    "tx_hash": "b4207c0d07b20e58fc2feadcc6aff778aeee55e0307c73ea60328d6902b9426e",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 6299999868,
+    "inflow_btc": 62.99999868,
+    "senders": [
+      "3CWX6EG46wwaXCRQe8rmudBkEXvt3LWQrQ"
+    ],
+    "sender_count": 1,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-20T13:01:19.292478+00:00"
+  },
+  {
+    "tx_hash": "95abd960dbc8d79f9d46b909033284ae428689592b163b3de28615fb48f5e93e",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4649999868,
+    "inflow_btc": 46.49999868,
+    "senders": [
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU"
+    ],
+    "sender_count": 1,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-20T14:11:23.722625+00:00"
+  },
+  {
+    "tx_hash": "158e04e5a248f74cf9ffdd04d1bacb9e288e954185f78470cb132aab4de3edb2",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2022394544164,
+    "inflow_btc": 20223.94544164,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-20T14:16:36.429656+00:00"
+  },
+  {
+    "tx_hash": "74611ddc58b337f332251fa95cd0d551156190142b8cced8760428c66fc809a1",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 3292392192,
+    "inflow_btc": 32.92392192,
+    "senders": [
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC",
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC",
+      "3CeugEWQLDjb9JpyqASd29BdGv5PnZnqkM"
+    ],
+    "sender_count": 3,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-20T14:42:35.812848+00:00"
+  },
+  {
+    "tx_hash": "170c869b8679e8012898c152a0cd40521aec4773a2414ab94d76b7d21fbe017e",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 2476448243,
+    "inflow_btc": 24.76448243,
+    "senders": [
+      "3QDM2jHxe9cYc5znbqikiu9f7okhrxngvm",
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC",
+      "3449U4rBTYxVunBKmDBdNMWpKohCst7ktz",
+      "3MQ2LvDBbqWjUdzQt6BKocJe2Qd9nvg83a"
+    ],
+    "sender_count": 4,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-20T15:39:46.395210+00:00"
+  },
+  {
+    "tx_hash": "0a4a161b2fa95c1b5aa5fd68ad26eb9290db02dad4e341b71a5910d9b68a0d4b",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 1999999868,
+    "inflow_btc": 19.99999868,
+    "senders": [
+      "36UDSGdhoxzVTCYqdsZPo5B8T478sx3BRG"
+    ],
+    "sender_count": 1,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-20T15:55:22.069573+00:00"
+  },
+  {
+    "tx_hash": "fe7e535bc4741a3ce40fe5871eb93e4379849516a25258eab07828fb2e72402f",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 3272561753,
+    "inflow_btc": 32.72561753,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-20T16:00:33.451505+00:00"
+  },
+  {
+    "tx_hash": "0f3eeb354318afe947c75a43b53bfb58c341598810582d1e58d42c7ae384b9bf",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 11176639809,
+    "inflow_btc": 111.76639809,
+    "senders": [
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU",
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC",
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC",
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC",
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN"
+    ],
+    "sender_count": 10,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-20T16:00:33.451505+00:00"
+  },
+  {
+    "tx_hash": "e81356f7b7e5212bc7c3e2b8c28d2f1b3b15b90970fd42fba457446567e6cefa",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4003196777,
+    "inflow_btc": 40.03196777,
+    "senders": [
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN",
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC"
+    ],
+    "sender_count": 2,
+    "block_height": 945970,
+    "timestamp": 1776722274,
+    "detected_at": "2026-04-20T23:28:24.473331+00:00"
+  },
+  {
+    "tx_hash": "60e4753cd3fc07162a1c9bec9eda1812916cc67beaf65c3789c417690ad4c935",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 2186438765,
+    "inflow_btc": 21.86438765,
+    "senders": [
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN",
+      "3Mm67t8UpgThKwTr9Evu9dGffhQBARFxxD",
+      "3LAUofeHp2krprTVcXq8QREfLbU5fU6iRW",
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC"
+    ],
+    "sender_count": 4,
+    "block_height": 945961,
+    "timestamp": 1776714572,
+    "detected_at": "2026-04-20T23:28:24.473331+00:00"
+  },
+  {
+    "tx_hash": "34465eed346fedbde09492400ededf8875e642760f438275d6132a55f4aa80ef",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 46923514767,
+    "inflow_btc": 469.23514767,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 945950,
+    "timestamp": 1776706643,
+    "detected_at": "2026-04-20T23:28:24.474332+00:00"
+  },
+  {
+    "tx_hash": "9b73b3fe6ef59dcb412bf41e8f6e808bf3e219941479ab3146828a4643ee32d1",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 29697522413,
+    "inflow_btc": 296.97522413,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 945949,
+    "timestamp": 1776704580,
+    "detected_at": "2026-04-20T23:28:24.474332+00:00"
+  },
+  {
+    "tx_hash": "5383821f5531b49115c49a6c09270ca8af77f46b6dc9fb4f5248b76350b36dfb",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2023094849281,
+    "inflow_btc": 20230.94849281,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 945971,
+    "timestamp": 1776723708,
+    "detected_at": "2026-04-20T23:28:25.227024+00:00"
+  },
+  {
+    "tx_hash": "0e4ef20c6a98bdc0860be275caa8ae358faabe63763c8bb4d4fe6998d86d9412",
+    "exchange": "gate.io",
+    "exchange_addr": "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw",
+    "inflow_sats": 8828716149,
+    "inflow_btc": 88.28716149,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 945949,
+    "timestamp": 1776704580,
+    "detected_at": "2026-04-20T23:28:26.712132+00:00"
+  },
+  {
+    "tx_hash": "906836bbe870616e84ae4301f75f37f4e19f7e5a8fe395c09228122b4d7e0bc4",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 114399999831,
+    "inflow_btc": 1143.99999831,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946057,
+    "timestamp": 1776780065,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "2e800320ae12f3ec9bbda926870cc773e614b9de87129b497ca54539d3bfa375",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 114399999831,
+    "inflow_btc": 1143.99999831,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946057,
+    "timestamp": 1776780065,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "3ace64861e76acf8a4173876429a4a8b36077ba77aeeb52d052d868b3b8f6c4e",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 44399997970,
+    "inflow_btc": 443.9999797,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946057,
+    "timestamp": 1776780065,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "7733039b50d300b725369ad54dab2b94b2037b5800ba0202ba24222def48e90f",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 34399999831,
+    "inflow_btc": 343.99999831,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946057,
+    "timestamp": 1776780065,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "e7f3d6ed9ff40dae4451be3affd065153a319bb06c560241528f541fc3472000",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 114399999831,
+    "inflow_btc": 1143.99999831,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946057,
+    "timestamp": 1776780065,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "71578f0996d7d3d46c775b7e1e89974f03e22b6fbf8a96fbcc8d50ec824c87a6",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 10903319958,
+    "inflow_btc": 109.03319958,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946057,
+    "timestamp": 1776780065,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "2719fb369c1fdbffbacbf14566de9f322b0b5d556526a7cc3a7c0e4a59e7eac2",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 114399999662,
+    "inflow_btc": 1143.99999662,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "c21fe10e5f3dbebd5b4b671f5166819772ad33a51d4476260dd7d48ba7120571",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 114399999662,
+    "inflow_btc": 1143.99999662,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "f9db58a25228db479c95675f87dac584c21c5ad8e13024fc6f3cbc8dade60240",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 114399999662,
+    "inflow_btc": 1143.99999662,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "a6706d47200361b5ae013e4ec3fff1d2e0543db2dd4e1c0e19b091e67e44991d",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 114399999662,
+    "inflow_btc": 1143.99999662,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "3f6ccea3521a505c3d9902091a4f7ef3949f2ee8ffabe09ae22785c9b85748dd",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 65600000000,
+    "inflow_btc": 656.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "82a740b2cc2049ddfafa7f928332594915c6a4cb7320ea6adfc4d90d79ab7264",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 65600000000,
+    "inflow_btc": 656.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "1f958ce280a3a51df00f1d9cd439b7816f51c3aa2eeec7b84051dbb8f124dc5b",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 65600000000,
+    "inflow_btc": 656.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "be9d8c8803950c93007fdba12ceb33af71dfaef0a90b2e574d1fdc9addbc1934",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 65600000000,
+    "inflow_btc": 656.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "2ee5d8e4e7c755ae1cd2d1204e9244e9fcae36624afc260a18e8396341648e15",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 65600000000,
+    "inflow_btc": 656.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "14b609764c4abb9a2c0650bef1e9551e35f7af8df0d49bf3d4e27cc52aaac7cd",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 65600000000,
+    "inflow_btc": 656.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 10,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "99247b204e425e166471d3a99be29b601dd0d8352a923626c2499019b6e20847",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 65600000000,
+    "inflow_btc": 656.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 10,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "c10dcc59d0d53dbc8beb3fb0ded46fbfbc520a9d2116211bdd7b23a07977f529",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 65600000000,
+    "inflow_btc": 656.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 10,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "53588ed262587eb934437c51721eeea297c6f0ba3c54c73772507ec027e725ec",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 65600000000,
+    "inflow_btc": 656.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "a6de195e7e259c1ce00bad2e41464dea85433c691e6fa984469b3b6860c51a47",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 65600000000,
+    "inflow_btc": 656.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946056,
+    "timestamp": 1776779928,
+    "detected_at": "2026-04-21T15:00:19.686869+00:00"
+  },
+  {
+    "tx_hash": "61b0b4dd1931959fce32067df6047f6e9eb47ee05a389d1633af4bc4348433d5",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 5700327421,
+    "inflow_btc": 57.00327421,
+    "senders": [
+      "3CWX6EG46wwaXCRQe8rmudBkEXvt3LWQrQ",
+      "3KrFw3BwXBHi2WH9ewwQghiCvkhiLEdv5n"
+    ],
+    "sender_count": 2,
+    "block_height": 946066,
+    "timestamp": 1776783451,
+    "detected_at": "2026-04-21T15:00:22.737394+00:00"
+  },
+  {
+    "tx_hash": "f9a65b216f50972eb92506495e154094281c2749bb14557501716ec1ca55ea99",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 1012029860,
+    "inflow_btc": 10.1202986,
+    "senders": [
+      "3B84t8DmCjM8phQhyrRAFaiFN5ZHuZL779",
+      "3DWZ5wD5DrMjh5mtu9WDZZcXhkxKyiqJ7D",
+      "344T3Z1LWe7C7tyCUE1pS6NRvUswNhT7q7"
+    ],
+    "sender_count": 3,
+    "block_height": 946031,
+    "timestamp": 1776766889,
+    "detected_at": "2026-04-21T15:00:22.737394+00:00"
+  },
+  {
+    "tx_hash": "9be0e96d1d2e208db6ee3fa90ebc3be18f941d2a27bc5f779e6ac869578e2726",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4000230476,
+    "inflow_btc": 40.00230476,
+    "senders": [
+      "36bTCT8U6RxjjvrqaKaWpEwgxKEGdZJAsr",
+      "3P6RHjGa6N6CV193r8kpFiSzy6xUvT6CX9"
+    ],
+    "sender_count": 2,
+    "block_height": 946029,
+    "timestamp": 1776765595,
+    "detected_at": "2026-04-21T15:00:22.737394+00:00"
+  },
+  {
+    "tx_hash": "2a6ff9cb603d969c010ab078eb65e4800d928549c36b3b12261018f37220f38a",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 7699995186,
+    "inflow_btc": 76.99995186,
+    "senders": [
+      "36GuNgGwqmwoMYWDv11HH68t1ym3DiCRR6",
+      "36GuNgGwqmwoMYWDv11HH68t1ym3DiCRR6",
+      "36GuNgGwqmwoMYWDv11HH68t1ym3DiCRR6"
+    ],
+    "sender_count": 3,
+    "block_height": 945997,
+    "timestamp": 1776738699,
+    "detected_at": "2026-04-21T15:00:22.738149+00:00"
+  },
+  {
+    "tx_hash": "7248edabcb65b171a222b22f5589ff63ae627650f49c48d26169106691c52086",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 2174439796,
+    "inflow_btc": 21.74439796,
+    "senders": [
+      "3JZ3byZy7TTrfy8zdxrm9iqJrdsaZ5CrNw",
+      "3JZ3byZy7TTrfy8zdxrm9iqJrdsaZ5CrNw",
+      "3JZ3byZy7TTrfy8zdxrm9iqJrdsaZ5CrNw",
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN",
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN"
+    ],
+    "sender_count": 10,
+    "block_height": 945986,
+    "timestamp": 1776733098,
+    "detected_at": "2026-04-21T15:00:22.738149+00:00"
+  },
+  {
+    "tx_hash": "85159a7e379300665f654e16f7f699b93c42e0b0a13599408127f05144ff6df1",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2022789246938,
+    "inflow_btc": 20227.89246938,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946058,
+    "timestamp": 1776781047,
+    "detected_at": "2026-04-21T15:00:23.452554+00:00"
+  },
+  {
+    "tx_hash": "03145d23b6a96cefaa7a0912bf610d874b3c6245c87cb0058f4f39e2945f205d",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 1218318175,
+    "inflow_btc": 12.18318175,
+    "senders": [
+      "bc1qrv0v2l9ekrx3lnkeusrzvu2hqyha6ex94nxumlhec4mrye8njm7sn7e4v4",
+      "bc1qrv0v2l9ekrx3lnkeusrzvu2hqyha6ex94nxumlhec4mrye8njm7sn7e4v4",
+      "bc1qrv0v2l9ekrx3lnkeusrzvu2hqyha6ex94nxumlhec4mrye8njm7sn7e4v4"
+    ],
+    "sender_count": 3,
+    "block_height": 946050,
+    "timestamp": 1776774049,
+    "detected_at": "2026-04-21T15:00:23.452554+00:00"
+  },
+  {
+    "tx_hash": "d4aea53d51f2c4f11396e08d000b4b547d725360f64111503d466201bff48939",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2022497098960,
+    "inflow_btc": 20224.9709896,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946031,
+    "timestamp": 1776766889,
+    "detected_at": "2026-04-21T15:00:23.452554+00:00"
+  },
+  {
+    "tx_hash": "15535a558b6d03cb25caa27c458e0fec7846c505dea0b6f45dc3f7059d01c797",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2022913565058,
+    "inflow_btc": 20229.13565058,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946017,
+    "timestamp": 1776759700,
+    "detected_at": "2026-04-21T15:00:23.452554+00:00"
+  },
+  {
+    "tx_hash": "c8341d543d9a37eabe0f4ce2f3391ef2c99f1ebc34b6862fc9c4a040c4d6df71",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2022844154475,
+    "inflow_btc": 20228.44154475,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946001,
+    "timestamp": 1776744997,
+    "detected_at": "2026-04-21T15:00:23.452554+00:00"
+  },
+  {
+    "tx_hash": "8d4260f8fd28d3145f5a8d8840c793d1d230b19b3a7b82c0a17f7bc23c3e8675",
+    "exchange": "gate.io",
+    "exchange_addr": "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw",
+    "inflow_sats": 4736600311,
+    "inflow_btc": 47.36600311,
+    "senders": [
+      "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9"
+    ],
+    "sender_count": 1,
+    "block_height": 946002,
+    "timestamp": 1776746142,
+    "detected_at": "2026-04-21T15:00:24.869721+00:00"
+  },
+  {
+    "tx_hash": "3bc35290ec41844b4d5717947ca68f290829b8e4cb01c2009ef42fe827866f8f",
+    "exchange": "Coincheck",
+    "exchange_addr": "bc1q4j7fcl8zx5yl56j00nkqez9zf3f6ggqchwzzcs5hjxwqhsgxvavq3qfgpr",
+    "inflow_sats": 724539655093,
+    "inflow_btc": 7245.39655093,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946009,
+    "timestamp": 1776754330,
+    "detected_at": "2026-04-21T15:00:25.757694+00:00"
+  },
+  {
+    "tx_hash": "0eee9b896811a1e39c4b428ba4f9a9c854f423d449dee050cf03daf5d51e9300",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 42635699554,
+    "inflow_btc": 426.35699554,
+    "senders": [
+      "3JZ3byZy7TTrfy8zdxrm9iqJrdsaZ5CrNw",
+      "3JZ3byZy7TTrfy8zdxrm9iqJrdsaZ5CrNw"
+    ],
+    "sender_count": 2,
+    "block_height": 946068,
+    "timestamp": 1776785096,
+    "detected_at": "2026-04-21T15:26:19.305476+00:00"
+  },
+  {
+    "tx_hash": "1e56d1596f996527c7ff273f0941e7ccfb29613c0d3853ba76b8cc9d3b9b9208",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 1134098054,
+    "inflow_btc": 11.34098054,
+    "senders": [
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC",
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN"
+    ],
+    "sender_count": 2,
+    "block_height": 946069,
+    "timestamp": 1776785883,
+    "detected_at": "2026-04-21T15:41:54.424439+00:00"
+  },
+  {
+    "tx_hash": "1fcfbbb7e94bf3bb77c51fd6746f69fcbe2bd88f7045760582eaaed26ec066e2",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 1077666510,
+    "inflow_btc": 10.7766651,
+    "senders": [
+      "bc1qrv0v2l9ekrx3lnkeusrzvu2hqyha6ex94nxumlhec4mrye8njm7sn7e4v4",
+      "bc1qrv0v2l9ekrx3lnkeusrzvu2hqyha6ex94nxumlhec4mrye8njm7sn7e4v4"
+    ],
+    "sender_count": 2,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-21T16:13:04.666072+00:00"
+  },
+  {
+    "tx_hash": "6ad685ebe2b5f7c6dd21ce453364aa825d71be2da817affdf8ab72d204f2bb53",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 3499998968,
+    "inflow_btc": 34.99998968,
+    "senders": [
+      "3MaaRxqGU8ePFg9kHUukqF2x2NgWLGP67a"
+    ],
+    "sender_count": 1,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-21T16:49:25.515775+00:00"
+  },
+  {
+    "tx_hash": "2be20deb2e9de1b3965619bc15bee34fc9678a4438879bbaef7ef92ad06e9cce",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 25268999868,
+    "inflow_btc": 252.68999868,
+    "senders": [
+      "3JZ3byZy7TTrfy8zdxrm9iqJrdsaZ5CrNw"
+    ],
+    "sender_count": 1,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-21T17:31:00.946172+00:00"
+  },
+  {
+    "tx_hash": "f741c7f84374d31e75dcf9da77a377e90b5f855f3b20c65b6149e2245a8ed722",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 25268999736,
+    "inflow_btc": 252.68999736,
+    "senders": [
+      "3JZ3byZy7TTrfy8zdxrm9iqJrdsaZ5CrNw"
+    ],
+    "sender_count": 1,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-21T17:57:16.609520+00:00"
+  },
+  {
+    "tx_hash": "6f0275de07629ceb6ed6816a1b60497768619c2cc74393facb7fe79ffa61d241",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 6020199554,
+    "inflow_btc": 60.20199554,
+    "senders": [
+      "3JZ3byZy7TTrfy8zdxrm9iqJrdsaZ5CrNw",
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC"
+    ],
+    "sender_count": 2,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-21T18:09:09.731879+00:00"
+  },
+  {
+    "tx_hash": "26885f0c973aadf8b8c6dcb4228905394a2d91935381600a77eadacdbc38b97e",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2023135835439,
+    "inflow_btc": 20231.35835439,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-21T18:17:37.155077+00:00"
+  },
+  {
+    "tx_hash": "cb104f377b0690eec86d264427d94b268409276d2624425289f41eb8b51060a7",
+    "exchange": "gate.io",
+    "exchange_addr": "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw",
+    "inflow_sats": 7164128184,
+    "inflow_btc": 71.64128184,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-21T19:05:32.937702+00:00"
+  },
+  {
+    "tx_hash": "9f2ded2c80a25da1db8da0ac9930b019cd024839a2ac0162a0513258290c50b4",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 22937199554,
+    "inflow_btc": 229.37199554,
+    "senders": [
+      "3JZ3byZy7TTrfy8zdxrm9iqJrdsaZ5CrNw",
+      "3JZ3byZy7TTrfy8zdxrm9iqJrdsaZ5CrNw"
+    ],
+    "sender_count": 2,
+    "block_height": 946093,
+    "timestamp": 1776802778,
+    "detected_at": "2026-04-21T20:21:39.028346+00:00"
+  },
+  {
+    "tx_hash": "cb3fd5db2a1630c9b2da6bc95f1360596b43c5e58e7d3c07f87658edbdbdbdfd",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 14457453681,
+    "inflow_btc": 144.57453681,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-21T21:14:02.532038+00:00"
+  },
+  {
+    "tx_hash": "f486acf2c7ce0e11943a99e876087c2e0c91be0f57dbd112d39a2ecb316877ed",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 50899999662,
+    "inflow_btc": 508.99999662,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946198,
+    "timestamp": 1776867600,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "16b4ff1ffa33c576e2d322eb3862f5af03f195cd24ed187bbf2f08a5f83ae3dd",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 50899999493,
+    "inflow_btc": 508.99999493,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946198,
+    "timestamp": 1776867600,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "32988b3c16bc3b1253c162507b6532962eb76eb88adcf7ef32249bcbd626758f",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 50899999493,
+    "inflow_btc": 508.99999493,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946198,
+    "timestamp": 1776867600,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "6f8c22c41ffcf3687badb8391d1d3155d31860ca69ea54c2bbe8ae85e11b437a",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 2099999831,
+    "inflow_btc": 20.99999831,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946198,
+    "timestamp": 1776867600,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "01fec0bc4da62a49fd78eacd8e702a1edc791baea903deca94ff73e8a8a0645f",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 2099999831,
+    "inflow_btc": 20.99999831,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946198,
+    "timestamp": 1776867600,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "db6ced0cf6e5e02bfe0cc1dfa4cbb6ab94d1d5835efd22755e7f2d137bb5685a",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 50899999493,
+    "inflow_btc": 508.99999493,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946198,
+    "timestamp": 1776867600,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "7757af69fa78a3ff480a83b8bc4a426030e1247d196293bc4efc4441ee630221",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 50899999493,
+    "inflow_btc": 508.99999493,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946198,
+    "timestamp": 1776867600,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "58392a898e731c4ce69bf80d7d76a3de2ea2979491e1c68925ed683abfa9ec1b",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 2099999831,
+    "inflow_btc": 20.99999831,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946198,
+    "timestamp": 1776867600,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "1053bde1c39695962ab054c396f1a03957204dc239941e8bcf3818e6ca5fb893",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 407203317147,
+    "inflow_btc": 4072.03317147,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946198,
+    "timestamp": 1776867600,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "685d152ca20c9ba8ae42be969a3aa3cc17b61e45f25423df658d4fe5c3c3f902",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 586199999094,
+    "inflow_btc": 5861.99999094,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946198,
+    "timestamp": 1776867600,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "a094d2fad5e7efd513ec349e822df16881b4265df40ad2fd0224bc1f3eb43bb1",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 63500000000,
+    "inflow_btc": 635.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 1,
+    "block_height": 946197,
+    "timestamp": 1776867105,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "e7707a6d84b11c62620773d551dbe4f43b8e7613323e697d01e018b23f64ef91",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 63500000000,
+    "inflow_btc": 635.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 1,
+    "block_height": 946197,
+    "timestamp": 1776867105,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "41f81b31ff982c90ecdd2b5fbebc0892357cad78a5f03bed983aea7c80caca65",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 63500000000,
+    "inflow_btc": 635.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946197,
+    "timestamp": 1776867105,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "4f3121f92a48ac9073d3eac6ece1d3c722811ff19f83d03dac806fa6a7990ca7",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 63500000000,
+    "inflow_btc": 635.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946196,
+    "timestamp": 1776866967,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "6b67a995ec5a7b1c4eb4e6ecd173aa11b8b2728b7ef69119b73c7b117791308e",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 63500000000,
+    "inflow_btc": 635.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 4,
+    "block_height": 946196,
+    "timestamp": 1776866967,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "e34ed13f1c031713aa84cf353b5dfecc0f3ae7bf5a669f19a771443cdbdff091",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 63500000000,
+    "inflow_btc": 635.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946196,
+    "timestamp": 1776866967,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "4fcaee96d323c3fd9320f6e5a53e418312375bced39f5ad06829e18604802242",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 63500000000,
+    "inflow_btc": 635.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946196,
+    "timestamp": 1776866967,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "d3c6a507656d5449b29953aa0a42c4ff4774744e8c1135c7ee6fe69594d516d6",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 63500000000,
+    "inflow_btc": 635.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946196,
+    "timestamp": 1776866967,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "2be634052aaf784d5bcac0cb6c21422722de31f1a5ddb125fc215b3b844795b5",
+    "exchange": "Robinhood",
+    "exchange_addr": "bc1ql49ydapnjafl5t2cp9zqpjwe6pdgmxy98859v2",
+    "inflow_sats": 63500000000,
+    "inflow_btc": 635.0,
+    "senders": [
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g",
+      "bc1qhk0ghcywv0mlmcmz408sdaxudxuk9tvng9xx8g"
+    ],
+    "sender_count": 2,
+    "block_height": 946196,
+    "timestamp": 1776866967,
+    "detected_at": "2026-04-22T15:05:38.662182+00:00"
+  },
+  {
+    "tx_hash": "21d1113cc281b8c2f27925b6847f289842992cb1cd074f1acbd8cec2d10ac39f",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 13734999595,
+    "inflow_btc": 137.34999595,
+    "senders": [
+      "3QDM2jHxe9cYc5znbqikiu9f7okhrxngvm",
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU",
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU",
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU"
+    ],
+    "sender_count": 4,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "d488caff9a282595ed083c52b177f769ae5127cdd3122420649b3d9c332e0820",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 3509999868,
+    "inflow_btc": 35.09999868,
+    "senders": [
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU"
+    ],
+    "sender_count": 1,
+    "block_height": 946202,
+    "timestamp": 1776869045,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "2ef5726fbe40639ac05872da73d37dca141d5b5cdc6be8d563f3d750cd6ec591",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4560341287,
+    "inflow_btc": 45.60341287,
+    "senders": [
+      "3JZ3byZy7TTrfy8zdxrm9iqJrdsaZ5CrNw",
+      "3NxLCP4W7kwnPzWhK1CPdW2o6H3XWGSz3P",
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU"
+    ],
+    "sender_count": 3,
+    "block_height": 946199,
+    "timestamp": 1776867711,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "9563b5f45c201adc1da699c78cbc9b3d73a5a5c2fcbee55b2b7d5d5a9ff3d893",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4429999736,
+    "inflow_btc": 44.29999736,
+    "senders": [
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU"
+    ],
+    "sender_count": 1,
+    "block_height": 946196,
+    "timestamp": 1776866967,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "b485352c7a88dcbcba626b1262624b32161556bbe25cc3f4b524f7aa04aa86dd",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 10261749244,
+    "inflow_btc": 102.61749244,
+    "senders": [
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU",
+      "3Q5DJ72nKE5AzRdL5RyLf5dBP4GxZfhPUW",
+      "3QDM2jHxe9cYc5znbqikiu9f7okhrxngvm",
+      "397DTWBbEFmS9xaNf4ZxKcpKEoR7VXuGyj",
+      "3CWX6EG46wwaXCRQe8rmudBkEXvt3LWQrQ"
+    ],
+    "sender_count": 6,
+    "block_height": 946193,
+    "timestamp": 1776865163,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "25168df81bf76bb2973bf309e6fc60a359d4db7114c1c276c02ac8efed034c53",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 2040383153,
+    "inflow_btc": 20.40383153,
+    "senders": [
+      "3QDM2jHxe9cYc5znbqikiu9f7okhrxngvm",
+      "3QDM2jHxe9cYc5znbqikiu9f7okhrxngvm",
+      "3QDM2jHxe9cYc5znbqikiu9f7okhrxngvm",
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC",
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN"
+    ],
+    "sender_count": 7,
+    "block_height": 946185,
+    "timestamp": 1776860745,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "fc2d5c1ba0ecdc2f1e3470798f348f4ed32467672961764063bd5d089805b3ee",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4461201295,
+    "inflow_btc": 44.61201295,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946176,
+    "timestamp": 1776847705,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "1d52f327c34bc3b51671d30833c4bd0affef1b2ff5034b4b16f079be53a982af",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4480181406,
+    "inflow_btc": 44.80181406,
+    "senders": [
+      "33BngzRje1AKLizVDUbWcTb7SHFsiuMUfE",
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU"
+    ],
+    "sender_count": 2,
+    "block_height": 946173,
+    "timestamp": 1776845680,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "343129b042c55472f8e00536e20ba2c0fcb3315acefbc446badb2d3060d655c2",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 2718998277,
+    "inflow_btc": 27.18998277,
+    "senders": [
+      "36GuNgGwqmwoMYWDv11HH68t1ym3DiCRR6",
+      "3J5hsSddounsXxYH4XWdCP851rZMBWs1VC"
+    ],
+    "sender_count": 2,
+    "block_height": 946151,
+    "timestamp": 1776836965,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "3973efbf91aaa30e01dca33af304728cc29a3c696508e90713dbfe6abbe5fb83",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 2499998368,
+    "inflow_btc": 24.99998368,
+    "senders": [
+      "36GuNgGwqmwoMYWDv11HH68t1ym3DiCRR6"
+    ],
+    "sender_count": 1,
+    "block_height": 946143,
+    "timestamp": 1776831243,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "d926bf255d4877a07bc091ccd0e91804c53a63983d4a60de0804bc73a7e0935c",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 1000605006,
+    "inflow_btc": 10.00605006,
+    "senders": [
+      "3P4QwrRqYDsgX8DJXCyhNFCs6491hud38K",
+      "3FJzkKTCBNM5nwvavngooX9fSQuwghpfaJ",
+      "3NbN9k6tPkkJPRqrPhHT6jKUY8yLhaGfXQ",
+      "3MHwMfE3xFoQetnvkXFpJC6uBECSNujxjF",
+      "3EYxunaV4N8DUt1Hkp2nSjMipdWPPewqyq"
+    ],
+    "sender_count": 5,
+    "block_height": 946143,
+    "timestamp": 1776831243,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "be1c2b2a07a57981e0876a4a029dc478f1605369da9728bfc8bd584a217e44a9",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 7499995186,
+    "inflow_btc": 74.99995186,
+    "senders": [
+      "36GuNgGwqmwoMYWDv11HH68t1ym3DiCRR6",
+      "36GuNgGwqmwoMYWDv11HH68t1ym3DiCRR6",
+      "36GuNgGwqmwoMYWDv11HH68t1ym3DiCRR6"
+    ],
+    "sender_count": 3,
+    "block_height": 946142,
+    "timestamp": 1776830513,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "58112cf7b628e73e810bd76263fd9ba97a6100cfc99b625bdd52cac10e4e8cdc",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4489999868,
+    "inflow_btc": 44.89999868,
+    "senders": [
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU"
+    ],
+    "sender_count": 1,
+    "block_height": 946139,
+    "timestamp": 1776830062,
+    "detected_at": "2026-04-22T15:05:41.634087+00:00"
+  },
+  {
+    "tx_hash": "091c6613fb3a819f54e147ff0637e012f6c132fc44143b50919fc4698dceb863",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4559999868,
+    "inflow_btc": 45.59999868,
+    "senders": [
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU"
+    ],
+    "sender_count": 1,
+    "block_height": 946119,
+    "timestamp": 1776819746,
+    "detected_at": "2026-04-22T15:05:41.635089+00:00"
+  },
+  {
+    "tx_hash": "661f46e8fa0c55765c1d2dcf3987dcc5e6698ebfde8988943425385025e073b1",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2021788933109,
+    "inflow_btc": 20217.88933109,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946184,
+    "timestamp": 1776860419,
+    "detected_at": "2026-04-22T15:05:42.334433+00:00"
+  },
+  {
+    "tx_hash": "b3ff650d60c12282d9b4c90a35f3247d9039e6bb8ad7fc6b3dddc1904ad2cb74",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2022024977789,
+    "inflow_btc": 20220.24977789,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946174,
+    "timestamp": 1776845761,
+    "detected_at": "2026-04-22T15:05:42.334433+00:00"
+  },
+  {
+    "tx_hash": "bd513b11588635858b3ddd104a107942106ef5442083ffc28c06d9306a42425b",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2022192272624,
+    "inflow_btc": 20221.92272624,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946143,
+    "timestamp": 1776831243,
+    "detected_at": "2026-04-22T15:05:42.334433+00:00"
+  },
+  {
+    "tx_hash": "350d6089f2a0a31bef3dfcbe212bcbbe4d2f5cc73f9b8000688654b6f55224c5",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2023270520999,
+    "inflow_btc": 20232.70520999,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946129,
+    "timestamp": 1776824467,
+    "detected_at": "2026-04-22T15:05:42.334433+00:00"
+  },
+  {
+    "tx_hash": "d72a02859f483822df9e3b2636ef5983c29393fbde8ddde41221a6c3ec16f62b",
+    "exchange": "gate.io",
+    "exchange_addr": "162bzZT2hJfv5Gm3ZmWfWfHJjCtMD6rHhw",
+    "inflow_sats": 12899999714,
+    "inflow_btc": 128.99999714,
+    "senders": [
+      "1G47mSr3oANXMafVrR8UC4pzV7FEAzo3r9"
+    ],
+    "sender_count": 1,
+    "block_height": 946144,
+    "timestamp": 1776833618,
+    "detected_at": "2026-04-22T15:05:43.854762+00:00"
+  },
+  {
+    "tx_hash": "75ea300e749e6c084ad94f9deafd4791c58e82d9b623cfe375f2328f0da939cb",
+    "exchange": "Coincheck",
+    "exchange_addr": "bc1q4j7fcl8zx5yl56j00nkqez9zf3f6ggqchwzzcs5hjxwqhsgxvavq3qfgpr",
+    "inflow_sats": 1186852697,
+    "inflow_btc": 11.86852697,
+    "senders": [
+      "1AZBwmc7A21giRCQnB6oYCAL3FkS9DPr6r",
+      "1FrCfmwamcTC3YzLznxadbGussrRWDNDVj",
+      "13Fgw7pNjyEkZGVMff22qPefKQVayxMwSV",
+      "13Fgw7pNjyEkZGVMff22qPefKQVayxMwSV",
+      "13Fgw7pNjyEkZGVMff22qPefKQVayxMwSV"
+    ],
+    "sender_count": 179,
+    "block_height": 946196,
+    "timestamp": 1776866967,
+    "detected_at": "2026-04-22T15:05:44.699063+00:00"
+  },
+  {
+    "tx_hash": "8e2cffdb5819cb8252a13b3d13accc537dd2236e830997654d8a47c3a0ad6404",
+    "exchange": "Coincheck",
+    "exchange_addr": "bc1q4j7fcl8zx5yl56j00nkqez9zf3f6ggqchwzzcs5hjxwqhsgxvavq3qfgpr",
+    "inflow_sats": 1226501652,
+    "inflow_btc": 12.26501652,
+    "senders": [
+      "bc1qnsupj8eqya02nm8v6tmk93zslu2e2z8chlmcej",
+      "bc1qsw55gkezdyssgy6jg5fuxd6upmrc5r59llefly",
+      "bc1qnsupj8eqya02nm8v6tmk93zslu2e2z8chlmcej",
+      "bc1qnsupj8eqya02nm8v6tmk93zslu2e2z8chlmcej",
+      "bc1qnsupj8eqya02nm8v6tmk93zslu2e2z8chlmcej"
+    ],
+    "sender_count": 8,
+    "block_height": 946186,
+    "timestamp": 1776860340,
+    "detected_at": "2026-04-22T15:05:44.699063+00:00"
+  },
+  {
+    "tx_hash": "43c68f6ea4e0268f78d054669f18a6673bd34ec1fd9c75af7f5671cbce8e4f9a",
+    "exchange": "Coincheck",
+    "exchange_addr": "bc1q4j7fcl8zx5yl56j00nkqez9zf3f6ggqchwzzcs5hjxwqhsgxvavq3qfgpr",
+    "inflow_sats": 720949771911,
+    "inflow_btc": 7209.49771911,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946149,
+    "timestamp": 1776835935,
+    "detected_at": "2026-04-22T15:05:44.699063+00:00"
+  },
+  {
+    "tx_hash": "1dc6021fd50046604c80a31b86fb8265747e58b17743ad5b2474e0fde1819c78",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4493999777,
+    "inflow_btc": 44.93999777,
+    "senders": [
+      "3QDM2jHxe9cYc5znbqikiu9f7okhrxngvm",
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU"
+    ],
+    "sender_count": 2,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-22T17:34:07.592623+00:00"
+  },
+  {
+    "tx_hash": "89dcceffd701db0852ddeaadc5b74f02f5f66138257d91e81b43093cd8a0f9fe",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 5354596058,
+    "inflow_btc": 53.54596058,
+    "senders": [
+      "3QDM2jHxe9cYc5znbqikiu9f7okhrxngvm",
+      "3LHZNTmeQqzKqqGLXUDxq7uGUX59qDvoEU",
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN"
+    ],
+    "sender_count": 3,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-22T17:49:44.166672+00:00"
+  },
+  {
+    "tx_hash": "0138d2bceff75916e023cad0dd91fa72ed96e963a8f3d623539684d41daaeb23",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2021881742663,
+    "inflow_btc": 20218.81742663,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 946214,
+    "timestamp": 1776881601,
+    "detected_at": "2026-04-22T18:15:46.348155+00:00"
+  },
+  {
+    "tx_hash": "6130463b1f84f9b33776ed4291a1c246b80743bd2ee59481a425a609b6d48655",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 3999999868,
+    "inflow_btc": 39.99999868,
+    "senders": [
+      "3CWX6EG46wwaXCRQe8rmudBkEXvt3LWQrQ"
+    ],
+    "sender_count": 1,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-22T18:41:47.393098+00:00"
+  },
+  {
+    "tx_hash": "f0620c0c3b5e70a19aeadaef5c5cfcbbe39eec1464df02978a7dd93623bec263",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 4009999777,
+    "inflow_btc": 40.09999777,
+    "senders": [
+      "3CWX6EG46wwaXCRQe8rmudBkEXvt3LWQrQ",
+      "3EeAYNdQ6KPz1VbuonFrQmJy7qNMt7pLGh"
+    ],
+    "sender_count": 2,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-22T18:52:11.081939+00:00"
+  },
+  {
+    "tx_hash": "7e44e36c67424c3791ff3f4ddf4bc6609f67ef4bcd4e855e764cd360bad03eb5",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 3699259307,
+    "inflow_btc": 36.99259307,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-22T19:49:18.702190+00:00"
+  },
+  {
+    "tx_hash": "3293b859b8845e57ac6f8320d068515a7eeac7c160c6567b15ea088c3b76cd05",
+    "exchange": "Crypto.com",
+    "exchange_addr": "bc1qr4dl5wa7kl8yu792dceg9z5knl2gkn220lk7a9",
+    "inflow_sats": 1999992668,
+    "inflow_btc": 19.99992668,
+    "senders": [
+      "32hK628jM4j1xLRQzJuvLsBhmBxKeVSdgN"
+    ],
+    "sender_count": 1,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-22T21:50:22.320694+00:00"
+  },
+  {
+    "tx_hash": "676d385cbba24b5e357fbdc9d059f99d921837030ab51ffddba1c49ef335ce91",
+    "exchange": "Bitbank",
+    "exchange_addr": "bc1qx2x5cqhymfcnjtg902ky6u5t5htmt7fvqztdsm028hkrvxcl4t2sjtpd9l",
+    "inflow_sats": 2021651641941,
+    "inflow_btc": 20216.51641941,
+    "senders": [],
+    "sender_count": 0,
+    "block_height": 0,
+    "timestamp": 0,
+    "detected_at": "2026-04-23T00:18:42.037127+00:00"
   }
 ]

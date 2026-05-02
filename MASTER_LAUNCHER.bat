@@ -33,7 +33,16 @@ echo.
 echo [4] LOGS
 echo     View system logs
 echo.
-echo [5] QUICK START GUIDE
+echo [3] TVScreener STRATEGY
+echo     10-agent parallel breakout scanner + GLM synthesis
+echo.
+echo [4] STOP SYSTEM
+echo     Safe shutdown of all processes
+echo.
+echo [5] LOGS
+echo     View system logs
+echo.
+echo [6] QUICK START GUIDE
 echo.
 echo [0] EXIT
 echo.
@@ -228,3 +237,106 @@ echo   All logs are timestamped and saved
 echo.
 pause
 goto menu
+
+
+REM ========== TVScreener Strategy (NEW) ==========
+:tvscreen
+cls
+echo.
+echo ============================================================
+echo  TVScreener - 10 Agent Breakout Strategy
+echo ============================================================
+echo.
+echo [1] RUN FULL PIPELINE
+echo     10 parallel agents + GLM synthesis + EV validation
+echo     Output: daytrade and swing candidates
+echo.
+echo [2] RUN AGENTS ONLY
+echo     10 agents scan without synthesis
+echo.
+echo [3] RUN SYNTHESIS ONLY
+echo     (Requires agent outputs already generated)
+echo.
+echo [4] VALIDATE EV
+echo     Check master_synthesis.json results
+echo.
+echo [5] VIEW RESULTS
+echo     Open results/ folder
+echo.
+echo [0] BACK
+echo.
+
+set /p tvschoice="Select (0-5): "
+
+if "%tvschoice%"=="1" goto tvscreen_full
+if "%tvschoice%"=="2" goto tvscreen_agents
+if "%tvschoice%"=="3" goto tvscreen_synthesis
+if "%tvschoice%"=="4" goto tvscreen_validate
+if "%tvschoice%"=="5" goto tvscreen_results
+if "%tvschoice%"=="0" goto menu
+goto tvscreen
+
+:tvscreen_full
+cls
+echo.
+echo [TVScreener] Running full pipeline (10 agents + synthesis + validation)...
+echo.
+cd /d "%~dp0\..\cursor\japanstock\ultra_thinking"
+echo [1/3] Running 10 parallel agents...
+python -m tvscreener.run_all_agents
+echo.
+echo [2/3] Running GLM-5-Turbo master synthesis...
+set ZAI_API_KEY=e7efefc0da5c49a9a684297efd193305.KawyRIk4RgAPEKXE
+python -m tvscreener.master_synthesis
+echo.
+echo [3/3] Validating EV results...
+python -m tvscreener.validate_ev
+echo.
+echo Pipeline complete. Check results/ folder for outputs.
+pause
+cd /d "%~dp0"
+goto tvscreen
+
+:tvscreen_agents
+cls
+echo.
+echo [TVScreener] Running 10 parallel agents...
+echo.
+cd /d "%~dp0\..\cursor\japanstock\ultra_thinking"
+python -m tvscreener.run_all_agents
+echo.
+echo Agents complete. Check results/agent-*.json
+pause
+cd /d "%~dp0"
+goto tvscreen
+
+:tvscreen_synthesis
+cls
+echo.
+echo [TVScreener] Running GLM-5-Turbo synthesis...
+echo.
+cd /d "%~dp0\..\cursor\japanstock\ultra_thinking"
+set ZAI_API_KEY=e7efefc0da5c49a9a684297efd193305.KawyRIk4RgAPEKXE
+python -m tvscreener.master_synthesis
+echo.
+echo Synthesis complete. Check results/master_synthesis.json
+pause
+cd /d "%~dp0"
+goto tvscreen
+
+:tvscreen_validate
+cls
+echo.
+echo [TVScreener] Validating EV...
+echo.
+cd /d "%~dp0\..\cursor\japanstock\ultra_thinking"
+python -m tvscreener.validate_ev
+echo.
+pause
+cd /d "%~dp0"
+goto tvscreen
+
+:tvscreen_results
+start explorer "%~dp0\..\cursor\japanstock\ultra_thinking\results"
+goto tvscreen
+[6] QUICK START GUIDE

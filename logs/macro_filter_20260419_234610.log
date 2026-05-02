@@ -1,0 +1,88 @@
+2026-04-20 08:46:10,326 [INFO] Starting loop with interval 3600s (1 hour)
+2026-04-20 08:46:10,326 [INFO] === Run Once ===
+2026-04-20 08:46:10,426 [INFO] Loaded 20 calendar events
+2026-04-20 08:46:10,434 [INFO] State written: regime=LOW, atr=0.0122, caution=False
+2026-04-20 09:46:10,442 [INFO] === Run Once ===
+2026-04-20 09:46:10,543 [INFO] Loaded 20 calendar events
+2026-04-20 09:46:10,549 [INFO] State written: regime=LOW, atr=0.0119, caution=False
+2026-04-20 10:46:10,551 [INFO] === Run Once ===
+2026-04-20 10:46:10,658 [INFO] Loaded 20 calendar events
+2026-04-20 10:46:10,664 [INFO] State written: regime=LOW, atr=0.0122, caution=False
+2026-04-20 19:59:57,645 [INFO] === Run Once ===
+2026-04-20 19:59:57,794 [INFO] Loaded 20 calendar events
+2026-04-20 19:59:57,804 [INFO] State written: regime=LOW, atr=0.0127, caution=False
+2026-04-20 20:59:57,265 [INFO] === Run Once ===
+2026-04-20 20:59:57,375 [INFO] Loaded 20 calendar events
+2026-04-20 20:59:57,381 [INFO] State written: regime=LOW, atr=0.0126, caution=False
+2026-04-20 21:59:57,218 [INFO] === Run Once ===
+2026-04-20 21:59:57,327 [INFO] Loaded 20 calendar events
+2026-04-20 21:59:57,334 [INFO] State written: regime=LOW, atr=0.0124, caution=False
+2026-04-20 22:59:57,296 [INFO] === Run Once ===
+2026-04-20 22:59:57,391 [INFO] Loaded 20 calendar events
+2026-04-20 22:59:57,398 [INFO] State written: regime=LOW, atr=0.0126, caution=False
+2026-04-20 23:59:57,385 [INFO] === Run Once ===
+2026-04-20 23:59:57,487 [INFO] Loaded 20 calendar events
+2026-04-20 23:59:57,494 [INFO] State written: regime=LOW, atr=0.0127, caution=False
+2026-04-21 00:59:57,492 [INFO] === Run Once ===
+2026-04-21 00:59:57,612 [INFO] Loaded 20 calendar events
+2026-04-21 00:59:57,619 [INFO] State written: regime=LOW, atr=0.0128, caution=False
+2026-04-21 08:56:51,120 [INFO] === Run Once ===
+2026-04-21 08:56:51,258 [INFO] Loaded 20 calendar events
+2026-04-21 08:56:51,264 [INFO] State written: regime=LOW, atr=0.0129, caution=False
+2026-04-22 00:24:32,293 [INFO] === Run Once ===
+2026-04-22 00:24:32,423 [INFO] Loaded 20 calendar events
+2026-04-22 00:24:32,440 [INFO] State written: regime=LOW, atr=0.0129, caution=False
+2026-04-22 01:24:32,454 [INFO] === Run Once ===
+2026-04-22 01:24:32,555 [INFO] Loaded 20 calendar events
+2026-04-22 01:24:32,566 [INFO] State written: regime=LOW, atr=0.0120, caution=False
+2026-04-22 02:24:32,575 [INFO] === Run Once ===
+2026-04-22 02:24:32,704 [INFO] Loaded 20 calendar events
+2026-04-22 02:24:32,708 [INFO] State written: regime=LOW, atr=0.0130, caution=False
+2026-04-22 03:24:32,727 [INFO] === Run Once ===
+2026-04-22 03:24:32,861 [INFO] Loaded 20 calendar events
+2026-04-22 03:24:32,877 [INFO] State written: regime=LOW, atr=0.0129, caution=False
+2026-04-22 04:24:32,892 [INFO] === Run Once ===
+2026-04-22 04:24:33,035 [INFO] Loaded 20 calendar events
+2026-04-22 04:24:33,042 [INFO] State written: regime=LOW, atr=0.0129, caution=False
+2026-04-22 05:24:33,057 [INFO] === Run Once ===
+2026-04-22 05:24:33,162 [INFO] Loaded 20 calendar events
+2026-04-22 05:24:33,182 [INFO] State written: regime=LOW, atr=0.0127, caution=False
+2026-04-22 06:24:33,189 [INFO] === Run Once ===
+2026-04-22 06:24:33,305 [INFO] Loaded 20 calendar events
+2026-04-22 06:24:33,341 [INFO] State written: regime=LOW, atr=0.0129, caution=False
+2026-04-22 07:24:33,345 [INFO] === Run Once ===
+2026-04-22 07:24:33,445 [INFO] Loaded 20 calendar events
+2026-04-22 07:24:33,466 [INFO] State written: regime=LOW, atr=0.0129, caution=False
+2026-04-22 08:24:33,470 [INFO] === Run Once ===
+2026-04-22 08:24:33,573 [INFO] Loaded 20 calendar events
+2026-04-22 08:24:33,595 [INFO] State written: regime=LOW, atr=0.0129, caution=False
+2026-04-22 09:24:33,600 [INFO] === Run Once ===
+2026-04-22 09:24:33,714 [INFO] Loaded 20 calendar events
+2026-04-22 09:24:33,720 [INFO] State written: regime=LOW, atr=0.0126, caution=False
+2026-04-23 00:55:38,621 [INFO] === Run Once ===
+2026-04-23 00:55:38,806 [INFO] Loaded 20 calendar events
+2026-04-23 00:55:38,811 [INFO] State written: regime=LOW, atr=0.0131, caution=True
+2026-04-23 01:55:38,473 [INFO] === Run Once ===
+2026-04-23 01:55:38,478 [WARNING] HL API error: HTTPSConnectionPool(host='api.hyperliquid.xyz', port=443): Max retries exceeded with url: /info (Caused by NameResolutionError("HTTPSConnection(host='api.hyperliquid.xyz', port=443): Failed to resolve 'api.hyperliquid.xyz' ([Errno 11001] getaddrinfo failed)"))
+2026-04-23 01:55:38,479 [WARNING] No candles fetched, using last known state
+2026-04-23 02:55:38,381 [INFO] === Run Once ===
+2026-04-23 02:55:38,488 [INFO] Loaded 20 calendar events
+2026-04-23 02:55:38,495 [INFO] State written: regime=LOW, atr=0.0125, caution=True
+2026-04-23 03:55:38,467 [INFO] === Run Once ===
+2026-04-23 03:55:38,571 [INFO] Loaded 20 calendar events
+2026-04-23 03:55:38,581 [INFO] State written: regime=LOW, atr=0.0125, caution=True
+2026-04-23 04:55:38,584 [INFO] === Run Once ===
+2026-04-23 04:55:38,697 [INFO] Loaded 20 calendar events
+2026-04-23 04:55:38,705 [INFO] State written: regime=LOW, atr=0.0125, caution=True
+2026-04-23 05:55:38,715 [INFO] === Run Once ===
+2026-04-23 05:55:38,825 [INFO] Loaded 20 calendar events
+2026-04-23 05:55:38,841 [INFO] State written: regime=LOW, atr=0.0120, caution=True
+2026-04-23 06:55:38,853 [INFO] === Run Once ===
+2026-04-23 06:55:38,941 [INFO] Loaded 20 calendar events
+2026-04-23 06:55:38,949 [INFO] State written: regime=LOW, atr=0.0120, caution=True
+2026-04-23 07:55:38,953 [INFO] === Run Once ===
+2026-04-23 07:55:39,087 [INFO] Loaded 20 calendar events
+2026-04-23 07:55:39,106 [INFO] State written: regime=LOW, atr=0.0120, caution=True
+2026-04-23 08:55:39,118 [INFO] === Run Once ===
+2026-04-23 08:55:39,230 [INFO] Loaded 20 calendar events
+2026-04-23 08:55:39,235 [INFO] State written: regime=LOW, atr=0.0123, caution=True

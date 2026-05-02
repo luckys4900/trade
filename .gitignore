@@ -1,0 +1,25 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Local secrets (never push keys)
+.env
+.env.*
+!.env.example
+
+# Cursor / Claude local worktrees (duplicate trees; not source of truth)
+.claude/worktrees/
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

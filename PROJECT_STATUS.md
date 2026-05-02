@@ -1,7 +1,7 @@
 # Qwen Unified Auto-Trader - プロジェクト状況記録
 
 ## 最終更新日
-2026-04-22 (JPX 2802 デイトレレポート監査対応)
+2026-04-26 (トリプルトップバックテスト実装)
 
 ---
 
@@ -372,7 +372,32 @@ taskkill /F /IM wscript.exe
 
 ---
 
-## 修正履歴（2026-04-20）
+## 修正履歴（2026-04-24）
+
+### 1. Tick Size バグ修正（致命的 → 修正済）
+- **問題**: `place_order()` の `round(price, 1)` が小数第一位に丸められていたが、BTCのtick sizeは$1.0（整数のみ）のため全注文が `Price must be divisible by tick size` で拒否されていた
+- **影響**: 過去すべての戦略エントリー（Contrarian 3回試行含む）が失敗。実質的にボットは発注不能だった
+- **修正**: `HyperliquidClient` に `get_tick_size()` と `round_price_to_tick()` を追加。candle価格からtick sizeを自動検出
+- **ファイル**: `SYSTEM/qwen_unified_live.py` (HyperliquidClient.place_order)
+
+### 2. ゴーストポジション自動清算（致命的 → 修正済）
+- **問題**: Exchange上に0.00053 BTCのポジションが存在したが、どの戦略も管理しておらずSL/TPが設定されていない裸ポジションだった
+- **影響**: 毎分 `Position Drift` 警告。価格変動リスクに無防備
+- **修正**: `_cleanup_ghost_position()` を起動時に追加。`_sync_positions()` でもorphanポジションを自動closeするよう強化
+- **ファイル**: `SYSTEM/qwen_unified_live.py` (UnifiedEngine)
+
+### 3. OCPM Donchian条件緩和（設計改善）
+- **問題**: pullback局面で `close > donchian_mid` が必要だったが、pullbackの定義上、価格はdonchian_midを下回るのが普通。そのためRSI条件を満たしていてもDonchian条件でブロックされていた
+- **修正**: LONG条件を `close > donchian_low`、SHORT条件を `close < donchian_high` に緩和。Donchianチャネル内にいればエントリー可能に
+- **ファイル**: `SYSTEM/qwen_unified_live.py` (compute_indicators)
+
+### テスト結果
+- `pytest test_contrarian_integration.py` → 26件全通過
+- `python -m py_compile SYSTEM/qwen_unified_live.py` → 成功
+
+---
+
+## 修正履歴（2026-04-24）
 
 ### 1. VSRev（Volume Spike Reversal）戦略統合
 - `SYSTEM/qwen_unified_live.py` に第5戦略「VSRev」を追加
@@ -389,6 +414,28 @@ taskkill /F /IM wscript.exe
 - 複合シグナル（Volume Spike + RSI + FR）バックテスト完了
 - Robinhood流入ショート戦略はOOSデータ不足で廃止確定
 - memory/whale_inflow_short_strategy_research.md にSection 13-17を追記
+
+---
+
+## 修正履歴（2026-04-26）
+
+### 1. トリプルトップバックテスト実装
+- Pine Script（トリプルトップブレイクアウト戦略）をPythonバックテストコードに移植
+- `indicators/triple_top.py` - トリプルトップ検出インジケーター作成
+- `triple_top_backtest.py` - メインバックテストスクリプト作成
+- エントリー条件: 同一価格帯で高値3回形成（±1.5%）、現在価格が高値帯の1.5%以内、安値切り上げ、出来高2.5倍以上、BB Upper突破・幅拡大、ボラティリティ35-80パーセンタイル
+- エグジット条件: SL=2.5*ATR、TP=4.0*ATR、Max Hold=15本
+- 手数料0.035%、スリッページ0.1%、レバレッジ1x
+- JSON形式で結果出力（総リターン、勝率、PF、MDD、シャープレート、トレード数）
+
+### 2. TVScreenerベース トリプルトップブレイクアウト戦略（backtesting.py版）実装
+- `strategies/triple_top_breakout.py` - `backtesting.Strategy`継承の戦略クラス新規作成
+  - Pine Script `tradingview_breakout_optimized.pine` のロジックを忠実に移植
+  - ピボット高値検出・トリプルトップ判定・安値切り上がり判定をPythonで実装
+  - フィルター: 出来高スパイク / BB上抜け+幅拡大 / ボラティリティレジーム(35-80%) / ADX(任意) / EMAスロープ(任意)
+  - リスク管理: SL=2.5ATR / TP=4.0ATR / MaxHold=15本 / リスク/trade=2%
+- `config.py` に `triple_top_breakout` 設定セクション追加
+- `main_backtest.py` に戦略4として組み込み、パラメータ最適化・比較サマリー対応
 
 ---
 

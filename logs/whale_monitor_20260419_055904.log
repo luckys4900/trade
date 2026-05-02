@@ -133,3 +133,12 @@
 2026-04-20 00:59:21,084 [INFO] === Run Once ===
 2026-04-20 00:59:21,085 [INFO] Using cached ranking (1.5h old)
 2026-04-20 00:59:21,512 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-20 01:14:21,527 [INFO] === Run Once ===
+2026-04-20 01:14:21,528 [INFO] Using cached ranking (1.8h old)
+2026-04-20 01:14:21,717 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-20 01:29:21,719 [INFO] === Run Once ===
+2026-04-20 01:29:21,720 [INFO] Using cached ranking (2.0h old)
+2026-04-20 01:29:22,285 [INFO] Signal written: LONG, strength=0.00, valid=True
+2026-04-20 01:44:22,296 [INFO] === Run Once ===
+2026-04-20 01:44:22,296 [INFO] Using cached ranking (2.3h old)
+2026-04-20 01:44:22,496 [INFO] Signal written: LONG, strength=0.00, valid=True

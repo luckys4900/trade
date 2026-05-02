@@ -1,0 +1,282 @@
+2026-04-20 01:51:28 [INFO] Qwen Unified Trader (live)
+2026-04-20 01:51:28 [INFO] Working directory: C:\Users\user\Desktop\cursor\trade
+2026-04-20 01:51:28 [INFO] Wallet: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
+2026-04-20 01:51:32 [INFO] State loaded: OCPM=No, MR=No, RSISwing=No, Contrarian=No, VSRev=No
+2026-04-20 01:51:32 [WARNING] REAL MONEY TRADING - Be careful!
+2026-04-20 01:51:32 [INFO] Starting Unified Live Loop...
+2026-04-20 01:51:32 [INFO] HL API: fetched 13 candles, total 4471 bars
+2026-04-20 01:51:32 [INFO] Bar 198 | Price: $75,575.50 | Equity: $190.83 (margin_used $2.00, withdrawable $186.83) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 01:51:32 [DEBUG] Kronos signal stale (9126.5min old)
+2026-04-20 01:51:32 [DEBUG] OCPM check: trend=UPTREND, close=75576, donchian_mid=75766, rsi_prev=52.7, rsi=54.8, ocpm_long=0, ocpm_short=0
+2026-04-20 01:51:32 [DEBUG] Kronos signal stale (9126.5min old)
+2026-04-20 01:51:32 [DEBUG] Kronos signal stale (9126.5min old)
+2026-04-20 01:51:32 [DEBUG] Contrarian signal stale (9126.5min old)
+2026-04-20 01:51:32 [DEBUG] Kronos signal stale (9126.5min old)
+2026-04-20 01:51:32 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 01:52:32 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 01:52:32 [INFO] Bar 198 | Price: $75,590.50 | Equity: $190.84 (margin_used $2.00, withdrawable $186.84) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 01:52:32 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 01:53:32 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 01:53:32 [INFO] Bar 198 | Price: $75,494.50 | Equity: $190.78 (margin_used $2.00, withdrawable $186.78) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 01:53:33 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 01:54:33 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 01:54:33 [INFO] Bar 198 | Price: $75,420.50 | Equity: $190.75 (margin_used $2.00, withdrawable $186.76) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 01:54:33 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 01:55:33 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 01:55:33 [INFO] Bar 198 | Price: $75,314.50 | Equity: $190.70 (margin_used $2.00, withdrawable $186.71) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 01:55:33 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 01:56:33 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 01:56:33 [INFO] Bar 198 | Price: $75,434.50 | Equity: $190.76 (margin_used $2.00, withdrawable $186.76) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 01:56:34 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 01:57:34 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 01:57:34 [INFO] Bar 198 | Price: $75,320.50 | Equity: $190.70 (margin_used $2.00, withdrawable $186.71) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 01:57:34 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 01:58:34 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 01:58:34 [INFO] Bar 198 | Price: $75,368.50 | Equity: $190.73 (margin_used $2.00, withdrawable $186.73) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 01:58:34 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 01:59:35 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 01:59:35 [INFO] Bar 198 | Price: $75,333.50 | Equity: $190.71 (margin_used $2.00, withdrawable $186.72) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 01:59:35 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:00:35 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:00:36 [INFO] Bar 198 | Price: $75,262.50 | Equity: $190.67 (margin_used $1.99, withdrawable $186.68) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:00:36 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:01:36 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:01:36 [INFO] Bar 198 | Price: $75,247.50 | Equity: $190.66 (margin_used $1.99, withdrawable $186.67) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:01:36 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:02:36 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:02:37 [INFO] Bar 198 | Price: $75,247.50 | Equity: $190.66 (margin_used $1.99, withdrawable $186.67) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:02:37 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:03:37 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:03:37 [INFO] Bar 198 | Price: $75,308.50 | Equity: $190.69 (margin_used $2.00, withdrawable $186.70) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:03:37 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:04:37 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:04:37 [INFO] Bar 198 | Price: $75,235.50 | Equity: $190.66 (margin_used $1.99, withdrawable $186.68) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:04:37 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:05:37 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:05:37 [INFO] Bar 198 | Price: $75,006.50 | Equity: $190.54 (margin_used $1.99, withdrawable $186.56) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:05:37 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:06:38 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:06:38 [INFO] Bar 198 | Price: $75,067.50 | Equity: $190.56 (margin_used $1.99, withdrawable $186.58) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:06:38 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:07:38 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:07:38 [INFO] Bar 198 | Price: $75,086.50 | Equity: $190.58 (margin_used $1.99, withdrawable $186.60) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:07:38 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:08:38 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:08:39 [INFO] Bar 198 | Price: $75,142.50 | Equity: $190.61 (margin_used $1.99, withdrawable $186.62) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:08:39 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:09:39 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:09:39 [INFO] Bar 198 | Price: $75,155.00 | Equity: $190.61 (margin_used $1.99, withdrawable $186.63) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:09:39 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:10:39 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:10:39 [INFO] Bar 198 | Price: $75,081.50 | Equity: $190.57 (margin_used $1.99, withdrawable $186.59) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:10:39 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:11:39 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:11:39 [INFO] Bar 198 | Price: $75,138.50 | Equity: $190.60 (margin_used $1.99, withdrawable $186.62) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:11:39 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:12:40 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:12:40 [INFO] Bar 198 | Price: $75,171.50 | Equity: $190.61 (margin_used $1.99, withdrawable $186.63) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:12:40 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:13:41 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:13:41 [INFO] Bar 198 | Price: $75,211.50 | Equity: $190.64 (margin_used $1.99, withdrawable $186.66) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:13:41 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:14:41 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:14:41 [INFO] Bar 198 | Price: $75,199.50 | Equity: $190.64 (margin_used $1.99, withdrawable $186.65) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:14:41 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:15:41 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:15:42 [INFO] Bar 198 | Price: $75,197.50 | Equity: $190.63 (margin_used $1.99, withdrawable $186.65) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:15:42 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:16:42 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:16:42 [INFO] Bar 198 | Price: $75,197.50 | Equity: $190.64 (margin_used $1.99, withdrawable $186.65) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:16:42 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:17:43 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:17:43 [INFO] Bar 198 | Price: $75,225.00 | Equity: $190.65 (margin_used $1.99, withdrawable $186.66) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:17:43 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:18:43 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:18:43 [INFO] Bar 198 | Price: $75,262.50 | Equity: $190.67 (margin_used $1.99, withdrawable $186.68) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:18:43 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:19:43 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:19:44 [INFO] Bar 198 | Price: $75,232.50 | Equity: $190.66 (margin_used $1.99, withdrawable $186.67) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:19:44 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:20:44 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:20:44 [INFO] Bar 198 | Price: $75,253.50 | Equity: $190.67 (margin_used $1.99, withdrawable $186.68) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:20:44 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:21:44 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:21:44 [INFO] Bar 198 | Price: $75,268.50 | Equity: $190.67 (margin_used $1.99, withdrawable $186.68) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:21:44 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:22:45 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:22:45 [INFO] Bar 198 | Price: $75,284.50 | Equity: $190.68 (margin_used $2.00, withdrawable $186.69) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:22:45 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:23:45 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:23:45 [INFO] Bar 198 | Price: $75,243.50 | Equity: $190.66 (margin_used $1.99, withdrawable $186.67) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:23:45 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:24:45 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:24:46 [INFO] Bar 198 | Price: $75,229.50 | Equity: $190.65 (margin_used $1.99, withdrawable $186.67) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:24:46 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:25:46 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:25:46 [INFO] Bar 198 | Price: $75,140.50 | Equity: $190.60 (margin_used $1.99, withdrawable $186.62) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:25:46 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:26:46 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:26:46 [INFO] Bar 198 | Price: $75,179.50 | Equity: $190.63 (margin_used $1.99, withdrawable $186.64) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:26:46 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:27:46 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:27:46 [INFO] Bar 198 | Price: $75,196.50 | Equity: $190.63 (margin_used $1.99, withdrawable $186.65) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:27:46 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:28:47 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:28:47 [INFO] Bar 198 | Price: $75,217.50 | Equity: $190.65 (margin_used $1.99, withdrawable $186.66) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:28:47 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:29:47 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:29:47 [INFO] Bar 198 | Price: $75,230.50 | Equity: $190.65 (margin_used $1.99, withdrawable $186.66) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:29:47 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:30:48 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:30:48 [INFO] Bar 198 | Price: $75,258.50 | Equity: $190.67 (margin_used $1.99, withdrawable $186.68) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:30:48 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:31:48 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:31:48 [INFO] Bar 198 | Price: $75,300.50 | Equity: $190.69 (margin_used $2.00, withdrawable $186.70) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:31:48 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:32:48 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:32:48 [INFO] Bar 198 | Price: $75,269.50 | Equity: $190.67 (margin_used $1.99, withdrawable $186.68) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:32:48 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:33:48 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:33:49 [INFO] Bar 198 | Price: $75,203.50 | Equity: $190.64 (margin_used $1.99, withdrawable $186.65) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:33:49 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:34:49 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:34:49 [INFO] Bar 198 | Price: $75,083.50 | Equity: $190.58 (margin_used $1.99, withdrawable $186.60) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:34:49 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:35:49 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:35:49 [INFO] Bar 198 | Price: $75,122.50 | Equity: $190.60 (margin_used $1.99, withdrawable $186.62) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:35:49 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:36:50 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:36:50 [INFO] Bar 198 | Price: $75,140.50 | Equity: $190.61 (margin_used $1.99, withdrawable $186.62) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:36:50 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:37:50 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:37:50 [INFO] Bar 198 | Price: $75,131.50 | Equity: $190.60 (margin_used $1.99, withdrawable $186.62) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:37:50 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:38:50 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:38:50 [INFO] Bar 198 | Price: $75,142.50 | Equity: $190.61 (margin_used $1.99, withdrawable $186.62) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:38:50 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:39:50 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:39:51 [INFO] Bar 198 | Price: $75,160.50 | Equity: $190.61 (margin_used $1.99, withdrawable $186.63) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:39:51 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:40:51 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:40:51 [INFO] Bar 198 | Price: $75,089.50 | Equity: $190.58 (margin_used $1.99, withdrawable $186.60) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:40:51 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:41:51 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:41:51 [INFO] Bar 198 | Price: $75,113.50 | Equity: $190.59 (margin_used $1.99, withdrawable $186.61) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:41:51 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:42:51 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:42:51 [INFO] Bar 198 | Price: $75,113.50 | Equity: $190.59 (margin_used $1.99, withdrawable $186.61) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:42:51 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:43:52 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:43:52 [INFO] Bar 198 | Price: $75,141.50 | Equity: $190.61 (margin_used $1.99, withdrawable $186.62) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:43:52 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:44:52 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:44:52 [INFO] Bar 198 | Price: $75,141.50 | Equity: $190.61 (margin_used $1.99, withdrawable $186.62) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:44:52 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:45:52 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:45:52 [INFO] Bar 198 | Price: $75,141.50 | Equity: $190.61 (margin_used $1.99, withdrawable $186.62) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:45:52 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:46:52 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:46:53 [INFO] Bar 198 | Price: $75,115.50 | Equity: $190.59 (margin_used $1.99, withdrawable $186.61) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:46:53 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:47:53 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:47:53 [INFO] Bar 198 | Price: $75,085.50 | Equity: $190.57 (margin_used $1.99, withdrawable $186.60) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:47:53 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:48:53 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:48:53 [INFO] Bar 198 | Price: $75,053.50 | Equity: $190.56 (margin_used $1.99, withdrawable $186.58) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:48:53 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:49:53 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:49:53 [INFO] Bar 198 | Price: $75,035.50 | Equity: $190.55 (margin_used $1.99, withdrawable $186.57) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:49:53 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:50:53 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:50:54 [INFO] Bar 198 | Price: $74,950.50 | Equity: $190.50 (margin_used $1.99, withdrawable $186.53) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:50:54 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:51:54 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:51:54 [INFO] Bar 198 | Price: $74,810.50 | Equity: $190.43 (margin_used $1.98, withdrawable $186.47) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:51:54 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:52:54 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:52:54 [INFO] Bar 198 | Price: $74,616.50 | Equity: $190.32 (margin_used $1.98, withdrawable $186.37) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:52:54 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 02:53:54 [INFO] HL API: fetched 1 candles, total 4471 bars
+2026-04-20 02:53:54 [INFO] Bar 198 | Price: $74,740.50 | Equity: $190.39 (margin_used $1.98, withdrawable $186.43) | RSI: 54.8 | Trend: UPTREND
+2026-04-20 02:53:54 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:23:25 [INFO] HL API: fetched 2 candles, total 4472 bars
+2026-04-20 08:23:47 [ERROR] Price fetch error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-20 08:23:47 [INFO] Bar 199 | Price: $74,926.00 | Equity: $189.92 (margin_used $1.96, withdrawable $186.01) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:23:47 [DEBUG] Whale signal stale (332.5min old)
+2026-04-20 08:23:47 [DEBUG] Macro state stale (332.5min old)
+2026-04-20 08:23:47 [DEBUG] Kronos signal stale (392.2min old)
+2026-04-20 08:23:47 [DEBUG] OCPM check: trend=UPTREND, close=74926, donchian_mid=75766, rsi_prev=54.8, rsi=46.7, ocpm_long=0, ocpm_short=0
+2026-04-20 08:23:47 [DEBUG] Whale signal stale (332.5min old)
+2026-04-20 08:23:47 [DEBUG] Macro state stale (332.5min old)
+2026-04-20 08:23:47 [DEBUG] Kronos signal stale (392.2min old)
+2026-04-20 08:23:47 [DEBUG] Whale signal stale (332.5min old)
+2026-04-20 08:23:47 [DEBUG] Macro state stale (332.5min old)
+2026-04-20 08:23:47 [DEBUG] Kronos signal stale (392.2min old)
+2026-04-20 08:23:47 [DEBUG] Contrarian signal stale (392.2min old)
+2026-04-20 08:23:47 [DEBUG] Whale signal stale (332.5min old)
+2026-04-20 08:23:47 [DEBUG] Macro state stale (332.5min old)
+2026-04-20 08:23:47 [DEBUG] Kronos signal stale (392.2min old)
+2026-04-20 08:23:47 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:24:47 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:24:47 [INFO] Bar 199 | Price: $73,831.50 | Equity: $189.91 (margin_used $1.96, withdrawable $186.00) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:24:47 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:25:47 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:25:47 [INFO] Bar 199 | Price: $73,822.50 | Equity: $189.91 (margin_used $1.96, withdrawable $185.99) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:25:47 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:26:48 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:26:48 [INFO] Bar 199 | Price: $73,879.50 | Equity: $189.94 (margin_used $1.96, withdrawable $186.02) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:26:48 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:27:48 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:27:48 [INFO] Bar 199 | Price: $73,846.50 | Equity: $189.92 (margin_used $1.96, withdrawable $186.01) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:27:48 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:28:48 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:28:48 [INFO] Bar 199 | Price: $73,856.50 | Equity: $189.93 (margin_used $1.96, withdrawable $186.01) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:28:48 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:29:48 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:29:48 [INFO] Bar 199 | Price: $73,843.50 | Equity: $189.92 (margin_used $1.96, withdrawable $186.00) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:29:48 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:30:49 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:30:49 [INFO] Bar 199 | Price: $73,898.50 | Equity: $189.95 (margin_used $1.96, withdrawable $186.03) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:30:49 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:31:49 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:31:49 [INFO] Bar 199 | Price: $73,823.50 | Equity: $189.90 (margin_used $1.96, withdrawable $185.99) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:31:49 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:32:49 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:32:49 [INFO] Bar 199 | Price: $73,802.50 | Equity: $189.90 (margin_used $1.96, withdrawable $185.99) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:32:49 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:33:50 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:33:50 [INFO] Bar 199 | Price: $73,804.50 | Equity: $189.90 (margin_used $1.96, withdrawable $185.99) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:33:50 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:34:50 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:34:50 [INFO] Bar 199 | Price: $73,806.00 | Equity: $189.90 (margin_used $1.96, withdrawable $185.99) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:34:50 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:35:51 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:35:51 [INFO] Bar 199 | Price: $73,818.50 | Equity: $189.91 (margin_used $1.96, withdrawable $185.99) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:35:51 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:36:51 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:36:51 [INFO] Bar 199 | Price: $73,878.50 | Equity: $189.94 (margin_used $1.96, withdrawable $186.02) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:36:51 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:37:51 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:37:51 [INFO] Bar 199 | Price: $73,915.50 | Equity: $189.96 (margin_used $1.96, withdrawable $186.04) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:37:51 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:38:52 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:38:52 [INFO] Bar 199 | Price: $73,823.50 | Equity: $189.91 (margin_used $1.96, withdrawable $186.00) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:38:52 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:39:52 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:39:52 [INFO] Bar 199 | Price: $73,831.50 | Equity: $189.91 (margin_used $1.96, withdrawable $186.00) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:39:52 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:40:52 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:40:52 [INFO] Bar 199 | Price: $73,806.50 | Equity: $189.90 (margin_used $1.96, withdrawable $185.99) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:40:52 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:41:53 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:41:53 [INFO] Bar 199 | Price: $73,814.50 | Equity: $189.91 (margin_used $1.96, withdrawable $185.99) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:41:53 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:42:53 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:42:53 [INFO] Bar 199 | Price: $73,829.50 | Equity: $189.91 (margin_used $1.96, withdrawable $186.00) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:42:53 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:43:53 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:43:54 [INFO] Bar 199 | Price: $73,821.50 | Equity: $189.91 (margin_used $1.96, withdrawable $185.99) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:43:54 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0
+2026-04-20 08:44:54 [INFO] HL API: fetched 1 candles, total 4472 bars
+2026-04-20 08:44:54 [INFO] Bar 199 | Price: $73,839.50 | Equity: $189.92 (margin_used $1.96, withdrawable $186.01) | RSI: 46.7 | Trend: UPTREND
+2026-04-20 08:44:54 [WARNING] Position Drift! Exchange: 0.00053, Target: 0.0

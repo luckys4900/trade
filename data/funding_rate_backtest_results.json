@@ -1,0 +1,102 @@
+[
+  {
+    "type": "SHORT on high FR",
+    "threshold": 0.01,
+    "is_n": 74,
+    "oos_n": 1,
+    "is_ev_net": -0.5063770468500476,
+    "oos_ev_net": -0.010505784588813627,
+    "is_wr": 36.486486486486484,
+    "oos_wr": 100.0
+  },
+  {
+    "type": "SHORT on high FR",
+    "threshold": 0.015,
+    "is_n": 22,
+    "oos_n": 0,
+    "is_ev_net": 0.8680826661588078,
+    "oos_ev_net": null,
+    "is_wr": 59.09090909090909,
+    "oos_wr": null
+  },
+  {
+    "type": "SHORT on high FR",
+    "threshold": 0.02,
+    "is_n": 11,
+    "oos_n": 0,
+    "is_ev_net": 1.2551712455848487,
+    "oos_ev_net": null,
+    "is_wr": 63.63636363636363,
+    "oos_wr": null
+  },
+  {
+    "type": "SHORT on high FR",
+    "threshold": 0.03,
+    "is_n": 3,
+    "oos_n": 0,
+    "is_ev_net": 2.730825580874806,
+    "oos_ev_net": null,
+    "is_wr": 66.66666666666666,
+    "oos_wr": null
+  },
+  {
+    "type": "LONG on low FR",
+    "threshold": -0.005,
+    "is_n": 3,
+    "oos_n": 0,
+    "is_ev_net": 0.8553336695154385,
+    "oos_ev_net": null,
+    "is_wr": 66.66666666666666,
+    "oos_wr": null
+  },
+  {
+    "type": "LONG on low FR",
+    "threshold": -0.008,
+    "is_n": 1,
+    "oos_n": 0,
+    "is_ev_net": -0.9009143011998824,
+    "oos_ev_net": null,
+    "is_wr": 0.0,
+    "oos_wr": null
+  },
+  {
+    "type": "Z-score reverse",
+    "threshold": 1.5,
+    "is_n": 153,
+    "oos_n": 105,
+    "is_ev_net": -0.3488351397520052,
+    "oos_ev_net": 0.030466033072071855,
+    "is_wr": 39.21568627450981,
+    "oos_wr": 52.38095238095239
+  },
+  {
+    "type": "Z-score reverse",
+    "threshold": 2.0,
+    "is_n": 106,
+    "oos_n": 64,
+    "is_ev_net": -0.15322347745260387,
+    "oos_ev_net": 0.043106053872473585,
+    "is_wr": 42.45283018867924,
+    "oos_wr": 53.125
+  },
+  {
+    "type": "Z-score reverse",
+    "threshold": 2.5,
+    "is_n": 74,
+    "oos_n": 46,
+    "is_ev_net": 0.10724228821513618,
+    "oos_ev_net": -0.004125318012083529,
+    "is_wr": 48.64864864864865,
+    "oos_wr": 54.347826086956516
+  },
+  {
+    "type": "Z-score reverse",
+    "threshold": 3.0,
+    "is_n": 49,
+    "oos_n": 30,
+    "is_ev_net": 0.14594139644653245,
+    "oos_ev_net": 0.06750675553117379,
+    "is_wr": 51.02040816326531,
+    "oos_wr": 50.0
+  }
+]

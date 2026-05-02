@@ -1,10 +1,10 @@
 {
   "regime": "LOW",
-  "atr_ratio": 0.01072973240721818,
-  "caution_mode": false,
-  "next_event": "2026-04-15 14:30:00",
-  "next_event_name": "US CPI YoY",
-  "hours_to_event": 53.752305264166665,
-  "timestamp": 1776069891701,
+  "atr_ratio": 0.012273009677376163,
+  "caution_mode": true,
+  "next_event": "2026-04-30 14:30:00",
+  "next_event_name": "US PCE Deflator",
+  "hours_to_event": 182.57243588111112,
+  "timestamp": 1776902139230,
   "valid": true
 }

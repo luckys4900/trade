@@ -17,6 +17,14 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Repo root (parent of SYSTEM/). Used so logs/json paths work when cwd is not the project.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+
+def project_path(rel: str) -> Path:
+    p = Path(rel)
+    return p if p.is_absolute() else PROJECT_ROOT / p
+
 
 def round_order_size(size: float, decimals: int) -> float:
     if size <= 0:
@@ -165,6 +173,19 @@ class Config:
     # Kronos Edge Filter: only trade when contrarian edge is statistically strongest
     # (Kronos accuracy drops to ~46% when RSI>55 & UPTREND => contrarian WR ~54%)
     contrarian_edge_filter_enabled: bool = False
+    # VSRev (Volume Spike Reversal) Strategy
+    vsrev_enabled: bool = True
+    vsrev_vol_ratio_threshold: float = 2.0
+    vsrev_rsi_long_threshold: float = 25.0
+    vsrev_rsi_short_threshold: float = 80.0
+    vsrev_sl_atr_mult: float = 2.0
+    vsrev_tp_atr_mult: float = 5.0
+    vsrev_max_hold: int = 6
+    vsrev_risk_pct: float = 0.015
+    vsrev_max_position_pct: float = 0.30
+    vsrev_max_consecutive_losses: int = 5
+    vsrev_cooldown_bars: int = 2
+
     legacy_capital_pct: float = 0.30
     contrarian_capital_pct: float = 0.70
 
@@ -261,19 +282,25 @@ class HyperliquidClient:
     def parse_position_from_state(
         self, user_state: Optional[Dict[str, Any]], symbol: str
     ) -> Optional[dict]:
-        """Returns {'side': 'LONG'/'SHORT', 'size': float, 'entry': float} or None"""
+        """Returns side, size, entry, unrealized_pnl (from API when present) or None."""
         if not user_state or "assetPositions" not in user_state:
             return None
+        sym = (symbol or "").strip()
         for pos in user_state["assetPositions"]:
             p = pos.get("position", {})
-            if p.get("coin") != symbol:
+            coin = (p.get("coin") or "").strip()
+            if coin != sym and coin.upper() != sym.upper():
                 continue
             szi = _hl_float(p.get("szi"))
             if szi != 0:
+                raw_up = p.get("unrealizedPnl")
                 return {
                     "side": "LONG" if szi > 0 else "SHORT",
                     "size": abs(szi),
                     "entry": _hl_float(p.get("entryPx")),
+                    "unrealized_pnl": None
+                    if raw_up is None
+                    else _hl_float(raw_up),
                 }
         return None
 
@@ -302,6 +329,53 @@ class HyperliquidClient:
         self._size_decimals_cache[symbol] = 4
         return 4
 
+    _tick_size_cache: dict = {}
+
+    def get_tick_size(self, symbol: str) -> float:
+        if symbol in self._tick_size_cache:
+            return self._tick_size_cache[symbol]
+        try:
+            import requests as _req
+            API = "https://api.hyperliquid.xyz/info"
+            now_ms = int(time.time() * 1000)
+            payload = {
+                "type": "candleSnapshot",
+                "req": {
+                    "coin": symbol,
+                    "interval": "1m",
+                    "startTime": now_ms - 60000 * 3,
+                    "endTime": now_ms,
+                },
+            }
+            resp = _req.post(API, json=payload, timeout=10)
+            candles = resp.json() if resp.status_code == 200 else []
+            if candles:
+                decimals_set = set()
+                for cd in candles:
+                    for key in ("o", "h", "l", "c"):
+                        val = float(cd[key])
+                        frac = val - int(val)
+                        if abs(frac) < 1e-9:
+                            decimals_set.add(0)
+                        else:
+                            d = 0
+                            while abs(round(frac, d + 1) - frac) > 1e-9 and d < 8:
+                                d += 1
+                            decimals_set.add(d)
+                min_decimals = min(decimals_set) if decimals_set else 0
+                tick = 10 ** (-min_decimals)
+                self._tick_size_cache[symbol] = tick
+                self.logger.info(f"Detected tick size for {symbol}: {tick}")
+                return tick
+        except Exception as e:
+            self.logger.debug(f"Tick size detection failed for {symbol}: {e}")
+        self._tick_size_cache[symbol] = 1.0
+        return 1.0
+
+    def round_price_to_tick(self, price: float, symbol: str) -> float:
+        tick = self.get_tick_size(symbol)
+        return round(price / tick) * tick
+
     def place_order(
         self,
         symbol: str,
@@ -327,7 +401,7 @@ class HyperliquidClient:
                 self.logger.error(f"Order size rounded to zero for {symbol}")
                 return None
 
-            price = round(float(price), 1)
+            price = self.round_price_to_tick(float(price), symbol)
             order_type = {"limit": {"tif": "Ioc"}}
 
             result = self.exchange.order(
@@ -491,8 +565,8 @@ def compute_indicators(df, c):
 
     # OCPM Signals with Donchian trend structure confirmation
     donchian_mid = (df["ocpm_donchian_high"] + df["ocpm_donchian_low"]) / 2
-    donchian_trend_long = df["close"] > donchian_mid
-    donchian_trend_short = df["close"] < donchian_mid
+    donchian_trend_long = df["close"] > df["ocpm_donchian_low"]
+    donchian_trend_short = df["close"] < df["ocpm_donchian_high"]
 
     df["ocpm_long"] = (
         (df["ocpm_trend"] == "UPTREND")
@@ -575,6 +649,23 @@ def compute_indicators(df, c):
         & (df["rsi"] < c.rsi_swing_rsi_ob)
     ).astype(int)
 
+    # --- VSRev (Volume Spike Reversal) ---
+    df["vol_ma20"] = df["volume"].rolling(20).mean()
+    df["vol_ratio"] = df["volume"] / df["vol_ma20"].replace(0, np.nan)
+    vsrev_rsi_long = getattr(c, "vsrev_rsi_long_threshold", 25.0)
+    vsrev_rsi_short = getattr(c, "vsrev_rsi_short_threshold", 80.0)
+    vsrev_vol_thresh = getattr(c, "vsrev_vol_ratio_threshold", 2.0)
+    df["vsrev_long"] = (
+        (df["vol_ratio"] >= vsrev_vol_thresh)
+        & (df["rsi"] < vsrev_rsi_long)
+        & (df["rsi"] > df["rsi_prev"])
+    ).astype(int)
+    df["vsrev_short"] = (
+        (df["vol_ratio"] >= vsrev_vol_thresh)
+        & (df["rsi"] > vsrev_rsi_short)
+        & (df["rsi"] < df["rsi_prev"])
+    ).astype(int)
+
     return df
 
 
@@ -618,16 +709,19 @@ class UnifiedEngine:
         self.mr = StratState("RangeMR")
         self.rsi_swing = StratState("RSISwing")
         self.contrarian = StratState("Contrarian")
+        self.vsrev = StratState("VSRev")
         self.current_bar = 0
         self.last_processed_bar_ts = 0
         self._current_eval_bar_ts = 0
         self._confluence_direction = None
         self.load_state()
+        self._cleanup_ghost_position()
 
     def load_state(self):
-        if os.path.exists(self.c.state_file):
+        state_path = project_path(self.c.state_file)
+        if state_path.exists():
             try:
-                with open(self.c.state_file) as f:
+                with open(state_path, encoding="utf-8") as f:
                     data = json.load(f)
                 self.ocpm = StratState.from_dict(data.get("ocpm", {}))
                 self.mr = StratState.from_dict(data.get("mr", {}))
@@ -637,13 +731,44 @@ class UnifiedEngine:
                 )
                 if self.contrarian.name == "Unknown":
                     self.contrarian.name = "Contrarian"
+                self.vsrev = StratState.from_dict(
+                    data.get("vsrev", {"name": "VSRev"})
+                )
+                if self.vsrev.name == "Unknown":
+                    self.vsrev.name = "VSRev"
                 self.current_bar = data.get("current_bar", 0)
                 self.last_processed_bar_ts = data.get("last_processed_bar_ts", 0)
                 self.lg.info(
-                    f"State loaded: OCPM={'Yes' if self.ocpm.in_pos else 'No'}, MR={'Yes' if self.mr.in_pos else 'No'}, RSISwing={'Yes' if self.rsi_swing.in_pos else 'No'}, Contrarian={'Yes' if self.contrarian.in_pos else 'No'}"
+                    f"State loaded: OCPM={'Yes' if self.ocpm.in_pos else 'No'}, MR={'Yes' if self.mr.in_pos else 'No'}, RSISwing={'Yes' if self.rsi_swing.in_pos else 'No'}, Contrarian={'Yes' if self.contrarian.in_pos else 'No'}, VSRev={'Yes' if self.vsrev.in_pos else 'No'}"
                 )
             except Exception as e:
                 self.lg.warning(f"State load error: {e}")
+
+    def _cleanup_ghost_position(self):
+        if not self.hl.authenticated:
+            return
+        try:
+            pos = self.hl.get_position(self.c.symbol)
+            if not pos or pos.get("size", 0) <= 0:
+                return
+            managed_long = 0.0
+            managed_short = 0.0
+            for s in [self.ocpm, self.mr, self.rsi_swing, self.contrarian, self.vsrev]:
+                if s.in_pos:
+                    if s.side == "LONG":
+                        managed_long += s.size
+                    else:
+                        managed_short += s.size
+            managed_net = managed_long - managed_short
+            actual_net = pos["size"] if pos["side"] == "LONG" else -pos["size"]
+            drift = actual_net - managed_net
+            if abs(drift) > 1e-6:
+                self.lg.info(
+                    f"MANUAL POSITION DETECTED: Exchange net={actual_net}, Bot managed net={managed_net}, "
+                    f"Manual/external={drift:.6f} - will NOT be modified by bot"
+                )
+        except Exception as e:
+            self.lg.warning(f"Ghost position check error: {e}")
 
     def _save_account_state(self, px: float, user_state: Optional[Dict[str, Any]]):
         try:
@@ -664,15 +789,20 @@ class UnifiedEngine:
                 "status": "ready",
             }
             if pos and pos.get("size", 0) > 0:
+                upnl = pos.get("unrealized_pnl")
+                if upnl is None:
+                    upnl = (px - pos["entry"]) * pos["size"] * (
+                        1 if pos["side"] == "LONG" else -1
+                    )
+                else:
+                    upnl = float(upnl)
                 account_state["positions"].append(
                     {
                         "symbol": self.c.symbol,
                         "size": pos["size"],
                         "entry_price": pos["entry"],
                         "current_price": px,
-                        "unrealized_pnl": (px - pos["entry"])
-                        * pos["size"]
-                        * (1 if pos["side"] == "LONG" else -1),
+                        "unrealized_pnl": round(upnl, 4),
                         "side": pos["side"],
                     }
                 )
@@ -687,11 +817,14 @@ class UnifiedEngine:
                         "side": "NONE",
                     }
                 )
-            os.makedirs("logs", exist_ok=True)
-            with open("logs/account_state.json", "w") as f:
+            out = project_path("logs/account_state.json")
+            out.parent.mkdir(parents=True, exist_ok=True)
+            account_state["source"] = "qwen_unified_live"
+            account_state["schema_version"] = 2
+            with open(out, "w", encoding="utf-8") as f:
                 json.dump(account_state, f, indent=2)
         except Exception as e:
-            self.lg.debug(f"Account state save skipped: {e}")
+            self.lg.warning(f"Account state save failed: {e}")
 
     def save_state(self):
         data = {
@@ -699,10 +832,11 @@ class UnifiedEngine:
             "mr": self.mr.to_dict(),
             "rsi_swing": self.rsi_swing.to_dict(),
             "contrarian": self.contrarian.to_dict(),
+            "vsrev": self.vsrev.to_dict(),
             "current_bar": self.current_bar,
             "last_processed_bar_ts": self.last_processed_bar_ts,
         }
-        with open(self.c.state_file, "w") as f:
+        with open(project_path(self.c.state_file), "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
 
     def _get_eval_bar(self, df: pd.DataFrame) -> tuple[pd.Series, int, bool]:
@@ -745,6 +879,7 @@ class UnifiedEngine:
         self._manage_mr_exit(r, px)
         self._manage_rsi_swing_exit(r, px)
         self._manage_contrarian_exit(r, px)
+        self._manage_vsrev_exit(r, px)
 
         # 2. Check Entries
         if is_new_bar:
@@ -766,6 +901,13 @@ class UnifiedEngine:
                 and self.current_bar >= self.contrarian.cool_bar
             ):
                 self._check_contrarian_entry(r, px, bal)
+
+            if (
+                self.c.vsrev_enabled
+                and not self.vsrev.in_pos
+                and self.current_bar >= self.vsrev.cool_bar
+            ):
+                self._check_vsrev_entry(r, px, bal)
 
         # 3. Sync with Exchange
         self._sync_positions()
@@ -918,7 +1060,7 @@ class UnifiedEngine:
                 return
 
     def _get_legacy_strategies(self):
-        return [self.ocpm, self.mr, self.rsi_swing]
+        return [self.ocpm, self.mr, self.rsi_swing, self.vsrev]
 
     def _strategy_pool_total(self, strategy_name: str, balance: float) -> float:
         if strategy_name == "Contrarian":
@@ -943,22 +1085,30 @@ class UnifiedEngine:
         pool_total = self._strategy_pool_total(strategy_name, balance)
         if strategy_name == "Contrarian":
             return pool_total * self.c.contrarian_risk_pct
+        if strategy_name == "VSRev":
+            return pool_total * self.c.vsrev_risk_pct
         return pool_total * self.c.risk_pct
 
     def _strategy_position_cap(self, strategy_name: str, balance: float) -> float:
         pool_total = self._strategy_pool_total(strategy_name, balance)
         if strategy_name == "Contrarian":
             return pool_total * self.c.contrarian_max_position_pct
+        if strategy_name == "VSRev":
+            return pool_total * self.c.vsrev_max_position_pct
         return pool_total * self.c.max_position_pct
 
     def _strategy_max_losses(self, strategy_name: str) -> int:
         if strategy_name == "Contrarian":
             return self.c.contrarian_max_consecutive_losses
+        if strategy_name == "VSRev":
+            return self.c.vsrev_max_consecutive_losses
         return self.c.max_consecutive_losses
 
     def _strategy_cooldown(self, strategy_name: str) -> int:
         if strategy_name == "Contrarian":
             return self.c.contrarian_cooldown_bars
+        if strategy_name == "VSRev":
+            return self.c.vsrev_cooldown_bars
         return self.c.cooldown_bars
 
     def _check_rsi_swing_entry(self, r, px, bal):
@@ -1367,6 +1517,7 @@ class UnifiedEngine:
                 1 if r.get("ocpm_long", 0) == 1 else 0,
                 1 if r.get("mr_long", 0) == 1 else 0,
                 1 if r.get("rsi_swing_long", 0) == 1 else 0,
+                1 if r.get("vsrev_long", 0) == 1 else 0,
             ]
         )
         shorts = sum(
@@ -1374,6 +1525,7 @@ class UnifiedEngine:
                 1 if r.get("ocpm_short", 0) == 1 else 0,
                 1 if r.get("mr_short", 0) == 1 else 0,
                 1 if r.get("rsi_swing_short", 0) == 1 else 0,
+                1 if r.get("vsrev_short", 0) == 1 else 0,
             ]
         )
         if longs >= 2:
@@ -1415,6 +1567,7 @@ class UnifiedEngine:
         ) / 2
         self.lg.debug(
             f"OCPM check: trend={r['ocpm_trend']}, close={px:.0f}, donchian_mid={donchian_mid:.0f}, "
+            f"donchian_low={r.get('ocpm_donchian_low', 0):.0f}, donchian_high={r.get('ocpm_donchian_high', 0):.0f}, "
             f"rsi_prev={r.get('rsi_prev', 0):.1f}, rsi={r['rsi']:.1f}, "
             f"ocpm_long={r['ocpm_long']}, ocpm_short={r['ocpm_short']}"
         )
@@ -1566,6 +1719,105 @@ class UnifiedEngine:
                     kronos_sig,
                 )
 
+    def _check_vsrev_entry(self, r, px, bal):
+        if not self.c.vsrev_enabled:
+            return
+        vol_ratio = r.get("vol_ratio")
+        if pd.isna(vol_ratio):
+            return
+
+        sl_d = self.c.vsrev_sl_atr_mult * r["atr"]
+        if sl_d <= 0 or np.isnan(sl_d):
+            return
+
+        risk = self._strategy_risk_budget("VSRev", bal)
+        available_notional = self._strategy_available_notional("VSRev", bal, px)
+        if available_notional <= 0:
+            return
+        sz = min(
+            risk / sl_d,
+            self._strategy_position_cap("VSRev", bal) / px,
+            available_notional / px,
+        )
+        if sz * px < self.c.min_notional:
+            return
+
+        whale_sig = self._read_whale_signal()
+        macro_state = self._read_macro_state()
+        kronos_sig = self._read_kronos_signal()
+
+        if r["vsrev_long"] == 1:
+            multiplier = self._compute_whale_multiplier("LONG", whale_sig, macro_state)
+            if multiplier == 0.0:
+                self.lg.info(f"VSRev LONG skipped - EXTREME macro regime")
+                return
+            kronos_mult = self._compute_kronos_multiplier("LONG", kronos_sig)
+            conf_mult = self._get_confluence_multiplier("LONG")
+            final_sz = sz * multiplier * kronos_mult * conf_mult
+            final_sz = max(final_sz, sz * 0.25)
+            if final_sz * px < self.c.min_notional:
+                return
+            tp = px + self.c.vsrev_tp_atr_mult * r["atr"]
+            stop = px - sl_d
+            self.lg.info(
+                f"VSRev LONG SIGNAL @ {px:.2f} (RSI={r['rsi']:.1f}, vol_ratio={vol_ratio:.1f}x) | whale={multiplier:.2f} kronos={kronos_mult:.2f} conf={conf_mult:.2f} | sz={sz:.4f}->{final_sz:.4f}"
+            )
+            if self._open_strat(self.vsrev, "LONG", final_sz, px, stop, tp=tp):
+                self._log_trade_alignment(
+                    "VSRev", "LONG", whale_sig, macro_state, multiplier, sz, final_sz, px, kronos_sig
+                )
+        elif r["vsrev_short"] == 1:
+            multiplier = self._compute_whale_multiplier("SHORT", whale_sig, macro_state)
+            if multiplier == 0.0:
+                self.lg.info(f"VSRev SHORT skipped - EXTREME macro regime")
+                return
+            kronos_mult = self._compute_kronos_multiplier("SHORT", kronos_sig)
+            conf_mult = self._get_confluence_multiplier("SHORT")
+            final_sz = sz * multiplier * kronos_mult * conf_mult
+            final_sz = max(final_sz, sz * 0.25)
+            if final_sz * px < self.c.min_notional:
+                return
+            tp = px - self.c.vsrev_tp_atr_mult * r["atr"]
+            stop = px + sl_d
+            self.lg.info(
+                f"VSRev SHORT SIGNAL @ {px:.2f} (RSI={r['rsi']:.1f}, vol_ratio={vol_ratio:.1f}x) | whale={multiplier:.2f} kronos={kronos_mult:.2f} conf={conf_mult:.2f} | sz={sz:.4f}->{final_sz:.4f}"
+            )
+            if self._open_strat(self.vsrev, "SHORT", final_sz, px, stop, tp=tp):
+                self._log_trade_alignment(
+                    "VSRev", "SHORT", whale_sig, macro_state, multiplier, sz, final_sz, px, kronos_sig
+                )
+
+    def _manage_vsrev_exit(self, r, px):
+        if not self.vsrev.in_pos:
+            return
+        s = self.vsrev
+        held = self.current_bar - s.entry_bar
+
+        if held >= self.c.vsrev_max_hold:
+            self.lg.info(f"VSRev TIME EXIT: {s.side}")
+            self._close_strat(s, px, "TIME_EXIT")
+            return
+
+        if s.side == "LONG":
+            if s.stop > 0 and px <= s.stop:
+                self._close_strat(s, s.stop, "STOP_LOSS")
+                return
+            if s.tp > 0 and px >= s.tp:
+                self._close_strat(s, s.tp, "TAKE_PROFIT")
+                return
+        else:
+            if s.stop > 0 and px >= s.stop:
+                self._close_strat(s, s.stop, "STOP_LOSS")
+                return
+            if s.tp > 0 and px <= s.tp:
+                self._close_strat(s, s.tp, "TAKE_PROFIT")
+                return
+
+        if s.side == "LONG" and r["rsi"] > 70:
+            self._close_strat(s, px, "RSI_EXIT")
+        elif s.side == "SHORT" and r["rsi"] < 30:
+            self._close_strat(s, px, "RSI_EXIT")
+
     def _check_contrarian_entry(self, r, px, bal):
         sig = self._read_contrarian_signal()
         if sig is None:
@@ -1690,6 +1942,11 @@ class UnifiedEngine:
                 target_long += self.contrarian.size
             else:
                 target_short += self.contrarian.size
+        if self.vsrev.in_pos:
+            if self.vsrev.side == "LONG":
+                target_long += self.vsrev.size
+            else:
+                target_short += self.vsrev.size
 
         # Note: This is a simplified sync. In a real netting account,
         # if we have Long OCPM and Short MR, they net out.
@@ -1701,8 +1958,9 @@ class UnifiedEngine:
             net_sz = pos["size"] if pos["side"] == "LONG" else -pos["size"]
             target_net = target_long - target_short
             if abs(net_sz - target_net) > 0.0001:
-                self.lg.warning(
-                    f"Position Drift! Exchange: {net_sz}, Target: {target_net}"
+                self.lg.info(
+                    f"Position info: Exchange net={net_sz}, Bot managed net={target_net}, "
+                    f"Manual/external={net_sz - target_net:.6f}"
                 )
 
     def run_loop(self):
@@ -1746,11 +2004,17 @@ def main():
     pa.add_argument("--debug", action="store_true")
     args = pa.parse_args()
 
+    try:
+        os.chdir(PROJECT_ROOT)
+    except OSError as e:
+        print(f"Could not chdir to {PROJECT_ROOT}: {e}", file=sys.stderr)
+
     c = Config()
     c.check_interval = args.interval
     lg = setup_logging(c, args.debug)
 
     lg.info(f"Qwen Unified Trader ({args.mode})")
+    lg.info(f"Working directory: {os.getcwd()}")
     lg.info(f"Wallet: {c.wallet_address}")
 
     engine = UnifiedEngine(c, lg)

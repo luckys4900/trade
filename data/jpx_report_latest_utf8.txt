@@ -1,0 +1,78 @@
+﻿python : 2026-04-22 08:58:02,309 [WARNING] J-Quants credentials not found. Using synthetic data or cached files only.
+発生場所 C:\Users\user\AppData\Local\Temp\ps-script-43469192-a169-48db-9cfa-5755e6899af7.ps1:84 文字:1
++ python "run_jpx_backtest.py" --code 2802 --start 2023-01-01 --end 202 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-04-22 08:5...hed files only.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-04-22 08:58:02,309 [WARNING] No API client. Fetching synthetic daily data.
+
+Backtest.run:   0%|          | 0/847 [00:00<?, ?bar/s]
+                                                      
+INFO:bokeh.io.state:Session output file 'jpx_backtest_2802.html' already exists, will be overwritten.
+2026-04-22 08:58:03,788 [INFO] Chart saved to jpx_backtest_2802.html
+
+## 本日の重大イベント
+- 2026-04-22 22:00 JST: 米イラン停戦期限切れ (CRITICAL)
+
+## マクロ環境 (修正後)
+- レジーム: BULL_FADING
+- CME日経先物 夜間: +0.27%
+- ギャップ予測: -0.35%
+- サイズ係数: 0.15
+
+## 環境スコア
+- 総合: 14.3/100
+- α: N/A (計算不能・中立扱い) (score=50.0)
+
+## セクター整合性
+- GICS: Consumer Staples / Food
+- Defensive: True
+- Beta参照: TOPIX_FOOD
+- SOX表示: 除外
+
+## シナリオ
+- [S2] Entry=2128.14 SL=2107.37 TP=2190.46 RRR=3.00 mode=PAPER_TRADE_ONLY max=10.0%
+  - warning: バックテストn=0, Sharpe=nan, 妥当性=False。実資金投入非推奨。
+- [C1] Entry=2076.21 SL=2060.64 TP=2133.34 RRR=3.67 mode=PAPER_TRADE_ONLY max=10.0%
+  - warning: バックテストn=0, Sharpe=nan, 妥当性=False。実資金投入非推奨。
+
+==================================================
+ JPX BACKTEST RESULTS: 2802
+==================================================
+Start                     2023-01-02 00:00:00
+End                       2026-04-21 00:00:00
+Duration                   1205 days 00:00:00
+Exposure Time [%]                         0.0
+Equity Final [$]                    1000000.0
+Equity Peak [$]                     1000000.0
+Return [%]                                0.0
+Buy & Hold Return [%]                 6.00052
+Return (Ann.) [%]                         0.0
+Volatility (Ann.) [%]                     0.0
+CAGR [%]                                  0.0
+Sharpe Ratio                              NaN
+Sortino Ratio                             NaN
+Calmar Ratio                              NaN
+Alpha [%]                                 0.0
+Beta                                      0.0
+Max. Drawdown [%]                        -0.0
+Avg. Drawdown [%]                         NaN
+Max. Drawdown Duration                    NaN
+Avg. Drawdown Duration                    NaN
+# Trades                                    0
+Win Rate [%]                              NaN
+Best Trade [%]                            NaN
+Worst Trade [%]                           NaN
+Avg. Trade [%]                            NaN
+Max. Trade Duration                       NaN
+Avg. Trade Duration                       NaN
+Profit Factor                             NaN
+Expectancy [%]                            NaN
+SQN                                       NaN
+Kelly Criterion                           NaN
+_strategy                         JPXRSISwing
+_equity_curve                            E...
+_trades                   Empty DataFrame
+...
+dtype: object

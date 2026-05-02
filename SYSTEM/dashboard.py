@@ -8,50 +8,71 @@ import sys
 import subprocess
 import time
 import re
-from datetime import datetime
+from datetime import datetime, timezone
+from pathlib import Path
+
+# Project root (parent of SYSTEM/) — same file layout as qwen_unified_live.py
+ROOT = Path(__file__).resolve().parent.parent
 
 def read_signal():
     try:
-        with open('whale_signal.json', 'r', encoding='utf-8') as f:
+        with open(ROOT / "whale_signal.json", "r", encoding="utf-8") as f:
             return json.load(f)
-    except:
+    except Exception:
         return None
 
 def read_macro():
     try:
-        with open('macro_state.json', 'r', encoding='utf-8') as f:
+        with open(ROOT / "macro_state.json", "r", encoding="utf-8") as f:
             return json.load(f)
-    except:
+    except Exception:
         return None
 
 def read_contrarian_signal():
     try:
-        with open('kronos_contrarian_signal.json', 'r', encoding='utf-8') as f:
+        with open(ROOT / "kronos_contrarian_signal.json", "r", encoding="utf-8") as f:
             return json.load(f)
-    except:
+    except Exception:
         return None
 
 
 def read_inflow_short_signal():
     """EV1 supplementary SHORT bias (inflow_short_signal.json); not a separate trade_state row."""
     try:
-        with open('inflow_short_signal.json', 'r', encoding='utf-8') as f:
+        with open(ROOT / "inflow_short_signal.json", "r", encoding="utf-8") as f:
             return json.load(f)
     except Exception:
         return None
 
 def read_account_state():
     try:
-        with open('logs/account_state.json', 'r', encoding='utf-8') as f:
+        with open(ROOT / "logs" / "account_state.json", "r", encoding="utf-8") as f:
             return json.load(f)
-    except:
+    except Exception:
         return None
 
 def read_trade_state():
     try:
-        with open('trade_state_unified.json', 'r', encoding='utf-8') as f:
+        with open(ROOT / "trade_state_unified.json", "r", encoding="utf-8") as f:
             return json.load(f)
-    except:
+    except Exception:
+        return None
+
+
+def account_state_age_seconds(account):
+    """Seconds since account_state timestamp; None if unparseable."""
+    if not account:
+        return None
+    ts = account.get("timestamp")
+    if not ts:
+        return None
+    try:
+        s = str(ts).replace("Z", "+00:00")
+        t = datetime.fromisoformat(s)
+        if t.tzinfo is None:
+            t = t.replace(tzinfo=timezone.utc)
+        return (datetime.now(timezone.utc) - t).total_seconds()
+    except Exception:
         return None
 
 def get_process_count():
@@ -95,6 +116,13 @@ def read_last_log_line(logfile):
     except:
         return None
 
+def _latest_log(pattern):
+    """Find the most recent log file matching a glob pattern under logs/."""
+    import glob as _glob
+    files = sorted(_glob.glob(str(ROOT / "logs" / pattern)))
+    return files[-1] if files else str(ROOT / "logs" / pattern.replace("*", "NOTFOUND"))
+
+
 def show_dashboard():
     os.system('cls' if os.name == 'nt' else 'clear')
     
@@ -133,6 +161,19 @@ def show_dashboard():
         margin_used = acc.get('margin_used', 0.0)
         withdrawable = acc.get('withdrawable', acc.get('available_margin'))
 
+        age_sec = account_state_age_seconds(account)
+        if age_sec is not None:
+            if age_sec > 600:
+                print("  Snapshot: STALE ({:.0f} min old) — main bot may be off or failing to write logs/account_state.json".format(age_sec / 60.0))
+            else:
+                print("  Snapshot: fresh ({:.0f}s ago)".format(age_sec))
+        src = account.get("source", "")
+        if src:
+            print("  Source: {}".format(src))
+        sch = account.get("schema_version", "")
+        if sch:
+            print("  Schema: {}".format(sch))
+
         print("  Balance: ${:.2f}".format(balance))
         print("  Equity: ${:.2f}".format(equity))
         print("  Margin Used: ${:.2f}".format(margin_used))
@@ -142,7 +183,7 @@ def show_dashboard():
         # Positions
         positions = account.get('positions', [])
         print()
-        print("[POSITIONS]")
+        print("[POSITIONS] (exchange / Hyperliquid snapshot)")
         if positions and len(positions) > 0 and positions[0].get('size', 0) != 0:
             for pos in positions:
                 symbol = pos.get('symbol', 'N/A')
@@ -157,8 +198,20 @@ def show_dashboard():
                         symbol, size, side, entry, current, pnl))
         else:
             print("  No active positions")
+        if trade_state and age_sec is not None and age_sec < 600:
+            bot_in_pos = any(
+                trade_state.get(k, {}).get("in_pos")
+                for k in ("ocpm", "mr", "rsi_swing", "contrarian", "vsrev")
+            )
+            exch_open = bool(
+                positions and len(positions) > 0 and positions[0].get("size", 0) != 0
+            )
+            if bot_in_pos and not exch_open:
+                print("  Note: Internal strategy state shows open position; exchange snapshot is flat — check orders or wait for next tick.")
+            elif not bot_in_pos and exch_open:
+                print("  Note: Exchange shows a position; bot strategy state is flat — manual trade or other client.")
     else:
-        print("  (No account data - bot may not be running)")
+        print("  (No account data — expected at {})".format(ROOT / "logs" / "account_state.json"))
     print()
     
     # Whale Signal
@@ -235,6 +288,7 @@ def show_dashboard():
             ('mr', 'RangeMR'),
             ('rsi_swing', 'RSISwing'),
             ('contrarian', 'Contrarian'),
+            ('vsrev', 'VSRev'),
         ]:
             state = trade_state.get(key, {})
             in_pos = state.get('in_pos', False)
@@ -253,18 +307,18 @@ def show_dashboard():
     print("[LATEST ACTIVITY]")
     
     logs = [
-        ('logs/whale_monitor_live.log', 'Whale'),
-        ('logs/macro_filter_live.log', 'Macro'),
-        ('logs/kronos_predictor_live.log', 'Kronos'),
-        ('logs/qwen_unified_live.log', 'Bot'),
+        (Path(_latest_log("whale_monitor_*.log")), "Whale"),
+        (Path(_latest_log("macro_filter_*.log")), "Macro"),
+        (Path(_latest_log("kronos_predictor_*.log")), "Kronos"),
+        (Path(_latest_log("unified_live_*.log")), "Bot"),
     ]
     
     for logfile, name in logs:
-        last_line = read_last_log_line(logfile)
+        last_line = read_last_log_line(str(logfile))
         if last_line:
             print("  {:<8} {}".format(name + ":", last_line))
         else:
-            if os.path.exists(logfile):
+            if os.path.exists(str(logfile)):
                 print("  {:<8} (no recent activity)".format(name + ":"))
             else:
                 print("  {:<8} (log not found)".format(name + ":"))

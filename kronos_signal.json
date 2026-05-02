@@ -1,12 +1,12 @@
 {
   "direction": "SHORT",
-  "prob_up": 0.48924963516060016,
-  "strength": 0.0538,
+  "prob_up": 0.4456553883830375,
+  "strength": 0.2717,
   "multiplier_long": 0.65,
-  "multiplier_short": 1.0215007296787997,
-  "pred_close": 70503.125,
-  "current_close": 70579.0,
+  "multiplier_short": 1.108689223233925,
+  "pred_close": 77771.046875,
+  "current_close": 78196.0,
   "valid": true,
-  "timestamp": 1776069903094,
-  "inference_time_s": 0.5
+  "timestamp": 1776902164044,
+  "inference_time_s": 0.6
 }

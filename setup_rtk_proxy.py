@@ -87,9 +87,11 @@ class RTKProxy:
                         "model": "glm-4-7-flash", 
                         "endpoint": "https://api.z.ai/api/coding/paas/v4"
                     },
-                    "qwen3.6-plus": {
+                    "tencent/hy3-preview:free": {
                         "provider": "openrouter",
-                        "model": "qwen/qwen3.6-plus:free",
+                        "model": "tencent/hy3-preview:free",
+                        "endpoint": "https://openrouter.ai/api/v1"
+                    },
                         "endpoint": "https://openrouter.ai/api/v1"
                     }
                 },
@@ -190,6 +192,10 @@ class RTKProxy:
                     "glm-4-7-flash": {
                         "id": "glm-4-7-flash",
                         "name": "GLM-4.7 Flash (RTK)"
+                    },
+                    "tencent/hy3-preview:free": {
+                        "id": "tencent/hy3-preview:free",
+                        "name": "TENCENT-HY3 Preview (RTK)"
                     }
                 },
                 "npm": "@ai-sdk/openai-compatible",
