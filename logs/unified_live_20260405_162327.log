@@ -1,7 +1,0 @@
-2026-04-05 16:23:27 [INFO] Qwen Unified Trader (live)
-2026-04-05 16:23:27 [INFO] Wallet: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
-2026-04-05 16:23:29 [INFO] State loaded: OCPM=No, MR=No, RSISwing=No
-2026-04-05 16:23:29 [WARNING] REAL MONEY TRADING - Be careful!
-2026-04-05 16:23:29 [INFO] Starting Unified Live Loop...
-2026-04-05 16:23:29 [INFO] Bar 1 | Price: $66,788.50 | Bal: $211.19 | RSI: 51.5 | Trend: DOWNTREND
-2026-04-05 16:23:29 [DEBUG] OCPM check: trend=DOWNTREND, close=66788, donchian_mid=67442, rsi_prev=49.6, rsi=51.5, ocpm_long=0, ocpm_short=0

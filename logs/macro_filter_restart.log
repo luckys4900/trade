@@ -1,8 +1,0 @@
-C:\Users\user\Desktop\cursor\trade\macro_filter.py:19: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  ts = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-2026-04-11 00:49:52,685 [INFO] Starting loop with interval 3600s (1 hour)
-2026-04-11 00:49:52,685 [INFO] === Run Once ===
-2026-04-11 00:49:53,009 [INFO] Loaded 20 calendar events
-C:\Users\user\Desktop\cursor\trade\macro_filter.py:176: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  now = datetime.utcnow()
-2026-04-11 00:49:53,011 [INFO] State written: regime=NORMAL, atr=0.0150, caution=False

@@ -1,9 +1,13 @@
 # Qwen Unified Auto-Trader - プロジェクト状況記録
 
 ## 最終更新日
-2026-04-26 (トリプルトップバックテスト実装)
+2026-05-04 (Git: ランタイム出力を追跡外へ)
 
 ---
+
+## 変更履歴 (Git / リポジトリ)
+
+- `.gitignore`: `logs/*`（`.gitkeep` 除く）およびボットが書き換える JSON（`whale_signal` / `macro_state` / `trade_state_unified` / 各種シグナル・キャッシュ）を追跡対象外に。構成・ソースの履歴を GitHub で扱いやすくする。
 
 ## 変更履歴 (JPX / 2802)
 

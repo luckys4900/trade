@@ -1,8 +1,0 @@
-2026-04-05 11:57:11 [INFO] Qwen Unified Trader (live)
-2026-04-05 11:57:11 [INFO] Wallet: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
-2026-04-05 11:57:11 [INFO] Wallet: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
-2026-04-05 11:57:11 [INFO] Qwen Unified Trader (live)
-2026-04-05 11:57:11 [INFO] Wallet: 0x7dd9f0C23Fb61CA3f36B8414306310F963093c12
-2026-04-05 11:57:11 [ERROR] Failed to init HL client: No module named 'eth_account'
-2026-04-05 11:57:11 [ERROR] Failed to init HL client: No module named 'eth_account'
-2026-04-05 11:57:11 [ERROR] Failed to init HL client: No module named 'eth_account'

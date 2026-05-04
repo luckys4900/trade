@@ -1,6 +1,0 @@
-2026-03-02 21:06:12 [INFO] Mode: backtest | v5 Adaptive RSI - OFFLINE BACKTEST | Days: 365
-2026-03-02 21:06:12 [INFO] Entering BACKTEST mode
-2026-03-02 21:06:12 [INFO] CSV cache: btc_usdt_4h.csv (6 bars)
-2026-03-02 21:06:12 [INFO] Data: 2026-03-01 12:00:00 -> 2026-03-02 08:00:00 (6 bars)
-2026-03-02 21:06:12 [INFO] Regimes: {'RANGE': 6}
-2026-03-02 21:06:12 [INFO] Long signals: 0, Short signals: 0

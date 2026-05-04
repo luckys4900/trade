@@ -1,4 +1,0 @@
-2026-04-11 00:50:34,631 [INFO] Starting loop with interval 3600s (1 hour)
-2026-04-11 00:50:34,631 [INFO] === Run Once ===
-2026-04-11 00:50:34,995 [INFO] Loaded 20 calendar events
-2026-04-11 00:50:34,997 [INFO] State written: regime=NORMAL, atr=0.0150, caution=False

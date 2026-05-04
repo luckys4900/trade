@@ -1,6 +1,0 @@
-2026-04-19 06:09:14,453 [INFO] Loaded config with 3 wallets
-2026-04-19 06:09:14,453 [INFO] PatternDetector initialized with config: C:\Users\user\Desktop\cursor\trade\SYSTEM\whale_wallets.json
-2026-04-19 06:09:15,206 [INFO] Fetched 2000 fills for 0x863b676e5e4fea0541062c32983dc8f84749ca6d (past 7 days)
-2026-04-19 06:09:15,207 [INFO] Converted 2000 fills to transactions
-2026-04-19 06:09:15,728 [INFO] Fetched 2000 fills for 0x863b676e5e4fea0541062c32983dc8f84749ca6d (past 30 days)
-2026-04-19 06:09:15,729 [INFO] Converted 2000 fills to transactions

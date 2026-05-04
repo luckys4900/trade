@@ -1,9 +1,0 @@
-2026-04-10 14:30:40,060 [INFO] Loaded config: 1 wallets
-2026-04-10 14:30:40,061 [INFO] Starting loop with interval 900s
-2026-04-10 14:30:40,061 [INFO] === Run Once ===
-2026-04-10 14:30:40,061 [INFO] Using cached ranking (0.5h old)
-2026-04-10 14:30:40,061 [WARNING] No qualified wallets
-2026-04-10 14:30:40,068 [INFO] Signal written: NONE, strength=0.00, valid=False
-2026-04-10 14:45:40,079 [INFO] === Run Once ===
-2026-04-10 14:45:40,080 [INFO] Using cached ranking (0.1h old)
-2026-04-10 14:45:40,375 [INFO] Signal written: NONE, strength=0.00, valid=False

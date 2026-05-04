@@ -1,4 +1,0 @@
-2026-03-02 20:47:23 [INFO] Mode: live | v5 Adaptive RSI (Hyperliquid Edition) | Days: 180
-2026-03-02 20:47:23 [INFO] Exchange: hyperliquid (Mainnet)
-2026-03-02 20:47:23 [INFO] Entering LIVE mode
-2026-03-02 20:47:24 [ERROR] Failed to initialize Hyperliquid client: (404, None, '', None, {'Content-Length': '0', 'Connection': 'keep-alive', 'Server': 'nginx/1.22.1', 'Date': 'Mon, 02 Mar 2026 11:47:23 GMT', 'access-control-expose-headers': '*', 'access-control-allow-origin': '*', 'vary': 'origin, access-control-request-method, access-control-request-headers', 'X-Cache': 'Error from cloudfront', 'Via': '1.1 d6561386137ba6ee4790474c67fb666e.cloudfront.net (CloudFront)', 'X-Amz-Cf-Pop': 'NRT57-P7', 'X-Amz-Cf-Id': 'BVm-P8ZZaFIjjRW17eyXRjlj7WjBIMvQfaSzdqX3AsMWOyvleoHfgQ=='})

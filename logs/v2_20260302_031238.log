@@ -1,4 +1,0 @@
-2026-03-02 03:12:38 [INFO] Mode: backtest | Version: v2.1
-2026-03-02 03:12:38 [INFO] Using cached CSV: btc_usdt_4h.csv (age=0.4h)
-2026-03-02 03:12:38 [INFO] Data: 2025-09-09 04:00:00 -> 2026-03-01 16:00:00 (1042 bars)
-2026-03-02 03:12:38 [INFO] Entry signals in data: 7

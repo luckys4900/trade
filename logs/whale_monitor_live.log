@@ -1,7 +1,0 @@
-C:\Users\user\Desktop\cursor\trade\whale_monitor.py:19: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
-  ts = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-2026-04-11 00:54:40,574 [INFO] Loaded config: 3 wallets
-2026-04-11 00:54:40,574 [INFO] Starting loop with interval 900s
-2026-04-11 00:54:40,574 [INFO] === Run Once ===
-2026-04-11 00:54:40,574 [INFO] Using cached ranking (0.1h old)
-2026-04-11 00:54:41,363 [INFO] Signal written: NONE, strength=0.00, valid=False

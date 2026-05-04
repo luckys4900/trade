@@ -23,3 +23,18 @@ ENV/
 *.swp
 .DS_Store
 Thumbs.db
+
+# Generated logs (keep repo history for config/code, not hourly log churn)
+logs/*
+!logs/.gitkeep
+
+# Runtime outputs (bots rewrite these; version config via config.json / whale_wallets.json)
+macro_state.json
+trade_state_unified.json
+state_tmp.json
+whale_signal.json
+whale_ranking_cache.json
+SYSTEM/whale_ranking_cache.json
+inflow_short_signal.json
+kronos_contrarian_signal.json
+kronos_signal.json
