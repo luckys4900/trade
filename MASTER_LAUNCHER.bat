@@ -71,21 +71,25 @@ if not errorlevel 1 (
     goto menu
 )
 
-echo [1/4] Starting Whale Monitor...
+echo [1/5] Starting Whale Monitor...
 start /MIN pythonw.exe SYSTEM\whale_monitor.py
 timeout /t 2 /nobreak >nul
 
-echo [2/4] Starting Macro Filter...
+echo [2/5] Starting Macro Filter...
 start /MIN pythonw.exe SYSTEM\macro_filter.py
 timeout /t 2 /nobreak >nul
 
-echo [3/4] Starting Kronos AI Predictor...
+echo [3/5] Starting Kronos AI Predictor...
 start /MIN pythonw.exe SYSTEM\kronos_predictor.py --interval 14400
 timeout /t 2 /nobreak >nul
 
-echo [4/4] Starting Main Trading Bot...
+echo [4/5] Starting Main Trading Bot...
 start /MIN pythonw.exe SYSTEM\qwen_unified_live.py
 timeout /t 3 /nobreak >nul
+
+echo [5/5] Starting Daily SMA Crossover Bot...
+start /MIN pythonw.exe SYSTEM\daily_sma_trader.py --interval 3600
+timeout /t 2 /nobreak >nul
 
 echo.
 echo System started successfully
