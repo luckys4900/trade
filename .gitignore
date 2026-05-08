@@ -38,3 +38,11 @@ SYSTEM/whale_ranking_cache.json
 inflow_short_signal.json
 kronos_contrarian_signal.json
 kronos_signal.json
+
+# memsearch (AI memory)
+# Vector DB is rebuildable from markdown, exclude to save space
+.memsearch/milvus.db
+.memsearch/.cache/
+.memsearch/.capture.pid
+.memsearch/.last_msg_time
+# Memory markdown files are SHARED (do not ignore .memsearch/memory/)
