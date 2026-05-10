@@ -61,6 +61,25 @@ STRATEGY_CONFIG = {
         'volume_mult': 2.5,
         'risk_per_trade': 0.02,
         'pivot_memory_bars': 70
+    },
+    'double_top_breakout': {
+        'pivot_length': 10,
+        'price_tolerance_pct': 2.0,
+        'min_high_count': 2,
+        'bb_period': 20,
+        'bb_std': 2.0,
+        'atr_period': 14,
+        'sl_atr_mult': 2.0,
+        'tp_atr_mult': 4.0,
+        'max_hold_bars': 20,
+        'volume_mult': 1.0,
+        'risk_per_trade': 0.005,
+        'pivot_memory_bars': 120,
+        'use_volume_filter': False,
+        'use_bb_filter': True,
+        'use_regime_filter': True,
+        'regime_lookback': 50,
+        'use_lows_rising_filter': True
     }
 }
 

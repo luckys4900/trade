@@ -185,6 +185,25 @@ class Config:
     vsrev_max_position_pct: float = 0.30
     vsrev_max_consecutive_losses: int = 5
     vsrev_cooldown_bars: int = 2
+    dt_breakout_enabled: bool = True
+    dt_breakout_pivot_length: int = 10
+    dt_breakout_price_tolerance: float = 0.02
+    dt_breakout_min_high_count: int = 2
+    dt_breakout_bb_period: int = 20
+    dt_breakout_bb_std: float = 2.0
+    dt_breakout_sl_atr_mult: float = 2.0
+    dt_breakout_tp_atr_mult: float = 4.0
+    dt_breakout_max_hold: int = 20
+    dt_breakout_use_bb_filter: bool = True
+    dt_breakout_use_regime_filter: bool = True
+    dt_breakout_regime_lookback: int = 50
+    dt_breakout_use_lows_rising: bool = True
+    dt_breakout_pivot_memory: int = 120
+    dt_breakout_risk_pct: float = 0.005
+    dt_breakout_max_position_pct: float = 0.30
+    dt_breakout_max_consecutive_losses: int = 5
+    dt_breakout_cooldown_bars: int = 2
+    dt_breakout_paper_mode: bool = True
 
     legacy_capital_pct: float = 0.30
     contrarian_capital_pct: float = 0.70
@@ -666,6 +685,118 @@ def compute_indicators(df, c):
         & (df["rsi"] < df["rsi_prev"])
     ).astype(int)
 
+    # --- DT Breakout (Double Top) ---
+    pl = getattr(c, 'dt_breakout_pivot_length', 10)
+    pt = getattr(c, 'dt_breakout_price_tolerance', 0.02)
+    mhc = getattr(c, 'dt_breakout_min_high_count', 2)
+    mem = getattr(c, 'dt_breakout_pivot_memory', 120)
+
+    n = len(df)
+    pivot_high_prices = [np.nan] * n
+    pivot_low_prices = [np.nan] * n
+
+    high_arr = df['high'].values
+    low_arr = df['low'].values
+
+    for i in range(pl, n - pl):
+        is_ph = True
+        for j in range(1, pl + 1):
+            if high_arr[i] < high_arr[i - j] or high_arr[i] < high_arr[i + j]:
+                is_ph = False
+                break
+        if is_ph:
+            pivot_high_prices[i] = high_arr[i]
+        is_pl = True
+        for j in range(1, pl + 1):
+            if low_arr[i] > low_arr[i - j] or low_arr[i] > low_arr[i + j]:
+                is_pl = False
+                break
+        if is_pl:
+            pivot_low_prices[i] = low_arr[i]
+
+    df['dt_pivot_high'] = pivot_high_prices
+    df['dt_pivot_low'] = pivot_low_prices
+
+    dt_bb_std_val = getattr(c, 'dt_breakout_bb_std', 2.0)
+    dt_bb_period = getattr(c, 'dt_breakout_bb_period', 20)
+    df['dt_bb_mid'] = df['close'].rolling(dt_bb_period).mean()
+    dt_bb_std_arr = df['close'].rolling(dt_bb_period).std()
+    df['dt_bb_upper'] = df['dt_bb_mid'] + dt_bb_std_val * dt_bb_std_arr
+    df['dt_bb_width'] = np.where(df['dt_bb_mid'] > 0, (df['dt_bb_upper'] - df['dt_bb_mid'] + dt_bb_std_val * dt_bb_std_arr) / df['dt_bb_mid'], np.nan)
+
+    dt_long = np.zeros(n, dtype=int)
+    dt_short = np.zeros(n, dtype=int)
+
+    use_bb = getattr(c, 'dt_breakout_use_bb_filter', True)
+    use_regime = getattr(c, 'dt_breakout_use_regime_filter', True)
+    use_lr = getattr(c, 'dt_breakout_use_lows_rising', True)
+    regime_lb = getattr(c, 'dt_breakout_regime_lookback', 50)
+
+    recent_ph = []
+    recent_ph_idx = []
+    recent_pl = []
+
+    for i in range(max(pl, 50), n):
+        pbar = i - pl
+        if pbar >= pl and not np.isnan(pivot_high_prices[pbar]):
+            recent_ph.append(pivot_high_prices[pbar])
+            recent_ph_idx.append(pbar)
+            while recent_ph_idx and (i - recent_ph_idx[0]) > mem:
+                recent_ph.pop(0)
+                recent_ph_idx.pop(0)
+        if pbar >= pl and not np.isnan(pivot_low_prices[pbar]):
+            recent_pl.append(pivot_low_prices[pbar])
+            while len(recent_pl) > mem:
+                recent_pl.pop(0)
+
+        if len(recent_ph) < mhc:
+            continue
+
+        last_n = recent_ph[-mhc:]
+        avg_h = sum(last_n) / mhc
+        if avg_h <= 0:
+            continue
+
+        price_range = (max(last_n) - min(last_n)) / avg_h
+        price_band_ok = price_range <= pt * 2
+
+        c_val = df['close'].values[i]
+        near_high = c_val >= avg_h * (1 - pt) and c_val <= avg_h * (1 + pt)
+
+        if not (price_band_ok and near_high):
+            continue
+
+        lows_rising = True
+        if use_lr and len(recent_pl) >= 2:
+            for k in range(1, min(len(recent_pl), mhc)):
+                if recent_pl[-k] <= recent_pl[-k - 1]:
+                    lows_rising = False
+                    break
+
+        if not lows_rising:
+            continue
+
+        if use_bb:
+            bb_u = df['dt_bb_upper'].values[i]
+            bb_w = df['dt_bb_width'].values[i]
+            bb_w_prev = df['dt_bb_width'].values[i - 1] if i > 0 else np.nan
+            if np.isnan(bb_u) or np.isnan(bb_w) or np.isnan(bb_w_prev):
+                continue
+            if not (c_val > bb_u and bb_w > bb_w_prev):
+                continue
+
+        if use_regime:
+            vp = df['vol_pct'].values[i]
+            if np.isnan(vp):
+                continue
+            if not (35 <= vp <= 80):
+                continue
+
+        dt_long[i] = 1
+
+    df['dt_long'] = dt_long
+    df['dt_short'] = dt_short
+
     return df
 
 
@@ -710,6 +841,7 @@ class UnifiedEngine:
         self.rsi_swing = StratState("RSISwing")
         self.contrarian = StratState("Contrarian")
         self.vsrev = StratState("VSRev")
+        self.dt_breakout = StratState("DTBreakout")
         self.current_bar = 0
         self.last_processed_bar_ts = 0
         self._current_eval_bar_ts = 0
@@ -736,10 +868,15 @@ class UnifiedEngine:
                 )
                 if self.vsrev.name == "Unknown":
                     self.vsrev.name = "VSRev"
+                self.dt_breakout = StratState.from_dict(
+                    data.get("dt_breakout", {"name": "DTBreakout"})
+                )
+                if self.dt_breakout.name == "Unknown":
+                    self.dt_breakout.name = "DTBreakout"
                 self.current_bar = data.get("current_bar", 0)
                 self.last_processed_bar_ts = data.get("last_processed_bar_ts", 0)
                 self.lg.info(
-                    f"State loaded: OCPM={'Yes' if self.ocpm.in_pos else 'No'}, MR={'Yes' if self.mr.in_pos else 'No'}, RSISwing={'Yes' if self.rsi_swing.in_pos else 'No'}, Contrarian={'Yes' if self.contrarian.in_pos else 'No'}, VSRev={'Yes' if self.vsrev.in_pos else 'No'}"
+                    f"State loaded: OCPM={'Yes' if self.ocpm.in_pos else 'No'}, MR={'Yes' if self.mr.in_pos else 'No'}, RSISwing={'Yes' if self.rsi_swing.in_pos else 'No'}, Contrarian={'Yes' if self.contrarian.in_pos else 'No'}, VSRev={'Yes' if self.vsrev.in_pos else 'No'}, DTBreakout={'Yes' if self.dt_breakout.in_pos else 'No'}"
                 )
             except Exception as e:
                 self.lg.warning(f"State load error: {e}")
@@ -833,6 +970,7 @@ class UnifiedEngine:
             "rsi_swing": self.rsi_swing.to_dict(),
             "contrarian": self.contrarian.to_dict(),
             "vsrev": self.vsrev.to_dict(),
+            "dt_breakout": self.dt_breakout.to_dict(),
             "current_bar": self.current_bar,
             "last_processed_bar_ts": self.last_processed_bar_ts,
         }
@@ -868,7 +1006,25 @@ class UnifiedEngine:
         self.lg.info(
             f"Bar {self.current_bar} | Price: ${px:,.2f} | Equity: ${bal:,.2f} "
             f"(margin_used ${mu:,.2f}, withdrawable ${wd:,.2f}) | RSI: {r['rsi']:.1f} | Trend: {r['ocpm_trend']}"
+            + f" | DT: {'PAPER ' + ('LONG' if self.dt_breakout.in_pos else 'No') if self.c.dt_breakout_paper_mode else ('LONG' if self.dt_breakout.in_pos else 'No')}"
         )
+
+        if self.dt_breakout.in_pos and self.c.dt_breakout_paper_mode:
+            s = self.dt_breakout
+            if s.side == "LONG":
+                paper_pnl = px - s.entry_px
+                paper_pnl_pct = paper_pnl / s.entry_px * 100
+            else:
+                paper_pnl = s.entry_px - px
+                paper_pnl_pct = paper_pnl / s.entry_px * 100
+            RED = "\x1b[31m"
+            RESET = "\x1b[0m"
+            pnl_sign = "+" if paper_pnl >= 0 else ""
+            self.lg.info(
+                f"{RED}[PAPER] DTBreakout {s.side} | Entry: ${s.entry_px:,.2f} | Current: ${px:,.2f} | "
+                f"PnL: {pnl_sign}${paper_pnl:,.2f} ({pnl_sign}{paper_pnl_pct:.2f}%) | "
+                f"SL: ${s.stop:,.2f} TP: ${s.tp:,.2f}{RESET}"
+            )
 
         self._save_account_state(px, us)
 
@@ -880,6 +1036,7 @@ class UnifiedEngine:
         self._manage_rsi_swing_exit(r, px)
         self._manage_contrarian_exit(r, px)
         self._manage_vsrev_exit(r, px)
+        self._manage_dt_breakout_exit(r, px)
 
         # 2. Check Entries
         if is_new_bar:
@@ -908,6 +1065,13 @@ class UnifiedEngine:
                 and self.current_bar >= self.vsrev.cool_bar
             ):
                 self._check_vsrev_entry(r, px, bal)
+
+            if (
+                self.c.dt_breakout_enabled
+                and not self.dt_breakout.in_pos
+                and self.current_bar >= self.dt_breakout.cool_bar
+            ):
+                self._check_dt_breakout_entry(r, px, bal)
 
         # 3. Sync with Exchange
         self._sync_positions()
@@ -1060,7 +1224,7 @@ class UnifiedEngine:
                 return
 
     def _get_legacy_strategies(self):
-        return [self.ocpm, self.mr, self.rsi_swing, self.vsrev]
+        return [self.ocpm, self.mr, self.rsi_swing, self.vsrev, self.dt_breakout]
 
     def _strategy_pool_total(self, strategy_name: str, balance: float) -> float:
         if strategy_name == "Contrarian":
@@ -1072,7 +1236,13 @@ class UnifiedEngine:
             strategies = [self.contrarian]
         else:
             strategies = self._get_legacy_strategies()
-        return sum(s.size * price for s in strategies if s.in_pos)
+        total = 0.0
+        for s in strategies:
+            if s.in_pos:
+                if s.name == "DTBreakout" and self.c.dt_breakout_paper_mode:
+                    continue
+                total += s.size * price
+        return total
 
     def _strategy_available_notional(
         self, strategy_name: str, balance: float, price: float
@@ -1818,6 +1988,121 @@ class UnifiedEngine:
         elif s.side == "SHORT" and r["rsi"] < 30:
             self._close_strat(s, px, "RSI_EXIT")
 
+    def _manage_dt_breakout_exit(self, r, px):
+        if not self.dt_breakout.in_pos:
+            return
+        s = self.dt_breakout
+        held = self.current_bar - s.entry_bar
+
+        RED = "\x1b[31m"
+        RESET = "\x1b[0m"
+
+        exit_reason = None
+        exit_px = px
+
+        if held >= self.c.dt_breakout_max_hold:
+            exit_reason = "MAX_HOLD"
+        elif s.side == "LONG":
+            if s.stop > 0 and px <= s.stop:
+                exit_px = s.stop
+                exit_reason = "STOP_LOSS"
+            elif s.tp > 0 and px >= s.tp:
+                exit_px = s.tp
+                exit_reason = "TAKE_PROFIT"
+            elif r.get("rsi", 50) > 75:
+                exit_reason = "RSI_EXIT"
+        elif s.side == "SHORT":
+            if s.stop > 0 and px >= s.stop:
+                exit_px = s.stop
+                exit_reason = "STOP_LOSS"
+            elif s.tp > 0 and px <= s.tp:
+                exit_px = s.tp
+                exit_reason = "TAKE_PROFIT"
+            elif r.get("rsi", 50) < 25:
+                exit_reason = "RSI_EXIT"
+
+        if exit_reason:
+            if s.side == "LONG":
+                paper_pnl = exit_px - s.entry_px
+            else:
+                paper_pnl = s.entry_px - exit_px
+            paper_pnl_pct = paper_pnl / s.entry_px * 100 if s.entry_px > 0 else 0
+            pnl_sign = "+" if paper_pnl >= 0 else ""
+
+            if self.c.dt_breakout_paper_mode:
+                self.lg.info(
+                    f"{RED}[PAPER] DTBreakout CLOSE {s.side} @ ${exit_px:,.2f} ({exit_reason}) | "
+                    f"PnL: {pnl_sign}${paper_pnl:,.2f} ({pnl_sign}{paper_pnl_pct:.2f}%){RESET}"
+                )
+                if paper_pnl <= 0:
+                    s.c_loss += 1
+                    if s.c_loss >= self.c.dt_breakout_max_consecutive_losses:
+                        s.cool_bar = self.current_bar + self.c.dt_breakout_cooldown_bars
+                        self.lg.warning(f"{RED}[PAPER] DTBreakout cooldown until bar {s.cool_bar}{RESET}")
+                else:
+                    s.c_loss = 0
+                s.in_pos = False
+                s.size = 0.0
+                s.side = ""
+                s.entry_px = 0.0
+                s.stop = 0.0
+                s.tp = 0.0
+                s.entry_bar = 0
+                s.entry_ts = ""
+                self.save_state()
+            else:
+                self._close_strat(s, exit_px, exit_reason)
+
+    def _check_dt_breakout_entry(self, r, px, bal):
+        if not self.c.dt_breakout_enabled:
+            return
+        if r.get("dt_long", 0) != 1:
+            return
+
+        atr_val = r.get("atr", 0)
+        if atr_val <= 0 or np.isnan(atr_val):
+            return
+
+        sl_d = self.c.dt_breakout_sl_atr_mult * atr_val
+        if sl_d <= 0:
+            return
+
+        risk = self._strategy_risk_budget("DTBreakout", bal)
+        available_notional = self._strategy_available_notional("DTBreakout", bal, px)
+        if available_notional <= 0:
+            return
+        sz = min(
+            risk / sl_d,
+            self._strategy_position_cap("DTBreakout", bal) / px,
+            available_notional / px,
+        )
+        if sz * px < self.c.min_notional:
+            return
+
+        tp = px + self.c.dt_breakout_tp_atr_mult * atr_val
+        stop = px - sl_d
+
+        RED = "\x1b[31m"
+        RESET = "\x1b[0m"
+        self.lg.info(
+            f"{RED}[PAPER] DTBreakout LONG SIGNAL @ ${px:,.2f} | "
+            f"SL: ${stop:,.2f} TP: ${tp:,.2f} | sz={sz:.4f}{RESET}"
+        )
+
+        if self.c.dt_breakout_paper_mode:
+            self.dt_breakout.in_pos = True
+            self.dt_breakout.side = "LONG"
+            self.dt_breakout.size = round_order_size(sz, self.hl.get_size_decimals(self.c.symbol))
+            self.dt_breakout.entry_px = px
+            self.dt_breakout.stop = stop
+            self.dt_breakout.tp = tp
+            self.dt_breakout.entry_bar = self.current_bar
+            self.dt_breakout.entry_ts = str(dt.datetime.now())
+            self.save_state()
+            return True
+        else:
+            return self._open_strat(self.dt_breakout, "LONG", sz, px, stop, tp=tp)
+
     def _check_contrarian_entry(self, r, px, bal):
         sig = self._read_contrarian_signal()
         if sig is None:
@@ -1947,6 +2232,11 @@ class UnifiedEngine:
                 target_long += self.vsrev.size
             else:
                 target_short += self.vsrev.size
+        if self.dt_breakout.in_pos and not self.c.dt_breakout_paper_mode:
+            if self.dt_breakout.side == "LONG":
+                target_long += self.dt_breakout.size
+            else:
+                target_short += self.dt_breakout.size
 
         # Note: This is a simplified sync. In a real netting account,
         # if we have Long OCPM and Short MR, they net out.

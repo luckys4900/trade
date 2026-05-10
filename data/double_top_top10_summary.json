@@ -1,0 +1,292 @@
+[
+  {
+    "rank": 1,
+    "pattern": "P1_DoubleTop_FULL",
+    "params": {
+      "pivot_length": 10,
+      "price_tolerance_pct": 2.0,
+      "bb_std": 2.0,
+      "sl_atr_mult": 2.0,
+      "tp_atr_mult": 4.0,
+      "max_hold": 20,
+      "volume_mult": 1.0,
+      "min_high_count": 2,
+      "regime_filter": true
+    },
+    "is_metrics": {
+      "n": 13,
+      "wr": 0.6153846153846154,
+      "ev": 275.815327054943,
+      "sharpe": 0.173142632050513,
+      "pf": 1.608298667708488
+    },
+    "oos_metrics": {
+      "n": 13,
+      "wr": 0.6923076923076923,
+      "ev": 638.2916546153841,
+      "sharpe": 0.4965153731578692,
+      "pf": 3.845848504189658
+    }
+  },
+  {
+    "rank": 2,
+    "pattern": "P1_DoubleTop_FULL",
+    "params": {
+      "pivot_length": 10,
+      "price_tolerance_pct": 2.0,
+      "bb_std": 2.0,
+      "sl_atr_mult": 2.0,
+      "tp_atr_mult": 5.0,
+      "max_hold": 20,
+      "volume_mult": 1.0,
+      "min_high_count": 2,
+      "regime_filter": true
+    },
+    "is_metrics": {
+      "n": 13,
+      "wr": 0.6153846153846154,
+      "ev": 275.815327054943,
+      "sharpe": 0.173142632050513,
+      "pf": 1.608298667708488
+    },
+    "oos_metrics": {
+      "n": 13,
+      "wr": 0.6923076923076923,
+      "ev": 638.2916546153841,
+      "sharpe": 0.4965153731578692,
+      "pf": 3.845848504189658
+    }
+  },
+  {
+    "rank": 3,
+    "pattern": "P1_DoubleTop_FULL",
+    "params": {
+      "pivot_length": 10,
+      "price_tolerance_pct": 2.0,
+      "bb_std": 2.0,
+      "sl_atr_mult": 2.0,
+      "tp_atr_mult": 3.0,
+      "max_hold": 20,
+      "volume_mult": 1.0,
+      "min_high_count": 2,
+      "regime_filter": true
+    },
+    "is_metrics": {
+      "n": 13,
+      "wr": 0.6153846153846154,
+      "ev": 275.815327054943,
+      "sharpe": 0.173142632050513,
+      "pf": 1.608298667708488
+    },
+    "oos_metrics": {
+      "n": 13,
+      "wr": 0.6923076923076923,
+      "ev": 534.1411051648342,
+      "sharpe": 0.4892490173323126,
+      "pf": 3.381489173746933
+    }
+  },
+  {
+    "rank": 4,
+    "pattern": "P1_DoubleTop_FULL",
+    "params": {
+      "pivot_length": 10,
+      "price_tolerance_pct": 2.0,
+      "bb_std": 2.0,
+      "sl_atr_mult": 2.5,
+      "tp_atr_mult": 4.0,
+      "max_hold": 20,
+      "volume_mult": 1.0,
+      "min_high_count": 2,
+      "regime_filter": true
+    },
+    "is_metrics": {
+      "n": 13,
+      "wr": 0.6153846153846154,
+      "ev": 216.2236512307679,
+      "sharpe": 0.12796111548349062,
+      "pf": 1.4214782697971928
+    },
+    "oos_metrics": {
+      "n": 13,
+      "wr": 0.6923076923076923,
+      "ev": 599.6480007692297,
+      "sharpe": 0.4447146976967568,
+      "pf": 3.2806170387022466
+    }
+  },
+  {
+    "rank": 5,
+    "pattern": "P1_DoubleTop_FULL",
+    "params": {
+      "pivot_length": 10,
+      "price_tolerance_pct": 2.0,
+      "bb_std": 2.0,
+      "sl_atr_mult": 2.5,
+      "tp_atr_mult": 5.0,
+      "max_hold": 20,
+      "volume_mult": 1.0,
+      "min_high_count": 2,
+      "regime_filter": true
+    },
+    "is_metrics": {
+      "n": 13,
+      "wr": 0.6153846153846154,
+      "ev": 216.2236512307679,
+      "sharpe": 0.12796111548349062,
+      "pf": 1.4214782697971928
+    },
+    "oos_metrics": {
+      "n": 13,
+      "wr": 0.6923076923076923,
+      "ev": 599.6480007692297,
+      "sharpe": 0.4447146976967568,
+      "pf": 3.2806170387022466
+    }
+  },
+  {
+    "rank": 6,
+    "pattern": "P4_TripleTop_BB_ONLY",
+    "params": {
+      "pivot_length": 5,
+      "price_tolerance_pct": 2.0,
+      "bb_std": 1.5,
+      "sl_atr_mult": 3.0,
+      "tp_atr_mult": 3.0,
+      "max_hold": 20,
+      "volume_mult": 1.0,
+      "min_high_count": 3,
+      "regime_filter": false
+    },
+    "is_metrics": {
+      "n": 18,
+      "wr": 0.7777777777777778,
+      "ev": 798.4556912380934,
+      "sharpe": 0.5407899291532797,
+      "pf": 3.9686692804836707
+    },
+    "oos_metrics": {
+      "n": 11,
+      "wr": 0.6363636363636364,
+      "ev": 901.8185265194805,
+      "sharpe": 0.4428485156528829,
+      "pf": 3.718262819677921
+    }
+  },
+  {
+    "rank": 7,
+    "pattern": "P4_TripleTop_BB_ONLY",
+    "params": {
+      "pivot_length": 5,
+      "price_tolerance_pct": 2.0,
+      "bb_std": 1.5,
+      "sl_atr_mult": 3.0,
+      "tp_atr_mult": 4.0,
+      "max_hold": 20,
+      "volume_mult": 1.0,
+      "min_high_count": 3,
+      "regime_filter": false
+    },
+    "is_metrics": {
+      "n": 18,
+      "wr": 0.7777777777777778,
+      "ev": 763.0710086984111,
+      "sharpe": 0.5378857822171892,
+      "pf": 3.8371085424139886
+    },
+    "oos_metrics": {
+      "n": 11,
+      "wr": 0.6363636363636364,
+      "ev": 901.8185265194805,
+      "sharpe": 0.4428485156528829,
+      "pf": 3.718262819677921
+    }
+  },
+  {
+    "rank": 8,
+    "pattern": "P4_TripleTop_BB_ONLY",
+    "params": {
+      "pivot_length": 5,
+      "price_tolerance_pct": 2.0,
+      "bb_std": 1.5,
+      "sl_atr_mult": 3.0,
+      "tp_atr_mult": 5.0,
+      "max_hold": 20,
+      "volume_mult": 1.0,
+      "min_high_count": 3,
+      "regime_filter": false
+    },
+    "is_metrics": {
+      "n": 18,
+      "wr": 0.7777777777777778,
+      "ev": 763.0710086984111,
+      "sharpe": 0.5378857822171892,
+      "pf": 3.8371085424139886
+    },
+    "oos_metrics": {
+      "n": 11,
+      "wr": 0.6363636363636364,
+      "ev": 901.8185265194805,
+      "sharpe": 0.4428485156528829,
+      "pf": 3.718262819677921
+    }
+  },
+  {
+    "rank": 9,
+    "pattern": "P1_DoubleTop_FULL",
+    "params": {
+      "pivot_length": 10,
+      "price_tolerance_pct": 2.0,
+      "bb_std": 2.0,
+      "sl_atr_mult": 2.5,
+      "tp_atr_mult": 3.0,
+      "max_hold": 20,
+      "volume_mult": 1.0,
+      "min_high_count": 2,
+      "regime_filter": true
+    },
+    "is_metrics": {
+      "n": 13,
+      "wr": 0.6153846153846154,
+      "ev": 216.2236512307679,
+      "sharpe": 0.12796111548349062,
+      "pf": 1.4214782697971928
+    },
+    "oos_metrics": {
+      "n": 13,
+      "wr": 0.6923076923076923,
+      "ev": 495.49745131867985,
+      "sharpe": 0.4266548197341609,
+      "pf": 2.884505457637314
+    }
+  },
+  {
+    "rank": 10,
+    "pattern": "P1_DoubleTop_FULL",
+    "params": {
+      "pivot_length": 10,
+      "price_tolerance_pct": 2.0,
+      "bb_std": 2.0,
+      "sl_atr_mult": 2.0,
+      "tp_atr_mult": 4.0,
+      "max_hold": 15,
+      "volume_mult": 1.0,
+      "min_high_count": 2,
+      "regime_filter": true
+    },
+    "is_metrics": {
+      "n": 13,
+      "wr": 0.6153846153846154,
+      "ev": 396.5265358461522,
+      "sharpe": 0.2757323432769815,
+      "pf": 2.1918094088669067
+    },
+    "oos_metrics": {
+      "n": 14,
+      "wr": 0.6428571428571429,
+      "ev": 524.3616818571423,
+      "sharpe": 0.41793045740929624,
+      "pf": 3.272042809429715
+    }
+  }
+]

@@ -1,11 +1,63 @@
 # Qwen Unified Auto-Trader - プロジェクト状況記録
 
 ## 最終更新日
-2026-05-04 (Git: ランタイム出力を追跡外へ)
+2026-05-10 (Double Top Breakout戦略追加)
 
 ---
 
 ## 変更履歴 (Git / リポジトリ)
+
+- **2026-05-10**: ダブルトップブレイクアウト戦略をペーパートレードモードで実装
+  - **背景**: トリプルトップブレイクアウト戦略の検証から開始。トリプルトップ（高値3回）はシグナルが極端に少ない（3年間で最大12回）ため、ダブルトップ（高値2回）に緩和して再検証。
+  - **バックテスト工程**:
+    1. トリプルトップ: 2,187通りのパラメータグリッド → OOS条件を満たす組み合わせ0（全廃棄）
+    2. ダブルトップ緩和版: 4パターン×2,187通り = 計2,916通りをテスト
+       - P1: ダブルトップ + FULL FILTER → **最良: OOS PF 3.85, WR 69.2%, Sharpe 0.497**
+       - P2: ダブルトップ + BB ONLY → Sharpe 0.211
+       - P3: ダブルトップ + NO FILTER → Sharpe 0.211
+       - P4: トリプルトップ + BB ONLY → Sharpe 0.443
+    3. 統計検定: p=0.099（5%水準で非有意だがborderline）、ロバストネス全スプリットで陽性
+  - **最適パラメータ**: PL=10, PT=2.0%, BB=2.0, SL=2.0ATR, TP=4.0ATR, MH=20, VM=1.0, regime=T
+  - **新規作成ファイル**:
+    - `strategies/double_top_breakout.py`: backtesting.py用Strategyクラス
+    - `double_top_breakout.pine`: TradingView用Pine Script
+    - `data/double_top_rigorous_backtest.py`: リグラスバックテストエンジン（2,187通りグリッドサーチ）
+    - `data/double_top_backtest_results.json`: 全バックテスト結果
+    - `data/double_top_top10_summary.json`: トップ10サマリー
+  - **変更ファイル**:
+    - `config.py`: `double_top_breakout`セクション追加
+    - `SYSTEM/qwen_unified_live.py`: DTBreakout戦略を6番目の戦略として追加（ペーパーモード）
+    - `config.json`: dt_breakout_*パラメータ19件追加
+  - **ペーパートレード機能**:
+    - `dt_breakout_paper_mode: true` で実際の発注を行わず内部状態のみシミュレーション
+    - ログに赤文字（ANSI `\x1b[31m`）で`[PAPER]`タグ付き表示
+    - エントリー/エグジット/仮想PnLを毎バー表示
+    - `_sync_positions()`でpaper_mode時は除外（実際の資金に影響なし）
+  - **コードレビューと修正**（Critical 1件 + Warning 4件を修正）:
+    - C1: SHORT exitロジック追加（将来のSHORT対応用）
+    - W1: `_sync_positions()`にDTBreakout追加（paper_mode=OFF時用）
+    - W2: プール配分システムを使用（`_strategy_risk_budget`等で資金競合防止）
+  - **期待値**: 月間$2.04（$190口座、月1.08%リターン）、年間$24.52
+  - **リスク**: サンプル13トレード、p=0.099、月1.6回のシグナル
+  - **ステータス**: ペーパートレード稼働中（3ヶ月間検証後に本番導入判定）
+
+- **2026-05-10 (前半セッション)**: LIQ-REV戦略の深掘り調査・最終判定
+  - **調査内容**: エントリータイミング3パターン追加バックテスト
+    - パターン1（1バー遅延）: OOS PF 1.29, WR 43.8%, 32トレード
+    - パターン2（反転確認）: OOS PF 1.61, WR 25.0%, 12トレード
+    - パターン3（高ボラ後反転）: トレード0件で不適
+  - **最終判定**: 月間EV +0.003%（$0.006）、実質ゼロ → **実装見送り**
+  - **根本理由**: 4h足の解像度不足、OI・清算データAPI不存在、カスケード後反転確率52-54%（ランダムに近い）
+  - **調査ファイル**:
+    - `data/liq_rev_backtest.py`: 初期バックテスト
+    - `data/liq_rev_optimized_backtest.py`: パラメータ最適化（1,024通り）
+    - `data/liq_rev_timing_backtest.py`: エントリータイミング比較
+
+- **2026-05-10 (冒頭)**: memsearchセットアップ・過去会話履歴復元
+  - GitHub `luckys4900/trade` からコミット `cda17c4`（memsearch Windows auto-setup）を導入
+  - WSL2 Ubuntu上にmemsearchインストール（WindowsネイティブはMilvus Lite非対応）
+  - 過去のClaude Code会話履歴（20セッション、3,571メッセージ）から6つのメモリファイルを生成
+  - 破棄された6戦略を特定: クジラ相関追従、Kronos×Multiplier、Robinhood流入ショート、FR+LIQ複合、Whale Inflow Short、hl_trader_v6
 
 - `.gitignore`: `logs/*`（`.gitkeep` 除く）およびボットが書き換える JSON（`whale_signal` / `macro_state` / `trade_state_unified` / 各種シグナル・キャッシュ）を追跡対象外に。構成・ソースの履歴を GitHub で扱いやすくする。
 
