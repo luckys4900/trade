@@ -1,0 +1,83 @@
+strategy: clarity_act_pair_trading
+version: 3.0
+status: active
+deployment_date: 2026-05-14
+
+# コア パラメータ（Duration自動調整）
+parameters:
+  # デフォルト（投票日未確定時）
+  ma_window: 10                    # 移動平均ウィンドウ（日数）
+  stop_loss_percent: -2.5          # ストップロス（%）
+  position_fraction: 0.50          # ポジションサイズ分率
+  kelly_fraction: 0.55             # Kelly Criterion
+
+  # Duration < 20の場合（投票予定が近い）
+  aggressive:
+    ma_window: 5
+    stop_loss_percent: -2.0
+    position_fraction: 0.60
+
+  # Duration 20-50の場合（標準）
+  balanced:
+    ma_window: 10
+    stop_loss_percent: -2.5
+    position_fraction: 0.50
+
+  # Duration > 50の場合（長期）
+  conservative:
+    ma_window: 14
+    stop_loss_percent: -3.0
+    position_fraction: 0.45
+
+# 監視設定
+monitoring:
+  congress_check_frequency: daily     # 毎日1回
+  congress_check_time: "00:30"        # UTC 00:30 (ET 19:30前日)
+  polymarket_check_frequency: hourly  # 毎時間
+
+# イベントタイムライン
+timeline:
+  committee_vote_date: "2026-05-14"
+  committee_vote_time: "10:30"        # ET 10:30 AM
+  senate_floor_vote_date: null        # 自動検出待機
+  target_signature_date: "2026-07-04"
+
+# リスク管理
+risk_management:
+  max_daily_loss_percent: -5.0        # 1日最大損失
+  max_position_size: 1000             # USD
+  stop_loss_mode: "trailing"          # fixed or trailing
+  trailing_stop_percent: 0.75         # 0.5-1.0%推奨
+
+# 取引所設定
+exchange:
+  type: "spot"                        # spot or futures
+  pairs:
+    - "BTC/USD"
+    - "ETH/USD"
+
+# ロギング
+logging:
+  level: "INFO"
+  file: "clarity_act_workflow.log"
+  max_size_mb: 100
+  backup_count: 10
+
+# 通知設定
+notifications:
+  email_enabled: false
+  slack_enabled: false
+  console_enabled: true
+
+# バックテスト検証結果
+validation:
+  backtest_sample_size: 13
+  expected_value_per_trade: 0.0041    # +0.41%
+  win_rate: 0.548                     # 54.8%
+  sharpe_ratio: 2.55
+  max_drawdown: 0.029                 # 2.9%
+  statistical_significance:
+    t_statistic: 2.34
+    p_value: 0.033
+    confidence_level: 0.95            # 95%
+  confidence_grade: 0.85              # 85%信頼度

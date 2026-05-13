@@ -1,0 +1,62 @@
+{
+  "A": [
+    {
+      "event": "FIT21 House Pass",
+      "date": "2024-05-22",
+      "type": "A",
+      "btc": {
+        "event": "FIT21 House Pass",
+        "actual_date": "2024-05-22",
+        "type": "A",
+        "before_30d_return": 8.018321203120047,
+        "before_30d_volatility": 3.1053889822862746,
+        "event_day_return": -1.3994914206095272,
+        "event_day_range": 1823.8099999999977,
+        "after_7d_return": -2.189206296331955,
+        "after_30d_return": -7.262260321525034
+      },
+      "eth": {
+        "event": "FIT21 House Pass",
+        "actual_date": "2024-05-22",
+        "type": "A",
+        "before_30d_return": 20.394197594403465,
+        "before_30d_volatility": 4.448220106672534,
+        "event_day_return": -1.3684857728672528,
+        "event_day_range": 160.53999999999996,
+        "after_7d_return": 0.7945999309741426,
+        "after_30d_return": -5.865324675672133
+      },
+      "eth_btc_relative_perf": 0.031005647742274434
+    },
+    {
+      "event": "Gary Gensler Resignation Announcement",
+      "date": "2025-01-09",
+      "type": "A",
+      "btc": {
+        "event": "Gary Gensler Resignation Announcement",
+        "actual_date": "2025-01-09",
+        "type": "A",
+        "before_30d_return": -2.2779093157976065,
+        "before_30d_volatility": 2.488728826733999,
+        "event_day_return": -2.638442989162383,
+        "event_day_range": 4178.650000000009,
+        "after_7d_return": 8.033073988609056,
+        "after_30d_return": 4.2054514146512965
+      },
+      "eth": {
+        "event": "Gary Gensler Resignation Announcement",
+        "actual_date": "2025-01-09",
+        "type": "A",
+        "before_30d_return": -10.363954741379311,
+        "before_30d_volatility": 3.2690274530137184,
+        "event_day_return": -3.24858969311362,
+        "event_day_range": 199.26999999999998,
+        "after_7d_return": 2.760002485089475,
+        "after_30d_return": -18.226267395626238
+      },
+      "eth_btc_relative_perf": -0.6101467039512367
+    }
+  ],
+  "B": [],
+  "C": []
+}

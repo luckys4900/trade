@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-05-14T02:38:22.916391",
+  "event": "FIT21",
+  "duration_days": 40,
+  "total_entries": 0,
+  "total_exits": 0,
+  "completed_trades": 0,
+  "win_trades": 0,
+  "loss_trades": 0,
+  "win_rate": 0,
+  "total_pnl_percent": 0.0,
+  "avg_pnl_per_trade": 0,
+  "expected_value_spec": 0.41,
+  "trades": []
+}

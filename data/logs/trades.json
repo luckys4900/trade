@@ -1,0 +1,50 @@
+[
+  {
+    "entry_id": "entry_20260514_024511_0",
+    "entry_time": "2026-05-14T02:45:11.959954",
+    "entry_price": 45000.0,
+    "position_size": 500.0,
+    "btc_price": 45000.0,
+    "eth_price": 2500.0,
+    "order_id": "test_order_001",
+    "exit_time": "2026-05-14T02:45:11.960287",
+    "exit_price": 45500.0,
+    "exit_reason": "Test exit",
+    "pnl": 250.0,
+    "pnl_percent": 1.11,
+    "status": "CLOSED",
+    "notes": "Closed: Entry logged at 2026-05-14 02:45:11.959954 | Exit reason: Test exit"
+  },
+  {
+    "entry_id": "entry_20260514_024527_1",
+    "entry_time": "2026-05-14T02:45:27.576238",
+    "entry_price": 45000.0,
+    "position_size": 500.0,
+    "btc_price": 45000.0,
+    "eth_price": 2500.0,
+    "order_id": "test_order_001",
+    "exit_time": "2026-05-14T02:45:27.576569",
+    "exit_price": 45500.0,
+    "exit_reason": "Test exit",
+    "pnl": 250.0,
+    "pnl_percent": 1.11,
+    "status": "CLOSED",
+    "notes": "Closed: Entry logged at 2026-05-14 02:45:27.576238 | Exit reason: Test exit"
+  },
+  {
+    "entry_id": "entry_20260514_024533_2",
+    "entry_time": "2026-05-14T02:45:33.024646",
+    "entry_price": 45000.0,
+    "position_size": 500.0,
+    "btc_price": 45000.0,
+    "eth_price": 2500.0,
+    "order_id": "test_order_001",
+    "exit_time": "2026-05-14T02:45:33.025027",
+    "exit_price": 45500.0,
+    "exit_reason": "Test exit",
+    "pnl": 250.0,
+    "pnl_percent": 1.11,
+    "status": "CLOSED",
+    "notes": "Closed: Entry logged at 2026-05-14 02:45:33.024646 | Exit reason: Test exit"
+  }
+]

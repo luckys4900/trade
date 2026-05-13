@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-05-14T02:45:33.025629",
+  "window_size": 50,
+  "total_trades_recorded": 1,
+  "current_metrics": {
+    "timestamp": "2026-05-14 02:45:33.025622",
+    "total_trades": 1,
+    "winning_trades": 1,
+    "losing_trades": 0,
+    "win_rate": 1.0,
+    "total_pnl": 250.0,
+    "total_pnl_percent": 1.11,
+    "average_pnl": 250.0,
+    "average_pnl_percent": 1.11,
+    "max_pnl": 250.0,
+    "min_pnl": 250.0,
+    "std_pnl": 0,
+    "sharpe_ratio": 0.0,
+    "sortino_ratio": 0.0,
+    "max_drawdown": 0.0,
+    "max_drawdown_percent": 0.0,
+    "recovery_factor": Infinity,
+    "profit_factor": 25000.0
+  }
+}

@@ -11,8 +11,18 @@ ENV/
 
 # Local secrets (never push keys)
 .env
-.env.*
+.env.local
+.env.production
+.env.staging
+.env.development
 !.env.example
+
+# API Keys and credentials
+credentials/
+secrets/
+*.key
+*.pem
+api_keys.json
 
 # Cursor / Claude local worktrees (duplicate trees; not source of truth)
 .claude/worktrees/

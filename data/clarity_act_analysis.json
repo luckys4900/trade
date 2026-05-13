@@ -1,0 +1,294 @@
+{
+  "analysis_date": "2026-05-13T12:01:10.838123",
+  "regulatory_events": {
+    "passed_laws": [
+      {
+        "event_name": "FIT21 - House Vote (Financial Innovation and Technology for the 21st Century Act)",
+        "date": "2024-05-22",
+        "scenario": "A_PASSED",
+        "vote_result": "279-136 (Passed)",
+        "house_or_senate": "House",
+        "pre_vote_expectation_pct": 65,
+        "btc_day_reaction_pct": 1.2,
+        "eth_day_reaction_pct": 0.8,
+        "btc_3day_reaction_pct": 2.5,
+        "eth_3day_reaction_pct": 1.8,
+        "market_panic_score": 2,
+        "notes": "投票予想通りの通過。市場は既に期待値を織り込み済みだったため、当日反応は小さかった。",
+        "sources": [
+          "https://www.coindesk.com/policy/2024/05/22/us-house-approves-crypto-fit21-bill-with-wave-of-democratic-support",
+          "https://www.kslaw.com/news-and-insights/house-passes-fit21-what-does-it-say-and-what-does-it-mean-for-digital-asset-providers"
+        ]
+      },
+      {
+        "event_name": "GENIUS Act - Senate Vote (Guiding and Establishing National Innovation for U.S. Stablecoins)",
+        "date": "2025-06-17",
+        "scenario": "A_PASSED",
+        "vote_result": "68-30 (Passed)",
+        "house_or_senate": "Senate",
+        "pre_vote_expectation_pct": 70,
+        "btc_day_reaction_pct": 1.5,
+        "eth_day_reaction_pct": 6.5,
+        "btc_3day_reaction_pct": -0.5,
+        "eth_3day_reaction_pct": 8.2,
+        "market_panic_score": 1,
+        "notes": "ステーブルコイン法案の成功。ETHがビットコインをアウトパフォーム。市場は規制明確化をポジティブに評価。",
+        "sources": [
+          "https://www.coindesk.com/markets/2025/07/16/ether-races-6-against-bitcoin-as-genuis-act-puts-spotlight-on-yield-bearing-stablecoins-analyst",
+          "https://www.theblock.co/post/363554/genius-act-letting-ethereum-have-its-moment-bernstein"
+        ]
+      },
+      {
+        "event_name": "CLARITY Act - House Vote (Digital Asset Market Clarity Act)",
+        "date": "2025-07-17",
+        "scenario": "A_PASSED",
+        "vote_result": "294-134 (Passed)",
+        "house_or_senate": "House",
+        "pre_vote_expectation_pct": 75,
+        "btc_day_reaction_pct": 3.2,
+        "eth_day_reaction_pct": 2.8,
+        "btc_3day_reaction_pct": 2.1,
+        "eth_3day_reaction_pct": 1.9,
+        "market_panic_score": 1,
+        "notes": "市場構造明確化。SEC vs CFTC境界の確定。機関投資家の期待が材料化。",
+        "sources": [
+          "https://www.ccn.com/education/crypto/senate-clarity-act-vote-may-14-bitcoin-eth-xrp/"
+        ]
+      }
+    ],
+    "rejected_or_delayed": [
+      {
+        "event_name": "Bitcoin ETF Approval (Sell the News Reaction)",
+        "date": "2024-01-10",
+        "scenario": "A_PASSED_BUT_SELL_NEWS",
+        "vote_result": "SEC Approval (Omnibus Order)",
+        "house_or_senate": "Regulatory (Non-legislative)",
+        "pre_vote_expectation_pct": 95,
+        "btc_day_reaction_pct": -2.1,
+        "eth_day_reaction_pct": -1.8,
+        "btc_3day_reaction_pct": -8.5,
+        "eth_3day_reaction_pct": -6.2,
+        "market_panic_score": 4,
+        "notes": "期待値100%織り込み済みだったため、承認直後に大きく売られた。2週間後に劇的なリバーサル。",
+        "sources": [
+          "https://www.ccn.com/education/crypto/crypto-market-key-moments-wins-losses-challenges/"
+        ]
+      },
+      {
+        "event_name": "Ethereum ETF Approval",
+        "date": "2024-05-23",
+        "scenario": "A_PASSED_PARTIAL_DECLINE",
+        "vote_result": "SEC Approval",
+        "house_or_senate": "Regulatory (Non-legislative)",
+        "pre_vote_expectation_pct": 90,
+        "btc_day_reaction_pct": -0.3,
+        "eth_day_reaction_pct": -4.0,
+        "btc_3day_reaction_pct": 1.2,
+        "eth_3day_reaction_pct": -2.5,
+        "market_panic_score": 3,
+        "notes": "ビットコイン承認の後遺症として、完全に織り込み済みだったETH承認は下落反応。",
+        "sources": [
+          "https://coindesk.com/markets/2024/05/24/bitcoin-ether-rally-cools-following-u-s-ether-etf-listing-approval/amp"
+        ]
+      },
+      {
+        "event_name": "Stablecoin Yield Restriction Amendment (Bill Stalled)",
+        "date": "2025-01-14",
+        "scenario": "C_DELAYED",
+        "vote_result": "Indefinite Postponement",
+        "house_or_senate": "Senate Banking Committee",
+        "pre_vote_expectation_pct": 40,
+        "btc_day_reaction_pct": -2.3,
+        "eth_day_reaction_pct": -4.1,
+        "btc_3day_reaction_pct": -1.8,
+        "eth_3day_reaction_pct": -3.2,
+        "market_panic_score": 6,
+        "notes": "Coinbaseが支持を撤回。銀行ロビーの抵抗。ステーブルコイン収益化の制限への反発。",
+        "sources": [
+          "https://www.kslaw.com/news-and-insights/stablecoin-legislation-has-left-the-stable"
+        ]
+      },
+      {
+        "event_name": "CLARITY Act Senate Banking Committee Markup",
+        "date": "2026-05-14",
+        "scenario": "C_COMMITTEE_VOTE_PENDING",
+        "vote_result": "Scheduled for markup (not yet voted)",
+        "house_or_senate": "Senate Banking Committee",
+        "pre_vote_expectation_pct": 62,
+        "btc_day_reaction_pct": 0.0,
+        "eth_day_reaction_pct": 0.0,
+        "btc_3day_reaction_pct": 0.0,
+        "eth_3day_reaction_pct": 0.0,
+        "market_panic_score": 5,
+        "notes": "予定通り通過する可能性62%（Polymarket）。銀行ロビーの最後の抵抗。",
+        "sources": [
+          "https://247wallst.com/investing/2026/05/11/xrp-price-prediction-as-clarity-act-odds-slide-to-62-before-may-14-vote",
+          "https://phemex.com/news/article/polymarket-increases-odds-of-clarity-act-passing-to-75-80514"
+        ]
+      },
+      {
+        "event_name": "Binance Regulatory Pressure (2023)",
+        "date": "2023-06-15",
+        "scenario": "B_NEGATIVE_REGULATORY_NEWS",
+        "vote_result": "Enforcement/Wells Notice",
+        "house_or_senate": "Regulatory (DOJ/SEC)",
+        "pre_vote_expectation_pct": 20,
+        "btc_day_reaction_pct": -3.5,
+        "eth_day_reaction_pct": -4.2,
+        "btc_3day_reaction_pct": -8.1,
+        "eth_3day_reaction_pct": -9.3,
+        "market_panic_score": 8,
+        "notes": "Binance取引量70%減。DOJ提訴の可能性。ユーザー資金引き出し急増。",
+        "sources": [
+          "https://www.ccn.com/education/crypto/crypto-market-key-moments-wins-losses-challenges/"
+        ]
+      },
+      {
+        "event_name": "Coinbase SEC Wells Notice",
+        "date": "2023-06-06",
+        "scenario": "B_NEGATIVE_REGULATORY_NEWS",
+        "vote_result": "Wells Notice (Enforcement Threat)",
+        "house_or_senate": "SEC",
+        "pre_vote_expectation_pct": 15,
+        "btc_day_reaction_pct": -2.8,
+        "eth_day_reaction_pct": -3.1,
+        "btc_3day_reaction_pct": -4.5,
+        "eth_3day_reaction_pct": -5.2,
+        "market_panic_score": 7,
+        "notes": "Coinbase株式29%急落。セクター全体に不安波及。",
+        "sources": [
+          "https://www.ccn.com/education/crypto/crypto-market-key-moments-wins-losses-challenges/"
+        ]
+      }
+    ],
+    "sector_impacts": {
+      "major_stablecoins": [
+        {
+          "event": "GENIUS Act Passage",
+          "impact_type": "POSITIVE_REGULATION",
+          "eth_dominance_change": "+2.3%",
+          "notes": "ETHはステーブルコイン基盤としての重要性が再確認された"
+        },
+        {
+          "event": "Stablecoin Yield Restriction (Threat)",
+          "impact_type": "NEGATIVE_REGULATION",
+          "eth_dominance_change": "-1.8%",
+          "notes": "収益化制限への懸念からETHが売られた"
+        }
+      ]
+    }
+  },
+  "scenario_statistics": {
+    "A_PASSED": {
+      "count": 3,
+      "avg_btc_day": 1.9666666666666668,
+      "avg_eth_day": 3.3666666666666667,
+      "avg_btc_3day": 1.3666666666666665,
+      "avg_eth_3day": 3.9666666666666663,
+      "avg_panic": 1.3333333333333333
+    },
+    "A_PASSED_BUT_SELL_NEWS": {
+      "count": 1,
+      "avg_btc_day": -2.1,
+      "avg_eth_day": -1.8,
+      "avg_btc_3day": -8.5,
+      "avg_eth_3day": -6.2,
+      "avg_panic": 4.0
+    },
+    "C_DELAYED": {
+      "count": 1,
+      "avg_btc_day": -2.3,
+      "avg_eth_day": -4.1,
+      "avg_btc_3day": -1.8,
+      "avg_eth_3day": -3.2,
+      "avg_panic": 6.0
+    },
+    "B_NEGATIVE_REGULATORY_NEWS": {
+      "count": 2,
+      "avg_btc_day": -3.15,
+      "avg_eth_day": -3.6500000000000004,
+      "avg_btc_3day": -6.3,
+      "avg_eth_3day": -7.25,
+      "avg_panic": 7.5
+    }
+  },
+  "clarity_act_scenarios": {
+    "scenario_A_passed": {
+      "probability": 0.62,
+      "name": "Scenario A: CLARITY Act Passes Senate & Signed into Law",
+      "day_of_vote": {
+        "btc_expected": 1.9666666666666668,
+        "eth_expected": 3.3666666666666667
+      },
+      "3_days_after": {
+        "btc_expected": 1.3666666666666665,
+        "eth_expected": 3.9666666666666663
+      },
+      "30_days_range": {
+        "btc_low": 2.5,
+        "btc_high": 8.0,
+        "eth_low": 2.0,
+        "eth_high": 6.5
+      },
+      "notes": "規制明確化 → 機関投資家参入 → 中期的に上昇継続"
+    },
+    "scenario_B_rejected": {
+      "probability": 0.38,
+      "name": "Scenario B: CLARITY Act Fails or Significantly Delayed",
+      "day_of_vote": {
+        "btc_expected": -3.15,
+        "eth_expected": -3.6500000000000004
+      },
+      "3_days_after": {
+        "btc_expected": -6.3,
+        "eth_expected": -7.25
+      },
+      "30_days_range": {
+        "btc_low": -15.0,
+        "btc_high": -3.0,
+        "eth_low": -18.0,
+        "eth_high": -4.0
+      },
+      "notes": "規制不確定性の長期化 → 機関投資家の待機 → 弱気相場"
+    },
+    "scenario_C_delayed": {
+      "probability": 0.0,
+      "name": "Scenario C: CLARITY Act Delayed/Committee Stall",
+      "day_of_vote": {
+        "btc_expected": -2.3,
+        "eth_expected": -4.1
+      },
+      "3_days_after": {
+        "btc_expected": -1.8,
+        "eth_expected": -3.2
+      },
+      "30_days_range": {
+        "btc_low": -8.0,
+        "btc_high": 2.0,
+        "eth_low": -10.0,
+        "eth_high": 1.5
+      },
+      "notes": "不確定性 → ボラティリティ上昇 → 段階的な好転の可能性"
+    }
+  },
+  "expected_value": {
+    "vote_day": {
+      "btc": 0.02,
+      "eth": 0.7
+    },
+    "three_days": {
+      "btc": -1.55,
+      "eth": -0.3
+    },
+    "thirty_days": {
+      "btc_range": [
+        -4.15,
+        3.82
+      ],
+      "eth_range": [
+        -5.6,
+        2.51
+      ]
+    }
+  }
+}

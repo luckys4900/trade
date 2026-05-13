@@ -6,7 +6,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # ── Load data ──
-df = pd.read_csv('C:/Users/user/Desktop/cursor/trade/data/btc_price_4h_cache.csv')
+df = pd.read_csv('btc_price_4h_cache.csv')
 df['datetime'] = pd.to_datetime(df['datetime']).dt.tz_localize(None)
 df = df.sort_values('datetime').reset_index(drop=True)
 

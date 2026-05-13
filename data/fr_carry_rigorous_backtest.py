@@ -16,7 +16,7 @@ warnings.filterwarnings('ignore')
 # ============================================================
 # CONFIGURATION
 # ============================================================
-DATA_DIR = r"C:\Users\user\Desktop\cursor\trade\data"
+DATA_DIR = "."
 
 # Cost model
 TAKER_FEE = 0.00035       # 0.035% per side

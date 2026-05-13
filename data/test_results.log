@@ -1,0 +1,129 @@
+2026-05-14 02:37:26,805 - __main__ - INFO - 
+TEST 1: Module Imports
+2026-05-14 02:37:26,807 - __main__ - ERROR - ❌ Failed to import clarity_act_core: No module named 'yaml'
+2026-05-14 02:37:26,807 - __main__ - INFO - 
+TEST 2: DynamicTimelineManager
+2026-05-14 02:37:26,807 - __main__ - ERROR - ❌ DynamicTimelineManager test failed: No module named 'yaml'
+
+2026-05-14 02:37:26,807 - __main__ - INFO - 
+TEST 3: RatioCalculator
+2026-05-14 02:37:26,808 - __main__ - ERROR - ❌ RatioCalculator test failed: No module named 'yaml'
+
+2026-05-14 02:37:26,808 - __main__ - INFO - 
+TEST 4: SignalGenerator
+2026-05-14 02:37:26,808 - __main__ - ERROR - ❌ SignalGenerator test failed: No module named 'yaml'
+
+2026-05-14 02:37:26,808 - __main__ - INFO - 
+TEST 5: ConfigurationManager
+2026-05-14 02:37:26,808 - __main__ - ERROR - ❌ ConfigurationManager test failed: No module named 'yaml'
+
+2026-05-14 02:37:26,808 - __main__ - INFO - 
+TEST 6: CongressGovMonitor
+2026-05-14 02:37:26,890 - __main__ - INFO - ✅ CongressGovMonitor initialized
+2026-05-14 02:37:28,152 - committee_vote_monitor - ERROR - Congress.gov API error: 403
+2026-05-14 02:37:28,154 - __main__ - INFO - ✅ Committee status check: unknown
+2026-05-14 02:37:28,764 - __main__ - INFO - ✅ Vote details structure valid: ['republican_votes', 'democrat_votes', 'total_votes', 'outcome']
+2026-05-14 02:37:28,764 - __main__ - INFO - ✅ CongressGovMonitor test passed
+
+2026-05-14 02:37:28,764 - __main__ - INFO - 
+TEST 7: RealtimeMonitorDashboard
+2026-05-14 02:37:28,769 - __main__ - INFO - ✅ RealtimeMonitorDashboard initialized
+2026-05-14 02:37:28,769 - __main__ - INFO - ✅ Dashboard file created
+2026-05-14 02:37:28,770 - __main__ - INFO - ✅ Dashboard loaded: ['timestamp', 'system_status', 'committee_vote', 'senate_floor_vote', 'strategy', 'market_data', 'positions', 'alerts', 'trade_log']
+2026-05-14 02:37:28,770 - __main__ - INFO - ✅ Committee vote status updated
+2026-05-14 02:37:28,770 - __main__ - INFO - ✅ Market data updated
+2026-05-14 02:37:28,771 - __main__ - INFO - ✅ Alert added successfully
+2026-05-14 02:37:28,771 - __main__ - INFO - ✅ Summary text generated
+2026-05-14 02:37:28,771 - __main__ - INFO - ✅ Test dashboard cleaned up
+2026-05-14 02:37:28,771 - __main__ - INFO - ✅ RealtimeMonitorDashboard test passed
+
+2026-05-14 02:37:28,771 - __main__ - INFO - 
+TEST 8: Integration Test
+2026-05-14 02:37:28,772 - __main__ - ERROR - ❌ Integration test failed: No module named 'yaml'
+
+2026-05-14 02:37:28,773 - __main__ - INFO - Test results saved to test_results.json
+2026-05-14 02:37:51,699 - __main__ - INFO - 
+TEST 1: Module Imports
+2026-05-14 02:37:51,768 - __main__ - INFO - ✅ Module 'clarity_act_core' imported successfully
+2026-05-14 02:37:51,768 - __main__ - INFO -   ✅ Class 'DynamicTimelineManager' found
+2026-05-14 02:37:51,768 - __main__ - INFO -   ✅ Class 'RatioCalculator' found
+2026-05-14 02:37:51,768 - __main__ - INFO -   ✅ Class 'SignalGenerator' found
+2026-05-14 02:37:51,768 - __main__ - INFO -   ✅ Class 'ConfigurationManager' found
+2026-05-14 02:37:51,768 - __main__ - INFO - ✅ Module 'committee_vote_monitor' imported successfully
+2026-05-14 02:37:51,768 - __main__ - INFO -   ✅ Class 'CongressGovMonitor' found
+2026-05-14 02:37:51,768 - __main__ - INFO -   ✅ Class 'PolymarketMonitor' found
+2026-05-14 02:37:51,768 - __main__ - INFO -   ✅ Class 'VoteResultAnalyzer' found
+2026-05-14 02:37:51,769 - __main__ - ERROR - ❌ Failed to import daily_workflow: No module named 'schedule'
+2026-05-14 02:37:51,769 - __main__ - INFO - 
+TEST 2: DynamicTimelineManager
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ DynamicTimelineManager initialized
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ Default params: {'ma_window': 10, 'stop_loss_percent': -2.5, 'position_fraction': 0.5, 'kelly_fraction': 0.55, 'duration_days': None}
+2026-05-14 02:37:51,769 - clarity_act_core - WARNING - Senate floor vote date not yet determined, using default params
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ Default params returned when vote date unknown
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ Medium duration params (Duration=45): {'ma_window': 10, 'stop_loss_percent': -2.5, 'position_fraction': 0.5, 'kelly_fraction': 0.55, 'duration_days': 45}
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ Entry trigger status: Ready to trade. Vote date: 2026-06-28 00:00:00
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ DynamicTimelineManager test passed
+
+2026-05-14 02:37:51,769 - __main__ - INFO - 
+TEST 3: RatioCalculator
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ RatioCalculator initialized with MA window=5
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ Ratio calculation: 65000/3500 = 18.5714
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ Added 10 price data points
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ Moving average (window=5): 17.0700
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ Current ratio: 16.6835, MA: 17.0700, Uptrend: False
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ MA returns None when insufficient data
+2026-05-14 02:37:51,769 - __main__ - INFO - ✅ RatioCalculator test passed
+
+2026-05-14 02:37:51,769 - __main__ - INFO - 
+TEST 4: SignalGenerator
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ SignalGenerator initialized
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ Entry signal test (uptrend): True - Entry signal: BTC/ETH ratio above MA (18.5000)
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ Position active: True, Entry price: 34250.00
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ Exit signal (no loss): False - Position still active
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ Exit signal (stop loss -3%): True - Stop loss hit: -2.85%
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ Position closed after stop loss
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ SignalGenerator test passed
+
+2026-05-14 02:37:51,770 - __main__ - INFO - 
+TEST 5: ConfigurationManager
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ ConfigurationManager initialized
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ Config structure valid: ['strategy', 'version', 'parameters', 'monitoring']
+2026-05-14 02:37:51,770 - clarity_act_core - INFO - Config updated with new parameters: {'ma_window': 14, 'stop_loss_percent': -3.0}
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ Parameters updated: {'ma_window': 14, 'stop_loss_percent': -3.0}
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ Config saved to file
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ Config reloaded correctly
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ Test config cleaned up
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ ConfigurationManager test passed
+
+2026-05-14 02:37:51,770 - __main__ - INFO - 
+TEST 6: CongressGovMonitor
+2026-05-14 02:37:51,770 - __main__ - INFO - ✅ CongressGovMonitor initialized
+2026-05-14 02:37:52,393 - committee_vote_monitor - ERROR - Congress.gov API error: 403
+2026-05-14 02:37:52,394 - __main__ - INFO - ✅ Committee status check: unknown
+2026-05-14 02:37:53,015 - __main__ - INFO - ✅ Vote details structure valid: ['republican_votes', 'democrat_votes', 'total_votes', 'outcome']
+2026-05-14 02:37:53,016 - __main__ - INFO - ✅ CongressGovMonitor test passed
+
+2026-05-14 02:37:53,016 - __main__ - INFO - 
+TEST 7: RealtimeMonitorDashboard
+2026-05-14 02:37:53,017 - __main__ - INFO - ✅ RealtimeMonitorDashboard initialized
+2026-05-14 02:37:53,017 - __main__ - INFO - ✅ Dashboard file created
+2026-05-14 02:37:53,017 - __main__ - INFO - ✅ Dashboard loaded: ['timestamp', 'system_status', 'committee_vote', 'senate_floor_vote', 'strategy', 'market_data', 'positions', 'alerts', 'trade_log']
+2026-05-14 02:37:53,018 - __main__ - INFO - ✅ Committee vote status updated
+2026-05-14 02:37:53,019 - __main__ - INFO - ✅ Market data updated
+2026-05-14 02:37:53,020 - __main__ - INFO - ✅ Alert added successfully
+2026-05-14 02:37:53,020 - __main__ - INFO - ✅ Summary text generated
+2026-05-14 02:37:53,020 - __main__ - INFO - ✅ Test dashboard cleaned up
+2026-05-14 02:37:53,020 - __main__ - INFO - ✅ RealtimeMonitorDashboard test passed
+
+2026-05-14 02:37:53,020 - __main__ - INFO - 
+TEST 8: Integration Test
+2026-05-14 02:37:53,020 - __main__ - INFO - ✅ All core modules imported
+2026-05-14 02:37:53,021 - __main__ - INFO - ✅ MA calculated: 16.6103
+2026-05-14 02:37:53,021 - clarity_act_core - WARNING - Senate floor vote date not yet determined, using default params
+2026-05-14 02:37:53,021 - __main__ - INFO - ✅ Parameters calculated: MA=10
+2026-05-14 02:37:53,021 - __main__ - INFO - ✅ Entry signal: True
+2026-05-14 02:37:53,021 - clarity_act_core - INFO - Config updated with new parameters: {'ma_window': 10, 'stop_loss_percent': -2.5, 'position_fraction': 0.5, 'kelly_fraction': 0.55, 'duration_days': None}
+2026-05-14 02:37:53,021 - __main__ - INFO - ✅ Config updated with parameters
+2026-05-14 02:37:53,021 - __main__ - INFO - ✅ Integration test passed
+
+2026-05-14 02:37:53,021 - __main__ - INFO - Test results saved to test_results.json

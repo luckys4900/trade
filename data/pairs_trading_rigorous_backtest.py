@@ -8,6 +8,7 @@ statistical significance tests, regime analysis, and final verdict.
 import numpy as np
 import pandas as pd
 from scipy import stats
+from statsmodels.tsa.stattools import coint, adfuller
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -18,8 +19,8 @@ print("=" * 80)
 print("PAIRS TRADING BACKTEST: BTC/ETH on Hyperliquid (4h candles)")
 print("=" * 80)
 
-btc = pd.read_csv(r"C:\Users\user\Desktop\cursor\trade\data\btc_price_4h_cache.csv")
-eth = pd.read_csv(r"C:\Users\user\Desktop\cursor\trade\data\eth_usdt_4h.csv")
+btc = pd.read_csv("btc_price_4h_cache.csv")
+eth = pd.read_csv("eth_usdt_4h.csv")
 
 # Parse datetime - strip timezone from BTC
 btc['datetime'] = pd.to_datetime(btc['datetime']).dt.tz_localize(None)

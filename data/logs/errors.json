@@ -1,0 +1,41 @@
+[
+  {
+    "error_id": "error_20260514_024511_0",
+    "timestamp": "2026-05-14T02:45:11.961496",
+    "error_type": "ValueError",
+    "severity": "MEDIUM",
+    "message": "Test error",
+    "traceback_str": "Traceback (most recent call last):\n  File \"/Users/user/Desktop/trade/data/test_daily_workflow.py\", line 360, in _test_error_recovery\n    raise ValueError(\"Test error\")\nValueError: Test error\n",
+    "component": "TEST_COMPONENT",
+    "retry_count": 0,
+    "recovery_strategy": null,
+    "is_recovered": false,
+    "recovery_notes": ""
+  },
+  {
+    "error_id": "error_20260514_024527_1",
+    "timestamp": "2026-05-14T02:45:27.577857",
+    "error_type": "ValueError",
+    "severity": "MEDIUM",
+    "message": "Test error",
+    "traceback_str": "Traceback (most recent call last):\n  File \"/Users/user/Desktop/trade/data/test_daily_workflow.py\", line 360, in _test_error_recovery\n    raise ValueError(\"Test error\")\nValueError: Test error\n",
+    "component": "TEST_COMPONENT",
+    "retry_count": 0,
+    "recovery_strategy": null,
+    "is_recovered": false,
+    "recovery_notes": ""
+  },
+  {
+    "error_id": "error_20260514_024533_2",
+    "timestamp": "2026-05-14T02:45:33.026377",
+    "error_type": "ValueError",
+    "severity": "MEDIUM",
+    "message": "Test error",
+    "traceback_str": "Traceback (most recent call last):\n  File \"/Users/user/Desktop/trade/data/test_daily_workflow.py\", line 360, in _test_error_recovery\n    raise ValueError(\"Test error\")\nValueError: Test error\n",
+    "component": "TEST_COMPONENT",
+    "retry_count": 0,
+    "recovery_strategy": null,
+    "is_recovered": false,
+    "recovery_notes": ""
+  }
+]

@@ -1,0 +1,141 @@
+{
+  "results": {
+    "FIT21 House Pass": {
+      "event": "FIT21 House Pass",
+      "date": "2024-05-22",
+      "days_available": 41,
+      "strategy1": {
+        "trades": [],
+        "metrics": null
+      },
+      "strategy2": {
+        "trades": [],
+        "metrics": null
+      },
+      "strategy3": {
+        "trades": [
+          {
+            "entry_date": "2024-06-11",
+            "exit_date": "2024-06-16",
+            "entry_ratio": 19.247322957799238,
+            "exit_ratio": 18.396613517786342,
+            "pnl": -4.419884478886339,
+            "exit_reason": "RATIO_DOWN",
+            "days": 5
+          },
+          {
+            "entry_date": "2024-06-17",
+            "exit_date": "2024-06-19",
+            "entry_ratio": 18.93922470994971,
+            "exit_ratio": 18.248613260459877,
+            "pnl": -3.646461035583047,
+            "exit_reason": "RATIO_DOWN",
+            "days": 2
+          }
+        ],
+        "metrics": {
+          "trades": 2,
+          "wr": 0.0,
+          "aw": 0,
+          "al": 4.033172757234693,
+          "pf": 0.0,
+          "total_ret": -8.066345514469386,
+          "sharpe": -165.56165504312315,
+          "mdd": 8.066345514469386,
+          "ev": -4.033172757234693,
+          "kelly": 0.0,
+          "avg_days": 3.5
+        }
+      }
+    },
+    "Gary Gensler Resignation": {
+      "event": "Gary Gensler Resignation",
+      "date": "2025-01-09",
+      "days_available": 41,
+      "strategy1": {
+        "trades": [],
+        "metrics": null
+      },
+      "strategy2": {
+        "trades": [],
+        "metrics": null
+      },
+      "strategy3": {
+        "trades": [
+          {
+            "entry_date": "2025-01-29",
+            "exit_date": "2025-01-31",
+            "entry_ratio": 33.31296444972543,
+            "exit_ratio": 31.029951620574437,
+            "pnl": -6.853226264496577,
+            "exit_reason": "RATIO_DOWN",
+            "days": 2
+          },
+          {
+            "entry_date": "2025-02-01",
+            "exit_date": "2025-02-17",
+            "entry_ratio": 32.28046793304978,
+            "exit_ratio": 34.90461179643228,
+            "pnl": 8.129200198785895,
+            "exit_reason": "RATIO_DOWN",
+            "days": 16
+          }
+        ],
+        "metrics": {
+          "trades": 2,
+          "wr": 0.5,
+          "aw": 8.129200198785895,
+          "al": 6.853226264496577,
+          "pf": 1.1861858758260404,
+          "total_ret": 1.2759739342893184,
+          "sharpe": 1.351947784080331,
+          "mdd": 6.853226264496577,
+          "ev": 0.6379869671446592,
+          "kelly": 0.5930929379130202,
+          "avg_days": 9.0
+        }
+      }
+    }
+  },
+  "aggregate_metrics": {
+    "strategy1": [],
+    "strategy2": [],
+    "strategy3": [
+      {
+        "trades": 2,
+        "wr": 0.0,
+        "aw": 0,
+        "al": 4.033172757234693,
+        "pf": 0.0,
+        "total_ret": -8.066345514469386,
+        "sharpe": -165.56165504312315,
+        "mdd": 8.066345514469386,
+        "ev": -4.033172757234693,
+        "kelly": 0.0,
+        "avg_days": 3.5
+      },
+      {
+        "trades": 2,
+        "wr": 0.5,
+        "aw": 8.129200198785895,
+        "al": 6.853226264496577,
+        "pf": 1.1861858758260404,
+        "total_ret": 1.2759739342893184,
+        "sharpe": 1.351947784080331,
+        "mdd": 6.853226264496577,
+        "ev": 0.6379869671446592,
+        "kelly": 0.5930929379130202,
+        "avg_days": 9.0
+      }
+    ]
+  },
+  "metadata": {
+    "slippage_pct": 0.15,
+    "test_date": "2026-05-13 12:01:10.191953",
+    "strategies": [
+      "Trend Following",
+      "Volatility Expansion",
+      "Pair Trading"
+    ]
+  }
+}

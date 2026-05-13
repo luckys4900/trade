@@ -41,12 +41,12 @@ print("=" * 90)
 print("  FUNDING RATE Z-SCORE MEAN REVERSION - RIGOROUS BACKTEST")
 print("=" * 90)
 
-fr_raw = pd.read_csv('data/btc_funding_rate.csv')
+fr_raw = pd.read_csv('btc_funding_rate.csv')
 fr_raw['datetime'] = pd.to_datetime(fr_raw['datetime']).dt.floor('h')
 fr_raw = fr_raw.set_index('datetime').sort_index()
 fr_raw = fr_raw[~fr_raw.index.duplicated(keep='first')]
 
-price_raw = pd.read_csv('data/btc_price_4h_cache.csv')
+price_raw = pd.read_csv('btc_price_4h_cache.csv')
 price_raw['datetime'] = pd.to_datetime(price_raw['datetime']).dt.tz_convert(None)
 price_raw = price_raw.set_index('datetime').sort_index()
 price_raw = price_raw[~price_raw.index.duplicated(keep='first')]

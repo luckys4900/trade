@@ -1,0 +1,350 @@
+================================================================================
+FUNDING RATE CARRY TRADE (DELTA-NEUTRAL) - RIGOROUS BACKTEST
+================================================================================
+
+FR data: 2024-01-01 00:00:00.151000 to 2026-04-18 15:00:00, 20127 rows
+Price data: 2023-01-08 16:00:00 to 2026-04-22 12:00:00, 7200 rows
+
+Settlement-time FR rows: 2516
+
+================================================================================
+RUNNING BACKTESTS...
+================================================================================
+
+================================================================================
+RESULTS: SHORT CARRY (Enter SHORT when FR > threshold)
+================================================================================
+
+--- Hold Period: 1 funding period (8h) ---
+Threshold      Period Trades      EV%     Std%  WinRate   t-stat    p-val               95% CI  Mo Win%   Sharpe     Total%
+--------------------------------------------------------------------------------------------------------------------------------------------
+ANY positive   IS      1288  -0.2278   1.5185    40.5%   -5.383   0.0000   [-0.3118, -0.1447] OK    13.3%   -4.815    -293.36
+ANY positive   OOS      976  -0.1410   1.2978    41.0%   -3.395   0.0007   [-0.2238, -0.0605] OK    15.4%   -3.262    -137.64
+0.005%         IS       216  -0.4186   1.6709    37.5%   -3.682   0.0003   [-0.6400, -0.1956] OK    28.6%   -3.408     -90.41
+0.005%         OOS       14   0.0660   1.1299    42.9%    0.219   0.8303    [-0.4644, 0.6593] *    33.3%    0.437       0.92
+0.01%          IS        72  -0.3860   1.9366    41.7%   -1.691   0.0952    [-0.8412, 0.0497] *    37.5%   -2.071     -27.79
+0.01%          OOS        3  -0.0595   0.3024    33.3%   -0.341   0.7656    [-0.3726, 0.2309] *    50.0%   -0.835      -0.18
+0.015%         IS        21  -0.1972   2.5844    42.9%   -0.350   0.7302    [-1.2851, 0.8941] *    60.0%   -0.542      -4.14
+0.015%         OOS        1  -0.3726      nan     0.0%    0.000   1.0000   [-0.3726, -0.3726] OK     0.0%      nan      -0.37
+0.02%          IS        11   0.1516   2.5327    45.5%    0.199   0.8466    [-1.2807, 1.5384] *    66.7%    0.397       1.67
+0.02%          OOS   NO TRADES
+0.025%         IS         6   0.4142   3.0844    66.7%    0.329   0.7555    [-1.9914, 2.6095] *   100.0%    0.806       2.49
+0.025%         OOS   NO TRADES
+0.03%          IS         3   0.7010   4.8386    66.7%    0.251   0.8253    [-4.7655, 4.4341] *    50.0%    0.615       2.10
+0.03%          OOS   NO TRADES
+
+--- Hold Period: 2 funding periods (16h) ---
+Threshold      Period Trades      EV%     Std%  WinRate   t-stat    p-val               95% CI  Mo Win%   Sharpe     Total%
+--------------------------------------------------------------------------------------------------------------------------------------------
+ANY positive   IS      1288  -0.2834   2.1657    42.7%   -4.697   0.0000   [-0.4020, -0.1666] OK    20.0%   -4.201    -365.08
+ANY positive   OOS      976  -0.1362   1.8312    44.1%   -2.323   0.0204   [-0.2545, -0.0239] OK    23.1%   -2.232    -132.91
+0.005%         IS       216  -0.5919   2.4778    39.8%   -3.511   0.0005   [-0.9325, -0.2709] OK    21.4%   -3.251    -127.86
+0.005%         OOS       14   0.2003   1.6335    50.0%    0.459   0.6540    [-0.5895, 1.0410] *    66.7%    0.917       2.80
+0.01%          IS        72  -0.6805   2.2961    38.9%   -2.515   0.0142   [-1.2089, -0.1553] OK    25.0%   -3.080     -48.99
+0.01%          OOS        3  -0.4218   0.8100    33.3%   -0.902   0.4623    [-1.0264, 0.4985] *    50.0%   -2.209      -1.27
+0.015%         IS        21  -0.4729   2.6406    42.9%   -0.821   0.4215    [-1.6367, 0.5611] *    60.0%   -1.271      -9.93
+0.015%         OOS        1  -0.7376      nan     0.0%    0.000   1.0000   [-0.7376, -0.7376] OK     0.0%      nan      -0.74
+0.02%          IS        11  -0.0901   2.1680    45.5%   -0.138   0.8931    [-1.3875, 1.0406] *    33.3%   -0.276      -0.99
+0.02%          OOS   NO TRADES
+0.025%         IS         6  -0.2155   2.3463    50.0%   -0.225   0.8309    [-2.1500, 1.3473] *    50.0%   -0.551      -1.29
+0.025%         OOS   NO TRADES
+0.03%          IS         3  -0.5846   3.6130    66.7%   -0.280   0.8056    [-4.4590, 2.6926] *    50.0%   -0.687      -1.75
+0.03%          OOS   NO TRADES
+
+================================================================================
+RESULTS: LONG CARRY (Enter LONG when FR < -threshold)
+================================================================================
+
+--- Hold Period: 1 funding period (8h) ---
+Threshold      Period Trades      EV%     Std%  WinRate   t-stat    p-val               95% CI  Mo Win%   Sharpe     Total%
+--------------------------------------------------------------------------------------------------------------------------------------------
+ANY positive   IS        77  -0.0077   1.6307    41.6%   -0.042   0.9670    [-0.3540, 0.3765] *    57.1%   -0.038      -0.59
+ANY positive   OOS      170   0.0104   1.2624    44.1%    0.108   0.9142    [-0.1722, 0.1929] *    50.0%    0.108       1.78
+0.005%         IS         2  -0.0816   0.0558     0.0%   -2.068   0.2867   [-0.1210, -0.0421] OK     0.0%   -5.066      -0.16
+0.005%         OOS        1  -0.8266      nan     0.0%    0.000   1.0000   [-0.8266, -0.8266] OK     0.0%      nan      -0.83
+0.01%          IS    NO TRADES
+0.01%          OOS   NO TRADES
+0.015%         IS    NO TRADES
+0.015%         OOS   NO TRADES
+0.02%          IS    NO TRADES
+0.02%          OOS   NO TRADES
+0.025%         IS    NO TRADES
+0.025%         OOS   NO TRADES
+0.03%          IS    NO TRADES
+0.03%          OOS   NO TRADES
+
+--- Hold Period: 2 funding periods (16h) ---
+Threshold      Period Trades      EV%     Std%  WinRate   t-stat    p-val               95% CI  Mo Win%   Sharpe     Total%
+--------------------------------------------------------------------------------------------------------------------------------------------
+ANY positive   IS        77   0.0972   2.0459    46.8%    0.417   0.6780    [-0.3494, 0.5575] *    71.4%    0.386       7.48
+ANY positive   OOS      170  -0.0087   1.7697    42.4%   -0.064   0.9490    [-0.2653, 0.2556] *    50.0%   -0.064      -1.48
+0.005%         IS         2  -0.0656   1.4953    50.0%   -0.062   0.9606    [-1.1229, 0.9918] *    50.0%   -0.152      -0.13
+0.005%         OOS        1   1.0644      nan   100.0%    0.000   1.0000     [1.0644, 1.0644] OK   100.0%      nan       1.06
+0.01%          IS    NO TRADES
+0.01%          OOS   NO TRADES
+0.015%         IS    NO TRADES
+0.015%         OOS   NO TRADES
+0.02%          IS    NO TRADES
+0.02%          OOS   NO TRADES
+0.025%         IS    NO TRADES
+0.025%         OOS   NO TRADES
+0.03%          IS    NO TRADES
+0.03%          OOS   NO TRADES
+
+================================================================================
+P&L DECOMPOSITION: Funding vs Price Movement
+================================================================================
+
+--- Hold Period: 1 funding period (8h) ---
+Config                         Period   Funding%     Price%      Cost%       Net% Fund/Total Price Dominates
+--------------------------------------------------------------------------------------------------------------
+SHORT FR>ANY positive          IS        3.7863   -78.1840   218.9600  -293.3578       4.6%             YES
+SHORT FR>ANY positive          OOS       1.3088    26.9669   165.9200  -137.6444       4.6%             YES
+LONG FR>ANY positive           IS        0.1087    12.3868    13.0900    -0.5945       0.9%             YES
+LONG FR>ANY positive           OOS       0.1699    30.5061    28.9000     1.7759       0.6%             YES
+SHORT FR>0.005%                IS        2.0826   -55.7723    36.7200   -90.4097       3.6%             YES
+SHORT FR>0.005%                OOS       0.1139     3.1906     2.3800     0.9245       3.4%             YES
+LONG FR>0.005%                 IS        0.0146     0.1623     0.3400    -0.1632       8.2%             YES
+LONG FR>0.005%                 OOS       0.0063    -0.6629     0.1700    -0.8266       0.9%             YES
+SHORT FR>0.01%                 IS        1.0946   -16.6440    12.2400   -27.7894       6.2%             YES
+SHORT FR>0.01%                 OOS       0.0393     0.2921     0.5100    -0.1786      11.9%             YES
+SHORT FR>0.015%                IS        0.4743    -1.0454     3.5700    -4.1411      31.2%             YES
+SHORT FR>0.015%                OOS       0.0184    -0.2210     0.1700    -0.3726       7.7%             YES
+SHORT FR>0.02%                 IS        0.3059     3.2316     1.8700     1.6675       8.6%             YES
+SHORT FR>0.025%                IS        0.1907     3.3143     1.0200     2.4851       5.4%             YES
+SHORT FR>0.03%                 IS        0.1094     2.5036     0.5100     2.1030       4.2%             YES
+
+--- Hold Period: 2 funding periods (16h) ---
+Config                         Period   Funding%     Price%      Cost%       Net% Fund/Total Price Dominates
+--------------------------------------------------------------------------------------------------------------
+SHORT FR>ANY positive          IS        3.7863  -149.9056   218.9600  -365.0793       2.5%             YES
+SHORT FR>ANY positive          OOS       1.3088    31.6987   165.9200  -132.9125       4.0%             YES
+LONG FR>ANY positive           IS        0.1087    20.4640    13.0900     7.4827       0.5%             YES
+LONG FR>ANY positive           OOS       0.1699    27.2530    28.9000    -1.4772       0.6%             YES
+SHORT FR>0.005%                IS        2.0826   -93.2228    36.7200  -127.8602       2.2%             YES
+SHORT FR>0.005%                OOS       0.1139     5.0698     2.3800     2.8037       2.2%             YES
+LONG FR>0.005%                 IS        0.0146     0.1943     0.3400    -0.1311       7.0%             YES
+LONG FR>0.005%                 OOS       0.0063     1.2280     0.1700     1.0644       0.5%             YES
+SHORT FR>0.01%                 IS        1.0946   -37.8478    12.2400   -48.9932       2.8%             YES
+SHORT FR>0.01%                 OOS       0.0393    -0.7948     0.5100    -1.2655       4.7%             YES
+SHORT FR>0.015%                IS        0.4743    -6.8343     3.5700    -9.9300       6.5%             YES
+SHORT FR>0.015%                OOS       0.0184    -0.5860     0.1700    -0.7376       3.1%             YES
+SHORT FR>0.02%                 IS        0.3059     0.5734     1.8700    -0.9907      34.8%             YES
+SHORT FR>0.025%                IS        0.1907    -0.4637     1.0200    -1.2929      29.1%             YES
+SHORT FR>0.03%                 IS        0.1094    -1.3533     0.5100    -1.7539       7.5%             YES
+
+================================================================================
+FR vs SUBSEQUENT PRICE MOVEMENT CORRELATION
+================================================================================
+(Tests whether FR is predictive of price direction, or just a carry)
+
+--- Hold Period: 1 funding period (8h) ---
+  SHORT IS: Pearson r=-0.0233 (p=0.4026), Spearman ρ=-0.0271 (p=0.3307), n=1288
+  SHORT OOS: Pearson r=0.0222 (p=0.4882), Spearman ρ=0.0093 (p=0.7715), n=976
+  LONG IS: Pearson r=0.0569 (p=0.6228), Spearman ρ=-0.0055 (p=0.9620), n=77
+  LONG OOS: Pearson r=-0.0534 (p=0.4891), Spearman ρ=-0.1054 (p=0.1714), n=170
+
+--- Hold Period: 2 funding periods (16h) ---
+  SHORT IS: Pearson r=-0.0510 (p=0.0675), Spearman ρ=-0.0277 (p=0.3214), n=1288
+  SHORT OOS: Pearson r=0.0370 (p=0.2476), Spearman ρ=0.0689 (p=0.0315), n=976
+  LONG IS: Pearson r=0.0813 (p=0.4821), Spearman ρ=-0.0125 (p=0.9138), n=77
+  LONG OOS: Pearson r=-0.1607 (p=0.0363), Spearman ρ=-0.1619 (p=0.0349), n=170
+
+
+================================================================================
+BREAKEVEN ANALYSIS: Minimum FR Threshold for Positive EV After Costs
+================================================================================
+
+--- Hold Period: 1 funding period (8h) ---
+
+  SHORT carry:
+     Threshold    OOS EV%    OOS n  OOS WinRate   OOS Sharpe
+  0.0000%         -0.1410      976        41.0%       -3.395
+  0.0050%          0.0660       14        42.9%        0.219
+
+  >>> Best OOS EV: 0.1837% at threshold 0.0080% (5 trades)
+
+  LONG carry:
+     Threshold    OOS EV%    OOS n  OOS WinRate   OOS Sharpe
+  0.0000%          0.0104      170        44.1%        0.108
+
+  >>> Best OOS EV: 0.1727% at threshold 0.0010% (70 trades)
+
+--- Hold Period: 2 funding periods (16h) ---
+
+  SHORT carry:
+     Threshold    OOS EV%    OOS n  OOS WinRate   OOS Sharpe
+  0.0000%         -0.1362      976        44.1%       -2.323
+  0.0050%          0.2003       14        50.0%        0.459
+
+  >>> Best OOS EV: 0.2274% at threshold 0.0080% (5 trades)
+
+  LONG carry:
+     Threshold    OOS EV%    OOS n  OOS WinRate   OOS Sharpe
+  0.0000%         -0.0087      170        42.4%       -0.064
+
+  >>> Best OOS EV: 0.4482% at threshold 0.0010% (70 trades)
+
+================================================================================
+DETAILED OOS MONTHLY BREAKDOWN - BEST CONFIGURATIONS
+================================================================================
+
+BEST SHORT: SHORT carry, threshold=0.005%, hold=2 funding periods (16h)
+  OOS Trades: 14
+  OOS EV: 0.2003%
+  OOS Sharpe: 0.917
+  OOS Win Rate: 50.0%
+
+  Month      Trades     Total%  WinRate   AvgFund%  AvgPrice%
+  ------------------------------------------------------------
+  2025-05         7    -0.7597    42.9%     0.0090     0.0524
+  2025-07         6     0.9085    50.0%     0.0073     0.3141
+  2025-08         1     2.6550   100.0%     0.0070     2.8180
+
+BEST LONG: LONG carry, threshold=ANY positive, hold=1 funding period (8h)
+  OOS Trades: 170
+  OOS EV: 0.0104%
+  OOS Sharpe: 0.108
+  OOS Win Rate: 44.1%
+
+  Month      Trades     Total%  WinRate   AvgFund%  AvgPrice%
+  ------------------------------------------------------------
+  2025-04        18     1.2714    38.9%     0.0011     0.2395
+  2025-05         3     1.7401    66.7%     0.0030     0.7470
+  2025-06        13     6.7053    69.2%     0.0010     0.6848
+  2025-08         7    -2.4420    28.6%     0.0008    -0.1796
+  2025-09         3    -0.8744    33.3%     0.0004    -0.1219
+  2025-10         2    -5.6087     0.0%     0.0004    -2.6347
+  2025-11         6    -0.3039    33.3%     0.0008     0.1185
+  2025-12        14     3.4192    50.0%     0.0007     0.4135
+  2026-01        16    -2.6328    43.8%     0.0009     0.0045
+  2026-02        28     0.4169    46.4%     0.0010     0.1839
+  2026-03        37     0.9526    45.9%     0.0010     0.1947
+  2026-04        23    -0.8678    34.8%     0.0011     0.1312
+
+================================================================================
+EXPECTED MONTHLY P&L FOR $190 ACCOUNT AT 1x LEVERAGE
+================================================================================
+
+Account: $190, Leverage: 1x
+Position size per trade: $190
+Round-trip cost: 0.17%
+
+Config                              Period  Trades/mo  EV/trade%  EV/trade$   Monthly$   Monthly%
+----------------------------------------------------------------------------------------------------
+SHORT FR>ANY positive 1 funding perio IS          85.9    -0.2278    -0.4327   -37.1586     -19.56
+SHORT FR>ANY positive 1 funding perio OOS         78.1    -0.1410    -0.2680   -20.9219     -11.01
+LONG FR>ANY positive 1 funding perio IS           5.1    -0.0077    -0.0147    -0.0753      -0.04
+LONG FR>ANY positive 1 funding perio OOS         13.6     0.0104     0.0198     0.2699       0.14
+SHORT FR>0.005% 1 funding perio     IS          14.4    -0.4186    -0.7953   -11.4519      -6.03
+SHORT FR>0.005% 1 funding perio     OOS          1.1     0.0660     0.1255     0.1405       0.07
+LONG FR>0.005% 1 funding perio      IS           0.1    -0.0816    -0.1550    -0.0207      -0.01
+LONG FR>0.005% 1 funding perio      OOS          0.1    -0.8266    -1.5705    -0.1256      -0.07
+SHORT FR>0.01% 1 funding perio      IS           4.8    -0.3860    -0.7333    -3.5200      -1.85
+SHORT FR>0.01% 1 funding perio      OOS          0.2    -0.0595    -0.1131    -0.0271      -0.01
+SHORT FR>0.015% 1 funding perio     IS           1.4    -0.1972    -0.3747    -0.5245      -0.28
+SHORT FR>0.015% 1 funding perio     OOS          0.1    -0.3726    -0.7079    -0.0566      -0.03
+SHORT FR>0.02% 1 funding perio      IS           0.7     0.1516     0.2880     0.2112       0.11
+SHORT FR>0.025% 1 funding perio     IS           0.4     0.4142     0.7869     0.3148       0.17
+SHORT FR>0.03% 1 funding perio      IS           0.2     0.7010     1.3319     0.2664       0.14
+SHORT FR>ANY positive 2 funding perio IS          85.9    -0.2834    -0.5385   -46.2434     -24.34
+SHORT FR>ANY positive 2 funding perio OOS         78.1    -0.1362    -0.2587   -20.2027     -10.63
+LONG FR>ANY positive 2 funding perio IS           5.1     0.0972     0.1846     0.9478       0.50
+LONG FR>ANY positive 2 funding perio OOS         13.6    -0.0087    -0.0165    -0.2245      -0.12
+SHORT FR>0.005% 2 funding perio     IS          14.4    -0.5919    -1.1247   -16.1956      -8.52
+SHORT FR>0.005% 2 funding perio     OOS          1.1     0.2003     0.3805     0.4262       0.22
+LONG FR>0.005% 2 funding perio      IS           0.1    -0.0656    -0.1246    -0.0166      -0.01
+LONG FR>0.005% 2 funding perio      OOS          0.1     1.0644     2.0223     0.1618       0.09
+SHORT FR>0.01% 2 funding perio      IS           4.8    -0.6805    -1.2929    -6.2058      -3.27
+SHORT FR>0.01% 2 funding perio      OOS          0.2    -0.4218    -0.8015    -0.1923      -0.10
+SHORT FR>0.015% 2 funding perio     IS           1.4    -0.4729    -0.8984    -1.2578      -0.66
+SHORT FR>0.015% 2 funding perio     OOS          0.1    -0.7376    -1.4014    -0.1121      -0.06
+SHORT FR>0.02% 2 funding perio      IS           0.7    -0.0901    -0.1711    -0.1255      -0.07
+SHORT FR>0.025% 2 funding perio     IS           0.4    -0.2155    -0.4094    -0.1638      -0.09
+SHORT FR>0.03% 2 funding perio      IS           0.2    -0.5846    -1.1108    -0.2222      -0.12
+
+================================================================================
+COMPREHENSIVE SUMMARY: ALL OOS CONFIGURATIONS
+================================================================================
+
+Hold                 Dir    Threshold        n      EV%     Std%    WR%       t       p      CI0      CI1  0∈CI   MoWR%  Sharpe     Mo$
+--------------------------------------------------------------------------------------------------------------------------------------------
+1 funding period (   SH     ANY positive   976  -0.1410   1.2978  41.0  -3.395  0.0007  -0.2238  -0.0605     N   15.4  -3.262 -20.922
+1 funding period (   LO     ANY positive   170   0.0104   1.2624  44.1   0.108  0.9142  -0.1722   0.1929     Y   50.0   0.108   0.270
+1 funding period (   SH     0.005%          14   0.0660   1.1299  42.9   0.219  0.8303  -0.4644   0.6593     Y   33.3   0.437   0.141
+1 funding period (   LO     0.005%           1  -0.8266      nan   0.0   0.000  1.0000  -0.8266  -0.8266     N    0.0     nan  -0.126
+1 funding period (   SH     0.01%            3  -0.0595   0.3024  33.3  -0.341  0.7656  -0.3726   0.2309     Y   50.0  -0.835  -0.027
+1 funding period (   SH     0.015%           1  -0.3726      nan   0.0   0.000  1.0000  -0.3726  -0.3726     N    0.0     nan  -0.057
+2 funding periods    SH     ANY positive   976  -0.1362   1.8312  44.1  -2.323  0.0204  -0.2545  -0.0239     N   23.1  -2.232 -20.203
+2 funding periods    LO     ANY positive   170  -0.0087   1.7697  42.4  -0.064  0.9490  -0.2653   0.2556     Y   50.0  -0.064  -0.225
+2 funding periods    SH     0.005%          14   0.2003   1.6335  50.0   0.459  0.6540  -0.5895   1.0410     Y   66.7   0.917   0.426
+2 funding periods    LO     0.005%           1   1.0644      nan 100.0   0.000  1.0000   1.0644   1.0644     N  100.0     nan   0.162
+2 funding periods    SH     0.01%            3  -0.4218   0.8100  33.3  -0.902  0.4623  -1.0264   0.4985     Y   50.0  -2.209  -0.192
+2 funding periods    SH     0.015%           1  -0.7376      nan   0.0   0.000  1.0000  -0.7376  -0.7376     N    0.0     nan  -0.112
+
+================================================================================
+FINAL VERDICT
+================================================================================
+
+Found 3 configurations with positive OOS EV.
+
+Top configurations by OOS Sharpe ratio:
+
+  #1: SHORT carry, threshold=0.005%, hold=2 funding periods (16h)
+      OOS: 14 trades, EV=0.2003%, Sharpe=0.917
+      t-stat=0.459, p-value=0.6540
+      95% CI: [-0.5895%, 1.0410%] * INCLUDES 0
+      Monthly win rate: 66.7%
+      Statistical significance: NOT SIGNIFICANT
+      Expected monthly P&L: $0.43 (0.22% of account)
+
+  #2: SHORT carry, threshold=0.005%, hold=1 funding period (8h)
+      OOS: 14 trades, EV=0.0660%, Sharpe=0.437
+      t-stat=0.219, p-value=0.8303
+      95% CI: [-0.4644%, 0.6593%] * INCLUDES 0
+      Monthly win rate: 33.3%
+      Statistical significance: NOT SIGNIFICANT
+      Expected monthly P&L: $0.14 (0.07% of account)
+
+  #3: LONG carry, threshold=ANY positive, hold=1 funding period (8h)
+      OOS: 170 trades, EV=0.0104%, Sharpe=0.108
+      t-stat=0.108, p-value=0.9142
+      95% CI: [-0.1722%, 0.1929%] * INCLUDES 0
+      Monthly win rate: 50.0%
+      Statistical significance: NOT SIGNIFICANT
+      Expected monthly P&L: $0.27 (0.14% of account)
+
+--------------------------------------------------------------------------------
+OVERALL ASSESSMENT:
+--------------------------------------------------------------------------------
+
+1. Is FR Carry trade profitable after costs on BTC/USDT?
+   YES - Best OOS EV: 0.2003% per trade
+
+2. Is the edge statistically significant?
+   NO - No configuration achieves statistical significance at p < 0.05
+   Best p-value: 0.6540
+
+3. P&L Decomposition (best config OOS):
+   Total funding PnL: +0.1139%
+   Total price PnL:   +5.0698%
+   Total net PnL:     +2.8037%
+   Funding dominance: 2.2% of gross PnL
+   → Price PnL is significant → carry trade has directional component
+
+4. Expected monthly P&L for $190 account at 1x leverage:
+   Best config: $0.43/month (0.22% return)
+   Config: SHORT carry, threshold=0.005%, hold=2 funding periods (16h)
+
+5. Breakeven analysis:
+   Round-trip cost: 0.17%
+   Average funding rate needed to break even: 0.17% per trade
+   (This is the minimum FR threshold for carry-only profitability)
+
+6. RECOMMENDATION:
+   X REJECT - Insufficient edge after costs
+   Best monthly P&L: $0.43 is too small relative to risk
+
+================================================================================
+BACKTEST COMPLETE
+================================================================================

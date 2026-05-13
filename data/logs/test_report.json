@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-05-14T02:45:36.693574",
+  "total_tests": 23,
+  "passed": 23,
+  "failed": 0,
+  "skipped": 0,
+  "results": [
+    {
+      "test_name": "Test Module Imports",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.024260",
+      "message": "All modules imported successfully"
+    },
+    {
+      "test_name": "DynamicTimelineManager Initialization",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.024293",
+      "message": "Timeline manager initialized correctly"
+    },
+    {
+      "test_name": "RatioCalculator Ratio Calculation",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.024320",
+      "message": "Ratio calculation works correctly"
+    },
+    {
+      "test_name": "SignalGenerator Entry/Exit Signals",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.024347",
+      "message": "Signal generation works correctly"
+    },
+    {
+      "test_name": "ConfigurationManager Config Load/Save",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.024415",
+      "message": "Configuration management works correctly"
+    },
+    {
+      "test_name": "TradeLogger Initialization",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.024555",
+      "message": "Trade logger initialized correctly"
+    },
+    {
+      "test_name": "TradeLogger Entry Logging",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.024929",
+      "message": "Entry logged with ID: entry_20260514_024533_2"
+    },
+    {
+      "test_name": "TradeLogger Exit Logging",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.025219",
+      "message": "Exit logged successfully"
+    },
+    {
+      "test_name": "TradeLogger Daily Report Generation",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.025425",
+      "message": "Daily report generated successfully"
+    },
+    {
+      "test_name": "PerformanceAnalyzer Initialization",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.025523",
+      "message": "Performance analyzer initialized correctly"
+    },
+    {
+      "test_name": "PerformanceAnalyzer Trade Recording",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.025752",
+      "message": "Trade recording and metrics work correctly"
+    },
+    {
+      "test_name": "PerformanceAnalyzer EV Calculation",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.025839",
+      "message": "EV calculation works (result: None)"
+    },
+    {
+      "test_name": "AlertManager Initialization",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.025935",
+      "message": "Alert manager initialized correctly"
+    },
+    {
+      "test_name": "AlertManager Send Alert",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.026104",
+      "message": "Alert sent with ID: alert_20260514_024533_2"
+    },
+    {
+      "test_name": "AlertManager Get Summary",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.026203",
+      "message": "Alert summary retrieved successfully"
+    },
+    {
+      "test_name": "ErrorRecovery Initialization",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.026297",
+      "message": "Error recovery initialized correctly"
+    },
+    {
+      "test_name": "ErrorRecovery Record Error",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.026710",
+      "message": "Error recorded with ID: error_20260514_024533_2"
+    },
+    {
+      "test_name": "ErrorRecovery System Health",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.026805",
+      "message": "System health: True"
+    },
+    {
+      "test_name": "MainWorkflowHyperliquid Initialization",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:33.026886",
+      "message": "Workflow initialized correctly"
+    },
+    {
+      "test_name": "MainWorkflowHyperliquid Initialization Phase",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:34.457907",
+      "message": "Initialization phase completed: True"
+    },
+    {
+      "test_name": "MainWorkflowHyperliquid Daily Execution Phase",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:35.723859",
+      "message": "Daily execution phase completed: True"
+    },
+    {
+      "test_name": "MainWorkflowHyperliquid Hourly Execution Phase",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:36.581033",
+      "message": "Hourly execution phase completed: True"
+    },
+    {
+      "test_name": "MainWorkflowHyperliquid Price Fetching",
+      "status": "PASSED",
+      "timestamp": "2026-05-14T02:45:36.693459",
+      "message": "Prices fetched: BTC=$79353, ETH=$2255.83"
+    }
+  ]
+}

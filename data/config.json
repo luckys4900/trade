@@ -1,0 +1,15 @@
+{
+  "strategy": "clarity_act_pair_trading",
+  "version": "3.0",
+  "parameters": {
+    "ma_window": 5,
+    "stop_loss_percent": -2.0,
+    "position_fraction": 0.6,
+    "kelly_fraction": 0.55,
+    "duration_days": -679
+  },
+  "monitoring": {
+    "congress_check_frequency": "daily",
+    "polymarket_check_frequency": "hourly"
+  }
+}

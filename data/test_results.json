@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-05-14T02:37:51.699592",
+  "tests": {
+    "DynamicTimelineManager": "PASS",
+    "RatioCalculator": "PASS",
+    "SignalGenerator": "PASS",
+    "ConfigurationManager": "PASS",
+    "CongressGovMonitor": "PASS",
+    "RealtimeMonitorDashboard": "PASS",
+    "Integration": "PASS"
+  },
+  "passed": 7,
+  "failed": 1,
+  "errors": [
+    "No module named 'schedule'"
+  ]
+}

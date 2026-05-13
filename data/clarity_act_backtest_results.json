@@ -1,0 +1,90 @@
+{
+  "strategy1_trend": {
+    "trades": [
+      {
+        "entry_date": "2024-06-04",
+        "exit_date": "2024-06-08",
+        "entry_price": 70537.84,
+        "exit_price": 69310.46,
+        "pnl_pct": -1.7400305991790932,
+        "exit_reason": "3D_DOWN",
+        "duration_days": 4
+      }
+    ],
+    "metrics": {
+      "num_trades": 1,
+      "win_rate": 0.0,
+      "avg_win": 0,
+      "avg_loss": 1.7400305991790932,
+      "profit_factor": -0.0,
+      "total_return": -1.7400305991790932,
+      "sharpe_ratio": 0,
+      "max_drawdown": 1.7400305991790932,
+      "expected_value": -1.7400305991790932,
+      "kelly_criterion": 0.0,
+      "avg_duration_days": 4.0
+    }
+  },
+  "strategy2_volatility": {
+    "trades": [
+      {
+        "entry_date": "2024-06-27",
+        "exit_date": "2024-07-01",
+        "entry_price": 61706.47,
+        "exit_price": 62899.99,
+        "pnl_pct": 1.9341893969951558,
+        "exit_reason": "EOV",
+        "vol_expansion_ratio": 1.2315838541302988,
+        "duration_days": 4
+      }
+    ],
+    "metrics": {
+      "num_trades": 1,
+      "win_rate": 1.0,
+      "avg_win": 1.9341893969951558,
+      "avg_loss": 0,
+      "profit_factor": 0,
+      "total_return": 1.9341893969951558,
+      "sharpe_ratio": 0,
+      "max_drawdown": 0,
+      "expected_value": 1.9341893969951558,
+      "kelly_criterion": 0,
+      "avg_duration_days": 4.0
+    }
+  },
+  "strategy3_pairs": {
+    "trades": [
+      {
+        "entry_date": "2024-06-11",
+        "exit_date": "2024-06-16",
+        "entry_ratio": 19.247322957799238,
+        "exit_ratio": 18.396613517786342,
+        "pnl_pct": -4.419884478886339,
+        "exit_reason": "RATIO_DOWN",
+        "duration_days": 5
+      },
+      {
+        "entry_date": "2024-06-17",
+        "exit_date": "2024-06-19",
+        "entry_ratio": 18.93922470994971,
+        "exit_ratio": 18.248613260459877,
+        "pnl_pct": -3.646461035583047,
+        "exit_reason": "RATIO_DOWN",
+        "duration_days": 2
+      }
+    ],
+    "metrics": {
+      "num_trades": 2,
+      "win_rate": 0.0,
+      "avg_win": 0,
+      "avg_loss": 4.033172757234693,
+      "profit_factor": -0.0,
+      "total_return": -8.066345514469386,
+      "sharpe_ratio": -165.56165504312315,
+      "max_drawdown": 8.066345514469386,
+      "expected_value": -4.033172757234693,
+      "kelly_criterion": 0.0,
+      "avg_duration_days": 3.5
+    }
+  }
+}

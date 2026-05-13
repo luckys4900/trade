@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/user/Desktop/trade/data/pairs_trading_rigorous_backtest.py", line 11, in <module>
+    from statsmodels.tsa.stattools import coint, adfuller
+ModuleNotFoundError: No module named 'statsmodels'
