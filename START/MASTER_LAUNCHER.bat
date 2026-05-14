@@ -61,6 +61,7 @@ echo  Component 3: BTC Exchange Inflow Monitor (5-min, on-chain to data\btc_infl
 echo  Component 4: Inflow EV1 Signal Builder (10-min to inflow_short_signal.json)
 echo  Component 5: Kronos Contrarian Predictor (4h cycle)
 echo  Component 6: Main Trading Bot (1-min; set inflow_short_enabled in code to use EV1)
+echo  Component 7: Clarity Act Phase Monitor (daily, BTC/ETH pair during regulatory events)
 echo.
 
 tasklist /FI "IMAGENAME eq pythonw.exe" 2>nul | find /I "pythonw.exe" >nul
@@ -86,28 +87,32 @@ if errorlevel 1 echo [WARN] macro_filter --once failed
 echo Pre-flight complete.
 echo.
 
-echo [1/6] Starting Whale Monitor...
+echo [1/7] Starting Whale Monitor...
 start "Whale Monitor" /MIN pythonw.exe SYSTEM\whale_monitor.py
 timeout /t 3 /nobreak >nul
 
-echo [2/6] Starting Macro Filter...
+echo [2/7] Starting Macro Filter...
 start "Macro Filter" /MIN pythonw.exe SYSTEM\macro_filter.py
 timeout /t 3 /nobreak >nul
 
-echo [3/6] Starting BTC Inflow Monitor (mempool.space, 5-min)...
+echo [3/7] Starting BTC Inflow Monitor (mempool.space, 5-min)...
 start "BTC Inflow Monitor" /MIN pythonw.exe data\btc_inflow_monitor.py --loop 300
 timeout /t 3 /nobreak >nul
 
-echo [4/6] Starting Inflow EV1 Signal Builder (10-min loop)...
+echo [4/7] Starting Inflow EV1 Signal Builder (10-min loop)...
 start "Inflow EV1 Signal" /MIN pythonw.exe SYSTEM\inflow_short_signal_loop.py
 timeout /t 3 /nobreak >nul
 
-echo [5/6] Starting Kronos AI Predictor...
+echo [5/7] Starting Kronos AI Predictor...
 start "Kronos Predictor" /MIN pythonw.exe SYSTEM\kronos_predictor.py --interval 14400
 timeout /t 3 /nobreak >nul
 
-echo [6/6] Starting Main Trading Bot...
+echo [6/7] Starting Main Trading Bot...
 start "Main Bot" /MIN pythonw.exe SYSTEM\qwen_unified_live.py
+timeout /t 3 /nobreak >nul
+
+echo [7/7] Starting Clarity Act Phase Monitor...
+start "Clarity Phase" /MIN pythonw.exe data\clarity_phase_monitor.py
 timeout /t 3 /nobreak >nul
 
 echo.
@@ -168,7 +173,8 @@ echo [1] Whale Monitor Log
 echo [2] Macro Filter Log
 echo [3] Main Bot Log
 echo [4] Startup Errors
-echo [5] Open logs folder
+echo [5] Clarity Act Phase Log
+echo [6] Open logs folder
 echo [0] Back
 echo.
 
@@ -215,6 +221,16 @@ if "%logchoice%"=="4" (
 )
 
 if "%logchoice%"=="5" (
+    cls
+    echo ====== CLARITY ACT PHASE LOG ======
+    if exist data\clarity_phase_history.json (
+        type data\clarity_phase_history.json | more
+    ) else (
+        echo No phase history yet
+    )
+)
+
+if "%logchoice%"=="6" (
     start explorer "logs\"
 )
 
@@ -262,6 +278,12 @@ echo   6. Main Trading Bot (1-min)
 echo      Auto-trades using whale signals, BTC trend logic,
 echo      and Contrarian mid-volatility filtering
 echo      Outputs: logs\qwen_unified_live.log
+echo.
+echo   7. Clarity Act Phase Monitor (daily)
+echo      BTC/ETH pair trading around regulatory events
+echo      Phase 2: Vol breakout on event day
+echo      Phase 3: Post-event BTC lead (D+5 to D+20)
+echo      Outputs: data\clarity_phase_history.json
 echo.
 echo MONITOR DASHBOARD SHOWS:
 echo   - Process Status: 6 systems running (if all started)

@@ -87,8 +87,12 @@ echo [4/5] Starting Main Trading Bot...
 start /MIN pythonw.exe SYSTEM\qwen_unified_live.py
 timeout /t 3 /nobreak >nul
 
-echo [5/5] Starting Daily SMA Crossover Bot...
+echo [5/6] Starting Daily SMA Crossover Bot...
 start /MIN pythonw.exe SYSTEM\daily_sma_trader.py --interval 3600
+timeout /t 2 /nobreak >nul
+
+echo [6/6] Starting Clarity Act Phase Monitor...
+start /MIN pythonw.exe data\clarity_phase_monitor.py
 timeout /t 2 /nobreak >nul
 
 echo.
