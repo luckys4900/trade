@@ -1,0 +1,179 @@
+{
+  "analysis_date": "2026-05-14 03:48:37.205526",
+  "parameters": {
+    "strategy": "FIXED_FULL",
+    "cost_pct": 0.17,
+    "event_buffer_days": 45,
+    "sliding_window_days": 45
+  },
+  "event_dates": [
+    [
+      "FIT21 House Pass",
+      "2024-05-22"
+    ],
+    [
+      "ETH ETF Surprise Approval",
+      "2024-05-23"
+    ],
+    [
+      "SAB121 Override Vote",
+      "2024-05-09"
+    ],
+    [
+      "Trump Wins Election (Pro-Crypto)",
+      "2024-11-06"
+    ],
+    [
+      "Gensler Resignation Announced",
+      "2024-11-21"
+    ],
+    [
+      "Gensler Steps Down",
+      "2025-01-20"
+    ],
+    [
+      "Trump Crypto EO",
+      "2025-03-07"
+    ],
+    [
+      "SAB121 Repealed",
+      "2025-04-01"
+    ]
+  ],
+  "normal_period_metrics": {
+    "n": 58,
+    "wr": 0.431,
+    "aw": 2.8658,
+    "al": 2.7685,
+    "pf": 0.7842,
+    "sharpe": -1.4909,
+    "mdd": 37.4983,
+    "ev": -0.34,
+    "rr": 1.0351,
+    "t_stat": -0.7091,
+    "p_val": 0.481163,
+    "ci_lo": -1.2299,
+    "ci_hi": 0.5813,
+    "avg_days": 2.8,
+    "total_pnl": -19.7175,
+    "exit_reasons": {
+      "SL": 19,
+      "TS": 19,
+      "TP": 12,
+      "MA_CROSS": 8
+    }
+  },
+  "event_period_metrics": {
+    "n": 49,
+    "wr": 0.5306,
+    "aw": 3.8468,
+    "al": 2.8192,
+    "pf": 1.5425,
+    "sharpe": 2.0504,
+    "mdd": 16.9928,
+    "ev": 0.7179,
+    "rr": 1.3645,
+    "t_stat": 0.8949,
+    "p_val": 0.375325,
+    "ci_lo": -0.6402,
+    "ci_hi": 2.3232,
+    "avg_days": 2.9,
+    "total_pnl": 35.1771,
+    "exit_reasons": {
+      "TS": 21,
+      "TP": 11,
+      "SL": 10,
+      "MA_CROSS": 7
+    }
+  },
+  "normal_sw_metrics": [
+    {
+      "start": "2024-07-08",
+      "end": "2024-08-21",
+      "n_trades": 8,
+      "ev": 0.8744,
+      "wr": 0.625,
+      "sharpe": 3.205,
+      "total_pnl": 6.9952
+    },
+    {
+      "start": "2024-08-22",
+      "end": "2025-05-30",
+      "n_trades": 7,
+      "ev": 0.0811,
+      "wr": 0.5714,
+      "sharpe": 0.5412,
+      "total_pnl": 0.5677
+    },
+    {
+      "start": "2025-05-31",
+      "end": "2025-07-14",
+      "n_trades": 3,
+      "ev": 0.1015,
+      "wr": 0.3333,
+      "sharpe": 0.3473,
+      "total_pnl": 0.3046
+    },
+    {
+      "start": "2025-07-15",
+      "end": "2025-08-28",
+      "n_trades": 3,
+      "ev": -3.7565,
+      "wr": 0.3333,
+      "sharpe": -14.6694,
+      "total_pnl": -11.2695
+    },
+    {
+      "start": "2025-08-29",
+      "end": "2025-10-12",
+      "n_trades": 7,
+      "ev": 0.3707,
+      "wr": 0.4286,
+      "sharpe": 1.1558,
+      "total_pnl": 2.5947
+    },
+    {
+      "start": "2025-10-13",
+      "end": "2025-11-26",
+      "n_trades": 6,
+      "ev": -1.9627,
+      "wr": 0.1667,
+      "sharpe": -12.0582,
+      "total_pnl": -11.7761
+    },
+    {
+      "start": "2025-11-27",
+      "end": "2026-01-10",
+      "n_trades": 5,
+      "ev": 0.4069,
+      "wr": 0.4,
+      "sharpe": 4.0216,
+      "total_pnl": 2.0345
+    },
+    {
+      "start": "2026-01-11",
+      "end": "2026-02-24",
+      "n_trades": 6,
+      "ev": 0.4771,
+      "wr": 0.5,
+      "sharpe": 1.8896,
+      "total_pnl": 2.8628
+    }
+  ],
+  "comparison": {
+    "event_n": 49,
+    "normal_n": 58,
+    "event_ev": 0.7179,
+    "normal_ev": -0.34,
+    "event_wr": 0.5306,
+    "normal_wr": 0.431,
+    "event_sharpe": 2.0504,
+    "normal_sharpe": -1.4909,
+    "welch_t": 1.1319,
+    "welch_p": 0.261065,
+    "mann_whitney_u": 1614.0,
+    "mann_whitney_p": 0.114364,
+    "cohens_d": 0.2256,
+    "ev_diff": 1.0579
+  }
+}
